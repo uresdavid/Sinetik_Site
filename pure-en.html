@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en" data-theme="dark" data-page-lang="en" data-alt-lang="pure.html"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>try{var t=localStorage.getItem('sinetik-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<title>Onda FG-01 — Wide toe box football boots | Sinetik:pure</title>
+<meta name="description" content="Football boots with a wide anatomical toe box, Pebax plate and structured heel hold. Designed in Switzerland, made in Portugal.">
+<link rel="alternate" hreflang="fr" href="https://www.sinetik.ch/pure.html">
+<link rel="alternate" hreflang="en" href="https://www.sinetik.ch/pure-en.html">
+<link rel="alternate" hreflang="x-default" href="https://www.sinetik.ch/pure.html">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/sinetik.css">
+
+<style>
+/* --- Blocks specific to pure --- */
+.stat-big{font-size:clamp(3rem,7vw,4.6rem);font-weight:800;line-height:1;letter-spacing:-.02em;color:var(--accent,#2b7fff)}
+.stat-cap{color:var(--ink-3);font-size:.92rem;margin-top:10px;max-width:32ch}
+.stat-src{font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);opacity:.7;margin-top:14px}
+
+
+/* Le bandeau bleu reprend exactement le format de la page d'accueil :
+   une carte arrondie dans le .wrap, pas une bande pleine largeur. */
+.band-txt{max-width:62ch}
+.band-txt p{color:rgba(255,255,255,.9)}
+
+.manifesto blockquote{margin:0 auto;max-width:30ch;font-family:var(--font);
+  font-size:clamp(1.5rem,3.4vw,2.3rem);font-weight:800;line-height:1.2;letter-spacing:-.03em}
+
+.media-note{font-size:.78rem;color:var(--ink-3);margin-top:12px}
+
+/* ── Comparatif de pression ── */
+.versus{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:36px}
+.vs-col{border:1px solid var(--hair);border-radius:var(--r-lg,16px);overflow:hidden;background:var(--surface);display:flex;flex-direction:column}
+.vs-col.is-onda{border-color:rgba(10,108,255,.45)}
+.vs-head{padding:20px 22px 0}
+.vs-head .mono{display:block}
+.vs-head h3{font-size:1.04rem;margin:9px 0 0}
+/* les cartes de pression sont dessinées clair : fond sombre dans les deux thèmes */
+.vs-map{background:#0A0C10;margin-top:18px;padding:26px 0;flex:1;display:grid;place-items:center}
+.vs-map img{width:auto;height:auto;max-width:58%;max-height:420px;display:block}
+.vs-foot{padding:16px 22px 22px;font-size:.85rem;color:var(--ink-3);line-height:1.55}
+.vs-legend{display:flex;gap:22px;flex-wrap:wrap;margin-top:20px;align-items:center;
+  font-family:var(--mono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.vs-scale{display:inline-block;width:74px;height:9px;border-radius:5px;vertical-align:-1px;margin-right:9px;
+  background:linear-gradient(90deg,#2B4CE0,#1FB6C9,#7BD64F,#F2C230,#E11D48)}
+@media (max-width:720px){.versus{grid-template-columns:1fr}.vs-map img{max-width:46%}}
+
+/* ── Carrousel produit ── */
+.carou{position:relative;border:1px solid var(--hair);border-radius:var(--r-lg,16px);overflow:hidden;background:#F4F6F9}
+.carou-track{display:flex;transition:transform .45s var(--ease,cubic-bezier(.2,.8,.2,1))}
+.carou-track figure{margin:0;flex:0 0 100%;position:relative;aspect-ratio:4/3;overflow:hidden}
+/* toute la vue tient dans le cadre, quelle que soit sa proportion.
+   Positionnement absolu : une hauteur en pourcentage ne se résout pas
+   de façon fiable dans un conteneur dimensionné par aspect-ratio. */
+.carou-track img,.carou-track video{position:absolute;inset:18px;
+  width:calc(100% - 36px);height:calc(100% - 36px);object-fit:contain;display:block}
+.carou-track img{mix-blend-mode:multiply}
+/* la vidéo est verticale et son fond est noir : le cadre l'accompagne */
+.carou-track figure.is-video{background:#0A0C10}
+.carou-track figure.is-video video{inset:0;width:100%;height:100%}
+/* Bouton de lecture, visible tant que la vidéo ne tourne pas */
+.carou-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:66px;height:66px;border-radius:50%;border:0;cursor:pointer;z-index:3;
+  background:var(--accent);color:#fff;display:grid;place-items:center;
+  box-shadow:0 10px 30px rgba(10,108,255,.45);transition:.2s var(--ease,ease)}
+.carou-play:hover{transform:translate(-50%,-50%) scale(1.07)}
+.carou-play svg{width:22px;height:22px;margin-left:3px;fill:currentColor}
+.carou-play[hidden]{display:none}
+.carou-cap{position:absolute;left:14px;bottom:14px;font-family:var(--mono);font-size:.64rem;
+  letter-spacing:.08em;text-transform:uppercase;background:rgba(10,12,16,.72);color:#fff;
+  padding:6px 11px;border-radius:6px;backdrop-filter:blur(4px)}
+.carou-btn{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;
+  border:1px solid rgba(10,12,16,.14);background:rgba(255,255,255,.92);color:#0B0D12;
+  display:grid;place-items:center;cursor:pointer;font-size:16px;transition:.2s;z-index:2}
+.carou-btn:hover{background:#fff;border-color:var(--accent);color:var(--accent)}
+.carou-btn[data-carou="prev"]{left:12px}
+.carou-btn[data-carou="next"]{right:12px}
+/* navigation par pastilles */
+.carou-dots{display:flex;gap:10px;justify-content:center;align-items:center;margin-top:18px}
+.carou-dots button{width:9px;height:9px;padding:0;border-radius:50%;cursor:pointer;border:0;
+  background:var(--ink-3);opacity:.45;transition:.25s var(--ease,ease)}
+.carou-dots button:hover{opacity:.8}
+.carou-dots button[aria-current="true"]{background:var(--accent);opacity:1;width:26px;border-radius:5px}
+
+/* ── Vue 360° ── */
+.spin{position:absolute;inset:0}
+.spin-stage{position:absolute;inset:0;overflow:hidden;background:#FFF;
+  cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.spin.is-dragging .spin-stage{cursor:grabbing}
+.carou-track .spin-img{position:absolute;inset:18px;width:calc(100% - 36px);height:calc(100% - 36px);
+  object-fit:contain;display:block;pointer-events:none;mix-blend-mode:normal}
+.spin-hint{position:absolute;right:14px;bottom:14px;
+  font-family:var(--mono);font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;
+  background:rgba(10,12,16,.72);color:#fff;padding:6px 11px;border-radius:6px;
+  backdrop-filter:blur(4px);transition:opacity .3s var(--ease,ease);pointer-events:none;z-index:2}
+.spin-hint.is-gone{opacity:0}
+.spin-bar{position:absolute;left:0;right:0;bottom:0;height:2px;background:rgba(10,12,16,.10);z-index:2}
+.spin-bar b{display:block;height:100%;background:var(--accent);width:12%}
+
+/* — Prix, avertissement, pointures, caractéristiques — */
+.price-line{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin:26px 0 6px}
+.price-line b{font-size:2rem;font-weight:800;letter-spacing:-.01em}
+.price-line .cur{font-family:var(--mono);font-size:.9rem;color:var(--ink-3)}
+.badge-warn{font-family:var(--mono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;background:#f5c518;color:#1a1400;padding:5px 9px;border-radius:5px}
+
+.notice{border:1px solid rgba(245,197,24,.35);background:rgba(245,197,24,.07);border-radius:12px;padding:16px 18px;margin:26px 0;font-size:.9rem;line-height:1.6;color:var(--ink-2)}
+
+.sizes{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.sizes span{min-width:52px;text-align:center;padding:9px 0;border:1px solid rgba(127,127,127,.28);border-radius:8px;font-size:.86rem;color:var(--ink-2)}
+.field-lab{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+
+.spec{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:34px;border-top:1px solid rgba(127,127,127,.18)}
+.spec div{padding:16px 0;border-bottom:1px solid rgba(127,127,127,.18)}
+.spec div:nth-child(odd){padding-right:20px}
+.spec em{display:block;font-style:normal;font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
+
+@media (max-width:720px){.spec{grid-template-columns:1fr}}
+/* Mouvement réduit : la vidéo reste visible, elle est simplement mise en pause (voir le script). */
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+
+<!-- ============ HERO ============ -->
+<header class="hero hero-solo">
+  <div class="hero-canvas" id="hero3d" data-scene="pure"></div>
+  <div class="hero-scrim"></div>
+  <div class="hero-glow"></div>
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">Sinetik:pure · Onda FG-01</span>
+    <h1 data-anim="rise" data-delay="1">Lock the heel.<br>Free the toes.</h1>
+    <p class="lead" data-anim="rise" data-delay="2">Sinetik:pure started from something seen on the pitch: feet deforming inside boots that were too narrow, chosen for how they looked. A football boot with a wide forefoot and the hold a cutting sport actually demands. Designed in Switzerland, made in Portugal — the European anatomical boot.</p>
+    <div class="btn-row" data-anim="rise" data-delay="3">
+      <a class="btn btn-primary" href="#onda">See the Onda FG-01</a>
+      <a class="btn btn-ghost" href="#principes">Our design principles</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 01 · THE PROBLEM ============ -->
+<section>
+  <div class="wrap">
+    <div class="split">
+      <div data-anim="rise" data-delay="0">
+        <span class="mono on">01</span>
+        <h2>The problem nobody looks at</h2>
+        <p class="lead">You've gone half a size down "to feel the ball better." You know the black toenail in November, the blister on the little toe, the burn under the forefoot after a match on dry ground. On a pitch, these things have become normal. They shouldn't be.</p>
+        <p>The foot is not just a platform. It is an organ of perception: thousands of receptors constantly feed balance, loading and coordination. Locked inside a narrow, heavily wrapped boot, it sends back impoverished information. Footwear that is too short or too tight is also associated in the literature with subungual haematoma, toe deformities and Morton's neuroma.</p>
+        <p>In a growing player this matters: the shape of the adult foot is built between roughly 10 and 18, inside the boot worn five times a week.</p>
+        <p>And that narrowness has no technical justification. It comes from aesthetic legacy and speed marketing — not from biomechanical optimisation.</p>
+      </div>
+
+      <div data-anim="rise" data-delay="1">
+        <div>
+          <div class="stat-big">82%</div>
+          <div class="stat-cap">of female players report high discomfort in their boots.</div>
+          <div class="stat-src">Prempeh &amp; Pennington, 2025</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:72px;font-size:clamp(1.5rem,2.6vw,2rem)" data-anim="rise" data-delay="0">The same size. Not the same room.</h3>
+    <p class="lead" data-anim="rise" data-delay="0">The same foot, in two different volumes. On the left, the geometry the market settled on. On the right, the one we drew.</p>
+
+    <div class="versus">
+      <div class="vs-col" data-anim="rise" data-delay="0">
+        <div class="vs-head">
+          <span class="mono">Conventional boot</span>
+          <h3>Pressure concentrates on a few points.</h3>
+        </div>
+        <div class="vs-map">
+          <img src="assets/img/onda/pure-pression-conventionnel.png" width="646" height="1900" loading="lazy" alt="Pressure map of a conventional boot: red hotspots on the big toe, both metatarsal heads and the heel">
+        </div>
+        <p class="vs-foot">The red hotspots are where the forefoot presses against the upper: the big toe, both metatarsal heads, the edge of the little toe. Those are what produce the black toenail and the end-of-season blister.</p>
+      </div>
+
+      <div class="vs-col is-onda" data-anim="rise" data-delay="1">
+        <div class="vs-head">
+          <span class="mono on">Onda FG-01</span>
+          <h3>Pressure spreads across the whole surface.</h3>
+        </div>
+        <div class="vs-map">
+          <img src="assets/img/onda/pure-pression-onda.png" width="647" height="1903" loading="lazy" alt="Pressure map of the Onda FG-01: load spread across the whole forefoot, with no hotspot">
+        </div>
+        <p class="vs-foot">No hotspots left. The wide forefoot lets the toes spread, the load distributes across the whole contact surface — and the heel stays locked, because that is where hold is won, not at the front.</p>
+      </div>
+    </div>
+
+    <div class="vs-legend">
+      <span><i class="vs-scale"></i>Increasing pressure</span>
+      <span style="opacity:.7">Illustrative maps, produced from our design testing</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 · PRINCIPLES ============ -->
+<section id="principes">
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">02</span>
+    <h2 data-anim="rise" data-delay="0">Our design principles</h2>
+    <p class="lead" style="margin-bottom:40px" data-anim="rise" data-delay="0">Six decisions, and the reason behind each. No technology invented for the story.</p>
+
+    <div class="grid g-3">
+      <div class="card" data-anim="rise" data-delay="0">
+        <span class="mono on">01</span>
+        <h3>A wide forefoot</h3>
+        <p>The shape follows real anatomy: the toes keep the room to spread as the foot loads, the way they do barefoot.</p>
+      </div>
+      <div class="card" data-anim="rise" data-delay="1">
+        <span class="mono on">02</span>
+        <h3>A locked heel</h3>
+        <p>This is where hold is won — structured counter, central lacing. The foot doesn't float over the studs. Wide at the front does not mean loose.</p>
+      </div>
+      <div class="card" data-anim="rise" data-delay="2">
+        <span class="mono on">03</span>
+        <h3>A plate that works</h3>
+        <p>Pebax from the first model, stiffness tuned by zone: firm enough to transmit energy, flexible enough for a natural roll.</p>
+      </div>
+      <div class="card" data-anim="rise" data-delay="0">
+        <span class="mono on">04</span>
+        <h3>Studs that let you turn</h3>
+        <p>A conical-dominant stud map, designed to let the foot pivot rather than lock into the ground. Firm ground, natural grass.</p>
+      </div>
+      <div class="card" data-anim="rise" data-delay="1">
+        <span class="mono on">05</span>
+        <h3>Minimal stack</h3>
+        <p>No thick midsole. Comfort comes from shape, footbed and flex — not from a stack of foam that cuts you off from the ground.</p>
+      </div>
+      <div class="card" data-anim="rise" data-delay="2">
+        <span class="mono on">06</span>
+        <h3>An honest lifespan</h3>
+        <p>A boot that lasts two seasons beats a recycled boot that lasts six months. Removable, replaceable footbed, compatible with your orthotics.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 · WHAT WE DON'T PROMISE ============ -->
+<section>
+  <div class="wrap">
+    <div class="band" data-anim="rise" data-delay="0">
+    <span class="mono on" data-anim="rise" data-delay="0">03</span>
+    <h2 data-anim="rise" data-delay="0">What we don't promise you.</h2>
+    <p class="lead band-txt" data-anim="rise" data-delay="1">Plenty of brands will swear their boot makes you play better. We won't.</p>
+    <p data-anim="rise" data-delay="1">There is no solid evidence that a wide forefoot improves ball touch. We could have sold you that anyway. We won't. And no boot prevents injury — the ones that claim otherwise are lying to you.</p>
+    <p data-anim="rise" data-delay="1">What we stand behind is what the literature actually supports: a foot that keeps its function, a geometry that respects your anatomy, and comfort that lets you play without thinking about your feet.</p>
+    <p data-anim="rise" data-delay="1">The rest — the speed, the touch, the goals — is still your job.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 · THE PRODUCT ============ -->
+<section id="onda">
+  <div class="wrap">
+    <div class="split">
+      <div data-anim="rise" data-delay="0">
+        <div class="carou" data-anim="rise" data-delay="0">
+          <div class="carou-track">
+            <figure class="is-video" data-label="Animated render">
+              <video src="assets/img/onda/onda-fg01.mp4" poster="assets/img/onda/00-video-poster.jpg" width="540" height="960" autoplay muted loop playsinline preload="auto" aria-label="Design render of the Onda FG-01, rotating profile view"></video>
+              <span class="carou-cap">Animated render</span>
+            </figure>
+            <figure class="is-spin" data-label="360° view">
+              <div class="spin" data-frames="8" data-src="assets/img/onda/360/onda-360-{i}.jpg" data-alt="Onda FG-01, full 360-degree turntable view" data-hint="Drag to rotate"></div>
+              <span class="carou-cap">360° view</span>
+            </figure>
+          </div>
+          <button class="carou-btn" data-carou="prev" aria-label="Previous view">←</button>
+          <button class="carou-btn" data-carou="next" aria-label="Next view">→</button>
+        </div>
+        <div class="carou-dots" role="tablist" aria-label="Product views"></div>
+        <p class="media-note">Design renders. The final model will be very close to these; physical prototypes have not been photographed yet.</p>
+      </div>
+
+      <div data-anim="rise" data-delay="1">
+        <span class="mono on">04 · Firm ground · First model</span>
+        <h2>Onda FG-01</h2>
+        <p class="lead">A boot for training and for matches, for the demanding amateur or professional adult as much as the developing player. Developed with partners in northern Portugal, in Europe's historic footwear cluster.</p>
+
+        <div class="price-line">
+          <span class="cur">CHF</span><b>259</b>
+          <span class="badge-warn">Indicative price</span>
+        </div>
+
+        <div class="notice">
+          <strong>In development.</strong> Prototypes are tested on the pitch before anything goes on sale — we'd rather ship late than approximate. The boot is not for sale yet. Leave your email and your size and you'll be the first to know when reservations open.
+        </div>
+
+        <div>
+          <span class="field-lab">Size (EU) — tell us yours, the grading is being decided now</span>
+          <div class="sizes">
+            <span>38</span><span>39</span><span>40</span><span>41</span><span>42</span>
+            <span>43</span><span>44</span><span>45</span><span>46</span>
+          </div>
+        </div>
+
+        <div class="btn-row" style="margin-top:26px">
+          <a class="btn btn-primary" href="contact.html">Notify me when it opens</a>
+        </div>
+
+        <div class="spec">
+          <div><em>Surface</em>Firm ground (FG) — natural grass</div>
+          <div><em>Shape</em>Anatomical, wide forefoot</div>
+          <div><em>Plate</em>Pebax, zoned stiffness</div>
+          <div><em>Footbed</em>Removable, orthotic-friendly</div>
+          <div><em>Made in</em>Northern Portugal</div>
+          <div><em>Sizes</em>EU 38 to 46 (final grading confirmed before production)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 · MADE IN EUROPE ============ -->
+<section>
+  <div class="wrap">
+    <div class="split split-narrow">
+      <div data-anim="rise" data-delay="0">
+        <span class="mono on">05</span>
+        <h2>You'll know where your boots come from</h2>
+      </div>
+      <div data-anim="rise" data-delay="1">
+        <p class="lead">No anonymous factory on the other side of the world. The Onda is developed and assembled in northern Portugal, in the historic footwear cluster, with a footwear technology centre as validation partner and a plate sourced in Europe.</p>
+        <p>Materials are chosen for durability first: a boot that lasts two seasons beats a recycled boot that lasts six months. We don't use "green" as a slogan — we show you the chain, step by step.</p>
+        <p class="note">Development and assembly: northern Portugal · Plate: Europe · Certifications are listed only for components that actually carry them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MANIFESTO ============ -->
+<section>
+  <div class="wrap">
+    <div class="band manifesto" style="text-align:center" data-anim="rise" data-delay="0">
+    <blockquote>Doing for football what minimalism did for running: reconciling the foot and performance.</blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT'S NEXT ============ -->
+<section>
+  <div class="wrap">
+    <div class="plan featured" data-anim="rise" data-delay="0" style="max-width:none;margin-top:100px">
+      <h2>What's next</h2>
+      <p class="lead">More anatomical shapes will follow, then a sports textile line built to the same standard: few products, each one justified.</p>
+      <a class="btn btn-primary" href="contact.html">Notify me when it opens</a>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/site.js"></script>
+<script type="module" src="assets/js/hero3d.js"></script>
+<script>
+/* Carrousel produit — sans dépendance, clavier et glissement tactile */
+(function(){
+  document.querySelectorAll('.carou').forEach(function(root){
+    var track  = root.querySelector('.carou-track');
+    var slides = Array.prototype.slice.call(track.children);
+    var dots   = root.parentNode.querySelector('.carou-dots');
+    var i = 0;
+
+    slides.forEach(function(s, n){
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('role','tab');
+      b.setAttribute('aria-label', (s.dataset.label || ('Vue ' + (n+1))));
+      b.addEventListener('click', function(){ go(n); });
+      dots.appendChild(b);
+    });
+
+    function go(n){
+      i = (n + slides.length) % slides.length;
+      track.style.transform = 'translateX(' + (-i * 100) + '%)';
+      Array.prototype.forEach.call(dots.children, function(b, k){
+        b.setAttribute('aria-current', k === i ? 'true' : 'false');
+      });
+    }
+
+    /* Lecture de la vidéo, avec rattrapage à chaque étape possible :
+       - certains navigateurs exigent la propriété muted, pas seulement l'attribut ;
+       - si la lecture automatique est refusée, on affiche les commandes ;
+       - si le fichier est introuvable ou illisible, on retombe sur l'image d'attente. */
+    var vid = root.querySelector('video');
+    if (vid){
+      vid.muted = true;
+      vid.setAttribute('muted','');
+
+      if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches){
+        vid.removeAttribute('autoplay');
+      } else {
+        var tryPlay = function(){
+          var pr = vid.play();
+          if (pr && pr.catch) pr.catch(function(){ /* le bouton de lecture prend le relais */ });
+        };
+        if (vid.readyState >= 2) tryPlay();
+        else vid.addEventListener('loadeddata', tryPlay, {once:true});
+        setTimeout(function(){ if (vid.paused) tryPlay(); }, 800);
+      }
+
+      /* Bouton de lecture : visible tant que la vidéo est en pause,
+         quelle qu'en soit la raison (démarrage refusé, mise en pause manuelle). */
+      var fig = vid.parentNode;
+      var play = document.createElement('button');
+      play.type = 'button';
+      play.className = 'carou-play';
+      play.setAttribute('aria-label', 'Play the video');
+      play.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
+      play.addEventListener('click', function(e){
+        e.stopPropagation();
+        if (vid.paused) vid.play(); else vid.pause();
+      });
+      fig.appendChild(play);
+      var sync = function(){
+        play.hidden = !vid.paused;
+        play.setAttribute('aria-label', vid.paused ? 'Play the video' : 'Pause');
+      };
+      vid.addEventListener('play', sync);
+      vid.addEventListener('pause', sync);
+      sync();
+
+      var fallback = function(){
+        var poster = vid.getAttribute('poster');
+        if (!poster || !vid.parentNode) return;
+        var img = document.createElement('img');
+        img.src = poster;
+        img.alt = vid.getAttribute('aria-label') || '';
+        var b = vid.parentNode.querySelector('.carou-play');
+        if (b) b.remove();
+        vid.parentNode.replaceChild(img, vid);
+      };
+      vid.addEventListener('error', fallback);
+      /* l'erreur a pu survenir avant l'exécution de ce script */
+      if (vid.error) fallback();
+    }
+
+    root.querySelector('[data-carou="prev"]').addEventListener('click', function(){ go(i-1); });
+    root.querySelector('[data-carou="next"]').addEventListener('click', function(){ go(i+1); });
+
+    root.tabIndex = 0;
+    root.addEventListener('keydown', function(e){
+      if(e.key === 'ArrowLeft'){  go(i-1); e.preventDefault(); }
+      if(e.key === 'ArrowRight'){ go(i+1); e.preventDefault(); }
+    });
+
+    var x0 = null;
+    root.addEventListener('touchstart', function(e){
+      /* à l'intérieur de la vue 360°, le glissement fait tourner la chaussure */
+      x0 = e.target.closest('.spin') ? null : e.touches[0].clientX;
+    }, {passive:true});
+    root.addEventListener('touchend', function(e){
+      if(x0 === null) return;
+      var dx = e.changedTouches[0].clientX - x0;
+      if(Math.abs(dx) > 40) go(dx < 0 ? i+1 : i-1);
+      x0 = null;
+    }, {passive:true});
+
+    go(0);
+  });
+
+  /* Vue 360° — séquence d'images, glissement à la souris ou au doigt.
+     Deux calques superposés se fondent l'un dans l'autre : avec huit vues,
+     un changement sec se verrait. */
+  document.querySelectorAll('.spin').forEach(function(root){
+    var total   = parseInt(root.dataset.frames, 10) || 8;
+    var pattern = root.dataset.src;
+    if (!pattern) return;
+    var urls = [];
+    for (var n = 1; n <= total; n++) urls.push(pattern.replace('{i}', ('0' + n).slice(-2)));
+
+    var stage = document.createElement('div'); stage.className = 'spin-stage';
+    var cur = document.createElement('img'); cur.className = 'spin-img';
+    cur.alt = root.dataset.alt || ''; cur.draggable = false;
+    stage.appendChild(cur);
+    var hint = document.createElement('span'); hint.className = 'spin-hint';
+    hint.textContent = root.dataset.hint || 'Drag to rotate'; stage.appendChild(hint);
+    var bar = document.createElement('div'); bar.className = 'spin-bar'; bar.innerHTML = '<b></b>'; stage.appendChild(bar);
+    root.appendChild(stage);
+
+    var pos = 0, iCur = -1;
+    function render(){
+      var p = ((pos % total) + total) % total;
+      /* une seule vue à l'écran, à pleine opacité : superposer deux angles
+         différents donnait une image dédoublée et délavée */
+      var a = Math.round(p) % total;
+      if (a !== iCur){ cur.src = urls[a]; iCur = a; }
+      bar.firstChild.style.width = ((a + 1) / total * 100) + '%';
+    }
+    urls.forEach(function(u){ var im = new Image(); im.src = u; });
+
+    var dragging = false, lastX = 0, span = 0;
+    function measure(){ span = Math.max(160, stage.clientWidth * 0.85); }
+    measure(); window.addEventListener('resize', measure);
+    function begin(x){ dragging = true; lastX = x; root.classList.add('is-dragging'); hint.classList.add('is-gone'); }
+    function move(x){ if (!dragging) return; pos -= (x - lastX) / span * total; lastX = x; render(); }
+    function end(){ dragging = false; root.classList.remove('is-dragging'); }
+    stage.addEventListener('mousedown', function(e){ e.preventDefault(); begin(e.clientX); });
+    window.addEventListener('mousemove', function(e){ move(e.clientX); });
+    window.addEventListener('mouseup', end);
+    stage.addEventListener('touchstart', function(e){ begin(e.touches[0].clientX); }, {passive:true});
+    stage.addEventListener('touchmove', function(e){ if (dragging) e.preventDefault(); move(e.touches[0].clientX); }, {passive:false});
+    stage.addEventListener('touchend', end);
+
+    stage.tabIndex = 0; stage.setAttribute('role','img');
+    stage.setAttribute('aria-label', root.dataset.alt || '');
+    stage.addEventListener('keydown', function(e){
+      if (e.key === 'ArrowLeft'){  pos -= 1; render(); hint.classList.add('is-gone'); e.preventDefault(); e.stopPropagation(); }
+      if (e.key === 'ArrowRight'){ pos += 1; render(); hint.classList.add('is-gone'); e.preventDefault(); e.stopPropagation(); }
+    });
+
+    /* un tour lent au premier passage devant l'écran, pour signaler que ça tourne */
+    var teased = false;
+    function tease(){
+      if (teased) return; teased = true;
+      if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      var t0 = null, from = pos;
+      requestAnimationFrame(function step(ts){
+        if (t0 === null) t0 = ts;
+        if (dragging) return;
+        var k = Math.min(1, (ts - t0) / 2600);
+        pos = from + total * k; render();
+        if (k < 1) requestAnimationFrame(step);
+      });
+    }
+    if ('IntersectionObserver' in window){
+      new IntersectionObserver(function(en, obs){
+        en.forEach(function(e){ if (e.isIntersecting){ tease(); obs.disconnect(); } });
+      }, {threshold:.4}).observe(root);
+    } else { tease(); }
+    render();
+  });
+})();
+</script>
+</body></html>

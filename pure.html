@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="fr" data-theme="dark" data-page-lang="fr" data-alt-lang="pure-en.html"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>try{var t=localStorage.getItem('sinetik-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<title>Onda FG-01 — Crampon de football à avant-pied large | Sinetik:pure</title>
+<meta name="description" content="Crampon de football à avant-pied anatomique large, plaque Pebax et maintien structuré. Conçu en Suisse, fabriqué au Portugal.">
+<link rel="alternate" hreflang="fr" href="https://www.sinetik.ch/pure.html">
+<link rel="alternate" hreflang="en" href="https://www.sinetik.ch/pure-en.html">
+<link rel="alternate" hreflang="x-default" href="https://www.sinetik.ch/pure.html">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/sinetik.css">
+
+<style>
+/* --- Blocs propres à pure.html --- */
+.stat-big{font-size:clamp(3rem,7vw,4.6rem);font-weight:800;line-height:1;letter-spacing:-.02em;color:var(--accent,#2b7fff)}
+.stat-cap{color:var(--ink-3);font-size:.92rem;margin-top:10px;max-width:32ch}
+.stat-src{font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);opacity:.7;margin-top:14px}
+
+
+/* Le bandeau bleu reprend exactement le format de la page d'accueil :
+   une carte arrondie dans le .wrap, pas une bande pleine largeur. */
+.band-txt{max-width:62ch}
+.band-txt p{color:rgba(255,255,255,.9)}
+
+.manifesto blockquote{margin:0 auto;max-width:30ch;font-family:var(--font);
+  font-size:clamp(1.5rem,3.4vw,2.3rem);font-weight:800;line-height:1.2;letter-spacing:-.03em}
+
+.media-note{font-size:.78rem;color:var(--ink-3);margin-top:12px}
+
+/* ── Comparatif de pression ── */
+.versus{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:36px}
+.vs-col{border:1px solid var(--hair);border-radius:var(--r-lg,16px);overflow:hidden;background:var(--surface);display:flex;flex-direction:column}
+.vs-col.is-onda{border-color:rgba(10,108,255,.45)}
+.vs-head{padding:20px 22px 0}
+.vs-head .mono{display:block}
+.vs-head h3{font-size:1.04rem;margin:9px 0 0}
+/* les cartes de pression sont dessinées clair : fond sombre dans les deux thèmes */
+.vs-map{background:#0A0C10;margin-top:18px;padding:26px 0;flex:1;display:grid;place-items:center}
+.vs-map img{width:auto;height:auto;max-width:58%;max-height:420px;display:block}
+.vs-foot{padding:16px 22px 22px;font-size:.85rem;color:var(--ink-3);line-height:1.55}
+.vs-legend{display:flex;gap:22px;flex-wrap:wrap;margin-top:20px;align-items:center;
+  font-family:var(--mono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.vs-scale{display:inline-block;width:74px;height:9px;border-radius:5px;vertical-align:-1px;margin-right:9px;
+  background:linear-gradient(90deg,#2B4CE0,#1FB6C9,#7BD64F,#F2C230,#E11D48)}
+@media (max-width:720px){.versus{grid-template-columns:1fr}.vs-map img{max-width:46%}}
+
+/* ── Carrousel produit ── */
+.carou{position:relative;border:1px solid var(--hair);border-radius:var(--r-lg,16px);overflow:hidden;background:#F4F6F9}
+.carou-track{display:flex;transition:transform .45s var(--ease,cubic-bezier(.2,.8,.2,1))}
+.carou-track figure{margin:0;flex:0 0 100%;position:relative;aspect-ratio:4/3;overflow:hidden}
+/* toute la vue tient dans le cadre, quelle que soit sa proportion.
+   Positionnement absolu : une hauteur en pourcentage ne se résout pas
+   de façon fiable dans un conteneur dimensionné par aspect-ratio. */
+.carou-track img,.carou-track video{position:absolute;inset:18px;
+  width:calc(100% - 36px);height:calc(100% - 36px);object-fit:contain;display:block}
+.carou-track img{mix-blend-mode:multiply}
+/* la vidéo est verticale et son fond est noir : le cadre l'accompagne */
+.carou-track figure.is-video{background:#0A0C10}
+.carou-track figure.is-video video{inset:0;width:100%;height:100%}
+/* Bouton de lecture, visible tant que la vidéo ne tourne pas */
+.carou-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:66px;height:66px;border-radius:50%;border:0;cursor:pointer;z-index:3;
+  background:var(--accent);color:#fff;display:grid;place-items:center;
+  box-shadow:0 10px 30px rgba(10,108,255,.45);transition:.2s var(--ease,ease)}
+.carou-play:hover{transform:translate(-50%,-50%) scale(1.07)}
+.carou-play svg{width:22px;height:22px;margin-left:3px;fill:currentColor}
+.carou-play[hidden]{display:none}
+.carou-cap{position:absolute;left:14px;bottom:14px;font-family:var(--mono);font-size:.64rem;
+  letter-spacing:.08em;text-transform:uppercase;background:rgba(10,12,16,.72);color:#fff;
+  padding:6px 11px;border-radius:6px;backdrop-filter:blur(4px)}
+.carou-btn{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;
+  border:1px solid rgba(10,12,16,.14);background:rgba(255,255,255,.92);color:#0B0D12;
+  display:grid;place-items:center;cursor:pointer;font-size:16px;transition:.2s;z-index:2}
+.carou-btn:hover{background:#fff;border-color:var(--accent);color:var(--accent)}
+.carou-btn[data-carou="prev"]{left:12px}
+.carou-btn[data-carou="next"]{right:12px}
+/* navigation par pastilles */
+.carou-dots{display:flex;gap:10px;justify-content:center;align-items:center;margin-top:18px}
+.carou-dots button{width:9px;height:9px;padding:0;border-radius:50%;cursor:pointer;border:0;
+  background:var(--ink-3);opacity:.45;transition:.25s var(--ease,ease)}
+.carou-dots button:hover{opacity:.8}
+.carou-dots button[aria-current="true"]{background:var(--accent);opacity:1;width:26px;border-radius:5px}
+
+/* ── Vue 360° ── */
+.spin{position:absolute;inset:0}
+.spin-stage{position:absolute;inset:0;overflow:hidden;background:#FFF;
+  cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.spin.is-dragging .spin-stage{cursor:grabbing}
+.carou-track .spin-img{position:absolute;inset:18px;width:calc(100% - 36px);height:calc(100% - 36px);
+  object-fit:contain;display:block;pointer-events:none;mix-blend-mode:normal}
+.spin-hint{position:absolute;right:14px;bottom:14px;
+  font-family:var(--mono);font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;
+  background:rgba(10,12,16,.72);color:#fff;padding:6px 11px;border-radius:6px;
+  backdrop-filter:blur(4px);transition:opacity .3s var(--ease,ease);pointer-events:none;z-index:2}
+.spin-hint.is-gone{opacity:0}
+.spin-bar{position:absolute;left:0;right:0;bottom:0;height:2px;background:rgba(10,12,16,.10);z-index:2}
+.spin-bar b{display:block;height:100%;background:var(--accent);width:12%}
+
+/* — Prix, avertissement, pointures, caractéristiques — */
+.price-line{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin:26px 0 6px}
+.price-line b{font-size:2rem;font-weight:800;letter-spacing:-.01em}
+.price-line .cur{font-family:var(--mono);font-size:.9rem;color:var(--ink-3)}
+.badge-warn{font-family:var(--mono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;background:#f5c518;color:#1a1400;padding:5px 9px;border-radius:5px}
+
+.notice{border:1px solid rgba(245,197,24,.35);background:rgba(245,197,24,.07);border-radius:12px;padding:16px 18px;margin:26px 0;font-size:.9rem;line-height:1.6;color:var(--ink-2)}
+
+.sizes{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.sizes span{min-width:52px;text-align:center;padding:9px 0;border:1px solid rgba(127,127,127,.28);border-radius:8px;font-size:.86rem;color:var(--ink-2)}
+.field-lab{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+
+.spec{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:34px;border-top:1px solid rgba(127,127,127,.18)}
+.spec div{padding:16px 0;border-bottom:1px solid rgba(127,127,127,.18)}
+.spec div:nth-child(odd){padding-right:20px}
+.spec em{display:block;font-style:normal;font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
+
+@media (max-width:720px){.spec{grid-template-columns:1fr}}
+/* Mouvement réduit : la vidéo reste visible, elle est simplement mise en pause (voir le script). */
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+
+<!-- ============ HERO ============ -->
+<header class="hero hero-solo">
+  <div class="hero-canvas" id="hero3d" data-scene="pure"></div>
+  <div class="hero-scrim"></div>
+  <div class="hero-glow"></div>
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">Sinetik:pure · Onda FG-01</span>
+    <h1 data-anim="rise" data-delay="1">Verrouille le talon.<br>Libère les orteils.</h1>
+    <p class="lead" data-anim="rise" data-delay="2">Sinetik:pure est né d'une observation de terrain : des pieds qui se déforment dans des chaussures trop étroites, choisies pour leur allure. Une chaussure de football à l'avant-pied large, avec le maintien qu'un sport d'appuis exige. Conçue en Suisse, fabriquée au Portugal — le crampon anatomique européen.</p>
+    <div class="btn-row" data-anim="rise" data-delay="3">
+      <a class="btn btn-primary" href="#onda">Découvrir la Onda FG-01</a>
+      <a class="btn btn-ghost" href="#principes">Nos principes de conception</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 01 · LE PROBLÈME ============ -->
+<section>
+  <div class="wrap">
+    <div class="split">
+      <div data-anim="rise" data-delay="0">
+        <span class="mono on">01</span>
+        <h2>Le problème que personne ne regarde</h2>
+        <p class="lead">Tu as déjà pris une demi-pointure en dessous « pour mieux sentir le ballon ». Tu connais l'ongle noir de fin de saison, l'ampoule au petit orteil, la brûlure sous l'avant-pied après un match sur sol sec. Sur un terrain, ces choses-là sont devenues normales. Elles ne devraient pas l'être.</p>
+        <p>Le pied n'est pas qu'une plateforme d'appui. C'est un organe de perception : des milliers de récepteurs y informent en permanence l'équilibre, l'appui et la coordination. Enfermé dans une chaussure étroite et fortement drapée, il envoie une information appauvrie. Le chaussage trop court ou trop serré est par ailleurs associé dans la littérature à l'hématome sous-unguéal, aux déformations d'orteils et au névrome de Morton.</p>
+        <p>Chez le jeune joueur en croissance, ce n'est pas anodin : la forme du pied adulte se construit là, entre 10 et 18 ans, dans la chaussure qu'il porte cinq fois par semaine.</p>
+        <p>Et cette étroitesse n'a pas de justification technique. Elle vient d'un héritage esthétique et du marketing « speed » — pas d'une optimisation biomécanique.</p>
+      </div>
+
+      <div data-anim="rise" data-delay="1">
+        <div>
+          <div class="stat-big">82 %</div>
+          <div class="stat-cap">des joueuses déclarent un inconfort élevé avec leurs crampons.</div>
+          <div class="stat-src">Prempeh &amp; Pennington, 2025</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:72px;font-size:clamp(1.5rem,2.6vw,2rem)" data-anim="rise" data-delay="0">La même pointure. Pas la même place.</h3>
+    <p class="lead" data-anim="rise" data-delay="0">Le même pied, dans deux volumes différents. À gauche, la géométrie que le marché a imposée. À droite, celle que nous avons dessinée.</p>
+
+    <div class="versus">
+      <div class="vs-col" data-anim="rise" data-delay="0">
+        <div class="vs-head">
+          <span class="mono">Crampon conventionnel</span>
+          <h3>La pression se concentre sur quelques points.</h3>
+        </div>
+        <div class="vs-map">
+          <img src="assets/img/onda/pure-pression-conventionnel.png" width="646" height="1900" loading="lazy" alt="Carte de pression d'un crampon conventionnel : foyers rouges sur le gros orteil, les deux têtes métatarsiennes et le talon">
+        </div>
+        <p class="vs-foot">Les foyers rouges sont les endroits où l'avant-pied bute contre la tige : le gros orteil, les deux têtes métatarsiennes, le bord du petit orteil. Ce sont eux qui font l'ongle noir et l'ampoule de fin de saison.</p>
+      </div>
+
+      <div class="vs-col is-onda" data-anim="rise" data-delay="1">
+        <div class="vs-head">
+          <span class="mono on">Onda FG-01</span>
+          <h3>La pression se répartit sur toute la surface.</h3>
+        </div>
+        <div class="vs-map">
+          <img src="assets/img/onda/pure-pression-onda.png" width="647" height="1903" loading="lazy" alt="Carte de pression de la Onda FG-01 : charge répartie sur l'ensemble de l'avant-pied, sans foyer rouge">
+        </div>
+        <p class="vs-foot">Plus aucun foyer. L'avant-pied large laisse les orteils s'écarter, la charge se répartit sur toute la surface d'appui — et le talon reste tenu, parce que le maintien se joue là, pas à l'avant.</p>
+      </div>
+    </div>
+
+    <div class="vs-legend">
+      <span><i class="vs-scale"></i>Pression croissante</span>
+      <span style="opacity:.7">Cartes illustratives, produites à partir de nos essais de conception</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 · PRINCIPES ============ -->
+<section id="principes">
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">02</span>
+    <h2 data-anim="rise" data-delay="0">Nos principes de conception</h2>
+    <p class="lead" style="margin-bottom:40px" data-anim="rise" data-delay="0">Six décisions, et la raison de chacune. Pas de technologie inventée pour le récit.</p>
+
+    <div class="grid g-3">
+      <div class="card" data-anim="rise" data-delay="0">
+        <span class="mono on">01</span>
+        <h3>Un avant-pied large</h3>
+        <p>La forme suit l'anatomie réelle : les orteils gardent la place de s'écarter au moment de l'appui, comme pieds nus.</p>
+      </div>
+      <div class="card" data-anim="rise" data-delay="1">
+        <span class="mono on">02</span>
+        <h3>Un talon verrouillé</h3>
+        <p>C'est là que se joue le maintien — contrefort structuré, laçage central. Le pied ne flotte pas sur les crampons. Large à l'avant ne veut pas dire flottant.</p>
+      </div>
+      <div class="card" data-anim="rise" data-delay="2">
+        <span class="mono on">03</span>
+        <h3>Une plaque qui travaille</h3>
+        <p>Pebax dès le premier modèle, rigidité pensée par zone : assez ferme pour transmettre l'énergie, assez souple pour le déroulé du pied.</p>
+      </div>
+      <div class="card" data-anim="rise" data-delay="0">
+        <span class="mono on">04</span>
+        <h3>Des crampons qui laissent tourner</h3>
+        <p>Une dominante conique, pensée pour laisser le pied pivoter plutôt que de se bloquer dans le sol. Terrain ferme, gazon naturel.</p>
+      </div>
+      <div class="card" data-anim="rise" data-delay="1">
+        <span class="mono on">05</span>
+        <h3>Une hauteur minimale</h3>
+        <p>Pas de semelle intermédiaire épaisse. Le confort vient de la forme, de la semelle de propreté et de la flexion — pas d'un empilement de mousse qui te coupe du sol.</p>
+      </div>
+      <div class="card" data-anim="rise" data-delay="2">
+        <span class="mono on">06</span>
+        <h3>Une durée de vie honnête</h3>
+        <p>Une chaussure qui tient deux saisons vaut mieux qu'une chaussure recyclée qui tient six mois. Semelle de propreté amovible et remplaçable, compatible avec ton orthèse.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 · CE QU'ON NE TE PROMET PAS ============ -->
+<section>
+  <div class="wrap">
+    <div class="band" data-anim="rise" data-delay="0">
+    <span class="mono on" data-anim="rise" data-delay="0">03</span>
+    <h2 data-anim="rise" data-delay="0">Ce qu'on ne te promet pas.</h2>
+    <p class="lead band-txt" data-anim="rise" data-delay="1">Beaucoup de marques te jureront que leur chaussure te fera mieux jouer. Nous, non.</p>
+    <p data-anim="rise" data-delay="1">Il n'existe pas de preuve solide qu'un avant-pied large améliore le toucher de balle. On aurait pu te le vendre quand même. On ne le fera pas. Et aucune chaussure ne prévient les blessures — celles qui le prétendent te mentent.</p>
+    <p data-anim="rise" data-delay="1">Ce qu'on défend, c'est ce que la littérature soutient réellement : un pied qui garde sa fonction, une géométrie qui respecte ton anatomie, et un confort qui te laisse jouer sans penser à tes pieds.</p>
+    <p data-anim="rise" data-delay="1">Le reste — la vitesse, le toucher, les buts — reste ton travail.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 · LE PRODUIT ============ -->
+<section id="onda">
+  <div class="wrap">
+    <div class="split">
+      <div data-anim="rise" data-delay="0">
+        <div class="carou" data-anim="rise" data-delay="0">
+          <div class="carou-track">
+            <figure class="is-video" data-label="Rendu animé">
+              <video src="assets/img/onda/onda-fg01.mp4" poster="assets/img/onda/00-video-poster.jpg" width="540" height="960" autoplay muted loop playsinline preload="auto" aria-label="Rendu de conception de la Onda FG-01, vue de profil en rotation"></video>
+              <span class="carou-cap">Rendu animé</span>
+            </figure>
+            <figure class="is-spin" data-label="Vue 360°">
+              <div class="spin" data-frames="8" data-src="assets/img/onda/360/onda-360-{i}.jpg" data-alt="Onda FG-01, vue tournante sur 360 degrés" data-hint="Glissez pour tourner"></div>
+              <span class="carou-cap">Vue 360°</span>
+            </figure>
+          </div>
+          <button class="carou-btn" data-carou="prev" aria-label="Vue précédente">←</button>
+          <button class="carou-btn" data-carou="next" aria-label="Vue suivante">→</button>
+        </div>
+        <div class="carou-dots" role="tablist" aria-label="Vues du produit"></div>
+        <p class="media-note">Rendus de conception. Le modèle définitif sera très proche ; les prototypes physiques ne sont pas encore photographiés.</p>
+      </div>
+
+      <div data-anim="rise" data-delay="1">
+        <span class="mono on">04 · Terrain ferme · Premier modèle</span>
+        <h2>Onda FG-01</h2>
+        <p class="lead">Une chaussure d'entraînement et de compétition, pour l'adulte amateur exigeant ou professionnel comme pour le joueur en formation. Développée avec des partenaires du nord du Portugal, dans le cluster historique de la chaussure européenne.</p>
+
+        <div class="price-line">
+          <span class="cur">CHF</span><b>259</b>
+          <span class="badge-warn">Tarif provisoire</span>
+        </div>
+
+        <div class="notice">
+          <strong>En développement.</strong> Les prototypes sont testés sur le terrain avant toute commercialisation — nous préférons sortir tard qu'approximatif. La chaussure n'est pas encore en vente. Laisse-nous ton e-mail et ta pointure : tu seras prévenu en premier à l'ouverture des réservations.
+        </div>
+
+        <div>
+          <span class="field-lab">Pointure (EU) — indique la tienne, la gradation se décide maintenant</span>
+          <div class="sizes">
+            <span>38</span><span>39</span><span>40</span><span>41</span><span>42</span>
+            <span>43</span><span>44</span><span>45</span><span>46</span>
+          </div>
+        </div>
+
+        <div class="btn-row" style="margin-top:26px">
+          <a class="btn btn-primary" href="contact.html">Me prévenir à l'ouverture</a>
+        </div>
+
+        <div class="spec">
+          <div><em>Terrain</em>Ferme (FG) — gazon naturel</div>
+          <div><em>Forme</em>Anatomique, avant-pied large</div>
+          <div><em>Plaque</em>Pebax, rigidité par zone</div>
+          <div><em>Semelle de propreté</em>Amovible, compatible orthèse</div>
+          <div><em>Fabrication</em>Nord du Portugal</div>
+          <div><em>Pointures</em>EU 38 à 46 (gradation finale confirmée avant production)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 · FABRIQUÉE EN EUROPE ============ -->
+<section>
+  <div class="wrap">
+    <div class="split split-narrow">
+      <div data-anim="rise" data-delay="0">
+        <span class="mono on">05</span>
+        <h2>Tu sauras d'où vient ta chaussure</h2>
+      </div>
+      <div data-anim="rise" data-delay="1">
+        <p class="lead">Pas d'usine anonyme à l'autre bout du monde. La Onda est développée et assemblée dans le nord du Portugal, dans le cluster historique de la chaussure, avec un centre technologique de la chaussure comme partenaire de validation et une plaque sourcée en Europe.</p>
+        <p>Matériaux choisis d'abord pour la durabilité : une chaussure qui tient deux saisons vaut mieux qu'une chaussure recyclée qui tient six mois. Nous ne faisons pas du « green » un slogan — nous montrons la chaîne, étape par étape.</p>
+        <p class="note">Développement et assemblage : nord du Portugal · Plaque : Europe · Les certifications ne sont indiquées que pour les composants qui les portent réellement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MANIFESTE ============ -->
+<section>
+  <div class="wrap">
+    <div class="band manifesto" style="text-align:center" data-anim="rise" data-delay="0">
+    <blockquote>Faire pour le football ce que le minimalisme a fait pour le running : réconcilier le pied et la performance.</blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ET ENSUITE ============ -->
+<section>
+  <div class="wrap">
+    <div class="plan featured" data-anim="rise" data-delay="0" style="max-width:none;margin-top:100px">
+      <h2>Et ensuite</h2>
+      <p class="lead">D'autres formes anatomiques suivront, puis une ligne de textile de sport construite avec la même exigence : peu de références, chacune justifiée.</p>
+      <a class="btn btn-primary" href="contact.html">Me prévenir à l'ouverture</a>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/site.js"></script>
+<script type="module" src="assets/js/hero3d.js"></script>
+<script>
+/* Carrousel produit — sans dépendance, clavier et glissement tactile */
+(function(){
+  document.querySelectorAll('.carou').forEach(function(root){
+    var track  = root.querySelector('.carou-track');
+    var slides = Array.prototype.slice.call(track.children);
+    var dots   = root.parentNode.querySelector('.carou-dots');
+    var i = 0;
+
+    slides.forEach(function(s, n){
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('role','tab');
+      b.setAttribute('aria-label', (s.dataset.label || ('Vue ' + (n+1))));
+      b.addEventListener('click', function(){ go(n); });
+      dots.appendChild(b);
+    });
+
+    function go(n){
+      i = (n + slides.length) % slides.length;
+      track.style.transform = 'translateX(' + (-i * 100) + '%)';
+      Array.prototype.forEach.call(dots.children, function(b, k){
+        b.setAttribute('aria-current', k === i ? 'true' : 'false');
+      });
+    }
+
+    /* Lecture de la vidéo, avec rattrapage à chaque étape possible :
+       - certains navigateurs exigent la propriété muted, pas seulement l'attribut ;
+       - si la lecture automatique est refusée, on affiche les commandes ;
+       - si le fichier est introuvable ou illisible, on retombe sur l'image d'attente. */
+    var vid = root.querySelector('video');
+    if (vid){
+      vid.muted = true;
+      vid.setAttribute('muted','');
+
+      if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches){
+        vid.removeAttribute('autoplay');
+      } else {
+        var tryPlay = function(){
+          var pr = vid.play();
+          if (pr && pr.catch) pr.catch(function(){ /* le bouton de lecture prend le relais */ });
+        };
+        if (vid.readyState >= 2) tryPlay();
+        else vid.addEventListener('loadeddata', tryPlay, {once:true});
+        setTimeout(function(){ if (vid.paused) tryPlay(); }, 800);
+      }
+
+      /* Bouton de lecture : visible tant que la vidéo est en pause,
+         quelle qu'en soit la raison (démarrage refusé, mise en pause manuelle). */
+      var fig = vid.parentNode;
+      var play = document.createElement('button');
+      play.type = 'button';
+      play.className = 'carou-play';
+      play.setAttribute('aria-label', 'Lire la vidéo');
+      play.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
+      play.addEventListener('click', function(e){
+        e.stopPropagation();
+        if (vid.paused) vid.play(); else vid.pause();
+      });
+      fig.appendChild(play);
+      var sync = function(){
+        play.hidden = !vid.paused;
+        play.setAttribute('aria-label', vid.paused ? 'Lire la vidéo' : 'Mettre en pause');
+      };
+      vid.addEventListener('play', sync);
+      vid.addEventListener('pause', sync);
+      sync();
+
+      var fallback = function(){
+        var poster = vid.getAttribute('poster');
+        if (!poster || !vid.parentNode) return;
+        var img = document.createElement('img');
+        img.src = poster;
+        img.alt = vid.getAttribute('aria-label') || '';
+        var b = vid.parentNode.querySelector('.carou-play');
+        if (b) b.remove();
+        vid.parentNode.replaceChild(img, vid);
+      };
+      vid.addEventListener('error', fallback);
+      /* l'erreur a pu survenir avant l'exécution de ce script */
+      if (vid.error) fallback();
+    }
+
+    root.querySelector('[data-carou="prev"]').addEventListener('click', function(){ go(i-1); });
+    root.querySelector('[data-carou="next"]').addEventListener('click', function(){ go(i+1); });
+
+    root.tabIndex = 0;
+    root.addEventListener('keydown', function(e){
+      if(e.key === 'ArrowLeft'){  go(i-1); e.preventDefault(); }
+      if(e.key === 'ArrowRight'){ go(i+1); e.preventDefault(); }
+    });
+
+    var x0 = null;
+    root.addEventListener('touchstart', function(e){
+      /* à l'intérieur de la vue 360°, le glissement fait tourner la chaussure */
+      x0 = e.target.closest('.spin') ? null : e.touches[0].clientX;
+    }, {passive:true});
+    root.addEventListener('touchend', function(e){
+      if(x0 === null) return;
+      var dx = e.changedTouches[0].clientX - x0;
+      if(Math.abs(dx) > 40) go(dx < 0 ? i+1 : i-1);
+      x0 = null;
+    }, {passive:true});
+
+    go(0);
+  });
+
+  /* Vue 360° — séquence d'images, glissement à la souris ou au doigt.
+     Deux calques superposés se fondent l'un dans l'autre : avec huit vues,
+     un changement sec se verrait. */
+  document.querySelectorAll('.spin').forEach(function(root){
+    var total   = parseInt(root.dataset.frames, 10) || 8;
+    var pattern = root.dataset.src;
+    if (!pattern) return;
+    var urls = [];
+    for (var n = 1; n <= total; n++) urls.push(pattern.replace('{i}', ('0' + n).slice(-2)));
+
+    var stage = document.createElement('div'); stage.className = 'spin-stage';
+    var cur = document.createElement('img'); cur.className = 'spin-img';
+    cur.alt = root.dataset.alt || ''; cur.draggable = false;
+    stage.appendChild(cur);
+    var hint = document.createElement('span'); hint.className = 'spin-hint';
+    hint.textContent = root.dataset.hint || 'Glissez pour tourner'; stage.appendChild(hint);
+    var bar = document.createElement('div'); bar.className = 'spin-bar'; bar.innerHTML = '<b></b>'; stage.appendChild(bar);
+    root.appendChild(stage);
+
+    var pos = 0, iCur = -1;
+    function render(){
+      var p = ((pos % total) + total) % total;
+      /* une seule vue à l'écran, à pleine opacité : superposer deux angles
+         différents donnait une image dédoublée et délavée */
+      var a = Math.round(p) % total;
+      if (a !== iCur){ cur.src = urls[a]; iCur = a; }
+      bar.firstChild.style.width = ((a + 1) / total * 100) + '%';
+    }
+    urls.forEach(function(u){ var im = new Image(); im.src = u; });
+
+    var dragging = false, lastX = 0, span = 0;
+    function measure(){ span = Math.max(160, stage.clientWidth * 0.85); }
+    measure(); window.addEventListener('resize', measure);
+    function begin(x){ dragging = true; lastX = x; root.classList.add('is-dragging'); hint.classList.add('is-gone'); }
+    function move(x){ if (!dragging) return; pos -= (x - lastX) / span * total; lastX = x; render(); }
+    function end(){ dragging = false; root.classList.remove('is-dragging'); }
+    stage.addEventListener('mousedown', function(e){ e.preventDefault(); begin(e.clientX); });
+    window.addEventListener('mousemove', function(e){ move(e.clientX); });
+    window.addEventListener('mouseup', end);
+    stage.addEventListener('touchstart', function(e){ begin(e.touches[0].clientX); }, {passive:true});
+    stage.addEventListener('touchmove', function(e){ if (dragging) e.preventDefault(); move(e.touches[0].clientX); }, {passive:false});
+    stage.addEventListener('touchend', end);
+
+    stage.tabIndex = 0; stage.setAttribute('role','img');
+    stage.setAttribute('aria-label', root.dataset.alt || '');
+    stage.addEventListener('keydown', function(e){
+      if (e.key === 'ArrowLeft'){  pos -= 1; render(); hint.classList.add('is-gone'); e.preventDefault(); e.stopPropagation(); }
+      if (e.key === 'ArrowRight'){ pos += 1; render(); hint.classList.add('is-gone'); e.preventDefault(); e.stopPropagation(); }
+    });
+
+    /* un tour lent au premier passage devant l'écran, pour signaler que ça tourne */
+    var teased = false;
+    function tease(){
+      if (teased) return; teased = true;
+      if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      var t0 = null, from = pos;
+      requestAnimationFrame(function step(ts){
+        if (t0 === null) t0 = ts;
+        if (dragging) return;
+        var k = Math.min(1, (ts - t0) / 2600);
+        pos = from + total * k; render();
+        if (k < 1) requestAnimationFrame(step);
+      });
+    }
+    if ('IntersectionObserver' in window){
+      new IntersectionObserver(function(en, obs){
+        en.forEach(function(e){ if (e.isIntersecting){ tease(); obs.disconnect(); } });
+      }, {threshold:.4}).observe(root);
+    } else { tease(); }
+    render();
+  });
+})();
+</script>
+</body></html>

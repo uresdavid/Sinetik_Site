@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en" data-theme="dark" data-page-lang="en" data-alt-lang="tracker.html">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>try{var t=localStorage.getItem('sinetik-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<title>Sinetik:tracker — velocity based training and load-velocity profiling</title>
+<meta name="description" content="Inertial sensor and iPhone app for velocity based training in the gym: velocity of every repetition, work zones, velocity loss, load-velocity profile, estimated 1RM and daily readiness.">
+<link rel="canonical" href="https://www.sinetik.ch/tracker-en.html">
+<link rel="alternate" hreflang="fr" href="https://www.sinetik.ch/tracker.html">
+<link rel="alternate" hreflang="en" href="https://www.sinetik.ch/tracker-en.html">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/sinetik.css">
+
+<!-- ============================================================
+     Page-local styles only.
+     Deliberately minimal: four components that do not yet exist in
+     sinetik.css (FAQ, image frame, spec list, download strip).
+     Everything else reuses the site's existing classes.
+     ============================================================ -->
+<style>
+  /* — Reusable image frame (sensor, photos) — */
+  /* Product shots are cut-out PNGs: they sit on the card background and stay
+     legible in light and dark themes alike. */
+  .shot{border:1px solid rgba(128,140,160,.22);border-radius:16px;overflow:hidden;
+    background:rgba(128,140,160,.05);max-width:380px}
+  .shot img{display:block;width:100%;height:auto;padding:9%;box-sizing:border-box}
+  .shot figcaption{padding:12px 16px;font-size:.8rem;line-height:1.5;color:var(--ink-3,#8a93a6);border-top:1px solid rgba(128,140,160,.16)}
+
+  /* — Technical spec list — */
+  .specs{list-style:none;margin:24px 0 0;padding:0}
+  .specs li{display:flex;justify-content:space-between;gap:20px;padding:11px 0;
+    border-bottom:1px solid rgba(128,140,160,.16);font-size:.9rem}
+  .specs li:last-child{border-bottom:0}
+  .specs em{font-style:normal;color:var(--ink-3,#8a93a6)}
+  .specs b{font-family:var(--mono,'JetBrains Mono',monospace);font-weight:500;text-align:right}
+
+  /* — FAQ (native <details>, readable without JavaScript) — */
+  .faq{border-top:1px solid rgba(128,140,160,.16)}
+  .faq details{border-bottom:1px solid rgba(128,140,160,.16)}
+  .faq summary{cursor:pointer;list-style:none;padding:20px 40px 20px 0;position:relative;
+    font-weight:600;font-size:1rem}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:'+';position:absolute;right:6px;top:18px;font-size:1.3rem;
+    font-weight:400;color:var(--ink-3,#8a93a6);transition:transform .2s ease}
+  .faq details[open] summary::after{transform:rotate(45deg)}
+  .faq details p{margin:0 0 22px;max-width:70ch;color:var(--ink-2,#b6bdc9);font-size:.94rem;line-height:1.65}
+
+  /* — Download strip — */
+  .getapp{display:flex;flex-wrap:wrap;align-items:center;gap:18px 28px;
+    padding:24px 28px;border:1px solid rgba(128,140,160,.22);border-radius:16px}
+  .getapp p{margin:0;font-size:.9rem;color:var(--ink-2,#b6bdc9)}
+
+  @media (prefers-reduced-motion:reduce){.faq summary::after{transition:none}}
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+
+<!-- ============================ HERO ============================ -->
+<header class="hero hero-solo">
+  <div class="hero-canvas" id="hero3d" data-scene="tracker"></div>
+  <div class="hero-scrim"></div>
+  <div class="hero-glow"></div>
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">Sinetik:tracker · Inertial sensor &amp; app</span>
+    <h1 data-anim="rise" data-delay="1">Train to velocity, not to feel</h1>
+    <p class="lead" data-anim="rise" data-delay="2">A sensor on the wrist, the app on the iPhone. Tracker measures the velocity of every repetition, places it in the work zone you are aiming for, and flags the moment a set stops delivering what you asked of it. In the gym, without interrupting the session.</p>
+    <div class="btn-row" data-anim="rise" data-delay="3">
+      <a class="btn btn-primary" href="contact.html">Become a pilot club</a>
+      <a class="btn btn-ghost" href="#measure">What Tracker measures</a>
+    </div>
+  </div>
+</header>
+
+<!-- ==================== 01 · WHAT TRACKER MEASURES ==================== -->
+<section id="measure">
+  <div class="wrap">
+    <div class="split">
+      <div data-anim="rise" data-delay="0">
+        <span class="mono on">01</span>
+        <h2>What Tracker measures</h2>
+        <p class="lead">For every repetition: mean velocity, peak velocity, range of motion, and the ratio between the two velocities. For every set: velocity loss, and the gap to the target zone. The load is entered once, before the set — everything else is computed as you lift.</p>
+        <p style="margin-top:22px">Velocity loss is the signal that matters. It tells you, without opinion or guesswork, when a set has produced what it was meant to produce — and when it starts costing more than it returns.</p>
+      </div>
+
+      <div data-anim="right" data-delay="1">
+        <div class="datacard">
+          <div class="datacard-head">
+            <span class="mono">Back Squat · 100 kg · Set 2</span>
+            <span class="live">Example</span>
+          </div>
+          <svg viewBox="0 0 460 210" role="img" aria-labelledby="vbttitle-en">
+            <title id="vbttitle-en">Mean velocity per repetition, with target work zone</title>
+            <!-- target zone band -->
+            <rect x="46" y="66" width="394" height="52" fill="#0A6CFF" fill-opacity=".10"/>
+            <text x="52" y="60" font-family="JetBrains Mono, monospace" font-size="9" fill="#0A6CFF" fill-opacity=".8">STRENGTH ZONE</text>
+            <!-- axes -->
+            <line x1="46" y1="12" x2="46" y2="176" stroke="currentColor" stroke-opacity=".18"/>
+            <line x1="46" y1="176" x2="440" y2="176" stroke="currentColor" stroke-opacity=".18"/>
+            <text x="26" y="20" font-family="JetBrains Mono, monospace" font-size="10" fill="currentColor" fill-opacity=".45">m/s</text>
+            <text x="418" y="196" font-family="JetBrains Mono, monospace" font-size="10" fill="currentColor" fill-opacity=".45">reps</text>
+            <!-- bars: velocity decaying across reps -->
+            <rect x="72"  y="70"  width="34" height="106" rx="3" fill="#0A6CFF" fill-opacity=".85"/>
+            <rect x="132" y="76"  width="34" height="100" rx="3" fill="#0A6CFF" fill-opacity=".85"/>
+            <rect x="192" y="82"  width="34" height="94"  rx="3" fill="#0A6CFF" fill-opacity=".85"/>
+            <rect x="252" y="94"  width="34" height="82"  rx="3" fill="#0A6CFF" fill-opacity=".85"/>
+            <rect x="312" y="108" width="34" height="68"  rx="3" fill="#0A6CFF" fill-opacity=".55"/>
+            <rect x="372" y="126" width="34" height="50"  rx="3" fill="#E4572E" fill-opacity=".75"/>
+            <!-- trend line -->
+            <line x1="89" y1="70" x2="389" y2="126" stroke="currentColor" stroke-opacity=".3" stroke-width="1.5" stroke-dasharray="4 4"/>
+          </svg>
+          <div class="datacard-foot">
+            <div><em>Mean V</em><b>0.42<span>m/s</span></b></div>
+            <div><em>Peak V</em><b>0.71<span>m/s</span></b></div>
+            <div><em>Loss</em><b>21<span>%</span></b></div>
+          </div>
+          <p class="mono" style="margin:14px 0 0;text-transform:none;letter-spacing:.02em">Illustration — the values shown are fictitious.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="note" style="margin-top:44px" data-anim="rise" data-delay="0">How it works, plainly: the sensor measures acceleration and angular velocity at 52 Hz. Velocity and range of motion are derived from that signal by integration. Force and power are computed from the load you enter. Tracker does not measure force directly, and does not claim to.</p>
+  </div>
+</section>
+
+<!-- ==================== 02 · MODES ==================== -->
+<section>
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">02</span>
+    <h2 data-anim="rise" data-delay="0">Ways to work</h2>
+    <p class="lead" style="margin-bottom:40px" data-anim="rise" data-delay="0">One sensor, several uses. You use what serves your plan — the rest stays out of your way.</p>
+
+    <div class="grid g-3">
+      <div class="card" data-anim="rise" data-delay="0">
+        <h3>Velocity based session</h3><p>Enter the load and the target zone, then start. The app follows the set and hands control back at the end.</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>20 exercises: squat, hinge, push, pull, olympic</li>
+          <li>7 work zones, from velocity to maximal strength</li>
+          <li>A velocity-loss threshold specific to each zone</li>
+          <li>A concrete load suggestion at the end of the set</li>
+        </ul>
+      </div>
+
+      <div class="card" data-anim="rise" data-delay="1">
+        <h3>Load-velocity profile</h3><p>The relationship between load and velocity, built from a few increments. It shows where an athlete sits between force and velocity.</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>F0, V0, Pmax, slope and goodness of fit</li>
+          <li>Dominant profile: force, velocity or balanced</li>
+          <li>Optimal power load, in kg and as a share of 1RM</li>
+          <li>Live test with the sensor, or manual entry</li>
+        </ul>
+      </div>
+
+      <div class="card" data-anim="rise" data-delay="2">
+        <h3>Estimated 1RM</h3><p>Maximal strength is inferred from the load-velocity relationship. Two increments are enough, and the estimate sharpens with each one added.</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>An estimate from two measured loads onwards</li>
+          <li>Automatic load suggestion between increments</li>
+          <li>Guided rest, editable increments</li>
+          <li>No maximal attempt required</li>
+        </ul>
+      </div>
+
+      <div class="card" data-anim="rise" data-delay="0">
+        <h3>Daily readiness</h3><p>One reference load, one repetition. The velocity gap against the profile gives you the state of the day.</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>Recalculated 1RM for the day</li>
+          <li>Work zones adjusted to the session</li>
+          <li>Four states, from supercompensated to fatigued</li>
+          <li>Under a minute, before the warm-up</li>
+        </ul>
+      </div>
+
+      <div class="card" data-anim="rise" data-delay="1">
+        <h3>Jump testing</h3><p>The explosive counterpart to loaded work, with the history that goes with it.</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>CMJ, squat jump, single-leg variants</li>
+          <li>Height, between-trial variability, reactive indices</li>
+          <li>Between-limb asymmetry (LSI)</li>
+          <li>Ratio between jumps with and without countermovement (EUR)</li>
+        </ul>
+      </div>
+
+      <div class="card" data-anim="rise" data-delay="2">
+        <h3>Athlete history</h3><p>Every session files itself. You read a progression, not a pile of spreadsheets.</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>Progression across the last twelve sessions</li>
+          <li>One profile per exercise, kept over time</li>
+          <li>Exportable PDF report</li>
+          <li>Raw sensor CSV export, for your own analysis</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 03 · THE APP ==================== -->
+<section>
+  <div class="wrap">
+    <div class="split">
+      <div data-anim="rise" data-delay="0">
+        <span class="mono on">03</span>
+        <h2>The app, next to the rack</h2>
+        <p class="lead">It fits in one hand and is read at a glance. During the set it shows velocity, zone and loss. At the end it suggests a load. Between sets, there is nothing to do.</p>
+        <ul class="ticks" style="margin-top:24px">
+          <li>One-tap sensor connection, five-second countdown</li>
+          <li>Voice feedback on every repetition — the screen becomes optional</li>
+          <li>An alert when velocity loss passes the zone's threshold</li>
+          <li>A stray repetition is removed with one tap, without skewing the set</li>
+          <li>Session stored on the device, exportable as PDF or CSV</li>
+        </ul>
+      </div>
+
+      <div data-anim="rise" data-delay="1">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-top"><i></i></div>
+            <div class="mock-body" style="padding:14px">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <strong style="font-size:12px">Back Squat · 100 kg</strong>
+                <span style="font-family:var(--mono);font-size:10px;color:#0A6CFF">Set 2</span>
+              </div>
+              <div class="mock-row" style="grid-template-columns:1fr 1fr">
+                <div class="mock-tile"><em>Mean V</em><b>0.42 m/s</b></div>
+                <div class="mock-tile"><em>Loss</em><b>21 %</b></div>
+              </div>
+              <div class="mock-panel">
+                <h5>Velocity per repetition</h5>
+                <div class="mock-chart" style="height:56px">
+                  <i style="height:92%"></i><i style="height:87%"></i><i style="height:81%"></i>
+                  <i style="height:71%"></i><i style="height:59%"></i><i class="alt" style="height:43%"></i>
+                </div>
+              </div>
+              <div class="mock-panel">
+                <h5>Zone — Strength</h5>
+                <div class="mock-list">
+                  <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b style="width:78%"></b></span></div>
+                  <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="warn" style="width:54%"></b></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Download strip.
+         Current state: TestFlight distribution, the app is not published yet.
+         On release day: replace the ghost button below with
+         <a class="btn btn-primary" href="https://apps.apple.com/…">Download on the App Store</a> -->
+    <div class="getapp" style="margin-top:52px" data-anim="rise" data-delay="0">
+      <p><strong>iPhone, iPad and Mac.</strong> The app is currently distributed through TestFlight to pilot organisations. App Store release will follow the end of that phase.</p>
+      <a class="btn btn-ghost" href="contact.html">Request TestFlight access</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 04 · THE SENSOR ==================== -->
+<section id="sensor">
+  <div class="wrap">
+    <div class="split">
+      <div data-anim="rise" data-delay="0">
+        <span class="mono on">04</span>
+        <h2>The sensor</h2>
+        <p class="lead">A custom Movesense inertial unit, worn on the wrist with a strap. No cable, no tripod, nothing to clamp onto the bar.</p>
+
+        <ul class="specs">
+          <li><em>Type</em><b>6-axis inertial unit</b></li>
+          <li><em>Signal</em><b>Accelerometer + gyroscope</b></li>
+          <li><em>Sampling rate</em><b>52 Hz</b></li>
+          <li><em>Link</em><b>Bluetooth Low Energy</b></li>
+          <li><em>Worn</em><b>Wrist, strap</b></li>
+          <li><em>Set-up time</em><b>≈ 10 seconds</b></li>
+        </ul>
+
+        <ol class="steps" style="margin-top:34px">
+          <li><strong>Clip it on</strong> The sensor sits on the strap, on the athlete's wrist.</li>
+          <li><strong>Connect</strong> The app recognises it and pairs over Bluetooth.</li>
+          <li><strong>Load it</strong> A load, a zone, and the set begins.</li>
+        </ol>
+      </div>
+
+      <div data-anim="rise" data-delay="1">
+        <figure class="shot">
+          <img src="assets/img/capteur-sinetik.png" width="714" height="713" loading="lazy" decoding="async" alt="The Sinetik inertial sensor, a circular black housing carrying the brand mark">
+          <figcaption>The Sinetik sensor, which clips onto its wrist strap.</figcaption>
+        </figure>
+
+        <figure class="shot" style="margin-top:20px">
+          <img src="assets/img/capteur-isometrie.png" width="1100" height="763" loading="lazy" decoding="async" alt="The Sinetik isometric testing sensor, a rectangular housing with a USB-C port and status light">
+          <figcaption>The isometric testing sensor — in development, see the roadmap.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 05 · PLANS ==================== -->
+<section id="tarifs">
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">05</span>
+    <h2 data-anim="rise" data-delay="0">Plans</h2>
+    <p class="lead" style="margin-bottom:40px" data-anim="rise" data-delay="0">Pricing is not settled yet. We are finalising hardware costs and the choice between outright purchase and subscription before announcing figures we intend to keep. Pilot organisations get entry conditions, whichever structure we land on.</p>
+
+    <div class="plans">
+      <div class="plan" data-anim="rise" data-delay="0">
+        <h3>Individual</h3>
+        <p style="color:var(--ink-3);font-size:.88rem;margin:0">Strength coach, athlete</p>
+        <!-- Final grid: replace with <div class="price" data-price="trackerUnit"></div> -->
+        <div class="price" style="font-size:1.05rem">Pricing to come</div>
+        <ul class="ticks">
+          <li>One sensor and its strap</li>
+          <li>Full app, every mode</li>
+          <li>History and exports</li>
+        </ul>
+        <a class="btn btn-ghost" href="contact.html">Hear about the launch</a>
+      </div>
+
+      <div class="plan featured" data-anim="rise" data-delay="1">
+        <span class="tag">Pilot phase</span>
+        <h3>Club</h3>
+        <p style="color:var(--ink-3);font-size:.88rem;margin:0">Academy, development club</p>
+        <div class="price" style="font-size:1.05rem">Pilot terms</div>
+        <ul class="ticks">
+          <li>Several sensors and their case</li>
+          <li>On-site onboarding with the staff</li>
+          <li>Direct influence on how the product evolves</li>
+          <li>Sinetik:studio connection as soon as it ships</li>
+        </ul>
+        <a class="btn btn-primary" href="contact.html">Become a pilot club</a>
+      </div>
+
+      <div class="plan" data-anim="rise" data-delay="2">
+        <h3>Organisation</h3>
+        <p style="color:var(--ink-3);font-size:.88rem;margin:0">Professional centre, federation</p>
+        <div class="price" style="font-size:1.05rem">On request</div>
+        <ul class="ticks">
+          <li>Volume matched to your squad sizes</li>
+          <li>API access for your own tools</li>
+          <li>Dedicated support through the season</li>
+        </ul>
+        <a class="btn btn-ghost" href="contact.html">Get in touch</a>
+      </div>
+    </div>
+
+    <p class="note" style="margin-top:36px" data-anim="rise" data-delay="0">Session data is stored on the device and belongs to you. It can be exported at any time as PDF, CSV or JSON — including the raw sensor signal, if you want to run your own analysis.</p>
+  </div>
+</section>
+
+<!-- ==================== 06 · FAQ ==================== -->
+<section>
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">06</span>
+    <h2 data-anim="rise" data-delay="0">Frequently asked</h2>
+    <p class="lead" style="margin-bottom:36px" data-anim="rise" data-delay="0">What people ask us, and what we answer — including when the answer does not flatter us.</p>
+
+    <div class="faq" data-anim="rise" data-delay="0">
+      <details>
+        <summary>The sensor is worn on the wrist, not on the bar. Does that change the measurement?</summary>
+        <p>Yes, and it should be said. The wrist does not travel exactly like the bar, particularly on movements where the arms move relative to the trunk. We chose the wrist because it makes set-up immediate and the sensor usable on every exercise, including those without a barbell. Consistency from session to session for the same athlete on the same exercise is good — and that is what drives training decisions. A figure-for-figure comparison against a bar-mounted system has not yet been formally carried out on our side. It is work we intend to do, and we will publish the results as they come out.</p>
+      </details>
+      <details>
+        <summary>Can Tracker's values be compared with another device's?</summary>
+        <p>Not yet. Until we have run that comparison, treat Tracker's values as an internal scale: they compare against each other, over time, for the same athlete on the same exercise. Do not place them next to another system's figures in the same table.</p>
+      </details>
+      <details>
+        <summary>How long does it take to set an athlete up?</summary>
+        <p>About ten seconds: clip the sensor to the strap, open the app, pick the exercise and the load. Nothing to calibrate, nothing to position precisely.</p>
+      </details>
+      <details>
+        <summary>Which devices does the app run on?</summary>
+        <p>iPhone, iPad and Mac. It is currently distributed through TestFlight to pilot organisations; App Store release will follow that phase. An Android version is planned, with no date fixed today.</p>
+      </details>
+      <details>
+        <summary>Do you need an internet connection in the gym?</summary>
+        <p>No. The sensor link is Bluetooth and the session is stored on the device. A connection is only needed to share a report or, in time, to sync to Sinetik:studio.</p>
+      </details>
+      <details>
+        <summary>What happens to the data, particularly for players under 18?</summary>
+        <p>Sessions are stored locally on the staff's device and can be exported at any time. Synchronisation to Sinetik:studio, currently in development, will run on European hosting with strict separation between organisations: the data belongs to the club, not to us, and follows the player if they move on. We collect no imagery and no location, and the values recorded are training measurements — not health data.</p>
+      </details>
+      <details>
+        <summary>Do you need to know your 1RM to use Tracker?</summary>
+        <p>No, and that is part of the point. Tracker estimates maximal strength from the load-velocity relationship, using a few submaximal increments. In a youth setting, that removes the need to put young athletes through maximal attempts simply to establish their strength level.</p>
+      </details>
+      <details>
+        <summary>Does it replace a strength and conditioning coach?</summary>
+        <p>No. Tracker measures and flags; it does not decide. It tells you a set has lost twenty per cent of its velocity — not whether that was the day to stop there, for that athlete. That call stays yours, and the tool exists to make it easier to make, not to make it for you.</p>
+      </details>
+      <details>
+        <summary>What if Tracker counts a repetition that was not one?</summary>
+        <p>It happens — an unrack, a reset. The app filters out movements that are too short or too slow, and any questionable repetition can be removed with one tap during or after the set. Averages and velocity loss are recalculated immediately.</p>
+      </details>
+      <details>
+        <summary>Does Tracker data flow into Sinetik:studio?</summary>
+        <p>That is the plan, and it is the reason the whole thing exists: gym load, wellness, testing and planning in a single history per player. The connection is in development. The interface will also be open to other analysis platforms — you will not be locked in with us.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 07 · ROADMAP ==================== -->
+<section>
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">07</span>
+    <h2 data-anim="rise" data-delay="0">What comes next</h2>
+    <p class="lead" style="margin-bottom:40px" data-anim="rise" data-delay="0">Three pieces of work under way. They are not available today and they are not dated: we would rather announce them when they work.</p>
+
+    <div class="grid g-3">
+      <div class="card" data-anim="rise" data-delay="0">
+        <span class="mono">In development</span>
+        <h3>Sinetik:studio connection</h3>
+        <p>Sessions flow into the platform and file themselves alongside the plan, wellness and testing. One history per player, and an interface open to the tools you already use.</p>
+      </div>
+      <div class="card" data-anim="rise" data-delay="1">
+        <span class="mono">In development</span>
+        <h3>Isometric testing</h3>
+        <p>A second sensor, dedicated to isometric testing and training. It picks up where dynamic measurement stops.</p>
+      </div>
+      <div class="card" data-anim="rise" data-delay="2">
+        <span class="mono">Exploratory</span>
+        <h3>Camera-based kinematics</h3>
+        <p>The iPhone camera to look at the movement itself, on the pitch as well as in the gym, where an inertial sensor is no longer enough.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CLOSING BAND ==================== -->
+<section>
+  <div class="wrap">
+    <div class="band" data-anim="rise" data-delay="0">
+      <span class="mono on">2026 pilot phase</span>
+      <h2>We are looking for organisations to get it wrong with us</h2>
+      <p class="lead">Tracker works and is already used in the gym. That does not make it finished. We are opening a limited number of places to clubs and academies willing to use it daily, tell us what breaks, and shape what the product becomes. Entry terms guaranteed, and a direct line to the people building it.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="contact.html">Become a pilot club</a>
+        <a class="btn btn-ghost" href="studio-en.html">Discover Sinetik:studio</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/site.js"></script>
+<script type="module" src="assets/js/hero3d.js"></script>
+</body>
+</html>
