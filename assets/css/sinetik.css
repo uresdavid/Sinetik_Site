@@ -237,7 +237,7 @@ hr.sep{border:0;border-top:1px solid var(--hair);margin:0}
 
 /* ─── Héros ─── */
 .hero{
-  position:relative;padding:calc(var(--nav-h) + 84px) 0 84px;overflow:hidden;
+  position:relative;padding:calc(var(--nav-h) + 52px) 0 72px;overflow:hidden;
   min-height:100vh;display:flex;align-items:center;
   border-bottom:1px solid var(--hair);
 }
@@ -269,7 +269,7 @@ hr.sep{border:0;border-top:1px solid var(--hair);margin:0}
 @media (prefers-reduced-motion:no-preference){ .hero-glow{animation:heroGlow 9s var(--ease) infinite} }
 @keyframes heroGlow{0%,100%{opacity:.75;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
 .hero > .wrap{position:relative;z-index:2;width:100%}
-.hero h1{max-width:16ch;font-size:clamp(3rem,7vw,5.6rem);line-height:1.03}
+.hero h1{max-width:18ch;font-size:clamp(2.5rem,5vw,4.1rem);line-height:1.05}
 .hero h1 em{font-style:normal;color:var(--accent)}
 .hero .lead{font-size:1.16rem;max-width:52ch}
 
@@ -296,9 +296,10 @@ hr.sep{border:0;border-top:1px solid var(--hair);margin:0}
 @media (max-width:860px){ .hero-cue{display:none} }
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
 .hero-solo h1{max-width:20ch}
-/* Accueil : titre un cran plus compact + marges resserrées pour que les
-   4 pastilles de branches tiennent dans le premier écran. */
-.hero-grid h1{font-size:clamp(2.4rem,4.7vw,3.9rem);line-height:1.06;max-width:21ch;margin-top:16px!important}
+/* Accueil : même taille de titre que partout (héritée) ; on ajuste
+   seulement la largeur et les marges pour que les 4 pastilles de
+   branches tiennent dans le premier écran. */
+.hero-grid h1{max-width:21ch;margin-top:16px!important}
 .hero-grid .lead{margin-top:16px;font-size:1.08rem}
 .hero-grid .chips{margin-top:22px}
 
