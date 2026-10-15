@@ -852,7 +852,7 @@ a.card:hover .card-arrow{color:var(--accent);transform:translate(3px,-3px)}
 body.leaving .page-veil{opacity:1}
 
 /* 2. Typo cinétique du héros (reveal asymétrique, masque par mot) */
-.hero h1 .kw{display:inline-block;overflow:hidden;vertical-align:top;padding:.16em .02em .26em;margin:-.16em 0 -.26em}
+.hero h1 .kw{display:inline-block;overflow:hidden;vertical-align:top;padding:.16em .02em .26em;margin:0 0 -.26em}
 .hero h1 .kw-i{display:inline-block;transform:translateY(135%) rotate(var(--kw-rot,6deg));opacity:0;will-change:transform}
 @media (prefers-reduced-motion:no-preference){
   .hero h1 .kw-i{animation:kwIn .9s var(--ease) both;animation-delay:var(--kw-d,0s)}
