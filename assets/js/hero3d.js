@@ -638,8 +638,10 @@ function buildSwarm(host, renderer){
     const rev = 1 - Math.pow(1 - Math.min(1, t / 1.3), 3);
     uni.uTime.value = t;
     uni.uReveal.value = rev;
-    /* cycle : converge → se tient → se disperse */
-    const CYCLE = 8, ph = (t % CYCLE) / CYCLE;
+    /* cycle : converge → se tient → se disperse.
+       Décalage initial (.45) pour DÉMARRER sur l'état ordonné (grille
+       visible dès le chargement, comme les autres scènes). */
+    const CYCLE = 8, ph = ((t % CYCLE) / CYCLE + .45) % 1;
     let m = ph < .30 ? ph / .30 : ph < .72 ? 1 : 1 - (ph - .72) / .28;
     m = m * m * (3 - 2 * m);
     uni.uMix.value = m;
