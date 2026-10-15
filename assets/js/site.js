@@ -706,7 +706,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const nav = document.querySelector(".nav");
-  const onScroll = () => nav && nav.classList.toggle("scrolled", scrollY > 24);
+  const cue = document.querySelector(".hero-cue");
+  const onScroll = () => {
+    if(nav) nav.classList.toggle("scrolled", scrollY > 24);
+    if(cue) cue.classList.toggle("gone", scrollY > 60);   // l'indice s'efface dès qu'on descend
+  };
   addEventListener("scroll", onScroll, { passive:true });
   onScroll();
 
