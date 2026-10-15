@@ -1,0 +1,37 @@
+name: Déploiement site → Infomaniak
+
+# Déclenché à chaque "push" sur la branche main (donc à chaque modification sur GitHub),
+# et manuellement via le bouton "Run workflow" dans l'onglet Actions.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code du dépôt
+        uses: actions/checkout@v4
+
+      - name: Envoyer les fichiers sur Infomaniak (FTPS)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          # Les fichiers du site vivent dans le dossier "web/" côté Infomaniak.
+          server-dir: web/
+          # Mode sûr : on n'envoie que les fichiers du dépôt, on ne touche PAS
+          # aux fichiers déjà présents sur le serveur qui ne sont pas dans le dépôt
+          # (ex. .htaccess, .user.ini, motion.html restent intacts).
+          dangerous-clean-slate: false
+          # On n'envoie pas les fichiers techniques du dépôt sur le site public.
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            .gitignore
+            ARCHITECTURE.md
+            README.md
