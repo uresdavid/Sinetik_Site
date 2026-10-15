@@ -149,30 +149,6 @@ function buildOrbit(host, renderer){
   const dust = new THREE.Points(dustGeo, dustMat);
   world.add(dust);
 
-  /* — Étiquettes HTML, projetées depuis la 3D — */
-  const layer = document.createElement('div');
-  layer.className = 'orbit-labels';
-  host.parentElement.appendChild(layer);
-  const labels = NODES.map(n => {
-    const el = document.createElement('a');
-    el.className = 'orbit-label';
-    el.href = n.href;
-    el.style.pointerEvents = 'auto';
-    el.style.textDecoration = 'none';
-    el.innerHTML = `<b>${n.label}</b><em data-verb="${n.key}"></em>`;
-    layer.appendChild(el);
-    return el;
-  });
-  function refreshVerbs(){
-    const lang = document.documentElement.lang === 'en' ? 'en' : 'fr';
-    NODES.forEach(n => {
-      const em = layer.querySelector(`[data-verb="${n.key}"]`);
-      if(em) em.textContent = n.verb[lang];
-    });
-  }
-  refreshVerbs();
-  new MutationObserver(refreshVerbs).observe(document.documentElement, { attributes:true, attributeFilter:['lang'] });
-
   /* — Mise en avant d'un nœud (utilisée si l'orbite sert sur une page de branche) — */
   const focus = host.dataset.focus || null;
 
@@ -232,18 +208,6 @@ function buildOrbit(host, renderer){
       const active = !focus || focus === n.key;
       n.group.scale.setScalar((active ? 1 + Math.sin(t * 1.6 + i) * .06 : .55) * rev);
       n.mat.opacity = (active ? .75 : .2) * rev;
-
-      /* étiquette : projection en coordonnées écran */
-      v.copy(n.group.position);
-      n.group.parent.localToWorld(v);
-      v.project(camera);
-      const el = labels[i];
-      const front = v.z < 1;
-      el.style.left = ((v.x * .5 + .5) * 100) + '%';
-      el.style.top  = ((-v.y * .5 + .5) * 100) + '%';
-      /* visible seulement devant la caméra, hors zone de texte,
-         et sans dépasser le bord droit */
-      el.classList.toggle('on', rev > .96 && front && active && v.x > minX && v.x < .88);
     });
 
     /* arcs : du noyau vers chaque nœud, en courbe, avec une pulsation décalée */
@@ -281,7 +245,7 @@ function buildOrbit(host, renderer){
     minX = wide ? 0.04 : -1;
   }
 
-  return { camera, frame, theme, layout, target, setScroll, dispose(){ layer.remove(); } };
+  return { camera, frame, theme, layout, target, setScroll };
 }
 
 /* ══════════════ Scène — hélice (origin) ══════════════
