@@ -21,8 +21,8 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
-          # Les fichiers du site vivent dans le dossier "web/" côté Infomaniak.
-          server-dir: web/
+          # Le vrai dossier racine du site est sites/sinetik.ch/ côté Infomaniak.
+          server-dir: sites/sinetik.ch/
           # Mode sûr : on n'envoie que les fichiers du dépôt, on ne touche PAS
           # aux fichiers déjà présents sur le serveur qui ne sont pas dans le dépôt
           # (ex. .htaccess, .user.ini, motion.html restent intacts).
