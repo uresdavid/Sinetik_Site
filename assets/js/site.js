@@ -403,7 +403,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   applyTheme(initialTheme());
-  applyLang(initialLang());
+  // Le header/footer suit la langue RÉELLE de la page (data-page-lang),
+  // pas un réglage mémorisé — sinon page moitié FR / moitié EN.
+  applyLang(document.documentElement.getAttribute("data-page-lang") || SINETIK.defaultLang);
   initShop();
   initTicker();
 
@@ -412,8 +414,16 @@ document.addEventListener("DOMContentLoaded", () => {
     applyTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark")
   );
 
+  // Le bouton de langue NAVIGUE vers le fichier de l'autre langue
+  // (chaque page a sa version: index.html ⇄ index-en.html), au lieu de
+  // traduire sur place (le corps des pages est écrit en dur par langue).
   document.querySelectorAll(".lang button").forEach(b =>
-    b.addEventListener("click", () => applyLang(b.dataset.lang))
+    b.addEventListener("click", () => {
+      const pageLang = document.documentElement.getAttribute("data-page-lang") || SINETIK.defaultLang;
+      if(b.dataset.lang === pageLang) return;               // déjà cette langue
+      const alt = document.documentElement.getAttribute("data-alt-lang");
+      if(alt) location.href = alt;                          // bascule de fichier
+    })
   );
 
   const burger = document.querySelector(".burger");
