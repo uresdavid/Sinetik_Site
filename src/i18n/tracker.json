@@ -904,5 +904,11 @@
     "en": "Discover Sinetik:studio",
     "de": "Sinetik:studio entdecken",
     "it": "Scopri Sinetik:studio"
+  },
+  "hero.cue": {
+    "fr": "Défiler",
+    "en": "Scroll",
+    "de": "Scrollen",
+    "it": "Scorri"
   }
 }

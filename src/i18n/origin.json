@@ -616,5 +616,11 @@
     "en": "We reply within 48 hours. Just tell us your sport, your goal in one sentence, and whether you'd prefer in person, remote, or don't know yet.",
     "de": "Wir antworten innerhalb von 48 Stunden. Sagen Sie uns einfach Ihre Sportart, Ihr Ziel in einem Satz und ob Sie den Präsenzmodus, die Ferne bevorzugen oder es noch nicht wissen.",
     "it": "Rispondiamo entro 48 ore. Dicci semplicemente il tuo sport, il tuo obiettivo in una frase, e se preferisci la presenza, la distanza, o se non lo sai ancora."
+  },
+  "hero.cue": {
+    "fr": "Défiler",
+    "en": "Scroll",
+    "de": "Scrollen",
+    "it": "Scorri"
   }
 }

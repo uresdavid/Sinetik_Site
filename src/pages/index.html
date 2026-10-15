@@ -45,6 +45,7 @@
       <div class="hero-stage" aria-hidden="true"></div>
     </div>
   </div>
+  <div class="hero-cue" aria-hidden="true">{{t:hero.cue}}<span></span></div>
 </header>
 
 <!-- ═══ Bandeau défilant ═══ -->
@@ -55,13 +56,186 @@
   </div>
 </div>
 
-<!-- ═══ Deux familles ═══ -->
+<!-- ═══ Le problème ═══ -->
+<section class="prob">
+  <div class="wrap">
+    <div class="prob-in">
+      <span class="mono accent" data-anim="rise" data-delay="0">{{t:prob.mono}}</span>
+      <h2 class="prob-h2" data-anim="rise" data-delay="1">{{t:prob.h2}}</h2>
+      <p class="lead" data-anim="rise" data-delay="2">{{t:prob.p}}</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ La réponse — intro de l'écosystème (mène à la section épinglée) ═══ -->
+<section class="answer">
+  <div class="wrap">
+    <div class="answer-in">
+      <span class="mono accent" data-anim="rise" data-delay="0">{{t:answer.mono}}</span>
+      <h2 data-anim="rise" data-delay="1">{{t:answer.h2}}</h2>
+      <p class="lead" data-anim="rise" data-delay="2">{{t:answer.p}}</p>
+      <div class="chips" data-anim="rise" data-delay="3">
+        <span class="chip-link">{{t:verb.tracker}} <em>Sinetik:tracker</em></span>
+        <span class="chip-link">{{t:verb.studio}} <em>Sinetik:studio</em></span>
+        <span class="chip-link">{{t:verb.origin}} <em>Sinetik:origin</em></span>
+        <span class="chip-link">{{t:verb.pure}} <em>Sinetik:pure</em></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Les quatre outils — section épinglée scrubbée au scroll (maquettes fusionnées) ═══ -->
+<section class="scrolly" aria-label="Les quatre outils Sinetik">
+  <div class="scrolly-sticky">
+    <div class="scrolly-glow" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="scrolly-steps">
+
+        <article class="scrolly-step is-on">
+          <div class="scrolly-copy">
+            <span class="mono accent">01 · Sinetik:tracker</span>
+            <h2>{{t:sec.tracker.h2}}</h2>
+            <p class="lead">{{t:sec.tracker.lead}}</p>
+            <div class="tags">
+              <span class="tag">{{t:tag.tracker.1}}</span>
+              <span class="tag">{{t:tag.tracker.2}}</span>
+              <span class="tag">{{t:tag.tracker.3}}</span>
+            </div>
+            <a class="btn btn-ghost" href="{{url:tracker}}">{{t:cta.more}}</a>
+          </div>
+          <div class="scrolly-vis" aria-hidden="true">
+            <div class="mock">
+              <div class="mock-bar"><i></i><i></i><i></i><span>{{t:mock.tracker.bar}}</span></div>
+              <div class="mock-body">
+                <div class="mock-row" style="grid-template-columns:repeat(3,1fr)">
+                  <div class="mock-tile"><em>{{t:mock.tracker.mv}}</em><b>0.42 m/s</b></div>
+                  <div class="mock-tile"><em>{{t:mock.tracker.pv}}</em><b>0.71 m/s</b></div>
+                  <div class="mock-tile"><em>{{t:mock.tracker.loss}}</em><b>21 %</b></div>
+                </div>
+                <div class="mock-panel">
+                  <h5>{{t:mock.tracker.chart}}</h5>
+                  <div class="mock-chart">
+                    <i style="height:92%"></i><i style="height:88%"></i><i style="height:84%"></i>
+                    <i style="height:79%"></i><i style="height:73%"></i><i style="height:66%"></i>
+                    <i style="height:60%"></i><i style="height:54%"></i><i style="height:48%"></i>
+                    <i style="height:44%"></i><i class="alt" style="height:38%"></i><i class="alt" style="height:31%"></i>
+                  </div>
+                </div>
+                <div class="mock-panel">
+                  <h5>{{t:mock.tracker.zone}}</h5>
+                  <div class="mock-list">
+                    <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b style="width:78%"></b></span></div>
+                    <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="warn" style="width:54%"></b></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="scrolly-step">
+          <div class="scrolly-copy">
+            <span class="mono accent">02 · Sinetik:studio</span>
+            <h2>{{t:sec.studio.h2}}</h2>
+            <p class="lead">{{t:sec.studio.lead}}</p>
+            <div class="tags">
+              <span class="tag">{{t:tag.studio.1}}</span>
+              <span class="tag">{{t:tag.studio.2}}</span>
+              <span class="tag">{{t:tag.studio.3}}</span>
+            </div>
+            <a class="btn btn-ghost" href="{{url:studio}}">{{t:cta.more}}</a>
+          </div>
+          <div class="scrolly-vis" aria-hidden="true">
+            <div class="mock">
+              <div class="mock-bar"><i></i><i></i><i></i><span>{{t:mock.studio.bar}}</span></div>
+              <div class="mock-body">
+                <div class="mock-row">
+                  <div class="mock-tile"><em>{{t:mock.studio.load}}</em><b>4 820</b></div>
+                  <div class="mock-tile"><em>{{t:mock.studio.planreal}}</em><b>−8 %</b></div>
+                  <div class="mock-tile"><em>{{t:mock.studio.avail}}</em><b>22/25</b></div>
+                  <div class="mock-tile"><em>{{t:mock.studio.alerts}}</em><b>3</b></div>
+                </div>
+                <div class="mock-panel">
+                  <h5>{{t:mock.studio.squad}}</h5>
+                  <div class="mock-list">
+                    <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="ok" style="width:88%"></b></span></div>
+                    <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="ok" style="width:76%"></b></span></div>
+                    <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="warn" style="width:52%"></b></span></div>
+                    <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="high" style="width:34%"></b></span></div>
+                    <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="ok" style="width:91%"></b></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="scrolly-step">
+          <div class="scrolly-copy">
+            <span class="mono accent">03 · Sinetik:origin</span>
+            <h2>{{t:sec.origin.h2}}</h2>
+            <p class="lead">{{t:sec.origin.lead}}</p>
+            <div class="tags">
+              <span class="tag">{{t:tag.origin.1}}</span>
+              <span class="tag">{{t:tag.origin.2}}</span>
+              <span class="tag">{{t:tag.origin.3}}</span>
+            </div>
+            <a class="btn btn-ghost" href="{{url:origin}}">{{t:cta.more}}</a>
+          </div>
+          <div class="scrolly-vis" aria-hidden="true">
+            <div class="card">
+              <ul class="ticks">
+                <li><strong>{{t:origin.tick.1}}</strong></li>
+                <li><strong>{{t:origin.tick.2}}</strong></li>
+                <li><strong>{{t:origin.tick.3}}</strong></li>
+                <li><strong>{{t:origin.tick.4}}</strong></li>
+              </ul>
+              <div style="margin-top:26px">
+                <svg viewBox="0 0 400 120" aria-hidden="true">
+                  <path class="stroke" d="M10 92 C 70 92, 78 26, 140 46 S 210 96, 258 34 S 340 14, 392 56"
+                        fill="none" stroke="var(--accent)" stroke-width="4" stroke-linecap="round"/>
+                  <circle class="dot" cx="140" cy="46" r="7" fill="var(--accent)"/>
+                  <circle class="dot" cx="258" cy="34" r="7" fill="var(--accent)"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="scrolly-step">
+          <div class="scrolly-copy">
+            <span class="mono accent">04 · Sinetik:pure</span>
+            <h2>{{t:sec.pure.h2}}</h2>
+            <p class="lead">{{t:sec.pure.lead}}</p>
+            <div class="tags">
+              <span class="tag">{{t:tag.pure.1}}</span>
+              <span class="tag">{{t:tag.pure.2}}</span>
+              <span class="tag">{{t:tag.pure.3}}</span>
+            </div>
+            <a class="btn btn-ghost" href="{{url:pure}}">{{t:cta.more}}</a>
+          </div>
+          <div class="scrolly-vis" aria-hidden="true">
+            <div class="shop-visual" style="aspect-ratio:4/3">
+              <span class="mono">Onda FG-01</span>
+              <img src="assets/img/onda-fg01.jpg" alt="Onda FG-01" loading="lazy">
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <div class="scrolly-dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+      <span class="scrolly-index mono" aria-hidden="true"><b>01</b> / 04</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Pour qui ═══ -->
 <section id="ecosysteme">
   <div class="wrap">
     <h2 data-anim="rise" data-delay="0">{{t:eco.h2}}</h2>
-    <p class="lead" style="margin-bottom:40px" data-anim="rise" data-delay="0">{{t:eco.lead}}</p>
+    <p class="lead" style="margin-bottom:40px;max-width:62ch" data-anim="rise" data-delay="1">{{t:eco.lead}}</p>
 
-    <div class="grid g-2" style="margin-bottom:48px">
+    <div class="grid g-2">
       <div class="card" data-anim="rise" data-delay="0">
         <span class="mono on">{{t:org.mono}}</span>
         <h3 style="margin:10px 0 8px">{{t:org.h3}}</h3>
@@ -81,226 +255,18 @@
         </div>
       </div>
     </div>
-
-    <div class="grid g-4 branches">
-      <a class="card branch" href="{{url:tracker}}" data-anim="rise" data-delay="0">
-        <span class="card-arrow">↗</span>
-        <span class="mono on">Sinetik:tracker</span>
-        <span class="status">{{t:status.dev}}</span>
-        <h3>{{t:branch.tracker.h3}}</h3>
-        <p>{{t:branch.tracker.p}}</p>
-        <div class="branch-art">
-          <svg viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true">
-            <g fill="#0A6CFF">
-              <rect x="30"  y="18"  width="34" height="132" rx="4"/>
-              <rect x="80"  y="30"  width="34" height="120" rx="4"/>
-              <rect x="130" y="46"  width="34" height="104" rx="4"/>
-              <rect x="180" y="60"  width="34" height="90" rx="4"/>
-              <rect x="230" y="82"  width="34" height="68" rx="4"/>
-              <rect x="280" y="104" width="34" height="46" rx="4" fill-opacity=".45"/>
-              <rect x="330" y="120" width="34" height="30" rx="4" fill-opacity=".45"/>
-            </g>
-          </svg>
-        </div>
-      </a>
-
-      <a class="card branch" href="{{url:studio}}" data-anim="rise" data-delay="1">
-        <span class="card-arrow">↗</span>
-        <span class="mono on">Sinetik:studio</span>
-        <span class="status">{{t:status.dev}}</span>
-        <h3>{{t:branch.studio.h3}}</h3>
-        <p>{{t:branch.studio.p}}</p>
-        <div class="branch-art">
-          <svg viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true">
-            <g fill="#0A6CFF">
-              <rect class="cell" x="20"  y="20" width="52" height="52" rx="7" fill-opacity=".22"/>
-              <rect class="cell" x="84"  y="20" width="52" height="52" rx="7"/>
-              <rect class="cell" x="148" y="20" width="52" height="52" rx="7" fill-opacity=".22"/>
-              <rect class="cell" x="212" y="20" width="52" height="52" rx="7" fill-opacity=".22"/>
-              <rect class="cell" x="276" y="20" width="52" height="52" rx="7"/>
-              <rect class="cell" x="20"  y="84" width="52" height="52" rx="7" fill-opacity=".22"/>
-              <rect class="cell" x="84"  y="84" width="52" height="52" rx="7" fill-opacity=".22"/>
-              <rect class="cell" x="148" y="84" width="52" height="52" rx="7"/>
-              <rect class="cell" x="212" y="84" width="52" height="52" rx="7" fill-opacity=".22"/>
-              <rect class="cell" x="276" y="84" width="52" height="52" rx="7" fill-opacity=".22"/>
-            </g>
-          </svg>
-        </div>
-      </a>
-
-      <a class="card branch" href="{{url:origin}}" data-anim="rise" data-delay="0">
-        <span class="card-arrow">↗</span>
-        <span class="mono on">Sinetik:origin</span>
-        <span class="status">{{t:status.dev}}</span>
-        <h3>{{t:branch.origin.h3}}</h3>
-        <p>{{t:branch.origin.p}}</p>
-        <div class="branch-art">
-          <svg viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M10 118 C 70 118, 78 40, 140 62 S 210 118, 258 52 S 340 28, 392 74"
-                  fill="none" stroke="#0A6CFF" stroke-width="5" stroke-linecap="round"/>
-            <circle cx="140" cy="62" r="8" fill="#0A6CFF"/>
-            <circle cx="258" cy="52" r="8" fill="#0A6CFF"/>
-          </svg>
-        </div>
-      </a>
-
-      <a class="card branch" href="{{url:pure}}" data-anim="rise" data-delay="1">
-        <span class="card-arrow">↗</span>
-        <span class="mono on">Sinetik:pure</span>
-        <span class="status">{{t:status.dev}}</span>
-        <h3>{{t:branch.pure.h3}}</h3>
-        <p>{{t:branch.pure.p}}</p>
-        <div class="branch-art">
-          <img src="assets/img/onda-fg01.jpg" alt="Onda FG-01" loading="lazy">
-        </div>
-      </a>
-    </div>
   </div>
 </section>
 
-<!-- ═══ 01 · tracker ═══ -->
-<section>
+<!-- ═══ Pourquoi nous ═══ -->
+<section class="why">
   <div class="wrap">
-    <div class="split">
-      <div data-anim="rise" data-delay="0">
-        <span class="mono">01 · <span class="accent">Sinetik:tracker</span></span>
-        <h2 style="margin-top:14px">{{t:sec.tracker.h2}}</h2>
-        <p class="lead">{{t:sec.tracker.lead}}</p>
-        <div class="tags">
-          <span class="tag">{{t:tag.tracker.1}}</span>
-          <span class="tag">{{t:tag.tracker.2}}</span>
-          <span class="tag">{{t:tag.tracker.3}}</span>
-        </div>
-        <div class="btn-row"><a class="btn btn-ghost" href="{{url:tracker}}">{{t:cta.more}}</a></div>
-      </div>
-      <div data-anim="grow" data-delay="1">
-        <div class="mock">
-          <div class="mock-bar"><i></i><i></i><i></i><span>{{t:mock.tracker.bar}}</span></div>
-          <div class="mock-body">
-            <div class="mock-row" style="grid-template-columns:repeat(3,1fr)">
-              <div class="mock-tile"><em>{{t:mock.tracker.mv}}</em><b>0.42 m/s</b></div>
-              <div class="mock-tile"><em>{{t:mock.tracker.pv}}</em><b>0.71 m/s</b></div>
-              <div class="mock-tile"><em>{{t:mock.tracker.loss}}</em><b>21 %</b></div>
-            </div>
-            <div class="mock-panel">
-              <h5>{{t:mock.tracker.chart}}</h5>
-              <div class="mock-chart">
-                <i style="height:92%"></i><i style="height:88%"></i><i style="height:84%"></i>
-                <i style="height:79%"></i><i style="height:73%"></i><i style="height:66%"></i>
-                <i style="height:60%"></i><i style="height:54%"></i><i style="height:48%"></i>
-                <i style="height:44%"></i><i class="alt" style="height:38%"></i><i class="alt" style="height:31%"></i>
-              </div>
-            </div>
-            <div class="mock-panel">
-              <h5>{{t:mock.tracker.zone}}</h5>
-              <div class="mock-list">
-                <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b style="width:78%"></b></span></div>
-                <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="warn" style="width:54%"></b></span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ 02 · studio ═══ -->
-<section>
-  <div class="wrap">
-    <div class="split rev">
-      <div data-anim="rise" data-delay="0">
-        <span class="mono">02 · <span class="accent">Sinetik:studio</span></span>
-        <h2 style="margin-top:14px">{{t:sec.studio.h2}}</h2>
-        <p class="lead">{{t:sec.studio.lead}}</p>
-        <div class="tags">
-          <span class="tag">{{t:tag.studio.1}}</span>
-          <span class="tag">{{t:tag.studio.2}}</span>
-          <span class="tag">{{t:tag.studio.3}}</span>
-        </div>
-        <div class="btn-row"><a class="btn btn-ghost" href="{{url:studio}}">{{t:cta.more}}</a></div>
-      </div>
-      <div data-anim="right" data-delay="1">
-        <div class="mock">
-          <div class="mock-bar"><i></i><i></i><i></i><span>{{t:mock.studio.bar}}</span></div>
-          <div class="mock-body">
-            <div class="mock-row">
-              <div class="mock-tile"><em>{{t:mock.studio.load}}</em><b>4 820</b></div>
-              <div class="mock-tile"><em>{{t:mock.studio.planreal}}</em><b>−8 %</b></div>
-              <div class="mock-tile"><em>{{t:mock.studio.avail}}</em><b>22/25</b></div>
-              <div class="mock-tile"><em>{{t:mock.studio.alerts}}</em><b>3</b></div>
-            </div>
-            <div class="mock-panel">
-              <h5>{{t:mock.studio.squad}}</h5>
-              <div class="mock-list">
-                <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="ok" style="width:88%"></b></span></div>
-                <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="ok" style="width:76%"></b></span></div>
-                <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="warn" style="width:52%"></b></span></div>
-                <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="high" style="width:34%"></b></span></div>
-                <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="ok" style="width:91%"></b></span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ 03 · origin ═══ -->
-<section>
-  <div class="wrap">
-    <div class="split">
-      <div data-anim="rise" data-delay="0">
-        <span class="mono">03 · <span class="accent">Sinetik:origin</span></span>
-        <h2 style="margin-top:14px">{{t:sec.origin.h2}}</h2>
-        <p class="lead">{{t:sec.origin.lead}}</p>
-        <div class="tags">
-          <span class="tag">{{t:tag.origin.1}}</span>
-          <span class="tag">{{t:tag.origin.2}}</span>
-          <span class="tag">{{t:tag.origin.3}}</span>
-        </div>
-        <div class="btn-row"><a class="btn btn-ghost" href="{{url:origin}}">{{t:cta.more}}</a></div>
-      </div>
-      <div class="card" data-anim="draw" data-delay="1">
-        <ul class="ticks">
-          <li><strong>{{t:origin.tick.1}}</strong></li>
-          <li><strong>{{t:origin.tick.2}}</strong></li>
-          <li><strong>{{t:origin.tick.3}}</strong></li>
-          <li><strong>{{t:origin.tick.4}}</strong></li>
-        </ul>
-        <div style="margin-top:26px">
-          <svg viewBox="0 0 400 120" aria-hidden="true">
-            <path class="stroke" d="M10 92 C 70 92, 78 26, 140 46 S 210 96, 258 34 S 340 14, 392 56"
-                  fill="none" stroke="#0A6CFF" stroke-width="4" stroke-linecap="round"/>
-            <circle class="dot" cx="140" cy="46" r="7" fill="#0A6CFF"/>
-            <circle class="dot" cx="258" cy="34" r="7" fill="#0A6CFF"/>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ 04 · pure ═══ -->
-<section>
-  <div class="wrap">
-    <div class="split rev">
-      <div data-anim="rise" data-delay="0">
-        <span class="mono">04 · <span class="accent">Sinetik:pure</span></span>
-        <h2 style="margin-top:14px">{{t:sec.pure.h2}}</h2>
-        <p class="lead">{{t:sec.pure.lead}}</p>
-        <div class="tags">
-          <span class="tag">{{t:tag.pure.1}}</span>
-          <span class="tag">{{t:tag.pure.2}}</span>
-          <span class="tag">{{t:tag.pure.3}}</span>
-        </div>
-        <div class="btn-row"><a class="btn btn-ghost" href="{{url:pure}}">{{t:cta.more}}</a></div>
-      </div>
-      <div class="shop-visual" style="aspect-ratio:4/3" data-anim="drift" data-delay="1">
-        <span class="mono">Onda FG-01</span>
-        <img src="assets/img/onda-fg01.jpg" alt="Onda FG-01" loading="lazy">
-      </div>
+    <span class="mono accent" data-anim="rise" data-delay="0">{{t:why.mono}}</span>
+    <h2 style="margin-top:10px" data-anim="rise" data-delay="1">{{t:why.h2}}</h2>
+    <div class="grid g-3" style="margin-top:40px">
+      <div class="card" data-anim="rise" data-delay="0"><p>{{t:why.1}}</p></div>
+      <div class="card" data-anim="rise" data-delay="1"><p>{{t:why.2}}</p></div>
+      <div class="card" data-anim="rise" data-delay="2"><p>{{t:why.3}}</p></div>
     </div>
   </div>
 </section>

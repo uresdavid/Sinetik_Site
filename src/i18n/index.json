@@ -231,5 +231,61 @@
     "de": "Schreiben Sie uns, um den Launch zu verfolgen, eine Frage zu stellen oder uns zu sagen, was Ihnen heute fehlt. Jede Nachricht wird gelesen.",
     "it": "Scrivici per seguire il lancio, fare una domanda o dirci cosa ti manca oggi. Ogni messaggio viene letto."
   },
-  "cta.band.btn": { "fr": "Nous écrire", "en": "Write to us", "de": "Schreiben Sie uns", "it": "Scrivici" }
+  "cta.band.btn": { "fr": "Nous écrire", "en": "Write to us", "de": "Schreiben Sie uns", "it": "Scrivici" },
+
+  "hero.cue": { "fr": "Défiler", "en": "Scroll", "de": "Scrollen", "it": "Scorri" },
+
+  "prob.mono": { "fr": "Le problème", "en": "The problem", "de": "Das Problem", "it": "Il problema" },
+  "prob.h2": {
+    "fr": "La donnée de performance est partout. Les décisions, nulle part.",
+    "en": "Performance data is everywhere. The decisions, nowhere.",
+    "de": "Leistungsdaten gibt es überall. Entscheidungen nirgends.",
+    "it": "I dati di performance sono ovunque. Le decisioni, da nessuna parte."
+  },
+  "prob.p": {
+    "fr": "Des capteurs, des fichiers Excel, des applications qui ne se parlent pas. Des outils pensés pour l'élite — trop chers, trop lourds pour le terrain. Résultat : on mesure beaucoup, on décide au feeling, on s'équipe mal.",
+    "en": "Sensors, spreadsheets, apps that don't talk to each other. Tools built for the elite — too expensive, too heavy for the field. The result: we measure a lot, decide on feel, and equip poorly.",
+    "de": "Sensoren, Excel-Dateien, Apps, die nicht miteinander reden. Werkzeuge für die Elite — zu teuer, zu schwerfällig fürs Feld. Das Ergebnis: viel Messen, Entscheiden nach Gefühl, schlecht ausgerüstet.",
+    "it": "Sensori, fogli Excel, app che non si parlano. Strumenti pensati per l'élite — troppo cari, troppo pesanti per il campo. Risultato: si misura molto, si decide a sensazione, ci si equipaggia male."
+  },
+
+  "answer.mono": { "fr": "La réponse", "en": "The answer", "de": "Die Antwort", "it": "La risposta" },
+  "answer.h2": {
+    "fr": "Un écosystème, pas une pile d'outils.",
+    "en": "An ecosystem, not a pile of tools.",
+    "de": "Ein Ökosystem, kein Stapel von Werkzeugen.",
+    "it": "Un ecosistema, non una pila di strumenti."
+  },
+  "answer.p": {
+    "fr": "Quatre outils pensés ensemble : mesurer sur le terrain, rassembler et décider, accompagner, équiper. Une même exigence, un même fil de données — du capteur à la chaussure.",
+    "en": "Four tools designed together: measure on the field, bring it together and decide, coach, equip. One standard, one data thread — from the sensor to the boot.",
+    "de": "Vier Werkzeuge, zusammen gedacht: auf dem Feld messen, zusammenführen und entscheiden, begleiten, ausrüsten. Ein Anspruch, ein Datenfaden — vom Sensor bis zum Schuh.",
+    "it": "Quattro strumenti pensati insieme: misurare sul campo, riunire e decidere, accompagnare, equipaggiare. Una sola esigenza, un solo filo di dati — dal sensore alla scarpa."
+  },
+
+  "why.mono": { "fr": "Pourquoi Sinetik", "en": "Why Sinetik", "de": "Warum Sinetik", "it": "Perché Sinetik" },
+  "why.h2": {
+    "fr": "Pensé sur le terrain. Vos données restent les vôtres.",
+    "en": "Built on the field. Your data stays yours.",
+    "de": "Auf dem Feld entwickelt. Ihre Daten bleiben Ihre.",
+    "it": "Pensato sul campo. I tuoi dati restano tuoi."
+  },
+  "why.1": {
+    "fr": "<strong>Conçu en Suisse</strong> Pensé sur le terrain, pas en laboratoire. Hébergement européen, confidentialité au cœur.",
+    "en": "<strong>Designed in Switzerland</strong> Built on the field, not in a lab. European hosting, privacy at the core.",
+    "de": "<strong>In der Schweiz entwickelt</strong> Auf dem Feld gedacht, nicht im Labor. Europäisches Hosting, Datenschutz im Kern.",
+    "it": "<strong>Progettato in Svizzera</strong> Pensato sul campo, non in laboratorio. Hosting europeo, privacy al centro."
+  },
+  "why.2": {
+    "fr": "<strong>Configuré pour vous</strong> Chaque organisation définit ses métriques, ses vues, son vocabulaire. Pas un modèle générique auquel s'adapter.",
+    "en": "<strong>Configured for you</strong> Each organisation defines its metrics, views and vocabulary. Not a generic template to adapt to.",
+    "de": "<strong>Für Sie konfiguriert</strong> Jede Organisation definiert ihre Metriken, Ansichten und ihr Vokabular. Keine generische Vorlage, an die man sich anpasst.",
+    "it": "<strong>Configurato per te</strong> Ogni organizzazione definisce le proprie metriche, viste e il proprio vocabolario. Non un modello generico a cui adattarsi."
+  },
+  "why.3": {
+    "fr": "<strong>Vos données, exportables</strong> Elles restent votre propriété, exportables à tout moment, sans format propriétaire ni frais de sortie.",
+    "en": "<strong>Your data, exportable</strong> It stays your property, exportable at any time, with no proprietary format and no exit fees.",
+    "de": "<strong>Ihre Daten, exportierbar</strong> Sie bleiben Ihr Eigentum, jederzeit exportierbar, ohne proprietäres Format und ohne Ausstiegsgebühren.",
+    "it": "<strong>I tuoi dati, esportabili</strong> Restano di tua proprietà, esportabili in qualsiasi momento, senza formato proprietario né costi di uscita."
+  }
 }

@@ -449,16 +449,52 @@
     "de": "Weitere anatomische Formen folgen, danach eine Sporttextil-Linie, mit demselben Anspruch gebaut: wenige Artikel, jeder begründet.",
     "it": "Seguiranno altre forme anatomiche, poi una linea di abbigliamento sportivo costruita con la stessa esigenza: poche referenze, ciascuna giustificata."
   },
-  "pure.carousel.video": { "fr": "Rendu animé", "en": "Animated render", "de": "Animierte Darstellung", "it": "Render animato" },
-  "pure.carousel.spin": { "fr": "Vue 360°", "en": "360° view", "de": "360°-Ansicht", "it": "Vista 360°" },
+  "pure.carousel.video": {
+    "fr": "Rendu animé",
+    "en": "Animated render",
+    "de": "Animierte Darstellung",
+    "it": "Render animato"
+  },
+  "pure.carousel.spin": {
+    "fr": "Vue 360°",
+    "en": "360° view",
+    "de": "360°-Ansicht",
+    "it": "Vista 360°"
+  },
   "pure.spin.alt": {
     "fr": "Onda FG-01, vue tournante sur 360 degrés",
     "en": "Onda FG-01, rotating 360-degree view",
     "de": "Onda FG-01, drehbare 360-Grad-Ansicht",
     "it": "Onda FG-01, vista rotante a 360 gradi"
   },
-  "pure.spin.hint": { "fr": "Glissez pour tourner", "en": "Drag to rotate", "de": "Zum Drehen ziehen", "it": "Trascina per ruotare" },
-  "pure.view": { "fr": "Vue", "en": "View", "de": "Ansicht", "it": "Vista" },
-  "pure.video.play": { "fr": "Lire la vidéo", "en": "Play video", "de": "Video abspielen", "it": "Riproduci il video" },
-  "pure.video.pause": { "fr": "Mettre en pause", "en": "Pause", "de": "Pausieren", "it": "Metti in pausa" }
+  "pure.spin.hint": {
+    "fr": "Glissez pour tourner",
+    "en": "Drag to rotate",
+    "de": "Zum Drehen ziehen",
+    "it": "Trascina per ruotare"
+  },
+  "pure.view": {
+    "fr": "Vue",
+    "en": "View",
+    "de": "Ansicht",
+    "it": "Vista"
+  },
+  "pure.video.play": {
+    "fr": "Lire la vidéo",
+    "en": "Play video",
+    "de": "Video abspielen",
+    "it": "Riproduci il video"
+  },
+  "pure.video.pause": {
+    "fr": "Mettre en pause",
+    "en": "Pause",
+    "de": "Pausieren",
+    "it": "Metti in pausa"
+  },
+  "hero.cue": {
+    "fr": "Défiler",
+    "en": "Scroll",
+    "de": "Scrollen",
+    "it": "Scorri"
+  }
 }

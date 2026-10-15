@@ -65,7 +65,7 @@ function buildOrbit(host, renderer){
   const BLUE = new THREE.Color(0x0A6CFF);
   const PALE = new THREE.Color(0x3D8BFF);
 
-  /* — Noyau : deux sphères concentriques, l'une pleine, l'autre en fil — */
+  /* — Noyau : sphère pleine + deux coques en fil contre-tournantes + halo lumineux — */
   const core = new THREE.Group();
   core.add(new THREE.Mesh(
     new THREE.IcosahedronGeometry(.42, 3),
@@ -76,6 +76,18 @@ function buildOrbit(host, renderer){
     new THREE.MeshBasicMaterial({ color:BLUE, wireframe:true, transparent:true, opacity:.28 })
   );
   core.add(halo);
+  const shell = new THREE.Mesh(
+    new THREE.IcosahedronGeometry(1.18, 1),
+    new THREE.MeshBasicMaterial({ color:PALE, wireframe:true, transparent:true, opacity:.14 })
+  );
+  core.add(shell);
+  /* halo lumineux additif : le noyau « s'allume » */
+  const glow = new THREE.Sprite(new THREE.SpriteMaterial({
+    map:softSprite(), color:PALE, transparent:true, opacity:.5,
+    blending:THREE.AdditiveBlending, depthWrite:false
+  }));
+  glow.scale.setScalar(3.4);
+  core.add(glow);
   world.add(core);
 
   /* — Anneaux inclinés — */
@@ -95,17 +107,15 @@ function buildOrbit(host, renderer){
   /* — Les quatre nœuds — */
   const nodes = NODES.map((n, i) => {
     const g = new THREE.Group();
-    g.add(new THREE.Mesh(
-      new THREE.SphereGeometry(.17, 24, 24),
-      new THREE.MeshBasicMaterial({ color:PALE })
-    ));
+    const ballMat = new THREE.MeshBasicMaterial({ color:PALE });
+    g.add(new THREE.Mesh(new THREE.SphereGeometry(.17, 24, 24), ballMat));
     const ringGeo = new THREE.RingGeometry(.29, .33, 48);
     const ringMat = new THREE.MeshBasicMaterial({ color:BLUE, transparent:true, opacity:.75, side:THREE.DoubleSide });
     const halo2 = new THREE.Mesh(ringGeo, ringMat);
     g.add(halo2);
     world.add(g);
     return {
-      group:g, halo:halo2, mat:ringMat,
+      group:g, halo:halo2, mat:ringMat, ball:ballMat,
       radius:R[i], tilt:TILT[i],
       phase:(i / NODES.length) * Math.PI * 2,
       speed:.16 + i * .022,
@@ -113,26 +123,31 @@ function buildOrbit(host, renderer){
     };
   });
 
-  /* — Arc de lumière qui court d'un nœud au suivant — */
-  const arcGeo = new THREE.BufferGeometry();
-  const ARC_PTS = 60;
-  arcGeo.setAttribute('position', new THREE.BufferAttribute(new Float32Array(ARC_PTS * 3), 3));
-  const arcMat = new THREE.LineBasicMaterial({ color:PALE, transparent:true, opacity:.8 });
-  world.add(new THREE.Line(arcGeo, arcMat));
+  /* — Arcs de lumière : du noyau vers chacun des quatre nœuds — */
+  const ARC_PTS = 48;
+  const arcs = NODES.map(() => {
+    const g = new THREE.BufferGeometry();
+    g.setAttribute('position', new THREE.BufferAttribute(new Float32Array(ARC_PTS * 3), 3));
+    const m = new THREE.LineBasicMaterial({ color:PALE, transparent:true, opacity:.5 });
+    world.add(new THREE.Line(g, m));
+    return { geo:g, mat:m };
+  });
+  const ORIGIN = new THREE.Vector3(0, 0, 0);
 
   /* — Poussière d'étoiles, pour donner de la profondeur — */
-  const N = 420, pos = new Float32Array(N * 3);
+  const N = 680, pos = new Float32Array(N * 3);
   for(let i = 0; i < N; i++){
-    const r = 6 + Math.random() * 7, a = Math.random() * Math.PI * 2, y = (Math.random() - .5) * 5;
+    const r = 5.5 + Math.random() * 8, a = Math.random() * Math.PI * 2, y = (Math.random() - .5) * 6;
     pos[i*3] = Math.cos(a) * r; pos[i*3+1] = y; pos[i*3+2] = Math.sin(a) * r;
   }
   const dustGeo = new THREE.BufferGeometry();
   dustGeo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
   const dustMat = new THREE.PointsMaterial({
     color:BLUE, map:softSprite(), size:2.4, sizeAttenuation:false,
-    transparent:true, opacity:.5, depthWrite:false
+    transparent:true, opacity:.5, depthWrite:false, blending:THREE.AdditiveBlending
   });
-  world.add(new THREE.Points(dustGeo, dustMat));
+  const dust = new THREE.Points(dustGeo, dustMat);
+  world.add(dust);
 
   /* — Étiquettes HTML, projetées depuis la 3D — */
   const layer = document.createElement('div');
@@ -161,19 +176,51 @@ function buildOrbit(host, renderer){
   /* — Mise en avant d'un nœud (utilisée si l'orbite sert sur une page de branche) — */
   const focus = host.dataset.focus || null;
 
+  /* Bleu plus profond en mode clair : le bleu pâle disparaît sur fond blanc. */
+  const DEEP = new THREE.Color(0x0A4FD6);
+
   function theme(){
     const light = isLight();
-    dustMat.opacity = light ? .32 : .5;
-    rings.forEach(m => m.opacity = light ? .38 : .26);
-    halo.material.opacity = light ? .20 : .28;
+    /* couleurs : en clair on fonce tout pour tenir sur le blanc */
+    rings.forEach(m => { m.color.copy(light ? DEEP : BLUE); m.opacity = light ? .60 : .42; });
+    dustMat.color.copy(light ? DEEP : BLUE);
+    dustMat.opacity = light ? .55 : .62;
+    dustMat.blending = light ? THREE.NormalBlending : THREE.AdditiveBlending;
+    dustMat.needsUpdate = true;
+    halo.material.color.copy(light ? DEEP : PALE);
+    halo.material.opacity = light ? .42 : .46;
+    shell.material.color.copy(light ? DEEP : PALE);
+    shell.material.opacity = light ? .26 : .24;
+    glow.material.color.copy(light ? DEEP : PALE);
+    glow.material.opacity = light ? .30 : .66;
+    glow.material.blending = light ? THREE.NormalBlending : THREE.AdditiveBlending;
+    glow.material.needsUpdate = true;
+    arcs.forEach(a => { a.mat.color.copy(light ? DEEP : PALE); });
+    nodes.forEach(n => { n.ball.color.copy(light ? DEEP : PALE); n.mat.color.copy(light ? DEEP : BLUE); });
   }
 
+  /* Allumage à l'arrivée : la scène grandit depuis un point et s'éclaire. */
+  let baseScale = 1, scroll = 0;
+  const setScroll = s => { scroll = s; };
+  const v = new THREE.Vector3(), a1 = new THREE.Vector3(), mid = new THREE.Vector3();
+
   function frame(t){
-    world.rotation.y = t * .055;
+    /* reveal 0→1 sur ~1.3 s, courbe douce (ease-out cubique) */
+    const r = Math.min(1, t / 1.3);
+    const rev = 1 - Math.pow(1 - r, 3);
+
+    world.rotation.y = t * .055 + scroll * .0024;   // le scroll fait pivoter l'orbite (marqué)
+    world.rotation.x = -0.52 + scroll * .0007;
+    world.scale.setScalar(baseScale * (.55 + rev * .45));
     core.rotation.y  = -t * .35;
     halo.rotation.x  =  t * .22;
+    shell.rotation.y = -t * .16;
+    shell.rotation.z =  t * .10;
+    /* le noyau respire */
+    const pulse = 1 + Math.sin(t * 1.5) * .08;
+    glow.scale.setScalar(3.4 * pulse);
+    glow.material.opacity = (isLight() ? .30 : .66) * rev * (.8 + Math.sin(t * 1.5) * .2);
 
-    const v = new THREE.Vector3();
     nodes.forEach((n, i) => {
       const a = n.phase + t * n.speed;
       n.group.position.set(
@@ -183,8 +230,8 @@ function buildOrbit(host, renderer){
       );
       n.halo.lookAt(camera.position);
       const active = !focus || focus === n.key;
-      n.group.scale.setScalar(active ? 1 + Math.sin(t * 1.6 + i) * .06 : .55);
-      n.mat.opacity = active ? .75 : .2;
+      n.group.scale.setScalar((active ? 1 + Math.sin(t * 1.6 + i) * .06 : .55) * rev);
+      n.mat.opacity = (active ? .75 : .2) * rev;
 
       /* étiquette : projection en coordonnées écran */
       v.copy(n.group.position);
@@ -196,17 +243,24 @@ function buildOrbit(host, renderer){
       el.style.top  = ((-v.y * .5 + .5) * 100) + '%';
       /* visible seulement devant la caméra, hors zone de texte,
          et sans dépasser le bord droit */
-      el.classList.toggle('on', front && active && v.x > minX && v.x < .88);
+      el.classList.toggle('on', rev > .96 && front && active && v.x > minX && v.x < .88);
     });
 
-    /* arc : du nœud le plus à gauche vers son voisin, en courbe */
-    const a0 = nodes[0].group.position, a1 = nodes[1].group.position;
-    const mid = new THREE.Vector3().addVectors(a0, a1).multiplyScalar(.5).multiplyScalar(1.22);
-    const curve = new THREE.QuadraticBezierCurve3(a0, mid, a1);
-    const arr = arcGeo.attributes.position.array;
-    curve.getPoints(ARC_PTS - 1).forEach((p, i) => { arr[i*3]=p.x; arr[i*3+1]=p.y; arr[i*3+2]=p.z; });
-    arcGeo.attributes.position.needsUpdate = true;
-    arcMat.opacity = .35 + Math.sin(t * 1.1) * .25;
+    /* arcs : du noyau vers chaque nœud, en courbe, avec une pulsation décalée */
+    arcs.forEach((arc, i) => {
+      a1.copy(nodes[i].group.position);
+      mid.copy(a1).multiplyScalar(.52);
+      mid.y += .5 + Math.sin(t * .7 + i) * .25;          // ventre de la courbe, animé
+      const curve = new THREE.QuadraticBezierCurve3(ORIGIN, mid, a1);
+      const arr = arc.geo.attributes.position.array;
+      curve.getPoints(ARC_PTS - 1).forEach((p, k) => { arr[k*3]=p.x; arr[k*3+1]=p.y; arr[k*3+2]=p.z; });
+      arc.geo.attributes.position.needsUpdate = true;
+      arc.mat.opacity = (.22 + (Math.sin(t * 1.3 + i * 1.7) * .5 + .5) * .5) * rev;
+    });
+
+    /* la poussière tourne lentement à contre-sens et scintille */
+    dust.rotation.y = -t * .02;
+    dustMat.opacity = (isLight() ? .55 : .62) * (.7 + Math.sin(t * .8) * .3) * rev;
 
     renderer.render(scene, camera);
   }
@@ -220,14 +274,14 @@ function buildOrbit(host, renderer){
     world.position.x = wide ? 3.55 : 0;
     world.position.y = wide ? 0 : -0.2;
     const k = wide ? Math.min(h / 660, 1.05) : Math.min(w / 780, 1);
-    world.scale.setScalar(Math.max(k, .62));
+    baseScale = Math.max(k, .62);      // le frame applique l'allumage par-dessus
     target.set(world.position.x * .5, 0, 0);
     /* Une étiquette qui passe côté texte est masquée : la géométrie peut
        glisser sous le voile, les mots non. */
     minX = wide ? 0.04 : -1;
   }
 
-  return { camera, frame, theme, layout, target, dispose(){ layer.remove(); } };
+  return { camera, frame, theme, layout, target, setScroll, dispose(){ layer.remove(); } };
 }
 
 /* ══════════════ Scène 2 — champ de particules ══════════════ */
@@ -270,11 +324,12 @@ const DISPLACE = /* glsl */`
   }
 
   float displace(vec2 p, float t, int mode){
-    if(mode == 1){                                  // studio — blocs en volume
-      vec2 cell = floor(p * vec2(.62, .78));
+    if(mode == 1){                                  // studio — barres 3D qui montent et descendent
+      vec2 cell = floor(p * vec2(.46, .60));        // barres larges et massives = lecture « histogramme 3D »
       float h    = hash21(cell);
-      float rise = smoothstep(-1., 1., sin(t * .55 - cell.x * .42 + h * 3.1));
-      return ((h * .9 + .12) * rise) * .82 - .30;   // sommets plats = faces de blocs
+      /* chaque barre monte et descend : vague qui traverse les colonnes + rythme propre */
+      float rise = smoothstep(-1., 1., sin(t * .55 - cell.x * .55 + h * 6.283));
+      return ((h * .75 + .35) * rise) * 2.6 - .8;   // forte amplitude : vraies barres qui s'élèvent
     } else if(mode == 2){                           // tracker — courbe de CMJ
       float u    = p.x * .072 + t * .085;
       float band = exp(-p.y * p.y * .42);           // la trace se resserre en ligne
@@ -303,7 +358,7 @@ const PT_VERT = /* glsl */`
 `;
 
 const PT_FRAG = /* glsl */`
-  uniform vec3 uTint; uniform float uLight;
+  uniform vec3 uTint; uniform float uLight, uReveal;
   varying float vH;
   void main(){
     float d = length(gl_PointCoord - .5);
@@ -311,10 +366,10 @@ const PT_FRAG = /* glsl */`
     if(a < .02) discard;
     vec3 hi = mix(vec3(1.), vec3(.01, .05, .14), uLight);   // crêtes : blanches / encre
     vec3 c  = mix(uTint, hi, clamp(vH * .8 + .28, 0., 1.));
-    float fade = clamp(.30 + vH * .85, .10, 1.);
+    float fade = clamp(.38 + vH * .85, .14, 1.);
     /* Sur fond clair le mélange n'est plus additif : sans ce rattrapage
        d'opacité, la scène disparaissait. */
-    gl_FragColor = vec4(c, a * fade * mix(1., 1.35, uLight));
+    gl_FragColor = vec4(c, a * fade * mix(1., 1.35, uLight) * uReveal);
   }
 `;
 
@@ -330,27 +385,36 @@ function buildField(cfg, renderer){
 
   const cols = Math.round(150 * cfg.density), rows = Math.round(86 * cfg.density);
   const uni = {
-    uTime:{value:0}, uMode:{value:cfg.mode}, uSize:{value:2.2}, uPix:{value:1},
-    uTint:{value:new THREE.Color(cfg.tint)}, uLight:{value:0}
+    uTime:{value:0}, uMode:{value:cfg.mode}, uSize:{value:2.8}, uPix:{value:1},
+    uTint:{value:new THREE.Color(cfg.tint)}, uLight:{value:0}, uReveal:{value:0}
   };
   const mat = new THREE.ShaderMaterial({
     uniforms:uni, vertexShader:PT_VERT, fragmentShader:PT_FRAG,
     transparent:true, depthWrite:false, blending:THREE.AdditiveBlending
   });
   group.add(new THREE.Points(new THREE.PlaneGeometry(15, 9, cols, rows), mat));
+  /* taille des points : plus gros = plus visible ; compense le pâle sur blanc */
+  const sizeFor = w => (w < 720 ? 2.1 : 2.8) * (isLight() ? 1.22 : 1.);
 
   return {
-    camera,
-    frame(t){ uni.uTime.value = t * cfg.speed; renderer.render(scene, camera); },
+    camera, baseTilt: cfg.tilt,
+    frame(t){
+      /* allumage : fondu + léger grandissement sur ~1.2 s */
+      const rev = 1 - Math.pow(1 - Math.min(1, t / 1.2), 3);
+      uni.uReveal.value = rev;
+      group.scale.setScalar(.92 + rev * .08);
+      uni.uTime.value = t * cfg.speed;
+      renderer.render(scene, camera);
+    },
     theme(){
       const light = isLight();
       uni.uLight.value = light ? 1 : 0;
       /* le mélange additif éclaircit : illisible sur fond clair */
       mat.blending = light ? THREE.NormalBlending : THREE.AdditiveBlending;
-      uni.uSize.value = (innerWidth < 720 ? 1.7 : 2.2) * (light ? 1.18 : 1.);
+      uni.uSize.value = sizeFor(innerWidth);
       mat.needsUpdate = true;
     },
-    resize(w){ uni.uSize.value = (w < 720 ? 1.7 : 2.2) * (isLight() ? 1.18 : 1.); },
+    resize(w){ uni.uSize.value = sizeFor(w); },
     target: new THREE.Vector3(0, 0, 0),
     group
   };
@@ -376,13 +440,14 @@ function boot(){
     ? buildOrbit(host, renderer)
     : buildField(FIELDS[name] || FIELDS.motion, renderer);
 
-  /* Parallaxe souris, très légère */
-  let tx = 0, ty = 0, mx = 0, my = 0;
+  /* Parallaxe souris (légère) + réaction au scroll (rotation de la scène) */
+  let tx = 0, ty = 0, mx = 0, my = 0, syTarget = 0, sy = 0;
   if(!reduced()){
     addEventListener('pointermove', e => {
-      tx = (e.clientX / innerWidth - .5) * .22;
-      ty = (e.clientY / innerHeight - .5) * .12;
+      tx = (e.clientX / innerWidth - .5) * .40;
+      ty = (e.clientY / innerHeight - .5) * .22;
     }, { passive:true });
+    addEventListener('scroll', () => { syTarget = scrollY; }, { passive:true });
   }
 
   function resize(){
@@ -414,9 +479,15 @@ function boot(){
     t += clock.getDelta();
     mx += (tx - mx) * .045;
     my += (ty - my) * .045;
-    if(scene.group){ scene.group.rotation.y = mx; }
-    scene.camera.position.x = mx * 2.4;
-    scene.camera.position.y = (scene.camera.position.y * 0) + (name === 'orbit' ? 1.5 + my * 2 : -2.6 + my * 2);
+    sy += (syTarget - sy) * .08;
+    if(scene.group){                                           // champs de particules
+      scene.group.rotation.y = mx + sy * .0026;                // scroll plus marqué
+      scene.group.rotation.x = (scene.baseTilt || 0) + sy * .0010;   // garde l'inclinaison de base
+    }
+    if(scene.setScroll) scene.setScroll(sy);
+    scene.camera.position.x = mx * 3.6;
+    scene.camera.position.y = (name === 'orbit' ? 1.5 + my * 3.2 : -2.6 + my * 3);
+    if(name === 'orbit') scene.camera.position.z = 7.4 - Math.min(sy, 800) * .0028;   // dolly avant au scroll, marqué
     const tgt = scene.target;
     scene.camera.lookAt(tgt ? tgt.x : 0, tgt ? tgt.y : 0, 0);
     scene.frame(t);

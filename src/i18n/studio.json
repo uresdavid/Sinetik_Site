@@ -77,10 +77,30 @@
     "de": "Übersicht — Woche 34",
     "it": "Panoramica — settimana 34"
   },
-  "mock.load": { "fr": "Charge", "en": "Load", "de": "Belastung", "it": "Carico" },
-  "mock.planreal": { "fr": "Plan./Réal.", "en": "Plan./Actual", "de": "Plan/Ist", "it": "Piano/Reale" },
-  "mock.avail": { "fr": "Dispo.", "en": "Avail.", "de": "Verfügb.", "it": "Disp." },
-  "mock.alerts": { "fr": "Alertes", "en": "Alerts", "de": "Warnungen", "it": "Avvisi" },
+  "mock.load": {
+    "fr": "Charge",
+    "en": "Load",
+    "de": "Belastung",
+    "it": "Carico"
+  },
+  "mock.planreal": {
+    "fr": "Plan./Réal.",
+    "en": "Plan./Actual",
+    "de": "Plan/Ist",
+    "it": "Piano/Reale"
+  },
+  "mock.avail": {
+    "fr": "Dispo.",
+    "en": "Avail.",
+    "de": "Verfügb.",
+    "it": "Disp."
+  },
+  "mock.alerts": {
+    "fr": "Alertes",
+    "en": "Alerts",
+    "de": "Warnungen",
+    "it": "Avvisi"
+  },
   "mock.chart": {
     "fr": "Charge hebdomadaire — U18",
     "en": "Weekly load — U18",
@@ -566,5 +586,11 @@
     "en": "You export everything and you leave. No exit fees, no proprietary format.",
     "de": "Sie exportieren alles und gehen. Keine Ausstiegsgebühren, kein proprietäres Format.",
     "it": "Esporti tutto e te ne vai. Nessun costo di uscita, nessun formato proprietario."
+  },
+  "hero.cue": {
+    "fr": "Défiler",
+    "en": "Scroll",
+    "de": "Scrollen",
+    "it": "Scorri"
   }
 }

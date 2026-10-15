@@ -371,7 +371,9 @@ function initScrollMotion(){
      pour apparaître : on le fige en position finale. */
   const vh0 = innerHeight;
   els.forEach(el => {
-    if(el.getBoundingClientRect().top < vh0 * .96){
+    // Le héros est toujours révélé (son entrée est gérée par l'animation CSS heroIn) ;
+    // sinon, tout ce qui est déjà à l'écran au chargement est figé en position finale.
+    if(el.closest(".hero") || el.getBoundingClientRect().top < vh0 * .96){
       el.style.setProperty("--p", 1);
       el.classList.add("lit");
       el.dataset.prelit = "1";
@@ -512,6 +514,151 @@ function initGlint(){
   }, { passive:true });
 }
 
+/* Transition entre pages : on referme un voile avant de naviguer (effet "app") */
+function initPageTransition(){
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const veil = document.createElement("div"); veil.className = "page-veil"; document.body.appendChild(veil);
+  let gone = false;
+  document.addEventListener("click", e => {
+    if(e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    const a = e.target.closest("a[href]");
+    if(!a) return;
+    const href = a.getAttribute("href") || "";
+    if(href.startsWith("#") || href.startsWith("mailto:") || href.startsWith("tel:")) return;
+    if(a.target === "_blank" || a.hasAttribute("download")) return;
+    let url; try{ url = new URL(a.href, location.href); }catch(err){ return; }
+    if(url.origin !== location.origin) return;                               // lien externe
+    if(url.pathname === location.pathname && url.search === location.search) return; // même page
+    e.preventDefault();
+    if(gone) return; gone = true;
+    document.body.classList.add("leaving");
+    setTimeout(() => { location.href = a.href; }, 420);
+  });
+  addEventListener("pageshow", e => { if(e.persisted){ gone = false; document.body.classList.remove("leaving"); } });
+}
+
+/* Typo cinétique du héros : chaque mot se révèle (masque + rotation asymétrique) */
+function initKineticHero(){
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const h1 = document.querySelector(".hero h1");
+  if(!h1) return;
+  h1.removeAttribute("data-anim");                 // remplace le reveal standard
+  let idx = 0;
+  (function wrap(node){
+    [...node.childNodes].forEach(ch => {
+      if(ch.nodeType === 3){                        // nœud texte → découpe en mots
+        const frag = document.createDocumentFragment();
+        ch.textContent.split(/(\s+)/).forEach(tok => {
+          if(!tok) return;
+          if(/^\s+$/.test(tok)){ frag.appendChild(document.createTextNode(tok)); return; }
+          const kw = document.createElement("span"); kw.className = "kw";
+          const inner = document.createElement("span"); inner.className = "kw-i"; inner.textContent = tok;
+          inner.style.setProperty("--kw-d", (idx * 0.06).toFixed(2) + "s");
+          inner.style.setProperty("--kw-rot", (idx % 2 ? -7 : 7) + "deg");
+          idx++;
+          kw.appendChild(inner); frag.appendChild(kw);
+        });
+        node.replaceChild(frag, ch);
+      } else if(ch.nodeType === 1 && ch.nodeName !== "BR"){ wrap(ch); }   // ex: <em>, garde <br>
+    });
+  })(h1);
+}
+
+/* Boutons magnétiques : ressort (stiffness 400, damping 15, mass 1) piloté en JS */
+function initMagnetic(){
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if(matchMedia("(hover: none)").matches) return;                          // pas sur tactile
+  const K = 400, C = 15, M = 1, strength = 0.4, radius = 90;
+  document.querySelectorAll(".btn-primary").forEach(btn => {
+    btn.classList.add("magnetic");
+    let x = 0, y = 0, vx = 0, vy = 0, tx = 0, ty = 0, raf = 0, last = 0;
+    function loop(now){
+      const dt = Math.min(0.032, (now - last) / 1000 || 0.016); last = now;
+      vx += ((-K * (x - tx) - C * vx) / M) * dt;
+      vy += ((-K * (y - ty) - C * vy) / M) * dt;
+      x += vx * dt; y += vy * dt;
+      btn.style.transform = "translate(" + x.toFixed(2) + "px," + y.toFixed(2) + "px)";
+      if(Math.abs(x - tx) > .1 || Math.abs(y - ty) > .1 || Math.abs(vx) > .1 || Math.abs(vy) > .1){
+        raf = requestAnimationFrame(loop);
+      } else { btn.style.transform = tx || ty ? "translate(" + tx + "px," + ty + "px)" : ""; raf = 0; }
+    }
+    function kick(){ if(!raf){ last = performance.now(); raf = requestAnimationFrame(loop); } }
+    btn.addEventListener("pointermove", e => {
+      const r = btn.getBoundingClientRect();
+      tx = Math.max(-radius, Math.min(radius, e.clientX - (r.left + r.width / 2))) * strength;
+      ty = Math.max(-radius, Math.min(radius, e.clientY - (r.top + r.height / 2))) * strength;
+      kick();
+    });
+    btn.addEventListener("pointerleave", () => { tx = 0; ty = 0; kick(); });
+  });
+}
+
+/* Curseur personnalisé : un anneau qui suit (avec inertie) et réagit aux éléments */
+function initCursor(){
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if(matchMedia("(hover: none)").matches) return;
+  const dot = document.createElement("div"); dot.className = "cursor"; document.body.appendChild(dot);
+  const SEL = "a,button,.card,.chip-link,input,textarea,select,[role=tab],.size,.icon-btn,.lang button";
+  let x = innerWidth / 2, y = innerHeight / 2, cx = x, cy = y, shown = false;
+  addEventListener("pointermove", e => { x = e.clientX; y = e.clientY; if(!shown){ shown = true; dot.style.opacity = ".9"; } }, { passive:true });
+  addEventListener("pointerover", e => { if(e.target.closest(SEL)) dot.classList.add("hot"); }, { passive:true });
+  addEventListener("pointerout",  e => { if(e.target.closest(SEL) && !(e.relatedTarget && e.relatedTarget.closest && e.relatedTarget.closest(SEL))) dot.classList.remove("hot"); }, { passive:true });
+  addEventListener("pointerdown", () => dot.classList.add("down"), { passive:true });
+  addEventListener("pointerup",   () => dot.classList.remove("down"), { passive:true });
+  (function loop(){ cx += (x - cx) * .2; cy += (y - cy) * .2; dot.style.transform = "translate3d(" + cx + "px," + cy + "px,0)"; requestAnimationFrame(loop); })();
+}
+
+/* Parallaxe cinématique du héros : les couches se déplacent à des vitesses différentes au scroll */
+function initParallax(){
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const canvas = document.querySelector(".hero-canvas");
+  const glow   = document.querySelector(".hero-glow");
+  const wrap   = document.querySelector(".hero > .wrap");
+  if(!canvas && !glow && !wrap) return;
+  let queued = false;
+  function tick(){
+    queued = false;
+    const y = scrollY;
+    if(y < innerHeight * 1.3){                       // seulement tant que le héros est proche
+      if(canvas) canvas.style.transform = "translate3d(0," + (y * .42).toFixed(1) + "px,0) scale(" + (1 + Math.min(y, 800) * .0006).toFixed(3) + ")";
+      if(glow)   glow.style.transform   = "translate3d(0," + (y * .66).toFixed(1) + "px,0)";
+      if(wrap){
+        wrap.style.transform = "translate3d(0," + (y * .24).toFixed(1) + "px,0)";
+        wrap.style.opacity   = Math.max(0, 1 - y / (innerHeight * .85)).toFixed(3);   // le texte s'efface en profondeur
+      }
+    }
+  }
+  addEventListener("scroll", () => { if(!queued){ queued = true; requestAnimationFrame(tick); } }, { passive:true });
+  tick();
+}
+
+/* Section épinglée scrubbée : le scroll fait défiler les 4 outils un par un */
+function initScrolly(){
+  const sec = document.querySelector(".scrolly");
+  if(!sec) return;
+  const steps = [...sec.querySelectorAll(".scrolly-step")];
+  const dots  = [...sec.querySelectorAll(".scrolly-dots i")];
+  const idx   = sec.querySelector(".scrolly-index b");
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches){ steps.forEach(s => s.classList.add("is-on")); return; }
+  let cur = -1, queued = false;
+  function tick(){
+    queued = false;
+    const rect = sec.getBoundingClientRect();
+    const total = sec.offsetHeight - innerHeight;
+    const prog = Math.min(.9999, Math.max(0, -rect.top / Math.max(1, total)));
+    const i = Math.min(steps.length - 1, Math.floor(prog * steps.length));
+    if(i !== cur){
+      cur = i;
+      steps.forEach((s, n) => s.classList.toggle("is-on", n === i));
+      dots.forEach((d, n) => d.classList.toggle("on", n === i));
+      if(idx) idx.textContent = "0" + (i + 1);
+    }
+  }
+  addEventListener("scroll", () => { if(!queued){ queued = true; requestAnimationFrame(tick); } }, { passive:true });
+  addEventListener("resize", () => { if(!queued){ queued = true; requestAnimationFrame(tick); } }, { passive:true });
+  tick();
+}
+
 /* ══ 7. Démarrage ════════════════════════════════════════════ */
 document.addEventListener("DOMContentLoaded", () => {
   const head = document.getElementById("site-header");
@@ -563,9 +710,15 @@ document.addEventListener("DOMContentLoaded", () => {
   addEventListener("scroll", onScroll, { passive:true });
   onScroll();
 
+  initKineticHero();
   initScrollMotion();
   initRails();
   initGlint();
+  initMagnetic();
+  initCursor();
+  initParallax();
+  initScrolly();
+  initPageTransition();
 
   const form = document.getElementById("contact-form");
   if(form){

@@ -1,1 +1,8 @@
-{}
+{
+  "hero.cue": {
+    "fr": "Défiler",
+    "en": "Scroll",
+    "de": "Scrollen",
+    "it": "Scorri"
+  }
+}
