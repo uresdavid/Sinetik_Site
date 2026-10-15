@@ -35,3 +35,6 @@ jobs:
             .gitignore
             ARCHITECTURE.md
             README.md
+            src/**
+            generate.mjs
+            *.md

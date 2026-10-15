@@ -1,0 +1,235 @@
+{
+  "meta.title": {
+    "fr": "Sinetik — Vitesse d'exécution, suivi athlète, préparation physique et équipement",
+    "en": "Sinetik — Bar velocity, athlete monitoring, individual coaching and footwear",
+    "de": "Sinetik — Hantelgeschwindigkeit, Athletenmonitoring, Athletikbetreuung und Ausrüstung",
+    "it": "Sinetik — Velocità d'esecuzione, monitoraggio atleti, preparazione fisica ed equipaggiamento"
+  },
+  "meta.desc": {
+    "fr": "Un capteur de vitesse d'exécution, une plateforme de suivi athlète, un accompagnement individuel et une chaussure anatomique. Conçu et développé en Suisse.",
+    "en": "A bar-velocity sensor, an athlete monitoring platform, individual coaching and an anatomical football boot. Designed and developed in Switzerland.",
+    "de": "Ein Sensor für die Hantelgeschwindigkeit, eine Plattform für das Athletenmonitoring, eine individuelle Betreuung und ein anatomischer Fussballschuh. Entwickelt in der Schweiz.",
+    "it": "Un sensore di velocità d'esecuzione, una piattaforma di monitoraggio degli atleti, un accompagnamento individuale e una scarpa anatomica. Progettato e sviluppato in Svizzera."
+  },
+  "meta.ogTitle": {
+    "fr": "Sinetik — Mesurer ce qui compte. Décider vite. Équiper juste.",
+    "en": "Sinetik — Measure what matters. Decide fast. Equip properly.",
+    "de": "Sinetik — Messen, was zählt. Schnell entscheiden. Richtig ausrüsten.",
+    "it": "Sinetik — Misura ciò che conta. Decidi in fretta. Equipaggia nel modo giusto."
+  },
+  "hero.pill": {
+    "fr": "Performance sportive · Suisse",
+    "en": "Sports performance · Switzerland",
+    "de": "Sportliche Leistung · Schweiz",
+    "it": "Performance sportiva · Svizzera"
+  },
+  "hero.h1": {
+    "fr": "Mesurer ce qui compte.<br>Décider vite. Équiper juste.",
+    "en": "Measure what matters.<br>Decide fast. Equip properly.",
+    "de": "Messen, was zählt.<br>Schnell entscheiden. Richtig ausrüsten.",
+    "it": "Misura ciò che conta.<br>Decidi in fretta. Equipaggia bene."
+  },
+  "hero.lead": {
+    "fr": "Sinetik construit les outils du quotidien de la performance : un capteur de vitesse d'exécution, une plateforme qui rassemble vos données, un accompagnement individuel et une chaussure qui respecte le pied. Pensés par quelqu'un qui a passé des années à en manquer.",
+    "en": "Sinetik builds the everyday tools of performance work: a bar-velocity sensor, a platform that brings your data together, individual coaching, and a boot that respects the foot. Built by someone who spent years without them.",
+    "de": "Sinetik baut die täglichen Werkzeuge der Leistungsarbeit: einen Sensor für die Hantelgeschwindigkeit, eine Plattform, die Ihre Daten zusammenführt, eine individuelle Betreuung und einen Schuh, der den Fuss respektiert. Entwickelt von jemandem, dem sie jahrelang gefehlt haben.",
+    "it": "Sinetik costruisce gli strumenti quotidiani della performance: un sensore di velocità d'esecuzione, una piattaforma che riunisce i tuoi dati, un accompagnamento individuale e una scarpa che rispetta il piede. Pensati da chi ne ha sentito la mancanza per anni."
+  },
+  "verb.tracker": { "fr": "Capter", "en": "Measure", "de": "Messen", "it": "Rilevare" },
+  "verb.studio": { "fr": "Analyser", "en": "Analyse", "de": "Analysieren", "it": "Analizzare" },
+  "verb.origin": { "fr": "Entraîner", "en": "Coach", "de": "Begleiten", "it": "Accompagnare" },
+  "verb.pure": { "fr": "Équiper", "en": "Equip", "de": "Ausrüsten", "it": "Equipaggiare" },
+  "eco.h2": {
+    "fr": "Deux métiers, une même exigence.",
+    "en": "Two audiences, one standard.",
+    "de": "Zwei Welten, derselbe Anspruch.",
+    "it": "Due mondi, una stessa esigenza."
+  },
+  "eco.lead": {
+    "fr": "Une partie de ce que nous construisons s'adresse à des structures. L'autre s'adresse directement à ceux qui s'entraînent. Ce ne sont pas les mêmes besoins, et nous ne faisons pas semblant du contraire.",
+    "en": "Part of what we build is for organisations. The rest is for the people who train. Those are not the same needs, and we do not pretend otherwise.",
+    "de": "Ein Teil dessen, was wir bauen, richtet sich an Organisationen. Der andere richtet sich direkt an die, die trainieren. Das sind nicht dieselben Bedürfnisse – und wir tun nicht so, als wären sie es.",
+    "it": "Una parte di ciò che costruiamo è destinata alle organizzazioni. L'altra si rivolge direttamente a chi si allena. Non sono gli stessi bisogni, e non facciamo finta del contrario."
+  },
+  "org.mono": { "fr": "Pour les organisations", "en": "For organisations", "de": "Für Organisationen", "it": "Per le organizzazioni" },
+  "org.h3": {
+    "fr": "Clubs, académies, fédérations, structures multi-sports et praticiens indépendants.",
+    "en": "Clubs, academies, federations, multi-sport organisations and independent practitioners.",
+    "de": "Vereine, Akademien, Verbände, Mehrsport-Organisationen und selbstständige Fachpersonen.",
+    "it": "Club, accademie, federazioni, organizzazioni multisport e professionisti indipendenti."
+  },
+  "org.p": {
+    "fr": "Mesurer sur le terrain d'entraînement, rassembler les données au même endroit, décider avec le staff.",
+    "en": "Measure where the training happens, bring the data into one place, decide with your staff.",
+    "de": "Dort messen, wo trainiert wird, die Daten an einem Ort zusammenführen, mit dem Staff entscheiden.",
+    "it": "Misurare dove ci si allena, riunire i dati in un unico posto, decidere con lo staff."
+  },
+  "train.mono": { "fr": "Pour ceux qui s'entraînent", "en": "For the people who train", "de": "Für alle, die trainieren", "it": "Per chi si allena" },
+  "train.h3": {
+    "fr": "Jeunes joueurs, amateurs exigeants, athlètes en reprise.",
+    "en": "Young players, committed amateurs, athletes coming back from injury.",
+    "de": "Junge Spieler, ambitionierte Amateure, Athleten im Comeback.",
+    "it": "Giovani giocatori, amatori esigenti, atleti in ripresa."
+  },
+  "train.p": {
+    "fr": "Comprendre son propre fonctionnement, s'entraîner dans sa semaine réelle, être équipé sans contraindre son pied.",
+    "en": "Understand how you work, train inside the week you actually have, and be equipped without constraining your foot.",
+    "de": "Verstehen, wie man funktioniert, in der realen Woche trainieren und ausgerüstet sein, ohne den Fuss einzuengen.",
+    "it": "Capire come si funziona, allenarsi nella settimana reale ed essere equipaggiati senza costringere il piede."
+  },
+  "status.dev": { "fr": "En développement", "en": "In development", "de": "In Entwicklung", "it": "In sviluppo" },
+  "branch.tracker.h3": {
+    "fr": "Entraîner à la vitesse, pas à la sensation.",
+    "en": "Train by velocity, not by feel.",
+    "de": "Nach Geschwindigkeit trainieren, nicht nach Gefühl.",
+    "it": "Allenarsi sulla velocità, non sulla sensazione."
+  },
+  "branch.tracker.p": {
+    "fr": "La vitesse d'exécution mesurée à chaque répétition, à côté du rack. Vous savez quand la série rapporte encore, et quand elle ne rapporte plus.",
+    "en": "Bar velocity measured on every repetition, right next to the rack. You know when the set is still paying off, and when it has stopped.",
+    "de": "Die Hantelgeschwindigkeit bei jeder Wiederholung gemessen, direkt am Rack. Sie wissen, wann der Satz noch etwas bringt – und wann nicht mehr.",
+    "it": "La velocità d'esecuzione misurata a ogni ripetizione, accanto al rack. Sai quando la serie rende ancora, e quando non rende più."
+  },
+  "branch.studio.h3": {
+    "fr": "Moins de temps sur vos fichiers. Plus de temps avec vos athlètes.",
+    "en": "Less time on your files. More time with your athletes.",
+    "de": "Weniger Zeit mit Dateien. Mehr Zeit mit Ihren Athleten.",
+    "it": "Meno tempo sui file. Più tempo con i tuoi atleti."
+  },
+  "branch.studio.p": {
+    "fr": "Planification, charge, wellness, tests, blessures et retour au jeu, réunis dans un environnement configuré pour votre organisation.",
+    "en": "Planning, load, wellness, testing, injuries and return to play, brought together in an environment configured for your organisation.",
+    "de": "Planung, Belastung, Wellness, Tests, Verletzungen und Return to Play – vereint in einer Umgebung, die für Ihre Organisation konfiguriert ist.",
+    "it": "Pianificazione, carico, wellness, test, infortuni e ritorno in campo, riuniti in un ambiente configurato per la tua organizzazione."
+  },
+  "branch.origin.h3": {
+    "fr": "Comprendre comment vous bougez, avant de vous entraîner.",
+    "en": "Understand how you move, before you train.",
+    "de": "Verstehen, wie Sie sich bewegen, bevor Sie trainieren.",
+    "it": "Capire come ti muovi, prima di allenarti."
+  },
+  "branch.origin.p": {
+    "fr": "Préparation physique individualisée, construite autour de votre semaine réelle — pas autour d'un modèle.",
+    "en": "Individual physical preparation, built around the week you actually have — not around a template.",
+    "de": "Individuelle Athletikvorbereitung, aufgebaut auf Ihrer realen Woche – nicht auf einer Vorlage.",
+    "it": "Preparazione fisica individuale, costruita attorno alla tua settimana reale — non attorno a un modello."
+  },
+  "branch.pure.h3": {
+    "fr": "Verrouille le talon. Libère les orteils.",
+    "en": "Locks the heel. Frees the toes.",
+    "de": "Verankert die Ferse. Befreit die Zehen.",
+    "it": "Blocca il tallone. Libera le dita."
+  },
+  "branch.pure.p": {
+    "fr": "Un avant-pied large, un talon tenu, une fabrication européenne. Premier modèle : Onda FG-01.",
+    "en": "A wide forefoot, a heel that holds, European manufacturing. First model: Onda FG-01.",
+    "de": "Ein breiter Vorfuss, eine stabile Ferse, Fertigung in Europa. Erstes Modell: Onda FG-01.",
+    "it": "Un avampiede largo, un tallone stabile, produzione europea. Primo modello: Onda FG-01."
+  },
+  "sec.tracker.h2": {
+    "fr": "La vitesse de la barre, répétition par répétition.",
+    "en": "Bar velocity, repetition by repetition.",
+    "de": "Die Hantelgeschwindigkeit, Wiederholung für Wiederholung.",
+    "it": "La velocità del bilanciere, ripetizione dopo ripetizione."
+  },
+  "sec.tracker.lead": {
+    "fr": "Un capteur au poignet, l'application sur l'iPhone. Tracker mesure la vitesse de chaque répétition, la situe dans la zone de travail visée, et signale le moment où la série n'apporte plus ce qu'on lui demandait. En salle, sans interrompre l'entraînement.",
+    "en": "A sensor on the wrist, the app on the iPhone. Tracker measures the velocity of every repetition, places it in the intended training zone, and flags the moment the set stops delivering what it was meant to. In the weight room, without interrupting the session.",
+    "de": "Ein Sensor am Handgelenk, die App auf dem iPhone. Tracker misst die Geschwindigkeit jeder Wiederholung, ordnet sie der angestrebten Arbeitszone zu und zeigt den Moment, in dem der Satz nicht mehr das bringt, wofür er gedacht war. Im Kraftraum, ohne das Training zu unterbrechen.",
+    "it": "Un sensore al polso, l'app sull'iPhone. Tracker misura la velocità di ogni ripetizione, la colloca nella zona di lavoro prevista e segnala il momento in cui la serie non dà più ciò che doveva. In palestra, senza interrompere l'allenamento."
+  },
+  "tag.tracker.1": { "fr": "Vitesse d'exécution", "en": "Bar velocity", "de": "Hantelgeschwindigkeit", "it": "Velocità d'esecuzione" },
+  "tag.tracker.2": { "fr": "Perte de vitesse", "en": "Velocity loss", "de": "Geschwindigkeitsverlust", "it": "Perdita di velocità" },
+  "tag.tracker.3": { "fr": "Zones de travail", "en": "Training zones", "de": "Arbeitszonen", "it": "Zone di lavoro" },
+  "cta.more": { "fr": "En savoir plus", "en": "Learn more", "de": "Mehr erfahren", "it": "Scopri di più" },
+  "mock.tracker.bar": { "fr": "Back Squat · 100 kg · Série 2", "en": "Back Squat · 100 kg · Set 2", "de": "Back Squat · 100 kg · Satz 2", "it": "Back Squat · 100 kg · Serie 2" },
+  "mock.tracker.mv": { "fr": "MV moy", "en": "Mean vel.", "de": "Ø Geschw.", "it": "Vel. media" },
+  "mock.tracker.pv": { "fr": "PV max", "en": "Peak vel.", "de": "Max. Geschw.", "it": "Vel. max" },
+  "mock.tracker.loss": { "fr": "Perte", "en": "Loss", "de": "Verlust", "it": "Perdita" },
+  "mock.tracker.chart": { "fr": "Vitesse par répétition — squat 80 %", "en": "Velocity per repetition — squat 80 %", "de": "Geschwindigkeit pro Wiederholung – Squat 80 %", "it": "Velocità per ripetizione — squat 80 %" },
+  "mock.tracker.zone": { "fr": "Zone — Force", "en": "Zone — Strength", "de": "Zone — Kraft", "it": "Zona — Forza" },
+  "sec.studio.h2": {
+    "fr": "Le tableau du lundi matin, à la place des onze fichiers.",
+    "en": "The Monday morning dashboard, instead of eleven files.",
+    "de": "Das Montagmorgen-Dashboard statt elf Dateien.",
+    "it": "Il cruscotto del lunedì mattina, al posto di undici file."
+  },
+  "sec.studio.lead": {
+    "fr": "Studio rassemble ce qui vit aujourd'hui dans vos fichiers et vos applications — GPS, tests, questionnaires, médical, programmation. Configuré pour votre organisation, pas un modèle générique auquel vous devez vous adapter.",
+    "en": "Studio brings together what lives today in your files and your apps — GPS, testing, questionnaires, medical, programming. Configured for your organisation, not a generic template you have to adapt to.",
+    "de": "Studio führt zusammen, was heute in Ihren Dateien und Apps lebt – GPS, Tests, Fragebögen, Medizin, Programmierung. Konfiguriert für Ihre Organisation, keine generische Vorlage, an die Sie sich anpassen müssen.",
+    "it": "Studio riunisce ciò che oggi vive nei tuoi file e nelle tue app — GPS, test, questionari, area medica, programmazione. Configurato per la tua organizzazione, non un modello generico a cui devi adattarti."
+  },
+  "tag.studio.1": { "fr": "Planification &amp; charge", "en": "Planning &amp; load", "de": "Planung &amp; Belastung", "it": "Pianificazione e carico" },
+  "tag.studio.2": { "fr": "Retour au jeu", "en": "Return to play", "de": "Return to Play", "it": "Ritorno in campo" },
+  "tag.studio.3": { "fr": "Rapports automatiques", "en": "Automatic reports", "de": "Automatische Berichte", "it": "Report automatici" },
+  "mock.studio.bar": { "fr": "Vue d'ensemble — semaine 34", "en": "Overview — week 34", "de": "Übersicht — Woche 34", "it": "Panoramica — settimana 34" },
+  "mock.studio.load": { "fr": "Charge", "en": "Load", "de": "Belastung", "it": "Carico" },
+  "mock.studio.planreal": { "fr": "Plan./Réal.", "en": "Plan./Actual", "de": "Plan/Ist", "it": "Piano/Reale" },
+  "mock.studio.avail": { "fr": "Dispo.", "en": "Avail.", "de": "Verfügb.", "it": "Disp." },
+  "mock.studio.alerts": { "fr": "Alertes", "en": "Alerts", "de": "Warnungen", "it": "Avvisi" },
+  "mock.studio.squad": { "fr": "Disponibilité du groupe", "en": "Squad availability", "de": "Verfügbarkeit der Gruppe", "it": "Disponibilità del gruppo" },
+  "sec.origin.h2": {
+    "fr": "Un accompagnement construit sur votre semaine, pas sur un modèle.",
+    "en": "Coaching built on your week, not on a template.",
+    "de": "Eine Betreuung, aufgebaut auf Ihrer Woche, nicht auf einer Vorlage.",
+    "it": "Un accompagnamento costruito sulla tua settimana, non su un modello."
+  },
+  "sec.origin.lead": {
+    "fr": "On commence par regarder comment vous bougez et comment votre semaine est réellement faite. Le plan vient après — et il s'ajuste quand la semaine change.",
+    "en": "We start by looking at how you move and how your week is actually built. The plan comes after — and it adjusts when the week changes.",
+    "de": "Wir beginnen damit, anzuschauen, wie Sie sich bewegen und wie Ihre Woche wirklich aussieht. Der Plan kommt danach – und er passt sich an, wenn sich die Woche ändert.",
+    "it": "Partiamo dall'osservare come ti muovi e com'è fatta davvero la tua settimana. Il piano viene dopo — e si adatta quando la settimana cambia."
+  },
+  "tag.origin.1": { "fr": "Personnalisation", "en": "Personalisation", "de": "Personalisierung", "it": "Personalizzazione" },
+  "tag.origin.2": { "fr": "Programmation", "en": "Programming", "de": "Programmierung", "it": "Programmazione" },
+  "tag.origin.3": { "fr": "Ajustement", "en": "Adjustment", "de": "Anpassung", "it": "Adattamento" },
+  "origin.tick.1": {
+    "fr": "On observe comment vous bougez avant de vous prescrire quoi que ce soit",
+    "en": "We watch how you move before prescribing anything",
+    "de": "Wir beobachten, wie Sie sich bewegen, bevor wir irgendetwas verordnen",
+    "it": "Osserviamo come ti muovi prima di prescriverti qualsiasi cosa"
+  },
+  "origin.tick.2": {
+    "fr": "Le plan tient dans votre semaine réelle, y compris quand elle déborde",
+    "en": "The plan fits the week you actually have, including the overloaded ones",
+    "de": "Der Plan passt in Ihre reale Woche, auch wenn sie überläuft",
+    "it": "Il piano sta nella tua settimana reale, anche quando è sovraccarica"
+  },
+  "origin.tick.3": {
+    "fr": "La force est construite, pas empilée",
+    "en": "Strength is built, not stacked",
+    "de": "Kraft wird aufgebaut, nicht gestapelt",
+    "it": "La forza si costruisce, non si accumula"
+  },
+  "origin.tick.4": {
+    "fr": "Vous savez toujours pourquoi vous faites ce que vous faites",
+    "en": "You always know why you are doing what you are doing",
+    "de": "Sie wissen immer, warum Sie tun, was Sie tun",
+    "it": "Sai sempre perché fai ciò che fai"
+  },
+  "sec.pure.h2": {
+    "fr": "Une chaussure dessinée autour du pied, pas autour d'une forme.",
+    "en": "A boot drawn around the foot, not around a last.",
+    "de": "Ein Schuh, gezeichnet um den Fuss herum, nicht um einen Leisten.",
+    "it": "Una scarpa disegnata attorno al piede, non attorno a una forma."
+  },
+  "sec.pure.lead": {
+    "fr": "Un avant-pied large qui laisse les orteils s'écarter, un talon vraiment tenu, une fabrication européenne. Premier modèle : Onda FG-01, terrain ferme.",
+    "en": "A wide forefoot that lets the toes spread, a heel that genuinely holds, European manufacturing. First model: Onda FG-01, firm ground.",
+    "de": "Ein breiter Vorfuss, der die Zehen spreizen lässt, eine Ferse, die wirklich hält, Fertigung in Europa. Erstes Modell: Onda FG-01, fester Boden.",
+    "it": "Un avampiede largo che lascia distendere le dita, un tallone che tiene davvero, produzione europea. Primo modello: Onda FG-01, terreno duro."
+  },
+  "tag.pure.1": { "fr": "Avant-pied large", "en": "Wide forefoot", "de": "Breiter Vorfuss", "it": "Avampiede largo" },
+  "tag.pure.2": { "fr": "Talon verrouillé", "en": "Locked heel", "de": "Verankerte Ferse", "it": "Tallone bloccato" },
+  "tag.pure.3": { "fr": "Fabrication européenne", "en": "European manufacturing", "de": "Fertigung in Europa", "it": "Produzione europea" },
+  "cta.band.mono": { "fr": "Bientôt disponible", "en": "Coming soon", "de": "Bald verfügbar", "it": "Presto disponibile" },
+  "cta.band.h2": { "fr": "Sinetik arrive.", "en": "Sinetik is on its way.", "de": "Sinetik kommt.", "it": "Sinetik sta arrivando." },
+  "cta.band.p": {
+    "fr": "Écrivez-nous pour suivre le lancement, poser une question, ou nous dire ce qui vous manque aujourd'hui. Chaque message est lu.",
+    "en": "Write to us to follow the launch, ask a question, or tell us what you are missing today. Every message is read.",
+    "de": "Schreiben Sie uns, um den Launch zu verfolgen, eine Frage zu stellen oder uns zu sagen, was Ihnen heute fehlt. Jede Nachricht wird gelesen.",
+    "it": "Scrivici per seguire il lancio, fare una domanda o dirci cosa ti manca oggi. Ogni messaggio viene letto."
+  },
+  "cta.band.btn": { "fr": "Nous écrire", "en": "Write to us", "de": "Schreiben Sie uns", "it": "Scrivici" }
+}

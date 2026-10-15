@@ -50,6 +50,35 @@ const PAGES = [
   { file:"pure.html",    key:"nav.pure"    }
 ];
 
+/* ── Multilingue : langues disponibles par page (miroir de generate.mjs) ──
+   Sert à construire des liens cohérents par langue (menu, logo, CTA).      */
+const PAGE_LANGS = {
+  index:["fr","en","de","it"], tracker:["fr","en"], studio:["fr","en"],
+  origin:["fr","en"], pure:["fr","en"], motion:["fr","en"], contact:["fr"]
+};
+const fileForLang = (page, lang) => (lang === "fr" ? `${page}.html` : `${page}-${lang}.html`);
+function urlForLang(page, lang){
+  const av = PAGE_LANGS[page];
+  if(!av) return `${page}.html`;
+  const l = [lang, "en", "fr"].find(x => av.includes(x)) || av[0];
+  return fileForLang(page, l);
+}
+const pageBase = file => (file.replace(/\.html$/, "").replace(/-(en|de|it)$/, "")) || "index";
+const currentLang = () => document.documentElement.getAttribute("data-page-lang") || SINETIK.defaultLang;
+/* Les langues proposées pour CETTE page : data-lang-urls (généré) sinon data-alt-lang (legacy 2 langues). */
+function pageLangUrls(){
+  const raw = document.documentElement.getAttribute("data-lang-urls");
+  if(raw){ try{ return JSON.parse(raw); }catch(e){} }
+  const cur = currentLang();
+  const out = { [cur]: location.pathname.split("/").pop() || "index.html" };
+  const alt = document.documentElement.getAttribute("data-alt-lang");
+  if(alt){
+    const al = /-en\.html$/.test(alt) ? "en" : /-de\.html$/.test(alt) ? "de" : /-it\.html$/.test(alt) ? "it" : "fr";
+    out[al] = alt;
+  }
+  return out;
+}
+
 const MARK = `<svg width="30" height="30" viewBox="0 0 100 100" fill="none" aria-hidden="true">
   <path d="M 18 78 Q 50 12 82 78" stroke="currentColor" stroke-width="9" stroke-linecap="round" fill="none"/>
   <circle cx="50" cy="22" r="7" fill="#0A6CFF"/>
@@ -63,22 +92,30 @@ const MOON = `<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke
 
 function buildHeader(){
   const here = location.pathname.split("/").pop() || "index.html";
-  const links = PAGES.map(p =>
-    `<a href="${p.file}" data-i18n="${p.key}" class="${p.file === here ? "is-active" : ""}"></a>`
+  const lang = currentLang();
+  const links = PAGES.map(p => {
+    const url = urlForLang(pageBase(p.file), lang);
+    return `<a href="${url}" data-i18n="${p.key}" class="${url === here ? "is-active" : ""}"></a>`;
+  }).join("");
+  const contactUrl = urlForLang("contact", lang);
+  const homeUrl = urlForLang("index", lang);
+  const langUrls = pageLangUrls();
+  const langButtons = Object.keys(langUrls).map(l =>
+    `<button data-lang="${l}" data-url="${langUrls[l]}"${l === lang ? ' aria-pressed="true"' : ""}>${l.toUpperCase()}</button>`
   ).join("");
   return `
   <nav class="nav">
     <div class="nav-in">
-      ${wordmark()}
+      <a class="wm" href="${homeUrl}" aria-label="Sinetik">${MARK}<span class="wm-txt">Sınetık<i>:</i></span></a>
       <div class="nav-links" data-open="false">
         ${links}
-        <a href="contact.html" data-i18n="nav.contact" class="${here === "contact.html" ? "is-active" : ""}"></a>
+        <a href="${contactUrl}" data-i18n="nav.contact" class="${contactUrl === here ? "is-active" : ""}"></a>
         <div class="lang" role="group" aria-label="Language">
-          <button data-lang="fr">FR</button><button data-lang="en">EN</button>
+          ${langButtons}
         </div>
       </div>
       <button class="icon-btn" id="theme-btn" aria-label="Thème"></button>
-      <a class="btn btn-primary btn-sm" href="contact.html" data-i18n="cta.keep"></a>
+      <a class="btn btn-primary btn-sm" href="${contactUrl}" data-i18n="cta.keep"></a>
       <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </nav>`;
@@ -182,6 +219,59 @@ function initialLang(){
     if(saved) return saved;
   }catch(e){}
   return (navigator.language || "fr").toLowerCase().startsWith("en") ? "en" : SINETIK.defaultLang;
+}
+
+/* ── Bandeau de détection automatique de langue ──
+   Propose (sans forcer) la langue du navigateur si la page existe dans
+   cette langue et qu'elle diffère de la langue actuelle. Choix mémorisé.  */
+function initLangBanner(){
+  let chosen = null;
+  try{ chosen = localStorage.getItem("sinetik-lang-choice"); }catch(e){}
+  if(chosen) return;                                   // l'utilisateur a déjà choisi
+
+  const urls = pageLangUrls();                          // langues dispo pour cette page
+  const cur  = currentLang();
+  const prefs = (navigator.languages && navigator.languages.length
+                 ? navigator.languages : [navigator.language || ""])
+                 .map(s => (s || "").slice(0, 2).toLowerCase());
+  const best = prefs.find(l => urls[l]);                // 1ère préférence dispo
+  if(!best || best === cur) return;                     // déjà la bonne langue
+
+  const T = {
+    fr:{ msg:"Ce site est aussi disponible en français.", go:"Passer au français", close:"Fermer" },
+    en:{ msg:"This site is also available in English.",    go:"Switch to English",  close:"Close" },
+    de:{ msg:"Diese Seite ist auch auf Deutsch verfügbar.", go:"Auf Deutsch wechseln", close:"Schliessen" },
+    it:{ msg:"Questo sito è disponibile anche in italiano.", go:"Passa all'italiano", close:"Chiudi" }
+  }[best] || null;
+  if(!T) return;
+
+  const remember = v => { try{ localStorage.setItem("sinetik-lang-choice", v); }catch(e){} };
+
+  const bar = document.createElement("div");
+  bar.className = "lang-prompt";
+  bar.setAttribute("role", "region");
+  bar.setAttribute("aria-label", T.msg);
+  bar.style.cssText = "position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;margin:0 auto;max-width:560px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:13px 16px;border-radius:14px;background:rgba(12,14,19,.94);color:#fff;box-shadow:0 12px 44px rgba(0,0,0,.4);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);font-size:.94rem;line-height:1.35";
+
+  const txt = document.createElement("span");
+  txt.textContent = T.msg;
+  txt.style.flex = "1 1 220px";
+
+  const go = document.createElement("a");
+  go.href = urls[best];
+  go.textContent = T.go;
+  go.style.cssText = "background:#0A6CFF;color:#fff;text-decoration:none;padding:8px 15px;border-radius:999px;font-weight:600;white-space:nowrap";
+  go.addEventListener("click", () => remember(best));
+
+  const close = document.createElement("button");
+  close.type = "button";
+  close.setAttribute("aria-label", T.close);
+  close.textContent = "✕";
+  close.style.cssText = "background:transparent;border:0;color:#fff;font-size:1.05rem;cursor:pointer;opacity:.7;padding:4px 6px;line-height:1";
+  close.addEventListener("click", () => { remember(cur); bar.remove(); });
+
+  bar.append(txt, go, close);
+  document.body.appendChild(bar);
 }
 
 /* Remplit chaque <span data-price="studioClub" data-unit="price.month"> */
@@ -414,17 +504,18 @@ document.addEventListener("DOMContentLoaded", () => {
     applyTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark")
   );
 
-  // Le bouton de langue NAVIGUE vers le fichier de l'autre langue
-  // (chaque page a sa version: index.html ⇄ index-en.html), au lieu de
-  // traduire sur place (le corps des pages est écrit en dur par langue).
+  // Le bouton de langue NAVIGUE vers le fichier de la langue choisie
+  // (chaque page a sa version par langue). On mémorise le choix pour
+  // ne plus proposer la détection automatique ensuite.
   document.querySelectorAll(".lang button").forEach(b =>
     b.addEventListener("click", () => {
-      const pageLang = document.documentElement.getAttribute("data-page-lang") || SINETIK.defaultLang;
-      if(b.dataset.lang === pageLang) return;               // déjà cette langue
-      const alt = document.documentElement.getAttribute("data-alt-lang");
-      if(alt) location.href = alt;                          // bascule de fichier
+      if(b.dataset.lang === currentLang()) return;          // déjà cette langue
+      try{ localStorage.setItem("sinetik-lang-choice", b.dataset.lang); }catch(e){}
+      if(b.dataset.url) location.href = b.dataset.url;       // bascule de fichier
     })
   );
+
+  initLangBanner();
 
   const burger = document.querySelector(".burger");
   const links  = document.querySelector(".nav-links");
