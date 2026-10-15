@@ -1,0 +1,570 @@
+{
+  "meta.title": {
+    "fr": "Sinetik:studio — logiciel de gestion de la performance sportive (AMS) pour clubs, fédérations et préparateurs",
+    "en": "Sinetik:studio — athlete management system (AMS) for clubs, federations and performance coaches",
+    "de": "Sinetik:studio — Software für das sportliche Leistungsmanagement (AMS) für Vereine, Verbände und Athletiktrainer",
+    "it": "Sinetik:studio — software di gestione della performance sportiva (AMS) per club, federazioni e preparatori"
+  },
+  "meta.desc": {
+    "fr": "Centralisez GPS, tests, wellness, blessures et programmation dans un outil configuré selon votre méthode. Planification, charge d'entraînement et retour au jeu réunis pour le staff de performance. Démo sur demande.",
+    "en": "Bring GPS, testing, wellness, injuries and programming together in a tool configured around your method. Planning, training load and return-to-play in one place for performance staff. Demo on request.",
+    "de": "Bündeln Sie GPS, Tests, Wellness, Verletzungen und Programmierung in einem Werkzeug, das nach Ihrer Methode konfiguriert ist. Planung, Trainingsbelastung und Return to Play vereint für den Leistungsstab. Demo auf Anfrage.",
+    "it": "Riunisci GPS, test, wellness, infortuni e programmazione in uno strumento configurato secondo il tuo metodo. Pianificazione, carico di allenamento e ritorno in campo in un unico posto per lo staff di performance. Demo su richiesta."
+  },
+  "meta.ogTitle": {
+    "fr": "Sinetik:studio — logiciel de gestion de la performance sportive (AMS)",
+    "en": "Sinetik:studio — athlete management system (AMS)",
+    "de": "Sinetik:studio — Software für das sportliche Leistungsmanagement (AMS)",
+    "it": "Sinetik:studio — software di gestione della performance sportiva (AMS)"
+  },
+  "meta.ogDesc": {
+    "fr": "Centralisez GPS, tests, wellness, blessures et programmation dans un outil configuré selon votre méthode. Démo sur demande.",
+    "en": "Bring GPS, testing, wellness, injuries and programming together in a tool configured around your method. Demo on request.",
+    "de": "Bündeln Sie GPS, Tests, Wellness, Verletzungen und Programmierung in einem Werkzeug, das nach Ihrer Methode konfiguriert ist. Demo auf Anfrage.",
+    "it": "Riunisci GPS, test, wellness, infortuni e programmazione in uno strumento configurato secondo il tuo metodo. Demo su richiesta."
+  },
+  "hero.mono": {
+    "fr": "Sinetik:studio · Athlete Management System",
+    "en": "Sinetik:studio · Athlete Management System",
+    "de": "Sinetik:studio · Athlete Management System",
+    "it": "Sinetik:studio · Athlete Management System"
+  },
+  "hero.h1": {
+    "fr": "Moins de temps sur vos fichiers.<br>Plus de temps avec vos athlètes.",
+    "en": "Less time on your files.<br>More time with your athletes.",
+    "de": "Weniger Zeit mit Ihren Dateien.<br>Mehr Zeit mit Ihren Athleten.",
+    "it": "Meno tempo sui tuoi file.<br>Più tempo con i tuoi atleti."
+  },
+  "hero.lead": {
+    "fr": "Studio rassemble ce qui vit aujourd'hui dans vos fichiers et vos applications — GPS, tests, questionnaires, médical, programmation. Configuré pour votre organisation — pas un modèle générique auquel vous devez vous adapter.",
+    "en": "Studio brings together what today lives across your files and your apps — GPS, testing, questionnaires, medical, programming. Configured for your organisation — not a generic template you have to bend to.",
+    "de": "Studio führt zusammen, was heute in Ihren Dateien und Apps lebt — GPS, Tests, Fragebögen, Medizin, Programmierung. Konfiguriert für Ihre Organisation — keine generische Vorlage, an die Sie sich anpassen müssen.",
+    "it": "Studio riunisce ciò che oggi vive nei tuoi file e nelle tue app — GPS, test, questionari, area medica, programmazione. Configurato per la tua organizzazione — non un modello generico a cui devi adattarti."
+  },
+  "cta.demo": {
+    "fr": "Demander une démo",
+    "en": "Request a demo",
+    "de": "Demo anfragen",
+    "it": "Richiedi una demo"
+  },
+  "hero.ctaPlans": {
+    "fr": "Formules",
+    "en": "Plans",
+    "de": "Pakete",
+    "it": "Piani"
+  },
+  "hero.note": {
+    "fr": "30 minutes. Avec vos propres fichiers si vous voulez.",
+    "en": "Thirty minutes. With your own files if you want.",
+    "de": "30 Minuten. Mit Ihren eigenen Dateien, wenn Sie möchten.",
+    "it": "Trenta minuti. Con i tuoi file, se vuoi."
+  },
+  "s1.h2": {
+    "fr": "Le tableau du lundi matin",
+    "en": "The Monday morning board",
+    "de": "Das Dashboard am Montagmorgen",
+    "it": "Il cruscotto del lunedì mattina"
+  },
+  "s1.lead": {
+    "fr": "Une seule vue : la charge de la semaine passée, la disponibilité de chaque joueur, les alertes qui méritent un regard. En trente secondes, le staff sait sur qui appuyer et qui protéger.",
+    "en": "One view: last week's load, each player's availability, the alerts worth a look. In thirty seconds, staff know who to push and who to protect.",
+    "de": "Eine einzige Ansicht: die Belastung der letzten Woche, die Verfügbarkeit jedes Spielers, die Warnungen, die einen Blick wert sind. In dreissig Sekunden weiss der Staff, wen man fordern und wen man schützen muss.",
+    "it": "Un'unica vista: il carico della settimana scorsa, la disponibilità di ogni giocatore, gli avvisi che meritano uno sguardo. In trenta secondi, lo staff sa su chi spingere e chi proteggere."
+  },
+  "mock.bar": {
+    "fr": "Vue d'ensemble — semaine 34",
+    "en": "Overview — week 34",
+    "de": "Übersicht — Woche 34",
+    "it": "Panoramica — settimana 34"
+  },
+  "mock.load": { "fr": "Charge", "en": "Load", "de": "Belastung", "it": "Carico" },
+  "mock.planreal": { "fr": "Plan./Réal.", "en": "Plan./Actual", "de": "Plan/Ist", "it": "Piano/Reale" },
+  "mock.avail": { "fr": "Dispo.", "en": "Avail.", "de": "Verfügb.", "it": "Disp." },
+  "mock.alerts": { "fr": "Alertes", "en": "Alerts", "de": "Warnungen", "it": "Avvisi" },
+  "mock.chart": {
+    "fr": "Charge hebdomadaire — U18",
+    "en": "Weekly load — U18",
+    "de": "Wöchentliche Belastung — U18",
+    "it": "Carico settimanale — U18"
+  },
+  "mock.squad": {
+    "fr": "Disponibilité du groupe",
+    "en": "Group availability",
+    "de": "Verfügbarkeit der Gruppe",
+    "it": "Disponibilità del gruppo"
+  },
+  "mod.h2": {
+    "fr": "Six domaines. Vous activez ceux dont vous avez besoin.",
+    "en": "Six areas. You switch on the ones you need.",
+    "de": "Sechs Bereiche. Sie aktivieren die, die Sie brauchen.",
+    "it": "Sei aree. Attivi quelle di cui hai bisogno."
+  },
+  "mod.lead": {
+    "fr": "Un club de formation ne travaille pas comme une fédération, et l'outil ne devrait pas les traiter pareil.",
+    "en": "A youth club does not work like a federation, and the tool should not treat them the same.",
+    "de": "Ein Ausbildungsverein arbeitet nicht wie ein Verband, und das Werkzeug sollte beide nicht gleich behandeln.",
+    "it": "Un club di formazione non lavora come una federazione, e lo strumento non dovrebbe trattarli allo stesso modo."
+  },
+  "mod.1.h3": {
+    "fr": "Planification &amp; périodisation",
+    "en": "Planning &amp; periodisation",
+    "de": "Planung &amp; Periodisierung",
+    "it": "Pianificazione e periodizzazione"
+  },
+  "mod.1.p": {
+    "fr": "Le calendrier de la saison, du macrocycle à la séance. Charge planifiée d'un côté, charge réalisée de l'autre — l'écart se lit d'un coup d'œil.",
+    "en": "The season calendar, from macrocycle to session. Planned load on one side, actual load on the other — the gap reads at a glance.",
+    "de": "Der Saisonkalender, vom Makrozyklus bis zur Trainingseinheit. Geplante Belastung auf der einen Seite, tatsächliche auf der anderen — die Differenz ist auf einen Blick ablesbar.",
+    "it": "Il calendario della stagione, dal macrociclo alla seduta. Carico pianificato da un lato, carico reale dall'altro — lo scarto si legge a colpo d'occhio."
+  },
+  "mod.1.li1": {
+    "fr": "Macro, méso et microcycles sur une même ligne de temps",
+    "en": "Macro, meso and microcycles on a single timeline",
+    "de": "Makro-, Meso- und Mikrozyklen auf einer einzigen Zeitachse",
+    "it": "Macro, meso e microcicli su un'unica linea temporale"
+  },
+  "mod.1.li2": {
+    "fr": "Modèles de semaine réutilisables par catégorie",
+    "en": "Reusable week templates per age group",
+    "de": "Wiederverwendbare Wochenvorlagen pro Kategorie",
+    "it": "Modelli di settimana riutilizzabili per categoria"
+  },
+  "mod.1.li3": {
+    "fr": "Comparaison planifié / réalisé automatique",
+    "en": "Automatic planned vs. actual comparison",
+    "de": "Automatischer Vergleich von Plan und Ist",
+    "it": "Confronto automatico tra pianificato e reale"
+  },
+  "mod.2.h3": {
+    "fr": "Charge &amp; données GPS",
+    "en": "Load &amp; GPS data",
+    "de": "Belastung &amp; GPS-Daten",
+    "it": "Carico e dati GPS"
+  },
+  "mod.2.p": {
+    "fr": "Import de vos exports GPS et de la charge interne, agrégation par joueur, par groupe et par période. Compatible avec ce que vous utilisez déjà.",
+    "en": "Import your GPS exports and internal load, aggregated by player, group and period. Compatible with what you already use.",
+    "de": "Import Ihrer GPS-Exporte und der internen Belastung, Aggregation nach Spieler, Gruppe und Zeitraum. Kompatibel mit dem, was Sie bereits nutzen.",
+    "it": "Importazione dei tuoi export GPS e del carico interno, aggregazione per giocatore, gruppo e periodo. Compatibile con ciò che usi già."
+  },
+  "mod.2.li1": {
+    "fr": "Import CSV des principaux systèmes GPS du marché",
+    "en": "CSV import from the main GPS systems",
+    "de": "CSV-Import der wichtigsten GPS-Systeme am Markt",
+    "it": "Importazione CSV dei principali sistemi GPS sul mercato"
+  },
+  "mod.2.li2": {
+    "fr": "Charge interne : RPE, durée, charge hebdomadaire",
+    "en": "Internal load: RPE, duration, weekly load",
+    "de": "Interne Belastung: RPE, Dauer, Wochenbelastung",
+    "it": "Carico interno: RPE, durata, carico settimanale"
+  },
+  "mod.2.li3": {
+    "fr": "Comparaison charge aiguë / chronique sur les fenêtres que vous définissez",
+    "en": "Acute:chronic load comparison over the windows you define",
+    "de": "Vergleich von akuter und chronischer Belastung über die von Ihnen definierten Zeitfenster",
+    "it": "Confronto tra carico acuto e cronico sulle finestre che definisci"
+  },
+  "mod.3.h3": {
+    "fr": "Wellness &amp; disponibilité",
+    "en": "Wellness &amp; availability",
+    "de": "Wellness &amp; Verfügbarkeit",
+    "it": "Wellness e disponibilità"
+  },
+  "mod.3.p": {
+    "fr": "Questionnaire quotidien côté joueur, tableau de disponibilité côté staff. Ce que vous voulez demander, et rien de plus.",
+    "en": "A daily questionnaire for players, an availability board for staff. What you want to ask, and nothing more.",
+    "de": "Täglicher Fragebogen auf Spielerseite, Verfügbarkeitstabelle auf Staffseite. Was Sie fragen möchten, und nicht mehr.",
+    "it": "Questionario quotidiano lato giocatore, tabella di disponibilità lato staff. Ciò che vuoi chiedere, e nulla di più."
+  },
+  "mod.3.li1": {
+    "fr": "Questionnaire personnalisable, saisie en moins d'une minute",
+    "en": "Customisable questionnaire, filled in under a minute",
+    "de": "Anpassbarer Fragebogen, in weniger als einer Minute ausgefüllt",
+    "it": "Questionario personalizzabile, compilato in meno di un minuto"
+  },
+  "mod.3.li2": {
+    "fr": "Alertes sur écart individuel, pas sur moyenne de groupe",
+    "en": "Alerts on individual deviation, not group average",
+    "de": "Warnungen bei individueller Abweichung, nicht beim Gruppendurchschnitt",
+    "it": "Avvisi sullo scostamento individuale, non sulla media del gruppo"
+  },
+  "mod.3.li3": {
+    "fr": "Historique consultable joueur par joueur",
+    "en": "Player-by-player history",
+    "de": "Verlauf einsehbar Spieler für Spieler",
+    "it": "Storico consultabile giocatore per giocatore"
+  },
+  "mod.4.h3": {
+    "fr": "Tests &amp; profils athlètes",
+    "en": "Testing &amp; athlete profiles",
+    "de": "Tests &amp; Athletenprofile",
+    "it": "Test e profili atleti"
+  },
+  "mod.4.p": {
+    "fr": "Batteries de tests physiques, historique par joueur, comparaison à la catégorie d'âge et suivi de la progression.",
+    "en": "Physical test batteries, per-player history, age-group comparison and progression tracking.",
+    "de": "Batterien physischer Tests, Verlauf pro Spieler, Vergleich mit der Alterskategorie und Fortschrittsverfolgung.",
+    "it": "Batterie di test fisici, storico per giocatore, confronto con la categoria d'età e monitoraggio della progressione."
+  },
+  "mod.4.li1": {
+    "fr": "Vos protocoles de test, pas les nôtres",
+    "en": "Your test protocols, not ours",
+    "de": "Ihre Testprotokolle, nicht unsere",
+    "it": "I tuoi protocolli di test, non i nostri"
+  },
+  "mod.4.li2": {
+    "fr": "Saisie terrain sur mobile, hors ligne si besoin",
+    "en": "Field entry on mobile, offline if needed",
+    "de": "Erfassung vor Ort auf dem Mobilgerät, offline bei Bedarf",
+    "it": "Inserimento sul campo da mobile, offline se necessario"
+  },
+  "mod.4.li3": {
+    "fr": "Repères de croissance et de maturation",
+    "en": "Growth and maturation markers",
+    "de": "Wachstums- und Reifungsmarker",
+    "it": "Riferimenti di crescita e maturazione"
+  },
+  "mod.5.h3": {
+    "fr": "Blessures &amp; retour au jeu",
+    "en": "Injuries &amp; return-to-play",
+    "de": "Verletzungen &amp; Return to Play",
+    "it": "Infortuni e ritorno in campo"
+  },
+  "mod.5.p": {
+    "fr": "Déclaration, localisation sur schéma corporel, étapes du retour au jeu et critères de passage. Une trace claire, partageable avec le médical.",
+    "en": "Reporting, body-map localisation, return-to-play stages and progression criteria. A clear record, shareable with medical staff.",
+    "de": "Meldung, Lokalisierung auf dem Körperschema, Return-to-Play-Stufen und Übergangskriterien. Eine klare Dokumentation, teilbar mit dem medizinischen Staff.",
+    "it": "Segnalazione, localizzazione sullo schema corporeo, fasi del ritorno in campo e criteri di passaggio. Una traccia chiara, condivisibile con lo staff medico."
+  },
+  "mod.5.li1": {
+    "fr": "Schéma corporel interactif, convention miroir",
+    "en": "Interactive body map, mirrored convention",
+    "de": "Interaktives Körperschema, Spiegelkonvention",
+    "it": "Schema corporeo interattivo, convenzione a specchio"
+  },
+  "mod.5.li2": {
+    "fr": "Étapes de retour au jeu avec critères objectifs",
+    "en": "Return-to-play stages with objective criteria",
+    "de": "Return-to-Play-Stufen mit objektiven Kriterien",
+    "it": "Fasi del ritorno in campo con criteri oggettivi"
+  },
+  "mod.5.li3": {
+    "fr": "Journal partagé staff médical / performance",
+    "en": "Shared medical / performance log",
+    "de": "Gemeinsames Journal für medizinischen und Leistungsstab",
+    "it": "Diario condiviso tra staff medico e performance"
+  },
+  "mod.6.h3": {
+    "fr": "Rapports &amp; partage",
+    "en": "Reports &amp; sharing",
+    "de": "Berichte &amp; Teilen",
+    "it": "Report e condivisione"
+  },
+  "mod.6.p": {
+    "fr": "Le rapport hebdomadaire pour l'entraîneur principal, le point mensuel pour la direction. Générés, pas recopiés.",
+    "en": "The weekly report for the head coach, the monthly review for management. Generated, not retyped.",
+    "de": "Der Wochenbericht für den Cheftrainer, die monatliche Übersicht für die Direktion. Generiert, nicht abgetippt.",
+    "it": "Il report settimanale per l'allenatore principale, il punto mensile per la direzione. Generati, non ricopiati."
+  },
+  "mod.6.li1": {
+    "fr": "Rapports automatiques par équipe et par période",
+    "en": "Automatic reports per team and period",
+    "de": "Automatische Berichte pro Team und Zeitraum",
+    "it": "Report automatici per squadra e periodo"
+  },
+  "mod.6.li2": {
+    "fr": "Export PDF et Excel en un clic",
+    "en": "One-click PDF and Excel export",
+    "de": "PDF- und Excel-Export mit einem Klick",
+    "it": "Esportazione PDF ed Excel con un clic"
+  },
+  "mod.6.li3": {
+    "fr": "Droits d'accès par rôle : coach, médical, direction",
+    "en": "Role-based access: coach, medical, management",
+    "de": "Zugriffsrechte nach Rolle: Coach, Medizin, Direktion",
+    "it": "Diritti di accesso per ruolo: coach, area medica, direzione"
+  },
+  "setup.h2": {
+    "fr": "Comment ça se met en place",
+    "en": "How it gets set up",
+    "de": "Wie die Einrichtung abläuft",
+    "it": "Come si mette in opera"
+  },
+  "setup.step1": {
+    "fr": "<strong>On écoute</strong> Un échange pour comprendre votre organisation, vos catégories, vos habitudes de travail.",
+    "en": "<strong>We listen</strong> A conversation to understand your organisation, your age groups, your working habits.",
+    "de": "<strong>Wir hören zu</strong> Ein Gespräch, um Ihre Organisation, Ihre Kategorien und Ihre Arbeitsgewohnheiten zu verstehen.",
+    "it": "<strong>Ascoltiamo</strong> Un confronto per capire la tua organizzazione, le tue categorie, le tue abitudini di lavoro."
+  },
+  "setup.step2": {
+    "fr": "<strong>On configure</strong> Studio est paramétré pour votre organisation : vos équipes, vos tests, vos indicateurs, votre vocabulaire.",
+    "en": "<strong>We configure</strong> Studio is set up for your organisation: your teams, your tests, your metrics, your vocabulary.",
+    "de": "<strong>Wir konfigurieren</strong> Studio wird für Ihre Organisation eingerichtet: Ihre Teams, Ihre Tests, Ihre Kennzahlen, Ihr Vokabular.",
+    "it": "<strong>Configuriamo</strong> Studio viene impostato per la tua organizzazione: le tue squadre, i tuoi test, i tuoi indicatori, il tuo vocabolario."
+  },
+  "setup.step3": {
+    "fr": "<strong>On reprend l'existant</strong> Vos historiques Excel et vos exports GPS sont importés — vous ne repartez pas de zéro.",
+    "en": "<strong>We import what exists</strong> Your spreadsheet history and GPS exports are brought in — you do not start from scratch.",
+    "de": "<strong>Wir übernehmen den Bestand</strong> Ihre Excel-Historien und GPS-Exporte werden importiert — Sie beginnen nicht bei null.",
+    "it": "<strong>Recuperiamo l'esistente</strong> I tuoi storici Excel e i tuoi export GPS vengono importati — non riparti da zero."
+  },
+  "setup.step4": {
+    "fr": "<strong>On accompagne</strong> Prise en main avec le staff, puis un point régulier la première saison.",
+    "en": "<strong>We support you</strong> Onboarding with the staff, then regular check-ins through the first season.",
+    "de": "<strong>Wir begleiten</strong> Einarbeitung mit dem Staff, danach regelmässige Austauschtermine in der ersten Saison.",
+    "it": "<strong>Accompagniamo</strong> Presa in mano con lo staff, poi un punto regolare durante la prima stagione."
+  },
+  "setup.note": {
+    "fr": "Une organisation avec trois sources de données est opérationnelle en une à deux semaines. De votre côté : votre effectif et un export par source. Du nôtre : la configuration, la reprise de vos historiques et la prise en main avec le staff.",
+    "en": "An organisation with three data sources is up and running in one to two weeks. On your side: your squad list and one export per source. On ours: configuration, migration of your history, and onboarding with the staff.",
+    "de": "Eine Organisation mit drei Datenquellen ist in ein bis zwei Wochen einsatzbereit. Auf Ihrer Seite: Ihr Kader und ein Export pro Quelle. Auf unserer: die Konfiguration, die Übernahme Ihrer Historien und die Einarbeitung mit dem Staff.",
+    "it": "Un'organizzazione con tre fonti di dati è operativa in una o due settimane. Da parte tua: la rosa e un export per fonte. Da parte nostra: la configurazione, il recupero dei tuoi storici e la presa in mano con lo staff."
+  },
+  "nope.h2": {
+    "fr": "Ce que Studio ne fait pas",
+    "en": "What Studio does not do",
+    "de": "Was Studio nicht tut",
+    "it": "Ciò che Studio non fa"
+  },
+  "nope.lead": {
+    "fr": "Tout le monde vous dira ce que son outil sait faire. Voici ce que le nôtre ne fait pas — pour que vous n'ayez pas de mauvaise surprise en janvier.",
+    "en": "Everyone will tell you what their tool can do. Here is what ours does not — so there are no surprises come January.",
+    "de": "Alle sagen Ihnen, was ihr Werkzeug kann. Hier ist, was unseres nicht tut — damit Sie im Januar keine böse Überraschung erleben.",
+    "it": "Tutti ti diranno cosa sa fare il loro strumento. Ecco cosa il nostro non fa — così non avrai brutte sorprese a gennaio."
+  },
+  "nope.step1": {
+    "fr": "<strong>Il ne prédit pas les blessures</strong> Personne ne sait le faire de façon fiable. Studio vous montre ce qui change, ce qui sort de vos bornes, ce qui se répète. La décision reste la vôtre.",
+    "en": "<strong>It does not predict injuries</strong> Nobody can do that reliably. Studio shows you what is changing, what falls outside your own thresholds, what keeps recurring. The decision stays yours.",
+    "de": "<strong>Es sagt keine Verletzungen voraus</strong> Niemand kann das zuverlässig. Studio zeigt Ihnen, was sich ändert, was ausserhalb Ihrer eigenen Grenzen liegt, was sich wiederholt. Die Entscheidung bleibt Ihre.",
+    "it": "<strong>Non predice gli infortuni</strong> Nessuno sa farlo in modo affidabile. Studio ti mostra ciò che cambia, ciò che esce dai tuoi limiti, ciò che si ripete. La decisione resta tua."
+  },
+  "nope.step2": {
+    "fr": "<strong>Il ne remplace pas votre œil</strong> La donnée dit qu'un joueur a couru quatre cents mètres de moins que d'habitude. Elle ne dit pas qu'il a mal dormi. Vous, oui.",
+    "en": "<strong>It does not replace your eye</strong> The data says a player ran four hundred metres less than usual. It does not say he slept badly. You do.",
+    "de": "<strong>Es ersetzt Ihr Auge nicht</strong> Die Daten sagen, dass ein Spieler vierhundert Meter weniger gelaufen ist als üblich. Sie sagen nicht, dass er schlecht geschlafen hat. Sie wissen es.",
+    "it": "<strong>Non sostituisce il tuo occhio</strong> Il dato dice che un giocatore ha corso quattrocento metri in meno del solito. Non dice che ha dormito male. Tu sì."
+  },
+  "nope.step3": {
+    "fr": "<strong>Il ne mesure rien lui-même</strong> Studio agrège ce que vos capteurs produisent. Vous gardez votre GPS, vos plateformes de force et vos outils actuels.",
+    "en": "<strong>It does not measure anything itself</strong> Studio aggregates what your sensors produce. You keep your GPS, your force platforms and your current tools.",
+    "de": "<strong>Es misst selbst nichts</strong> Studio aggregiert, was Ihre Sensoren liefern. Sie behalten Ihr GPS, Ihre Kraftmessplatten und Ihre aktuellen Werkzeuge.",
+    "it": "<strong>Non misura nulla da solo</strong> Studio aggrega ciò che producono i tuoi sensori. Mantieni il tuo GPS, le tue pedane di forza e i tuoi strumenti attuali."
+  },
+  "nope.step4": {
+    "fr": "<strong>Il ne fournit pas de programmes tout faits</strong> Il vous donne les outils pour construire les vôtres. Votre méthode est votre valeur ; ce n'est pas à un logiciel de vous la vendre.",
+    "en": "<strong>It does not hand you ready-made programmes</strong> It gives you the tools to build your own. Your method is your value; it is not a software vendor's job to sell it to you.",
+    "de": "<strong>Es liefert keine fertigen Programme</strong> Es gibt Ihnen die Werkzeuge, um Ihre eigenen zu bauen. Ihre Methode ist Ihr Wert; es ist nicht Aufgabe einer Software, sie Ihnen zu verkaufen.",
+    "it": "<strong>Non fornisce programmi preconfezionati</strong> Ti dà gli strumenti per costruire i tuoi. Il tuo metodo è il tuo valore; non spetta a un software vendertelo."
+  },
+  "plans.h2": {
+    "fr": "Formules",
+    "en": "Plans",
+    "de": "Pakete",
+    "it": "Piani"
+  },
+  "plans.lead": {
+    "fr": "Le tarif dépend du nombre d'athlètes suivis et des modules retenus. Tarifs de lancement, confirmés ensemble avant tout engagement.",
+    "en": "Pricing depends on the number of athletes and the modules you keep. Launch pricing, confirmed together before any commitment.",
+    "de": "Der Preis hängt von der Zahl der betreuten Athleten und den gewählten Modulen ab. Einführungspreise, gemeinsam bestätigt vor jeder Verpflichtung.",
+    "it": "Il prezzo dipende dal numero di atleti seguiti e dai moduli scelti. Prezzi di lancio, confermati insieme prima di qualsiasi impegno."
+  },
+  "plan.starter.name": {
+    "fr": "Starter",
+    "en": "Starter",
+    "de": "Starter",
+    "it": "Starter"
+  },
+  "plan.starter.desc": {
+    "fr": "Coach indépendant, petite structure",
+    "en": "Independent coach, small structure",
+    "de": "Selbstständiger Coach, kleine Struktur",
+    "it": "Coach indipendente, piccola struttura"
+  },
+  "plan.starter.li1": {
+    "fr": "Jusqu'à 30 athlètes",
+    "en": "Up to 30 athletes",
+    "de": "Bis zu 30 Athleten",
+    "it": "Fino a 30 atleti"
+  },
+  "plan.starter.li2": {
+    "fr": "Planification, wellness, tests",
+    "en": "Planning, wellness, testing",
+    "de": "Planung, Wellness, Tests",
+    "it": "Pianificazione, wellness, test"
+  },
+  "plan.starter.li3": {
+    "fr": "Import CSV, rapports PDF",
+    "en": "CSV import, PDF reports",
+    "de": "CSV-Import, PDF-Berichte",
+    "it": "Importazione CSV, report PDF"
+  },
+  "plan.starter.li4": {
+    "fr": "Support par e-mail",
+    "en": "Email support",
+    "de": "Support per E-Mail",
+    "it": "Supporto via e-mail"
+  },
+  "plan.club.tag": {
+    "fr": "Le plus demandé",
+    "en": "Most chosen",
+    "de": "Am häufigsten gewählt",
+    "it": "Il più richiesto"
+  },
+  "plan.club.name": {
+    "fr": "Club",
+    "en": "Club",
+    "de": "Club",
+    "it": "Club"
+  },
+  "plan.club.desc": {
+    "fr": "Académie, club formateur",
+    "en": "Academy, development club",
+    "de": "Akademie, Ausbildungsverein",
+    "it": "Accademia, club di formazione"
+  },
+  "plan.club.li1": {
+    "fr": "Jusqu'à 200 athlètes, équipes illimitées",
+    "en": "Up to 200 athletes, unlimited teams",
+    "de": "Bis zu 200 Athleten, unbegrenzte Teams",
+    "it": "Fino a 200 atleti, squadre illimitate"
+  },
+  "plan.club.li2": {
+    "fr": "Tous les modules, dont blessures et retour au jeu",
+    "en": "All modules, including injuries and return-to-play",
+    "de": "Alle Module, einschliesslich Verletzungen und Return to Play",
+    "it": "Tutti i moduli, inclusi infortuni e ritorno in campo"
+  },
+  "plan.club.li3": {
+    "fr": "Connexion Sinetik:tracker incluse <span style=\"color:var(--ink-3)\">— automne 2026</span>",
+    "en": "Sinetik:tracker connection included <span style=\"color:var(--ink-3)\">— autumn 2026</span>",
+    "de": "Sinetik:tracker-Anbindung inbegriffen <span style=\"color:var(--ink-3)\">— Herbst 2026</span>",
+    "it": "Connessione Sinetik:tracker inclusa <span style=\"color:var(--ink-3)\">— autunno 2026</span>"
+  },
+  "plan.club.li4": {
+    "fr": "Configuration et reprise des données incluses",
+    "en": "Setup and data migration included",
+    "de": "Konfiguration und Datenübernahme inbegriffen",
+    "it": "Configurazione e migrazione dei dati incluse"
+  },
+  "plan.elite.name": {
+    "fr": "Elite / Fédération",
+    "en": "Elite / Federation",
+    "de": "Elite / Verband",
+    "it": "Elite / Federazione"
+  },
+  "plan.elite.desc": {
+    "fr": "Centre professionnel, fédération",
+    "en": "Professional centre, federation",
+    "de": "Profizentrum, Verband",
+    "it": "Centro professionistico, federazione"
+  },
+  "plan.elite.li1": {
+    "fr": "Athlètes et structures illimités",
+    "en": "Unlimited athletes and structures",
+    "de": "Unbegrenzte Athleten und Strukturen",
+    "it": "Atleti e strutture illimitati"
+  },
+  "plan.elite.li2": {
+    "fr": "Modules premium et indicateurs sur mesure",
+    "en": "Premium modules and custom metrics",
+    "de": "Premium-Module und massgeschneiderte Kennzahlen",
+    "it": "Moduli premium e indicatori su misura"
+  },
+  "plan.elite.li3": {
+    "fr": "API et connexion à vos outils existants",
+    "en": "API and connection to your existing tools",
+    "de": "API und Anbindung an Ihre bestehenden Werkzeuge",
+    "it": "API e connessione ai tuoi strumenti esistenti"
+  },
+  "plan.elite.li4": {
+    "fr": "Accompagnement dédié toute la saison",
+    "en": "Dedicated support all season",
+    "de": "Dedizierte Begleitung die ganze Saison",
+    "it": "Accompagnamento dedicato per tutta la stagione"
+  },
+  "plan.elite.cta": {
+    "fr": "Nous écrire",
+    "en": "Get in touch",
+    "de": "Kontakt aufnehmen",
+    "it": "Scrivici"
+  },
+  "plans.compare": {
+    "fr": "Les plateformes de gestion de la performance sont facturées entre 15 000 et 50 000 CHF par an. Nous ne sommes pas construits sur le même modèle : pas de commerciaux, pas d'investisseurs, un produit né du besoin de quelqu'un qui fait le travail.",
+    "en": "Athlete management platforms are typically billed between CHF 15,000 and CHF 50,000 a year. We are not built on the same model: no sales team, no investors, a product born of the need of someone doing the work.",
+    "de": "Plattformen für das Leistungsmanagement werden zwischen 15 000 und 50 000 CHF pro Jahr berechnet. Wir sind nicht nach demselben Modell gebaut: keine Vertriebler, keine Investoren, ein Produkt, das aus dem Bedürfnis von jemandem entstanden ist, der die Arbeit macht.",
+    "it": "Le piattaforme di gestione della performance vengono fatturate tra 15 000 e 50 000 CHF all'anno. Non siamo costruiti sullo stesso modello: niente commerciali, niente investitori, un prodotto nato dal bisogno di chi fa il lavoro."
+  },
+  "plans.note": {
+    "fr": "Hébergement européen, données chiffrées, cloisonnement strict entre organisations. Conforme au RGPD et à la nLPD suisse. Vos données restent les vôtres et sont exportables à tout moment, sans frais de sortie ni format propriétaire.",
+    "en": "European hosting, encrypted data, strict separation between organisations. GDPR and Swiss nFADP compliant. Your data stays yours and can be exported at any time, with no exit fees and no proprietary format.",
+    "de": "Europäisches Hosting, verschlüsselte Daten, strikte Trennung zwischen Organisationen. Konform mit der DSGVO und dem Schweizer nDSG. Ihre Daten bleiben Ihre und sind jederzeit exportierbar, ohne Ausstiegsgebühren und ohne proprietäres Format.",
+    "it": "Hosting europeo, dati cifrati, separazione rigorosa tra organizzazioni. Conforme al GDPR e alla nLPD svizzera. I tuoi dati restano tuoi e sono esportabili in qualsiasi momento, senza costi di uscita né formato proprietario."
+  },
+  "faq.h2": {
+    "fr": "Ce qu'on nous demande le plus souvent",
+    "en": "What we get asked most",
+    "de": "Was man uns am häufigsten fragt",
+    "it": "Le domande che ci fanno più spesso"
+  },
+  "faq.q1": {
+    "fr": "Faut-il abandonner nos outils actuels ?",
+    "en": "Do we have to drop our current tools?",
+    "de": "Müssen wir unsere aktuellen Werkzeuge aufgeben?",
+    "it": "Dobbiamo abbandonare i nostri strumenti attuali?"
+  },
+  "faq.a1": {
+    "fr": "Non. Studio se place au-dessus de ce que vous utilisez déjà. Vous continuez avec votre GPS, vos plateformes de force, vos questionnaires. Nous récupérons leurs exports.",
+    "en": "No. Studio sits on top of what you already use. You carry on with your GPS, your force platforms, your questionnaires. We take in their exports.",
+    "de": "Nein. Studio setzt auf dem auf, was Sie bereits nutzen. Sie machen weiter mit Ihrem GPS, Ihren Kraftmessplatten, Ihren Fragebögen. Wir übernehmen deren Exporte.",
+    "it": "No. Studio si colloca al di sopra di ciò che usi già. Continui con il tuo GPS, le tue pedane di forza, i tuoi questionari. Noi recuperiamo i loro export."
+  },
+  "faq.q2": {
+    "fr": "Combien de temps pour démarrer ?",
+    "en": "How long does it take to get started?",
+    "de": "Wie lange dauert der Start?",
+    "it": "Quanto tempo serve per iniziare?"
+  },
+  "faq.a2": {
+    "fr": "La mise en route dépend du nombre de sources. En pratique : import des athlètes et des équipes le premier jour, puis un profil d'import par source. Une organisation avec trois sources est opérationnelle en une à deux semaines, accompagnement compris.",
+    "en": "It depends on the number of sources. In practice: athletes and teams imported on day one, then one import profile per source. An organisation with three sources is up and running in one to two weeks, onboarding included.",
+    "de": "Der Start hängt von der Zahl der Quellen ab. In der Praxis: Import der Athleten und Teams am ersten Tag, dann ein Importprofil pro Quelle. Eine Organisation mit drei Quellen ist in ein bis zwei Wochen einsatzbereit, Einarbeitung inbegriffen.",
+    "it": "L'avvio dipende dal numero di fonti. In pratica: importazione di atleti e squadre il primo giorno, poi un profilo d'importazione per fonte. Un'organizzazione con tre fonti è operativa in una o due settimane, accompagnamento incluso."
+  },
+  "faq.q3": {
+    "fr": "Est-ce que ça fonctionne pour un autre sport que le football ?",
+    "en": "Does it work for sports other than football?",
+    "de": "Funktioniert es für eine andere Sportart als Fussball?",
+    "it": "Funziona per uno sport diverso dal calcio?"
+  },
+  "faq.a3": {
+    "fr": "Oui. Rien dans la plateforme n'est propre au football : les métriques, les vocabulaires et les seuils sont définis par chaque organisation. Le football est simplement le sport où l'outil a été le plus éprouvé.",
+    "en": "Yes. Nothing in the platform is football-specific: metrics, vocabulary and thresholds are defined by each organisation. Football is simply the sport where the tool has been tested hardest.",
+    "de": "Ja. Nichts in der Plattform ist fussballspezifisch: die Kennzahlen, die Vokabulare und die Schwellenwerte werden von jeder Organisation definiert. Fussball ist einfach die Sportart, in der das Werkzeug am meisten erprobt wurde.",
+    "it": "Sì. Nulla nella piattaforma è specifico del calcio: le metriche, i vocabolari e le soglie sono definiti da ogni organizzazione. Il calcio è semplicemente lo sport in cui lo strumento è stato collaudato di più."
+  },
+  "faq.q4": {
+    "fr": "Qui voit quoi ?",
+    "en": "Who sees what?",
+    "de": "Wer sieht was?",
+    "it": "Chi vede cosa?"
+  },
+  "faq.a4": {
+    "fr": "Vous définissez les rôles et ce que chacun voit. Les données médicales peuvent être réservées au staff médical.",
+    "en": "You define the roles and what each one sees. Medical data can be restricted to medical staff.",
+    "de": "Sie definieren die Rollen und was jeder sieht. Medizinische Daten können dem medizinischen Staff vorbehalten bleiben.",
+    "it": "Definisci i ruoli e ciò che ciascuno vede. I dati medici possono essere riservati allo staff medico."
+  },
+  "faq.q5": {
+    "fr": "Et si nous voulons arrêter ?",
+    "en": "And if we want to stop?",
+    "de": "Und wenn wir aufhören möchten?",
+    "it": "E se volessimo smettere?"
+  },
+  "faq.a5": {
+    "fr": "Vous exportez tout et vous partez. Pas de frais de sortie, pas de format propriétaire.",
+    "en": "You export everything and you leave. No exit fees, no proprietary format.",
+    "de": "Sie exportieren alles und gehen. Keine Ausstiegsgebühren, kein proprietäres Format.",
+    "it": "Esporti tutto e te ne vai. Nessun costo di uscita, nessun formato proprietario."
+  }
+}

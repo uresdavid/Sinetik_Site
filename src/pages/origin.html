@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="{{lang}}" data-theme="dark" data-page-lang="{{lang}}" data-lang-urls='{{langUrls}}'><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>try{var t=localStorage.getItem('sinetik-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<title>{{t:meta.title}}</title>
+<meta name="description" content="{{t:meta.desc}}">
+{{headAlternates}}
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/sinetik.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<header class="hero hero-solo">
+  <div class="hero-canvas" id="hero3d" data-scene="motion"></div>
+  <div class="hero-scrim"></div>
+  <div class="hero-glow"></div>
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">{{t:hero.mono}}</span>
+    <h1 data-anim="rise" data-delay="1">{{t:hero.h1}}</h1>
+    <p class="lead" data-anim="rise" data-delay="2">{{t:hero.lead}}</p>
+    <div class="btn-row" data-anim="rise" data-delay="3">
+      <a class="btn btn-primary" href="{{url:contact}}">{{t:cta.write}}</a>
+      <a class="btn btn-ghost" href="#formules">{{t:hero.ctaFormats}}</a>
+    </div>
+    <p class="note" style="margin-top:28px;max-width:58ch" data-anim="rise" data-delay="3">{{t:hero.note}}</p>
+  </div>
+</header>
+
+<!-- 01 · Le parti pris -->
+<section>
+  <div class="wrap">
+    <div class="split">
+      <div data-anim="rise" data-delay="0">
+        <span class="mono on">01</span>
+        <h2>{{t:s01.h2}}</h2>
+        <p class="lead">{{t:s01.lead}}</p>
+        <p>{{t:s01.p1}}</p>
+        <p>{{t:s01.p2}}</p>
+        <p>{{t:s01.p3}}</p>
+      </div>
+
+      <div data-anim="rise" data-delay="1">
+        <div class="card">
+          <span class="mono on">{{t:s01.card.mono}}</span>
+          <h3>{{t:s01.card.h3}}</h3>
+          <p>{{t:s01.card.p}}</p>
+          <ul class="ticks" style="margin-top:18px">
+            <li>{{t:s01.card.li1}}</li>
+            <li>{{t:s01.card.li2}}</li>
+          </ul>
+          <p class="note" style="margin-top:18px">{{t:s01.card.note}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 · Pour qui -->
+<section>
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">02</span>
+    <h2 data-anim="rise" data-delay="0">{{t:s02.h2}}</h2>
+    <p class="lead" style="margin-bottom:40px" data-anim="rise" data-delay="0">{{t:s02.lead}}</p>
+
+    <div class="grid g-4">
+      <div class="card" data-anim="rise" data-delay="0">
+        <span class="mono on">01</span>
+        <h3>{{t:s02.c1.h3}}</h3>
+        <p>{{t:s02.c1.p}}</p>
+      </div>
+      <div class="card" data-anim="rise" data-delay="1">
+        <span class="mono on">02</span>
+        <h3>{{t:s02.c2.h3}}</h3>
+        <p>{{t:s02.c2.p}}</p>
+      </div>
+      <div class="card" data-anim="rise" data-delay="2">
+        <span class="mono on">03</span>
+        <h3>{{t:s02.c3.h3}}</h3>
+        <p>{{t:s02.c3.p}}</p>
+      </div>
+      <div class="card" data-anim="rise" data-delay="3">
+        <span class="mono on">04</span>
+        <h3>{{t:s02.c4.h3}}</h3>
+        <p>{{t:s02.c4.p}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 · La méthode -->
+<section>
+  <div class="wrap">
+    <div class="split split-narrow">
+      <div data-anim="rise" data-delay="0">
+        <span class="mono on">03</span>
+        <h2>{{t:s03.h2}}</h2>
+        <p class="lead">{{t:s03.lead}}</p>
+      </div>
+      <ol class="steps" data-anim="rise" data-delay="1">
+        <li>{{t:s03.step1}}</li>
+        <li>{{t:s03.step2}}</li>
+        <li>{{t:s03.step3}}</li>
+        <li>{{t:s03.step4}}</li>
+      </ol>
+    </div>
+
+    <div class="card" style="margin-top:40px" data-anim="rise" data-delay="0">
+      <span class="mono on">{{t:s03.card.mono}}</span>
+      <h3>{{t:s03.card.h3}}</h3>
+      <p>{{t:s03.card.p}}</p>
+      <ul class="ticks" style="margin-top:18px">
+        <li>{{t:s03.card.li1}}</li>
+        <li>{{t:s03.card.li2}}</li>
+        <li>{{t:s03.card.li3}}</li>
+        <li>{{t:s03.card.li4}}</li>
+      </ul>
+      <p class="note" style="margin-top:18px">{{t:s03.card.note}}</p>
+    </div>
+  </div>
+</section>
+
+<!-- 04 · Les formules -->
+<section id="formules">
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">04</span>
+    <h2 data-anim="rise" data-delay="0">{{t:s04.h2}}</h2>
+    <p class="lead" style="margin-bottom:40px" data-anim="rise" data-delay="0">{{t:s04.lead}}</p>
+
+    <div class="plans">
+      <div class="plan" data-anim="rise" data-delay="0">
+        <h3>{{t:s04.p1.h3}}</h3>
+        <p style="color:var(--ink-3);font-size:.88rem;margin:0">{{t:s04.p1.sub}}</p>
+        <div class="price">CHF 150</div>
+        <ul class="ticks">
+          <li>{{t:s04.p1.li1}}</li>
+          <li>{{t:s04.p1.li2}}</li>
+          <li>{{t:s04.p1.li3}}</li>
+          <li>{{t:s04.p1.li4}}</li>
+          <li>{{t:s04.p1.li5}}</li>
+          <li>{{t:s04.p1.li6}}</li>
+        </ul>
+        <a class="btn btn-ghost" href="{{url:contact}}">{{t:cta.write}}</a>
+      </div>
+
+      <div class="plan featured" data-anim="rise" data-delay="1">
+        <span class="tag">{{t:s04.p2.tag}}</span>
+        <h3>{{t:s04.p2.h3}}</h3>
+        <p style="color:var(--ink-3);font-size:.88rem;margin:0">{{t:s04.p2.sub}}</p>
+        <div class="price">CHF 390 <span class="mono">{{t:s04.per.month}}</span></div>
+        <ul class="ticks">
+          <li>{{t:s04.p2.li1}}</li>
+          <li>{{t:s04.p2.li2}}</li>
+          <li>{{t:s04.p2.li3}}</li>
+          <li>{{t:s04.p2.li4}}</li>
+          <li>{{t:s04.p2.li5}}</li>
+        </ul>
+        <a class="btn btn-primary" href="{{url:contact}}">{{t:cta.write}}</a>
+      </div>
+
+      <div class="plan" data-anim="rise" data-delay="2">
+        <h3>{{t:s04.p3.h3}}</h3>
+        <p style="color:var(--ink-3);font-size:.88rem;margin:0">{{t:s04.p3.sub}}</p>
+        <div class="price">CHF 190 <span class="mono">{{t:s04.per.month}}</span></div>
+        <ul class="ticks">
+          <li>{{t:s04.p3.li1}}</li>
+          <li>{{t:s04.p3.li2}}</li>
+          <li>{{t:s04.p3.li3}}</li>
+          <li>{{t:s04.p3.li4}}</li>
+          <li>{{t:s04.p3.li5}}</li>
+        </ul>
+        <a class="btn btn-ghost" href="{{url:contact}}">{{t:cta.write}}</a>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:40px" data-anim="rise" data-delay="0">
+      <span class="mono on">{{t:s04.tools.mono}}</span>
+      <h3>{{t:s04.tools.h3}}</h3>
+      <p>{{t:s04.tools.p1}}</p>
+      <p style="margin-bottom:0">{{t:s04.tools.p2}}</p>
+    </div>
+
+    <p class="note" style="margin-top:28px" data-anim="rise" data-delay="0">{{t:s04.note}}</p>
+
+    <!-- Emplacement prévu : aperçu de deux pages de rapport de bilan anonymisées, à ajouter quand Sinetik:studio sera prêt. -->
+  </div>
+</section>
+
+<!-- 05 · Ce que nous nous imposons -->
+<section>
+  <div class="wrap">
+    <div class="split split-narrow">
+      <div data-anim="rise" data-delay="0">
+        <span class="mono on">05</span>
+        <h2>{{t:s05.h2}}</h2>
+        <p class="lead">{{t:s05.lead}}</p>
+      </div>
+      <ol class="steps" data-anim="rise" data-delay="1">
+        <li>{{t:s05.step1}}</li>
+        <li>{{t:s05.step2}}</li>
+        <li>{{t:s05.step3}}</li>
+      </ol>
+    </div>
+
+    <h3 style="margin-top:56px" data-anim="rise" data-delay="0">{{t:s05.evidence.h3}}</h3>
+    <p class="lead" style="margin-bottom:40px" data-anim="rise" data-delay="0">{{t:s05.evidence.lead}}</p>
+
+    <div class="grid g-3">
+      <div class="card" data-anim="rise" data-delay="0">
+        <span class="mono on">{{t:s05.c1.mono}}</span>
+        <h3>{{t:s05.c1.h3}}</h3>
+        <p>{{t:s05.c1.p}}</p>
+        <p class="note" style="margin-top:14px">{{t:s05.c1.note}}</p>
+      </div>
+      <div class="card" data-anim="rise" data-delay="1">
+        <span class="mono on">{{t:s05.c2.mono}}</span>
+        <h3>{{t:s05.c2.h3}}</h3>
+        <p>{{t:s05.c2.p}}</p>
+        <p class="note" style="margin-top:14px">{{t:s05.c2.note}}</p>
+      </div>
+      <div class="card" data-anim="rise" data-delay="2">
+        <span class="mono on">{{t:s05.c3.mono}}</span>
+        <h3>{{t:s05.c3.h3}}</h3>
+        <p>{{t:s05.c3.p}}</p>
+        <p class="note" style="margin-top:14px">{{t:s05.c3.note}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 · Questions -->
+<section>
+  <div class="wrap">
+    <div class="split split-narrow">
+      <div data-anim="rise" data-delay="0">
+        <span class="mono on">06</span>
+        <h2>{{t:s06.h2}}</h2>
+      </div>
+      <ol class="steps" data-anim="rise" data-delay="1">
+        <li>{{t:s06.q1}}</li>
+        <li>{{t:s06.q2}}</li>
+        <li>{{t:s06.q3}}</li>
+        <li>{{t:s06.q4}}</li>
+        <li>{{t:s06.q5}}</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 07 · Contact -->
+<section>
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">07</span>
+    <h2 data-anim="rise" data-delay="0">{{t:s07.h2}}</h2>
+    <p class="lead" data-anim="rise" data-delay="0">{{t:s07.lead}}</p>
+    <div class="btn-row" data-anim="rise" data-delay="1">
+      <a class="btn btn-primary" href="{{url:contact}}">{{t:cta.write}}</a>
+      <a class="btn btn-ghost" href="{{url:studio}}">{{t:s07.ctaStudio}}</a>
+    </div>
+    <p class="note" style="margin-top:28px" data-anim="rise" data-delay="1">{{t:s07.note}}</p>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/site.js"></script>
+<script type="module" src="assets/js/hero3d.js"></script>
+
+
+</body></html>

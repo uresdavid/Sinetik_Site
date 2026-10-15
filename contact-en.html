@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" data-theme="dark" data-page-lang="en" data-lang-urls='{"fr":"contact.html","en":"contact-en.html","de":"contact-de.html","it":"contact-it.html"}'>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>try{var t=localStorage.getItem('sinetik-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<title data-i18n="contact.title">Contact — Sinetik</title>
+<meta name="description" content="" data-i18n-attr="content: contact.desc">
+<link rel="canonical" href="https://www.sinetik.ch/contact-en.html">
+<link rel="alternate" hreflang="fr" href="https://www.sinetik.ch/contact.html">
+<link rel="alternate" hreflang="en" href="https://www.sinetik.ch/contact-en.html">
+<link rel="alternate" hreflang="de" href="https://www.sinetik.ch/contact-de.html">
+<link rel="alternate" hreflang="it" href="https://www.sinetik.ch/contact-it.html">
+<link rel="alternate" hreflang="x-default" href="https://www.sinetik.ch/contact.html">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/sinetik.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<header class="hero hero-solo">
+  <div class="hero-canvas" id="hero3d" data-scene="contact"></div>
+  <div class="hero-scrim"></div>
+  <div class="hero-glow"></div>
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">Sinetik:</span>
+    <h1 data-i18n="contact.h1" data-anim="rise" data-delay="1"></h1>
+    <p class="lead" data-i18n="contact.lead" data-anim="rise" data-delay="2"></p>
+  </div>
+</header>
+
+<section style="padding-top:64px">
+  <div class="wrap">
+    <div class="split" style="align-items:start">
+      <form class="form" id="contact-form" novalidate data-anim="rise" data-delay="0">
+        <div class="field">
+          <label for="name" data-i18n="contact.f.name"></label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div class="field">
+          <label for="email" data-i18n="contact.f.email"></label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div class="field">
+          <label for="org" data-i18n="contact.f.org"></label>
+          <input id="org" name="org" type="text">
+        </div>
+        <div class="field">
+          <label for="subject" data-i18n="contact.f.subject"></label>
+          <select id="subject" name="subject">
+            <option data-i18n="contact.f.s1"></option>
+            <option data-i18n="contact.f.s2"></option>
+            <option data-i18n="contact.f.s3"></option>
+            <option data-i18n="contact.f.s4"></option>
+            <option data-i18n="contact.f.s5"></option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message" data-i18n="contact.f.msg"></label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="btn-row" style="margin-top:4px">
+          <button class="btn btn-primary" type="submit" data-i18n="contact.f.send"></button>
+        </div>
+        <p style="font-size:.82rem;color:var(--ink-3)" data-i18n="contact.f.hint"></p>
+      </form>
+
+      <div class="card" data-anim="rise" data-delay="1">
+        <h3 data-i18n="contact.direct.h3"></h3>
+        <p><a data-email href="#" style="color:var(--accent-2);font-weight:600;text-decoration:none"></a></p>
+        <hr class="sep" style="margin:26px 0">
+        <h3 data-i18n="contact.where.h3"></h3>
+        <p data-i18n="contact.where.p"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/site.js"></script>
+<script type="module" src="assets/js/hero3d.js"></script>
+</body>
+</html>

@@ -1,0 +1,908 @@
+{
+  "meta.title": {
+    "fr": "Sinetik:tracker — entraînement à la vitesse (VBT) et profil force-vitesse",
+    "en": "Sinetik:tracker — velocity based training and load-velocity profiling",
+    "de": "Sinetik:tracker — geschwindigkeitsbasiertes Training (VBT) und Last-Geschwindigkeits-Profil",
+    "it": "Sinetik:tracker — allenamento basato sulla velocità (VBT) e profilo carico-velocità"
+  },
+  "meta.desc": {
+    "fr": "Capteur inertiel et application iPhone pour l'entraînement à la vitesse en salle : vitesse de chaque répétition, zones de travail, perte de vitesse, profil charge-vitesse, 1RM estimé et readiness du jour.",
+    "en": "Inertial sensor and iPhone app for velocity based training in the gym: velocity of every repetition, work zones, velocity loss, load-velocity profile, estimated 1RM and daily readiness.",
+    "de": "Inertialsensor und iPhone-App für geschwindigkeitsbasiertes Training im Kraftraum: Geschwindigkeit jeder Wiederholung, Arbeitszonen, Geschwindigkeitsverlust, Last-Geschwindigkeits-Profil, geschätztes 1RM und tägliche Readiness.",
+    "it": "Sensore inerziale e app per iPhone per l'allenamento basato sulla velocità in palestra: velocità di ogni ripetizione, zone di lavoro, perdita di velocità, profilo carico-velocità, 1RM stimato e readiness del giorno."
+  },
+  "hero.mono": {
+    "fr": "Sinetik:tracker · Capteur inertiel &amp; application",
+    "en": "Sinetik:tracker · Inertial sensor &amp; app",
+    "de": "Sinetik:tracker · Inertialsensor &amp; App",
+    "it": "Sinetik:tracker · Sensore inerziale &amp; app"
+  },
+  "hero.h1": {
+    "fr": "Entraîner à la vitesse, pas à la sensation",
+    "en": "Train to velocity, not to feel",
+    "de": "Nach Geschwindigkeit trainieren, nicht nach Gefühl",
+    "it": "Allenarsi sulla velocità, non sulla sensazione"
+  },
+  "hero.lead": {
+    "fr": "Un capteur au poignet, l'application sur l'iPhone. Tracker mesure la vitesse de chaque répétition, la situe dans la zone de travail visée, et signale le moment où la série n'apporte plus ce qu'on lui demandait. En salle, sans interrompre l'entraînement.",
+    "en": "A sensor on the wrist, the app on the iPhone. Tracker measures the velocity of every repetition, places it in the work zone you are aiming for, and flags the moment a set stops delivering what you asked of it. In the gym, without interrupting the session.",
+    "de": "Ein Sensor am Handgelenk, die App auf dem iPhone. Tracker misst die Geschwindigkeit jeder Wiederholung, ordnet sie der angestrebten Arbeitszone zu und zeigt den Moment, in dem ein Satz nicht mehr bringt, was Sie von ihm verlangt haben. Im Kraftraum, ohne das Training zu unterbrechen.",
+    "it": "Un sensore al polso, l'app sull'iPhone. Tracker misura la velocità di ogni ripetizione, la colloca nella zona di lavoro prevista e segnala il momento in cui una serie smette di dare ciò che le chiedevi. In palestra, senza interrompere l'allenamento."
+  },
+  "cta.pilot": {
+    "fr": "Devenir club pilote",
+    "en": "Become a pilot club",
+    "de": "Pilotklub werden",
+    "it": "Diventare club pilota"
+  },
+  "s1.h2": {
+    "fr": "Ce que Tracker mesure",
+    "en": "What Tracker measures",
+    "de": "Was Tracker misst",
+    "it": "Cosa misura Tracker"
+  },
+  "s1.p1": {
+    "fr": "À chaque répétition : vitesse moyenne, vitesse pic, amplitude, et le rapport entre les deux vitesses. À chaque série : la perte de vitesse, et l'écart à la zone visée. La charge est saisie une fois, avant la série — tout le reste est calculé pendant l'effort.",
+    "en": "For every repetition: mean velocity, peak velocity, range of motion, and the ratio between the two velocities. For every set: velocity loss, and the gap to the target zone. The load is entered once, before the set — everything else is computed as you lift.",
+    "de": "Bei jeder Wiederholung: mittlere Geschwindigkeit, Spitzengeschwindigkeit, Bewegungsamplitude und das Verhältnis zwischen beiden Geschwindigkeiten. Bei jedem Satz: der Geschwindigkeitsverlust und der Abstand zur Zielzone. Die Last wird einmal eingegeben, vor dem Satz — alles Übrige wird während der Ausführung berechnet.",
+    "it": "A ogni ripetizione: velocità media, velocità di picco, ampiezza e il rapporto tra le due velocità. A ogni serie: la perdita di velocità e lo scarto rispetto alla zona prevista. Il carico si inserisce una volta, prima della serie — tutto il resto viene calcolato durante lo sforzo."
+  },
+  "s1.p2": {
+    "fr": "La perte de vitesse est le signal central. C'est elle qui dit, sans avis ni ressenti, quand une série a produit ce qu'elle devait produire — et quand elle commence à coûter plus qu'elle ne rapporte.",
+    "en": "Velocity loss is the signal that matters. It tells you, without opinion or guesswork, when a set has produced what it was meant to produce — and when it starts costing more than it returns.",
+    "de": "Der Geschwindigkeitsverlust ist das zentrale Signal. Er sagt Ihnen, ohne Meinung und ohne Gefühl, wann ein Satz das gebracht hat, was er bringen sollte — und wann er mehr kostet, als er einbringt.",
+    "it": "La perdita di velocità è il segnale centrale. È lei a dire, senza opinioni né sensazioni, quando una serie ha prodotto ciò che doveva — e quando inizia a costare più di quanto renda."
+  },
+  "card.squat.set2": {
+    "fr": "Back Squat · 100 kg · Série 2",
+    "en": "Back Squat · 100 kg · Set 2",
+    "de": "Back Squat · 100 kg · Satz 2",
+    "it": "Back Squat · 100 kg · Serie 2"
+  },
+  "card.example": {
+    "fr": "Exemple",
+    "en": "Example",
+    "de": "Beispiel",
+    "it": "Esempio"
+  },
+  "svg.title": {
+    "fr": "Vitesse moyenne par répétition, avec zone de travail cible",
+    "en": "Mean velocity per repetition, with target work zone",
+    "de": "Mittlere Geschwindigkeit pro Wiederholung, mit Ziel-Arbeitszone",
+    "it": "Velocità media per ripetizione, con zona di lavoro obiettivo"
+  },
+  "svg.zone.strength": {
+    "fr": "ZONE FORCE",
+    "en": "STRENGTH ZONE",
+    "de": "KRAFTZONE",
+    "it": "ZONA FORZA"
+  },
+  "foot.mvmoy": {
+    "fr": "MV moy",
+    "en": "Mean V",
+    "de": "Ø Geschw.",
+    "it": "Vel. media"
+  },
+  "foot.pvmax": {
+    "fr": "PV max",
+    "en": "Peak V",
+    "de": "Max. Geschw.",
+    "it": "Vel. max"
+  },
+  "foot.loss": {
+    "fr": "Perte",
+    "en": "Loss",
+    "de": "Verlust",
+    "it": "Perdita"
+  },
+  "card.illustration": {
+    "fr": "Illustration — les valeurs affichées sont fictives.",
+    "en": "Illustration — the values shown are fictitious.",
+    "de": "Illustration — die angezeigten Werte sind fiktiv.",
+    "it": "Illustrazione — i valori mostrati sono fittizi."
+  },
+  "s1.note": {
+    "fr": "Comment c'est obtenu, sans détour : le capteur mesure l'accélération et la vitesse angulaire à 52 Hz. La vitesse et l'amplitude en sont dérivées par intégration du signal. La force et la puissance sont calculées à partir de la charge que vous saisissez. Tracker ne mesure pas la force directement, et ne le prétend pas.",
+    "en": "How it works, plainly: the sensor measures acceleration and angular velocity at 52 Hz. Velocity and range of motion are derived from that signal by integration. Force and power are computed from the load you enter. Tracker does not measure force directly, and does not claim to.",
+    "de": "Wie es zustande kommt, ohne Umwege: Der Sensor misst Beschleunigung und Winkelgeschwindigkeit mit 52 Hz. Geschwindigkeit und Amplitude werden daraus durch Integration des Signals abgeleitet. Kraft und Leistung werden aus der Last berechnet, die Sie eingeben. Tracker misst die Kraft nicht direkt und behauptet das auch nicht.",
+    "it": "Come si ottiene, senza giri di parole: il sensore misura l'accelerazione e la velocità angolare a 52 Hz. Velocità e ampiezza ne derivano per integrazione del segnale. Forza e potenza sono calcolate a partire dal carico che inserisci. Tracker non misura la forza direttamente, e non pretende di farlo."
+  },
+  "s2.h2": {
+    "fr": "Les modes de travail",
+    "en": "Ways to work",
+    "de": "Die Arbeitsweisen",
+    "it": "Le modalità di lavoro"
+  },
+  "s2.lead": {
+    "fr": "Le même capteur, plusieurs usages. Vous vous servez de ce qui sert votre plan — le reste ne vous encombre pas.",
+    "en": "One sensor, several uses. You use what serves your plan — the rest stays out of your way.",
+    "de": "Derselbe Sensor, mehrere Einsätze. Sie nutzen, was Ihrem Plan dient — der Rest steht Ihnen nicht im Weg.",
+    "it": "Lo stesso sensore, più usi. Usi ciò che serve al tuo piano — il resto non ti intralcia."
+  },
+  "s2.c1.h3": {
+    "fr": "Séance à la vitesse",
+    "en": "Velocity based session",
+    "de": "Geschwindigkeitsbasierte Einheit",
+    "it": "Sessione basata sulla velocità"
+  },
+  "s2.c1.p": {
+    "fr": "Vous entrez la charge et la zone visée, vous lancez. L'application suit la série et vous rend la main à la fin.",
+    "en": "Enter the load and the target zone, then start. The app follows the set and hands control back at the end.",
+    "de": "Sie geben die Last und die Zielzone ein und starten. Die App begleitet den Satz und gibt Ihnen am Ende die Kontrolle zurück.",
+    "it": "Inserisci il carico e la zona prevista, poi avvii. L'app segue la serie e ti restituisce il controllo alla fine."
+  },
+  "s2.c1.li1": {
+    "fr": "20 exercices : squat, hinge, poussée, tirage, haltérophilie",
+    "en": "20 exercises: squat, hinge, push, pull, olympic",
+    "de": "20 Übungen: Squat, Hinge, Druck, Zug, Gewichtheben",
+    "it": "20 esercizi: squat, hinge, spinta, trazione, sollevamento olimpico"
+  },
+  "s2.c1.li2": {
+    "fr": "7 zones de travail, de la vitesse à la force maximale",
+    "en": "7 work zones, from velocity to maximal strength",
+    "de": "7 Arbeitszonen, von der Geschwindigkeit bis zur Maximalkraft",
+    "it": "7 zone di lavoro, dalla velocità alla forza massimale"
+  },
+  "s2.c1.li3": {
+    "fr": "Seuil de perte de vitesse propre à chaque zone",
+    "en": "A velocity-loss threshold specific to each zone",
+    "de": "Ein Geschwindigkeitsverlust-Schwellenwert für jede Zone",
+    "it": "Soglia di perdita di velocità specifica per ogni zona"
+  },
+  "s2.c1.li4": {
+    "fr": "Suggestion de charge chiffrée en fin de série",
+    "en": "A concrete load suggestion at the end of the set",
+    "de": "Konkreter Lastvorschlag am Ende des Satzes",
+    "it": "Suggerimento di carico concreto a fine serie"
+  },
+  "s2.c2.h3": {
+    "fr": "Profil charge-vitesse",
+    "en": "Load-velocity profile",
+    "de": "Last-Geschwindigkeits-Profil",
+    "it": "Profilo carico-velocità"
+  },
+  "s2.c2.p": {
+    "fr": "La relation entre la charge et la vitesse, établie sur quelques paliers. Elle dit où se situe l'athlète entre force et vitesse.",
+    "en": "The relationship between load and velocity, built from a few increments. It shows where an athlete sits between force and velocity.",
+    "de": "Die Beziehung zwischen Last und Geschwindigkeit, aufgebaut aus einigen Stufen. Sie zeigt, wo der Athlet zwischen Kraft und Geschwindigkeit steht.",
+    "it": "La relazione tra carico e velocità, costruita su alcuni livelli. Indica dove si colloca l'atleta tra forza e velocità."
+  },
+  "s2.c2.li1": {
+    "fr": "F0, V0, Pmax, pente et qualité d'ajustement",
+    "en": "F0, V0, Pmax, slope and goodness of fit",
+    "de": "F0, V0, Pmax, Steigung und Anpassungsgüte",
+    "it": "F0, V0, Pmax, pendenza e bontà di adattamento"
+  },
+  "s2.c2.li2": {
+    "fr": "Profil dominant : force, vitesse ou équilibré",
+    "en": "Dominant profile: force, velocity or balanced",
+    "de": "Dominantes Profil: Kraft, Geschwindigkeit oder ausgeglichen",
+    "it": "Profilo dominante: forza, velocità o equilibrato"
+  },
+  "s2.c2.li3": {
+    "fr": "Charge de puissance optimale, en kg et en % du 1RM",
+    "en": "Optimal power load, in kg and as a share of 1RM",
+    "de": "Optimale Leistungslast, in kg und als Anteil des 1RM",
+    "it": "Carico di potenza ottimale, in kg e in % del 1RM"
+  },
+  "s2.c2.li4": {
+    "fr": "Test avec le capteur, ou saisie manuelle",
+    "en": "Live test with the sensor, or manual entry",
+    "de": "Test mit dem Sensor oder manuelle Eingabe",
+    "it": "Test con il sensore, o inserimento manuale"
+  },
+  "s2.c3.h3": {
+    "fr": "1RM estimé",
+    "en": "Estimated 1RM",
+    "de": "Geschätztes 1RM",
+    "it": "1RM stimato"
+  },
+  "s2.c3.p": {
+    "fr": "La force maximale se déduit de la relation charge-vitesse. Deux paliers suffisent, et l'estimation s'affine à chaque palier ajouté.",
+    "en": "Maximal strength is inferred from the load-velocity relationship. Two increments are enough, and the estimate sharpens with each one added.",
+    "de": "Die Maximalkraft wird aus der Last-Geschwindigkeits-Beziehung abgeleitet. Zwei Stufen genügen, und die Schätzung wird mit jeder weiteren Stufe genauer.",
+    "it": "La forza massimale si deduce dalla relazione carico-velocità. Bastano due livelli, e la stima si affina a ogni livello aggiunto."
+  },
+  "s2.c3.li1": {
+    "fr": "Estimation dès deux charges mesurées",
+    "en": "An estimate from two measured loads onwards",
+    "de": "Schätzung ab zwei gemessenen Lasten",
+    "it": "Stima già da due carichi misurati"
+  },
+  "s2.c3.li2": {
+    "fr": "Proposition de charge automatique entre paliers",
+    "en": "Automatic load suggestion between increments",
+    "de": "Automatischer Lastvorschlag zwischen den Stufen",
+    "it": "Proposta di carico automatica tra i livelli"
+  },
+  "s2.c3.li3": {
+    "fr": "Repos guidé, paliers modifiables",
+    "en": "Guided rest, editable increments",
+    "de": "Geführte Pause, anpassbare Stufen",
+    "it": "Recupero guidato, livelli modificabili"
+  },
+  "s2.c3.li4": {
+    "fr": "Pas de tentative maximale à réaliser",
+    "en": "No maximal attempt required",
+    "de": "Kein maximaler Versuch nötig",
+    "it": "Nessun tentativo massimale da eseguire"
+  },
+  "s2.c4.h3": {
+    "fr": "Readiness du jour",
+    "en": "Daily readiness",
+    "de": "Tägliche Readiness",
+    "it": "Readiness del giorno"
+  },
+  "s2.c4.p": {
+    "fr": "Une charge de référence, une répétition. L'écart de vitesse par rapport au profil donne l'état du jour.",
+    "en": "One reference load, one repetition. The velocity gap against the profile gives you the state of the day.",
+    "de": "Eine Referenzlast, eine Wiederholung. Der Geschwindigkeitsabstand zum Profil ergibt den Tageszustand.",
+    "it": "Un carico di riferimento, una ripetizione. Lo scarto di velocità rispetto al profilo dà lo stato del giorno."
+  },
+  "s2.c4.li1": {
+    "fr": "1RM du jour recalculé",
+    "en": "Recalculated 1RM for the day",
+    "de": "Neu berechnetes 1RM des Tages",
+    "it": "1RM del giorno ricalcolato"
+  },
+  "s2.c4.li2": {
+    "fr": "Zones de travail ajustées à la séance",
+    "en": "Work zones adjusted to the session",
+    "de": "An die Einheit angepasste Arbeitszonen",
+    "it": "Zone di lavoro adattate alla sessione"
+  },
+  "s2.c4.li3": {
+    "fr": "Quatre états, de surcompensé à fatigué",
+    "en": "Four states, from supercompensated to fatigued",
+    "de": "Vier Zustände, von superkompensiert bis ermüdet",
+    "it": "Quattro stati, da supercompensato ad affaticato"
+  },
+  "s2.c4.li4": {
+    "fr": "Moins d'une minute, avant l'échauffement",
+    "en": "Under a minute, before the warm-up",
+    "de": "Weniger als eine Minute, vor dem Aufwärmen",
+    "it": "Meno di un minuto, prima del riscaldamento"
+  },
+  "s2.c5.h3": {
+    "fr": "Tests de sauts",
+    "en": "Jump testing",
+    "de": "Sprungtests",
+    "it": "Test di salto"
+  },
+  "s2.c5.p": {
+    "fr": "Le complément explosif du travail en charge, avec l'historique qui va avec.",
+    "en": "The explosive counterpart to loaded work, with the history that goes with it.",
+    "de": "Die explosive Ergänzung zur Arbeit mit Last, samt zugehöriger Historie.",
+    "it": "Il complemento esplosivo del lavoro con carico, con lo storico che l'accompagna."
+  },
+  "s2.c5.li1": {
+    "fr": "CMJ, squat jump, versions unipodales",
+    "en": "CMJ, squat jump, single-leg variants",
+    "de": "CMJ, Squat Jump, einbeinige Varianten",
+    "it": "CMJ, squat jump, versioni monopodaliche"
+  },
+  "s2.c5.li2": {
+    "fr": "Hauteur, variabilité entre essais, indices de réactivité",
+    "en": "Height, between-trial variability, reactive indices",
+    "de": "Höhe, Variabilität zwischen Versuchen, Reaktivitätsindizes",
+    "it": "Altezza, variabilità tra i tentativi, indici di reattività"
+  },
+  "s2.c5.li3": {
+    "fr": "Asymétrie entre jambes (LSI)",
+    "en": "Between-limb asymmetry (LSI)",
+    "de": "Asymmetrie zwischen den Beinen (LSI)",
+    "it": "Asimmetria tra le gambe (LSI)"
+  },
+  "s2.c5.li4": {
+    "fr": "Rapport entre saut avec et sans contre-mouvement (EUR)",
+    "en": "Ratio between jumps with and without countermovement (EUR)",
+    "de": "Verhältnis zwischen Sprüngen mit und ohne Gegenbewegung (EUR)",
+    "it": "Rapporto tra salto con e senza contromovimento (EUR)"
+  },
+  "s2.c6.h3": {
+    "fr": "Historique athlète",
+    "en": "Athlete history",
+    "de": "Athleten-Historie",
+    "it": "Storico atleta"
+  },
+  "s2.c6.p": {
+    "fr": "Chaque séance se range d'elle-même. Vous relisez une progression, pas une pile de fichiers.",
+    "en": "Every session files itself. You read a progression, not a pile of spreadsheets.",
+    "de": "Jede Einheit ordnet sich von selbst ein. Sie lesen einen Verlauf, keinen Stapel Dateien.",
+    "it": "Ogni sessione si archivia da sola. Rileggi una progressione, non una pila di file."
+  },
+  "s2.c6.li1": {
+    "fr": "Progression sur les douze dernières séances",
+    "en": "Progression across the last twelve sessions",
+    "de": "Verlauf über die letzten zwölf Einheiten",
+    "it": "Progressione sulle ultime dodici sessioni"
+  },
+  "s2.c6.li2": {
+    "fr": "Un profil par exercice, conservé dans le temps",
+    "en": "One profile per exercise, kept over time",
+    "de": "Ein Profil pro Übung, über die Zeit erhalten",
+    "it": "Un profilo per esercizio, conservato nel tempo"
+  },
+  "s2.c6.li3": {
+    "fr": "Rapport PDF exportable",
+    "en": "Exportable PDF report",
+    "de": "Exportierbarer PDF-Bericht",
+    "it": "Report PDF esportabile"
+  },
+  "s2.c6.li4": {
+    "fr": "Export CSV du signal brut, pour vos propres analyses",
+    "en": "Raw sensor CSV export, for your own analysis",
+    "de": "CSV-Export des Rohsignals, für Ihre eigenen Analysen",
+    "it": "Esportazione CSV del segnale grezzo, per le tue analisi"
+  },
+  "s3.h2": {
+    "fr": "L'application, à côté du rack",
+    "en": "The app, next to the rack",
+    "de": "Die App, direkt am Rack",
+    "it": "L'app, accanto al rack"
+  },
+  "s3.lead": {
+    "fr": "Elle tient dans une main et se conduit du regard. Pendant la série, elle affiche la vitesse, la zone et la perte. À la fin, elle propose une charge. Entre deux séries, il n'y a rien à faire.",
+    "en": "It fits in one hand and is read at a glance. During the set it shows velocity, zone and loss. At the end it suggests a load. Between sets, there is nothing to do.",
+    "de": "Sie liegt in einer Hand und wird mit einem Blick bedient. Während des Satzes zeigt sie Geschwindigkeit, Zone und Verlust. Am Ende schlägt sie eine Last vor. Zwischen zwei Sätzen gibt es nichts zu tun.",
+    "it": "Sta in una mano e si gestisce con uno sguardo. Durante la serie mostra velocità, zona e perdita. Alla fine propone un carico. Tra due serie non c'è nulla da fare."
+  },
+  "s3.li1": {
+    "fr": "Connexion au capteur en une touche, décompte de cinq secondes",
+    "en": "One-tap sensor connection, five-second countdown",
+    "de": "Sensorverbindung mit einem Tipp, Countdown von fünf Sekunden",
+    "it": "Connessione al sensore con un tocco, conto alla rovescia di cinque secondi"
+  },
+  "s3.li2": {
+    "fr": "Retour vocal à chaque répétition — l'écran devient facultatif",
+    "en": "Voice feedback on every repetition — the screen becomes optional",
+    "de": "Sprachausgabe bei jeder Wiederholung — der Bildschirm wird optional",
+    "it": "Riscontro vocale a ogni ripetizione — lo schermo diventa facoltativo"
+  },
+  "s3.li3": {
+    "fr": "Alerte quand la perte de vitesse dépasse le seuil de la zone",
+    "en": "An alert when velocity loss passes the zone's threshold",
+    "de": "Warnung, wenn der Geschwindigkeitsverlust den Schwellenwert der Zone überschreitet",
+    "it": "Avviso quando la perdita di velocità supera la soglia della zona"
+  },
+  "s3.li4": {
+    "fr": "Répétition parasite supprimable d'un geste, sans fausser la série",
+    "en": "A stray repetition is removed with one tap, without skewing the set",
+    "de": "Eine Fehlwiederholung lässt sich mit einer Geste entfernen, ohne den Satz zu verfälschen",
+    "it": "Una ripetizione spuria si elimina con un gesto, senza falsare la serie"
+  },
+  "s3.li5": {
+    "fr": "Séance enregistrée sur l'appareil, exportable en PDF ou en CSV",
+    "en": "Session stored on the device, exportable as PDF or CSV",
+    "de": "Einheit auf dem Gerät gespeichert, exportierbar als PDF oder CSV",
+    "it": "Sessione salvata sul dispositivo, esportabile in PDF o CSV"
+  },
+  "phone.set2": {
+    "fr": "Série 2",
+    "en": "Set 2",
+    "de": "Satz 2",
+    "it": "Serie 2"
+  },
+  "phone.chart": {
+    "fr": "Vitesse par répétition",
+    "en": "Velocity per repetition",
+    "de": "Geschwindigkeit pro Wiederholung",
+    "it": "Velocità per ripetizione"
+  },
+  "phone.zone": {
+    "fr": "Zone — Force",
+    "en": "Zone — Strength",
+    "de": "Zone — Kraft",
+    "it": "Zona — Forza"
+  },
+  "getapp.p": {
+    "fr": "<strong>iPhone, iPad et Mac.</strong> L'application est actuellement distribuée en TestFlight aux structures pilotes. La publication sur l'App Store suivra la fin de cette phase.",
+    "en": "<strong>iPhone, iPad and Mac.</strong> The app is currently distributed through TestFlight to pilot organisations. App Store release will follow the end of that phase.",
+    "de": "<strong>iPhone, iPad und Mac.</strong> Die App wird derzeit über TestFlight an die Pilotstrukturen verteilt. Die Veröffentlichung im App Store folgt nach dem Ende dieser Phase.",
+    "it": "<strong>iPhone, iPad e Mac.</strong> L'app è attualmente distribuita via TestFlight alle strutture pilota. La pubblicazione sull'App Store seguirà la fine di questa fase."
+  },
+  "getapp.btn": {
+    "fr": "Demander un accès TestFlight",
+    "en": "Request TestFlight access",
+    "de": "TestFlight-Zugang anfragen",
+    "it": "Richiedere un accesso TestFlight"
+  },
+  "s4.h2": {
+    "fr": "Le capteur",
+    "en": "The sensor",
+    "de": "Der Sensor",
+    "it": "Il sensore"
+  },
+  "s4.lead": {
+    "fr": "Une centrale inertielle Movesense personnalisée, portée au poignet par une sangle. Pas de câble, pas de trépied, rien à fixer sur la barre.",
+    "en": "A custom Movesense inertial unit, worn on the wrist with a strap. No cable, no tripod, nothing to clamp onto the bar.",
+    "de": "Eine angepasste Movesense-Inertialeinheit, am Handgelenk mit einem Band getragen. Kein Kabel, kein Stativ, nichts, was an der Stange befestigt werden muss.",
+    "it": "Un'unità inerziale Movesense personalizzata, indossata al polso con una fascia. Nessun cavo, nessun treppiede, niente da fissare sul bilanciere."
+  },
+  "spec.type.k": {
+    "fr": "Type",
+    "en": "Type",
+    "de": "Typ",
+    "it": "Tipo"
+  },
+  "spec.type.v": {
+    "fr": "Centrale inertielle 6 axes",
+    "en": "6-axis inertial unit",
+    "de": "6-Achsen-Inertialeinheit",
+    "it": "Unità inerziale a 6 assi"
+  },
+  "spec.signal.k": {
+    "fr": "Signal",
+    "en": "Signal",
+    "de": "Signal",
+    "it": "Segnale"
+  },
+  "spec.signal.v": {
+    "fr": "Accéléromètre + gyroscope",
+    "en": "Accelerometer + gyroscope",
+    "de": "Beschleunigungssensor + Gyroskop",
+    "it": "Accelerometro + giroscopio"
+  },
+  "spec.freq.k": {
+    "fr": "Fréquence",
+    "en": "Sampling rate",
+    "de": "Abtastrate",
+    "it": "Frequenza"
+  },
+  "spec.link.k": {
+    "fr": "Liaison",
+    "en": "Link",
+    "de": "Verbindung",
+    "it": "Collegamento"
+  },
+  "spec.worn.k": {
+    "fr": "Port",
+    "en": "Worn",
+    "de": "Getragen",
+    "it": "Indossato"
+  },
+  "spec.worn.v": {
+    "fr": "Poignet, sangle",
+    "en": "Wrist, strap",
+    "de": "Handgelenk, Band",
+    "it": "Polso, fascia"
+  },
+  "spec.setup.k": {
+    "fr": "Mise en place",
+    "en": "Set-up time",
+    "de": "Einrichtzeit",
+    "it": "Tempo di preparazione"
+  },
+  "spec.setup.v": {
+    "fr": "≈ 10 secondes",
+    "en": "≈ 10 seconds",
+    "de": "≈ 10 Sekunden",
+    "it": "≈ 10 secondi"
+  },
+  "step1.b": {
+    "fr": "On clipse",
+    "en": "Clip it on",
+    "de": "Aufclipsen",
+    "it": "Si aggancia"
+  },
+  "step1.t": {
+    "fr": "Le capteur se pose sur la sangle, au poignet de l'athlète.",
+    "en": "The sensor sits on the strap, on the athlete's wrist.",
+    "de": "Der Sensor sitzt auf dem Band, am Handgelenk des Athleten.",
+    "it": "Il sensore si posiziona sulla fascia, al polso dell'atleta."
+  },
+  "step2.b": {
+    "fr": "On connecte",
+    "en": "Connect",
+    "de": "Verbinden",
+    "it": "Si connette"
+  },
+  "step2.t": {
+    "fr": "L'application le reconnaît et se lie en Bluetooth.",
+    "en": "The app recognises it and pairs over Bluetooth.",
+    "de": "Die App erkennt ihn und verbindet sich über Bluetooth.",
+    "it": "L'app lo riconosce e si collega via Bluetooth."
+  },
+  "step3.b": {
+    "fr": "On charge",
+    "en": "Load it",
+    "de": "Beladen",
+    "it": "Si carica"
+  },
+  "step3.t": {
+    "fr": "Une charge, une zone, et la série démarre.",
+    "en": "A load, a zone, and the set begins.",
+    "de": "Eine Last, eine Zone, und der Satz beginnt.",
+    "it": "Un carico, una zona, e la serie parte."
+  },
+  "fig1.alt": {
+    "fr": "Le capteur inertiel Sinetik, boîtier circulaire noir portant le logo de la marque",
+    "en": "The Sinetik inertial sensor, a circular black housing carrying the brand mark",
+    "de": "Der Inertialsensor Sinetik, ein rundes schwarzes Gehäuse mit dem Markenlogo",
+    "it": "Il sensore inerziale Sinetik, un alloggiamento circolare nero con il logo del marchio"
+  },
+  "fig1.cap": {
+    "fr": "Le capteur Sinetik, qui se clipse sur sa sangle de poignet.",
+    "en": "The Sinetik sensor, which clips onto its wrist strap.",
+    "de": "Der Sinetik-Sensor, der auf sein Handgelenkband geclipst wird.",
+    "it": "Il sensore Sinetik, che si aggancia alla sua fascia da polso."
+  },
+  "fig2.alt": {
+    "fr": "Le capteur d'évaluation isométrique Sinetik, boîtier rectangulaire avec port USB-C et témoin lumineux",
+    "en": "The Sinetik isometric testing sensor, a rectangular housing with a USB-C port and status light",
+    "de": "Der isometrische Testsensor Sinetik, ein rechteckiges Gehäuse mit USB-C-Anschluss und Statusleuchte",
+    "it": "Il sensore di valutazione isometrica Sinetik, un alloggiamento rettangolare con porta USB-C e spia luminosa"
+  },
+  "fig2.cap": {
+    "fr": "Le capteur d'évaluation isométrique — en développement, voir la feuille de route.",
+    "en": "The isometric testing sensor — in development, see the roadmap.",
+    "de": "Der isometrische Testsensor — in Entwicklung, siehe Roadmap.",
+    "it": "Il sensore di valutazione isometrica — in sviluppo, vedi la roadmap."
+  },
+  "s5.h2": {
+    "fr": "Formules",
+    "en": "Plans",
+    "de": "Angebote",
+    "it": "Formule"
+  },
+  "s5.lead": {
+    "fr": "Les tarifs ne sont pas encore arrêtés. Nous finalisons le coût du matériel et le choix entre vente et abonnement avant d'annoncer des montants que nous tiendrons. Les structures pilotes bénéficient des conditions d'entrée, quelle que soit la grille retenue ensuite.",
+    "en": "Pricing is not settled yet. We are finalising hardware costs and the choice between outright purchase and subscription before announcing figures we intend to keep. Pilot organisations get entry conditions, whichever structure we land on.",
+    "de": "Die Preise stehen noch nicht fest. Wir finalisieren die Hardwarekosten und die Wahl zwischen Kauf und Abonnement, bevor wir Beträge nennen, die wir auch halten. Pilotstrukturen erhalten die Einstiegskonditionen, unabhängig davon, für welches Modell wir uns danach entscheiden.",
+    "it": "I prezzi non sono ancora stabiliti. Stiamo finalizzando il costo del materiale e la scelta tra vendita e abbonamento prima di annunciare cifre che manterremo. Le strutture pilota beneficiano delle condizioni d'ingresso, qualunque sia la griglia scelta in seguito."
+  },
+  "plan1.h3": {
+    "fr": "Individuel",
+    "en": "Individual",
+    "de": "Einzelperson",
+    "it": "Individuale"
+  },
+  "plan1.sub": {
+    "fr": "Préparateur physique, athlète",
+    "en": "Strength coach, athlete",
+    "de": "Athletiktrainer, Athlet",
+    "it": "Preparatore fisico, atleta"
+  },
+  "plan1.price": {
+    "fr": "Tarif à venir",
+    "en": "Pricing to come",
+    "de": "Preis folgt",
+    "it": "Prezzo in arrivo"
+  },
+  "plan1.li1": {
+    "fr": "Un capteur et sa sangle",
+    "en": "One sensor and its strap",
+    "de": "Ein Sensor und sein Band",
+    "it": "Un sensore e la sua fascia"
+  },
+  "plan1.li2": {
+    "fr": "Application complète, tous les modes",
+    "en": "Full app, every mode",
+    "de": "Vollständige App, alle Modi",
+    "it": "App completa, tutte le modalità"
+  },
+  "plan1.li3": {
+    "fr": "Historique et exports",
+    "en": "History and exports",
+    "de": "Historie und Exporte",
+    "it": "Storico ed esportazioni"
+  },
+  "plan1.btn": {
+    "fr": "Être informé du lancement",
+    "en": "Hear about the launch",
+    "de": "Über den Start informiert werden",
+    "it": "Essere informato del lancio"
+  },
+  "plan2.tag": {
+    "fr": "Phase pilote",
+    "en": "Pilot phase",
+    "de": "Pilotphase",
+    "it": "Fase pilota"
+  },
+  "plan2.h3": {
+    "fr": "Club",
+    "en": "Club",
+    "de": "Klub",
+    "it": "Club"
+  },
+  "plan2.sub": {
+    "fr": "Académie, club formateur",
+    "en": "Academy, development club",
+    "de": "Akademie, Ausbildungsklub",
+    "it": "Accademia, club di formazione"
+  },
+  "plan2.price": {
+    "fr": "Conditions pilotes",
+    "en": "Pilot terms",
+    "de": "Pilotkonditionen",
+    "it": "Condizioni pilota"
+  },
+  "plan2.li1": {
+    "fr": "Plusieurs capteurs et leur mallette",
+    "en": "Several sensors and their case",
+    "de": "Mehrere Sensoren und ihr Koffer",
+    "it": "Più sensori e la loro valigetta"
+  },
+  "plan2.li2": {
+    "fr": "Prise en main sur site avec le staff",
+    "en": "On-site onboarding with the staff",
+    "de": "Einführung vor Ort mit dem Staff",
+    "it": "Avviamento in sede con lo staff"
+  },
+  "plan2.li3": {
+    "fr": "Influence directe sur les évolutions du produit",
+    "en": "Direct influence on how the product evolves",
+    "de": "Direkter Einfluss auf die Weiterentwicklung des Produkts",
+    "it": "Influenza diretta sull'evoluzione del prodotto"
+  },
+  "plan2.li4": {
+    "fr": "Connexion à Sinetik:studio dès sa mise en service",
+    "en": "Sinetik:studio connection as soon as it ships",
+    "de": "Anbindung an Sinetik:studio, sobald es verfügbar ist",
+    "it": "Connessione a Sinetik:studio non appena disponibile"
+  },
+  "plan3.h3": {
+    "fr": "Structure",
+    "en": "Organisation",
+    "de": "Organisation",
+    "it": "Struttura"
+  },
+  "plan3.sub": {
+    "fr": "Centre professionnel, fédération",
+    "en": "Professional centre, federation",
+    "de": "Profizentrum, Verband",
+    "it": "Centro professionale, federazione"
+  },
+  "plan3.price": {
+    "fr": "Sur devis",
+    "en": "On request",
+    "de": "Auf Anfrage",
+    "it": "Su preventivo"
+  },
+  "plan3.li1": {
+    "fr": "Volume adapté à vos effectifs",
+    "en": "Volume matched to your squad sizes",
+    "de": "An Ihre Kadergrössen angepasstes Volumen",
+    "it": "Volume adattato ai tuoi organici"
+  },
+  "plan3.li2": {
+    "fr": "Accès API pour vos propres outils",
+    "en": "API access for your own tools",
+    "de": "API-Zugang für Ihre eigenen Tools",
+    "it": "Accesso API per i tuoi strumenti"
+  },
+  "plan3.li3": {
+    "fr": "Accompagnement dédié sur la saison",
+    "en": "Dedicated support through the season",
+    "de": "Dedizierte Begleitung über die Saison",
+    "it": "Accompagnamento dedicato per la stagione"
+  },
+  "plan3.btn": {
+    "fr": "Nous écrire",
+    "en": "Get in touch",
+    "de": "Schreiben Sie uns",
+    "it": "Scrivici"
+  },
+  "s5.note": {
+    "fr": "Les données de séance sont enregistrées sur l'appareil et vous appartiennent. Elles sont exportables à tout moment en PDF, en CSV ou en JSON — y compris le signal brut du capteur, si vous voulez mener vos propres analyses.",
+    "en": "Session data is stored on the device and belongs to you. It can be exported at any time as PDF, CSV or JSON — including the raw sensor signal, if you want to run your own analysis.",
+    "de": "Die Einheitsdaten werden auf dem Gerät gespeichert und gehören Ihnen. Sie lassen sich jederzeit als PDF, CSV oder JSON exportieren — einschliesslich des Rohsignals des Sensors, wenn Sie eigene Analysen durchführen möchten.",
+    "it": "I dati della sessione sono salvati sul dispositivo e ti appartengono. Sono esportabili in qualsiasi momento in PDF, CSV o JSON — compreso il segnale grezzo del sensore, se vuoi condurre le tue analisi."
+  },
+  "s6.h2": {
+    "fr": "Questions fréquentes",
+    "en": "Frequently asked",
+    "de": "Häufige Fragen",
+    "it": "Domande frequenti"
+  },
+  "s6.lead": {
+    "fr": "Ce qu'on nous demande, et ce que nous répondons — y compris quand la réponse n'est pas à notre avantage.",
+    "en": "What people ask us, and what we answer — including when the answer does not flatter us.",
+    "de": "Was man uns fragt und was wir antworten — auch dann, wenn die Antwort nicht zu unserem Vorteil ist.",
+    "it": "Ciò che ci chiedono e ciò che rispondiamo — anche quando la risposta non è a nostro favore."
+  },
+  "faq1.q": {
+    "fr": "Le capteur se porte au poignet et non sur la barre. Est-ce que ça change la mesure ?",
+    "en": "The sensor is worn on the wrist, not on the bar. Does that change the measurement?",
+    "de": "Der Sensor wird am Handgelenk getragen, nicht an der Stange. Verändert das die Messung?",
+    "it": "Il sensore si porta al polso e non sul bilanciere. Questo cambia la misurazione?"
+  },
+  "faq1.a": {
+    "fr": "Oui, et il faut le dire. La trajectoire du poignet n'est pas exactement celle de la barre, en particulier sur les mouvements où les bras se déplacent par rapport au tronc. Le port au poignet a été retenu parce qu'il rend la mise en place immédiate et le capteur utilisable sur tous les exercices, y compris sans barre. La cohérence d'une séance à l'autre pour un même athlète et un même exercice est bonne — c'est ce qui compte pour piloter un entraînement. Le rapprochement chiffre à chiffre avec un système fixé à la barre n'a pas encore fait l'objet d'une comparaison formelle de notre part. C'est un travail que nous voulons mener, et nous publierons les résultats tels qu'ils sortiront.",
+    "en": "Yes, and it should be said. The wrist does not travel exactly like the bar, particularly on movements where the arms move relative to the trunk. We chose the wrist because it makes set-up immediate and the sensor usable on every exercise, including those without a barbell. Consistency from session to session for the same athlete on the same exercise is good — and that is what drives training decisions. A figure-for-figure comparison against a bar-mounted system has not yet been formally carried out on our side. It is work we intend to do, and we will publish the results as they come out.",
+    "de": "Ja, und das muss man sagen. Die Bahn des Handgelenks entspricht nicht genau der der Stange, besonders bei Bewegungen, bei denen sich die Arme relativ zum Rumpf bewegen. Das Tragen am Handgelenk wurde gewählt, weil es die Einrichtung sofort macht und den Sensor bei allen Übungen nutzbar macht, auch ohne Stange. Die Konsistenz von Einheit zu Einheit für denselben Athleten bei derselben Übung ist gut — und das ist es, was für die Steuerung eines Trainings zählt. Der Zahl-für-Zahl-Vergleich mit einem an der Stange befestigten System wurde von unserer Seite noch nicht formell durchgeführt. Das ist eine Arbeit, die wir angehen wollen, und wir werden die Ergebnisse so veröffentlichen, wie sie herauskommen.",
+    "it": "Sì, e va detto. La traiettoria del polso non è esattamente quella del bilanciere, in particolare nei movimenti in cui le braccia si spostano rispetto al tronco. Abbiamo scelto il polso perché rende la preparazione immediata e il sensore utilizzabile in ogni esercizio, anche senza bilanciere. La coerenza da una sessione all'altra per lo stesso atleta e lo stesso esercizio è buona — ed è ciò che conta per guidare un allenamento. Il confronto cifra per cifra con un sistema fissato al bilanciere non è ancora stato oggetto di un confronto formale da parte nostra. È un lavoro che vogliamo svolgere, e pubblicheremo i risultati così come emergeranno."
+  },
+  "faq2.q": {
+    "fr": "Peut-on comparer les valeurs de Tracker à celles d'un autre appareil ?",
+    "en": "Can Tracker's values be compared with another device's?",
+    "de": "Lassen sich die Werte von Tracker mit denen eines anderen Geräts vergleichen?",
+    "it": "Si possono confrontare i valori di Tracker con quelli di un altro dispositivo?"
+  },
+  "faq2.a": {
+    "fr": "Pas encore. Tant que nous n'avons pas conduit cette comparaison, considérez les valeurs de Tracker comme une échelle interne : elles se comparent entre elles, dans le temps, pour un même athlète et un même exercice. Ne les mettez pas côte à côte avec celles d'un autre système dans un même tableau.",
+    "en": "Not yet. Until we have run that comparison, treat Tracker's values as an internal scale: they compare against each other, over time, for the same athlete on the same exercise. Do not place them next to another system's figures in the same table.",
+    "de": "Noch nicht. Solange wir diesen Vergleich nicht durchgeführt haben, betrachten Sie die Werte von Tracker als interne Skala: Sie vergleichen sich untereinander, über die Zeit, für denselben Athleten bei derselben Übung. Stellen Sie sie nicht neben die Werte eines anderen Systems in dieselbe Tabelle.",
+    "it": "Non ancora. Finché non avremo condotto questo confronto, considera i valori di Tracker come una scala interna: si confrontano tra loro, nel tempo, per lo stesso atleta e lo stesso esercizio. Non metterli accanto a quelli di un altro sistema nella stessa tabella."
+  },
+  "faq3.q": {
+    "fr": "Combien de temps pour équiper un athlète ?",
+    "en": "How long does it take to set an athlete up?",
+    "de": "Wie lange dauert es, einen Athleten auszustatten?",
+    "it": "Quanto tempo serve per attrezzare un atleta?"
+  },
+  "faq3.a": {
+    "fr": "Une dizaine de secondes : clipser le capteur sur la sangle, ouvrir l'application, choisir l'exercice et la charge. Rien à calibrer, rien à positionner précisément.",
+    "en": "About ten seconds: clip the sensor to the strap, open the app, pick the exercise and the load. Nothing to calibrate, nothing to position precisely.",
+    "de": "Rund zehn Sekunden: den Sensor auf das Band clipsen, die App öffnen, Übung und Last wählen. Nichts zu kalibrieren, nichts genau zu positionieren.",
+    "it": "Una decina di secondi: agganciare il sensore alla fascia, aprire l'app, scegliere l'esercizio e il carico. Niente da calibrare, niente da posizionare con precisione."
+  },
+  "faq4.q": {
+    "fr": "Sur quels appareils fonctionne l'application ?",
+    "en": "Which devices does the app run on?",
+    "de": "Auf welchen Geräten läuft die App?",
+    "it": "Su quali dispositivi funziona l'app?"
+  },
+  "faq4.a": {
+    "fr": "iPhone, iPad et Mac. Elle est aujourd'hui distribuée en TestFlight aux structures pilotes ; la publication sur l'App Store interviendra à la fin de cette phase. Une version Android est prévue, sans date arrêtée à ce jour.",
+    "en": "iPhone, iPad and Mac. It is currently distributed through TestFlight to pilot organisations; App Store release will follow that phase. An Android version is planned, with no date fixed today.",
+    "de": "iPhone, iPad und Mac. Sie wird derzeit über TestFlight an die Pilotstrukturen verteilt; die Veröffentlichung im App Store erfolgt am Ende dieser Phase. Eine Android-Version ist geplant, bislang ohne festes Datum.",
+    "it": "iPhone, iPad e Mac. Oggi è distribuita via TestFlight alle strutture pilota; la pubblicazione sull'App Store avverrà alla fine di questa fase. È prevista una versione Android, senza una data definita ad oggi."
+  },
+  "faq5.q": {
+    "fr": "Faut-il une connexion internet en salle ?",
+    "en": "Do you need an internet connection in the gym?",
+    "de": "Braucht es im Kraftraum eine Internetverbindung?",
+    "it": "Serve una connessione internet in palestra?"
+  },
+  "faq5.a": {
+    "fr": "Non. La liaison avec le capteur se fait en Bluetooth et la séance est enregistrée sur l'appareil. La connexion ne sert qu'à partager un rapport ou, à terme, à synchroniser vers Sinetik:studio.",
+    "en": "No. The sensor link is Bluetooth and the session is stored on the device. A connection is only needed to share a report or, in time, to sync to Sinetik:studio.",
+    "de": "Nein. Die Verbindung zum Sensor läuft über Bluetooth, und die Einheit wird auf dem Gerät gespeichert. Die Internetverbindung dient nur dazu, einen Bericht zu teilen oder, mit der Zeit, mit Sinetik:studio zu synchronisieren.",
+    "it": "No. Il collegamento con il sensore avviene via Bluetooth e la sessione è salvata sul dispositivo. La connessione serve solo a condividere un report o, in futuro, a sincronizzare con Sinetik:studio."
+  },
+  "faq6.q": {
+    "fr": "Que deviennent les données, en particulier celles de joueurs mineurs ?",
+    "en": "What happens to the data, particularly for players under 18?",
+    "de": "Was geschieht mit den Daten, insbesondere mit denen minderjähriger Spieler?",
+    "it": "Che fine fanno i dati, in particolare quelli dei giocatori minorenni?"
+  },
+  "faq6.a": {
+    "fr": "Les séances sont enregistrées localement sur l'appareil du staff et exportables à tout moment. La synchronisation vers Sinetik:studio, en cours de développement, reposera sur un hébergement européen avec cloisonnement strict entre organisations : les données restent celles du club, pas les nôtres, et suivent le joueur s'il change de structure. Nous ne collectons ni image ni position, et les grandeurs enregistrées sont des mesures d'entraînement — pas des données de santé.",
+    "en": "Sessions are stored locally on the staff's device and can be exported at any time. Synchronisation to Sinetik:studio, currently in development, will run on European hosting with strict separation between organisations: the data belongs to the club, not to us, and follows the player if they move on. We collect no imagery and no location, and the values recorded are training measurements — not health data.",
+    "de": "Die Einheiten werden lokal auf dem Gerät des Staffs gespeichert und sind jederzeit exportierbar. Die Synchronisation mit Sinetik:studio, derzeit in Entwicklung, wird auf einem europäischen Hosting mit strikter Trennung zwischen Organisationen beruhen: Die Daten bleiben die des Klubs, nicht unsere, und folgen dem Spieler, wenn er die Struktur wechselt. Wir erfassen weder Bild noch Standort, und die gespeicherten Grössen sind Trainingsmessungen — keine Gesundheitsdaten.",
+    "it": "Le sessioni sono salvate localmente sul dispositivo dello staff ed esportabili in qualsiasi momento. La sincronizzazione con Sinetik:studio, in fase di sviluppo, si baserà su un hosting europeo con una rigorosa separazione tra organizzazioni: i dati restano quelli del club, non i nostri, e seguono il giocatore se cambia struttura. Non raccogliamo né immagini né posizione, e le grandezze registrate sono misure di allenamento — non dati sanitari."
+  },
+  "faq7.q": {
+    "fr": "Faut-il connaître son 1RM pour utiliser Tracker ?",
+    "en": "Do you need to know your 1RM to use Tracker?",
+    "de": "Muss man sein 1RM kennen, um Tracker zu nutzen?",
+    "it": "Bisogna conoscere il proprio 1RM per usare Tracker?"
+  },
+  "faq7.a": {
+    "fr": "Non, et c'est un des intérêts de la méthode. Tracker estime la force maximale à partir de la relation entre la charge et la vitesse, sur quelques paliers sous-maximaux. En formation, cela évite de faire réaliser des tentatives maximales à de jeunes athlètes pour connaître leur niveau de force.",
+    "en": "No, and that is part of the point. Tracker estimates maximal strength from the load-velocity relationship, using a few submaximal increments. In a youth setting, that removes the need to put young athletes through maximal attempts simply to establish their strength level.",
+    "de": "Nein, und das ist einer der Vorzüge der Methode. Tracker schätzt die Maximalkraft aus der Beziehung zwischen Last und Geschwindigkeit, anhand einiger submaximaler Stufen. In der Ausbildung erspart das jungen Athleten maximale Versuche, nur um ihr Kraftniveau zu bestimmen.",
+    "it": "No, ed è uno dei vantaggi del metodo. Tracker stima la forza massimale a partire dalla relazione tra carico e velocità, su alcuni livelli submassimali. Nella formazione, questo evita di far eseguire tentativi massimali a giovani atleti solo per conoscere il loro livello di forza."
+  },
+  "faq8.q": {
+    "fr": "Est-ce que ça remplace un préparateur physique ?",
+    "en": "Does it replace a strength and conditioning coach?",
+    "de": "Ersetzt das einen Athletiktrainer?",
+    "it": "Sostituisce un preparatore fisico?"
+  },
+  "faq8.a": {
+    "fr": "Non. Tracker mesure et signale ; il ne décide pas. Il dit qu'une série a perdu vingt pour cent de vitesse — pas s'il fallait s'arrêter là ce jour-là pour cet athlète. Cette décision reste la vôtre, et l'outil est fait pour vous la rendre plus facile à prendre, pas pour vous en dispenser.",
+    "en": "No. Tracker measures and flags; it does not decide. It tells you a set has lost twenty per cent of its velocity — not whether that was the day to stop there, for that athlete. That call stays yours, and the tool exists to make it easier to make, not to make it for you.",
+    "de": "Nein. Tracker misst und meldet; es entscheidet nicht. Es sagt Ihnen, dass ein Satz zwanzig Prozent an Geschwindigkeit verloren hat — nicht, ob an diesem Tag für diesen Athleten dort Schluss sein sollte. Diese Entscheidung bleibt Ihre, und das Werkzeug ist dafür da, sie Ihnen leichter zu machen, nicht sie Ihnen abzunehmen.",
+    "it": "No. Tracker misura e segnala; non decide. Ti dice che una serie ha perso il venti per cento di velocità — non se fosse il giorno giusto per fermarsi lì, per quell'atleta. Questa decisione resta tua, e lo strumento serve a rendertela più facile da prendere, non a sollevartene."
+  },
+  "faq9.q": {
+    "fr": "Et si Tracker compte une répétition qui n'en est pas une ?",
+    "en": "What if Tracker counts a repetition that was not one?",
+    "de": "Und wenn Tracker eine Wiederholung zählt, die keine ist?",
+    "it": "E se Tracker conta una ripetizione che non lo è?"
+  },
+  "faq9.a": {
+    "fr": "Cela arrive — un dérackage, un repositionnement. L'application filtre les mouvements trop courts ou trop lents, et toute répétition douteuse se supprime d'un geste pendant ou après la série. Les moyennes et la perte de vitesse sont recalculées immédiatement.",
+    "en": "It happens — an unrack, a reset. The app filters out movements that are too short or too slow, and any questionable repetition can be removed with one tap during or after the set. Averages and velocity loss are recalculated immediately.",
+    "de": "Das kommt vor — ein Ausheben aus dem Rack, ein Neupositionieren. Die App filtert zu kurze oder zu langsame Bewegungen heraus, und jede fragwürdige Wiederholung lässt sich mit einer Geste während oder nach dem Satz entfernen. Durchschnitte und Geschwindigkeitsverlust werden sofort neu berechnet.",
+    "it": "Capita — uno stacco dal rack, un riposizionamento. L'app filtra i movimenti troppo brevi o troppo lenti, e ogni ripetizione dubbia si elimina con un gesto durante o dopo la serie. Le medie e la perdita di velocità vengono ricalcolate immediatamente."
+  },
+  "faq10.q": {
+    "fr": "Les données de Tracker remontent-elles dans Sinetik:studio ?",
+    "en": "Does Tracker data flow into Sinetik:studio?",
+    "de": "Fliessen die Daten von Tracker in Sinetik:studio ein?",
+    "it": "I dati di Tracker confluiscono in Sinetik:studio?"
+  },
+  "faq10.a": {
+    "fr": "C'est prévu et c'est la raison d'être de l'ensemble : la charge de musculation, le wellness, les tests et la planification dans un seul historique par joueur. La connexion est en développement. L'interface sera également ouverte à d'autres plateformes d'analyse — vous ne serez pas enfermé chez nous.",
+    "en": "That is the plan, and it is the reason the whole thing exists: gym load, wellness, testing and planning in a single history per player. The connection is in development. The interface will also be open to other analysis platforms — you will not be locked in with us.",
+    "de": "Das ist vorgesehen und der eigentliche Sinn des Ganzen: Kraftbelastung, Wellness, Tests und Planung in einer einzigen Historie pro Spieler. Die Anbindung ist in Entwicklung. Die Schnittstelle wird auch für andere Analyseplattformen offen sein — Sie werden nicht bei uns eingesperrt sein.",
+    "it": "È previsto ed è la ragion d'essere dell'insieme: carico di muscolazione, wellness, test e pianificazione in un unico storico per giocatore. La connessione è in sviluppo. L'interfaccia sarà aperta anche ad altre piattaforme di analisi — non sarai vincolato a noi."
+  },
+  "s7.h2": {
+    "fr": "Ce qui vient ensuite",
+    "en": "What comes next",
+    "de": "Was als Nächstes kommt",
+    "it": "Cosa viene dopo"
+  },
+  "s7.lead": {
+    "fr": "Trois chantiers en cours. Ils ne sont pas disponibles aujourd'hui et ne sont pas datés : nous préférons les annoncer quand ils fonctionnent.",
+    "en": "Three pieces of work under way. They are not available today and they are not dated: we would rather announce them when they work.",
+    "de": "Drei laufende Vorhaben. Sie sind heute nicht verfügbar und nicht datiert: Wir kündigen sie lieber an, wenn sie funktionieren.",
+    "it": "Tre cantieri in corso. Non sono disponibili oggi e non hanno una data: preferiamo annunciarli quando funzionano."
+  },
+  "status.dev": {
+    "fr": "En développement",
+    "en": "In development",
+    "de": "In Entwicklung",
+    "it": "In sviluppo"
+  },
+  "status.study": {
+    "fr": "À l'étude",
+    "en": "Exploratory",
+    "de": "In Prüfung",
+    "it": "Allo studio"
+  },
+  "s7.c1.h3": {
+    "fr": "Connexion à Sinetik:studio",
+    "en": "Sinetik:studio connection",
+    "de": "Anbindung an Sinetik:studio",
+    "it": "Connessione a Sinetik:studio"
+  },
+  "s7.c1.p": {
+    "fr": "Les séances remontent dans la plateforme et se rangent à côté du plan, du wellness et des tests. Un seul historique par joueur, et une interface ouverte aux outils que vous utilisez déjà.",
+    "en": "Sessions flow into the platform and file themselves alongside the plan, wellness and testing. One history per player, and an interface open to the tools you already use.",
+    "de": "Die Einheiten fliessen in die Plattform und ordnen sich neben Plan, Wellness und Tests ein. Eine einzige Historie pro Spieler und eine Schnittstelle, die für die Tools offen ist, die Sie bereits nutzen.",
+    "it": "Le sessioni confluiscono nella piattaforma e si archiviano accanto al piano, al wellness e ai test. Un unico storico per giocatore, e un'interfaccia aperta agli strumenti che usi già."
+  },
+  "s7.c2.h3": {
+    "fr": "Évaluation isométrique",
+    "en": "Isometric testing",
+    "de": "Isometrische Evaluation",
+    "it": "Valutazione isometrica"
+  },
+  "s7.c2.p": {
+    "fr": "Un second capteur, dédié à l'évaluation et à l'entraînement en isométrie. Il complète la mesure dynamique là où elle s'arrête.",
+    "en": "A second sensor, dedicated to isometric testing and training. It picks up where dynamic measurement stops.",
+    "de": "Ein zweiter Sensor, gewidmet der isometrischen Evaluation und dem isometrischen Training. Er ergänzt die dynamische Messung dort, wo sie aufhört.",
+    "it": "Un secondo sensore, dedicato alla valutazione e all'allenamento in isometria. Completa la misura dinamica dove essa si ferma."
+  },
+  "s7.c3.h3": {
+    "fr": "Cinématique par caméra",
+    "en": "Camera-based kinematics",
+    "de": "Kinematik per Kamera",
+    "it": "Cinematica tramite telecamera"
+  },
+  "s7.c3.p": {
+    "fr": "La caméra de l'iPhone pour observer le mouvement lui-même, sur le terrain comme en salle, là où un capteur inertiel ne suffit plus.",
+    "en": "The iPhone camera to look at the movement itself, on the pitch as well as in the gym, where an inertial sensor is no longer enough.",
+    "de": "Die iPhone-Kamera, um die Bewegung selbst zu beobachten, auf dem Platz wie im Kraftraum, dort wo ein Inertialsensor nicht mehr ausreicht.",
+    "it": "La fotocamera dell'iPhone per osservare il movimento stesso, sul campo come in palestra, là dove un sensore inerziale non basta più."
+  },
+  "band.mono": {
+    "fr": "Phase pilote 2026",
+    "en": "2026 pilot phase",
+    "de": "Pilotphase 2026",
+    "it": "Fase pilota 2026"
+  },
+  "band.h2": {
+    "fr": "Nous cherchons des structures pour se tromper avec nous",
+    "en": "We are looking for organisations to get it wrong with us",
+    "de": "Wir suchen Strukturen, um gemeinsam mit uns Fehler zu machen",
+    "it": "Cerchiamo strutture con cui sbagliare insieme"
+  },
+  "band.p": {
+    "fr": "Tracker fonctionne et s'utilise déjà en salle. Il n'est pas fini pour autant. Nous ouvrons un nombre limité de places à des clubs et des académies prêts à l'utiliser au quotidien, à nous dire ce qui coince, et à peser sur ce que le produit deviendra. Conditions d'entrée garanties, et une ligne directe avec ceux qui le construisent.",
+    "en": "Tracker works and is already used in the gym. That does not make it finished. We are opening a limited number of places to clubs and academies willing to use it daily, tell us what breaks, and shape what the product becomes. Entry terms guaranteed, and a direct line to the people building it.",
+    "de": "Tracker funktioniert und wird im Kraftraum bereits genutzt. Fertig ist es deswegen nicht. Wir öffnen eine begrenzte Zahl an Plätzen für Klubs und Akademien, die bereit sind, es täglich zu nutzen, uns zu sagen, wo es hakt, und darauf Einfluss zu nehmen, was das Produkt wird. Garantierte Einstiegskonditionen und eine direkte Linie zu denen, die es bauen.",
+    "it": "Tracker funziona e si usa già in palestra. Non per questo è finito. Apriamo un numero limitato di posti a club e accademie pronti a usarlo ogni giorno, a dirci cosa non va e a influenzare ciò che il prodotto diventerà. Condizioni d'ingresso garantite, e una linea diretta con chi lo costruisce."
+  },
+  "band.btn.studio": {
+    "fr": "Découvrir Sinetik:studio",
+    "en": "Discover Sinetik:studio",
+    "de": "Sinetik:studio entdecken",
+    "it": "Scopri Sinetik:studio"
+  }
+}

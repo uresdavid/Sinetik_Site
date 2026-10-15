@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="dark" data-page-lang="en" data-alt-lang="tracker.html">
+<html lang="en" data-theme="dark" data-page-lang="en" data-lang-urls='{"fr":"tracker.html","en":"tracker-en.html","de":"tracker-de.html","it":"tracker-it.html"}'>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -9,6 +9,9 @@
 <link rel="canonical" href="https://www.sinetik.ch/tracker-en.html">
 <link rel="alternate" hreflang="fr" href="https://www.sinetik.ch/tracker.html">
 <link rel="alternate" hreflang="en" href="https://www.sinetik.ch/tracker-en.html">
+<link rel="alternate" hreflang="de" href="https://www.sinetik.ch/tracker-de.html">
+<link rel="alternate" hreflang="it" href="https://www.sinetik.ch/tracker-it.html">
+<link rel="alternate" hreflang="x-default" href="https://www.sinetik.ch/tracker.html">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/img/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
@@ -18,21 +21,22 @@
 <link rel="stylesheet" href="assets/css/sinetik.css">
 
 <!-- ============================================================
-     Page-local styles only.
-     Deliberately minimal: four components that do not yet exist in
-     sinetik.css (FAQ, image frame, spec list, download strip).
-     Everything else reuses the site's existing classes.
+     Styles locaux à cette page uniquement.
+     Volontairement minimalistes : 4 composants qui n'existent pas
+     encore dans sinetik.css (FAQ, cadre d'image, liste de specs,
+     bandeau de téléchargement). Tout le reste réutilise les
+     classes existantes du site.
      ============================================================ -->
 <style>
-  /* — Reusable image frame (sensor, photos) — */
-  /* Product shots are cut-out PNGs: they sit on the card background and stay
-     legible in light and dark themes alike. */
+  /* — Cadre d'image réutilisable (capteur, photos) — */
+  /* Les visuels produit sont des PNG détourés : ils se posent sur le fond de
+     la carte et restent lisibles en thème clair comme en thème sombre. */
   .shot{border:1px solid rgba(128,140,160,.22);border-radius:16px;overflow:hidden;
     background:rgba(128,140,160,.05);max-width:380px}
   .shot img{display:block;width:100%;height:auto;padding:9%;box-sizing:border-box}
   .shot figcaption{padding:12px 16px;font-size:.8rem;line-height:1.5;color:var(--ink-3,#8a93a6);border-top:1px solid rgba(128,140,160,.16)}
 
-  /* — Technical spec list — */
+  /* — Liste de caractéristiques techniques — */
   .specs{list-style:none;margin:24px 0 0;padding:0}
   .specs li{display:flex;justify-content:space-between;gap:20px;padding:11px 0;
     border-bottom:1px solid rgba(128,140,160,.16);font-size:.9rem}
@@ -40,7 +44,7 @@
   .specs em{font-style:normal;color:var(--ink-3,#8a93a6)}
   .specs b{font-family:var(--mono,'JetBrains Mono',monospace);font-weight:500;text-align:right}
 
-  /* — FAQ (native <details>, readable without JavaScript) — */
+  /* — FAQ (balise native <details>, lisible sans JavaScript) — */
   .faq{border-top:1px solid rgba(128,140,160,.16)}
   .faq details{border-bottom:1px solid rgba(128,140,160,.16)}
   .faq summary{cursor:pointer;list-style:none;padding:20px 40px 20px 0;position:relative;
@@ -51,7 +55,7 @@
   .faq details[open] summary::after{transform:rotate(45deg)}
   .faq details p{margin:0 0 22px;max-width:70ch;color:var(--ink-2,#b6bdc9);font-size:.94rem;line-height:1.65}
 
-  /* — Download strip — */
+  /* — Bandeau de téléchargement — */
   .getapp{display:flex;flex-wrap:wrap;align-items:center;gap:18px 28px;
     padding:24px 28px;border:1px solid rgba(128,140,160,.22);border-radius:16px}
   .getapp p{margin:0;font-size:.9rem;color:var(--ink-2,#b6bdc9)}
@@ -72,14 +76,14 @@
     <h1 data-anim="rise" data-delay="1">Train to velocity, not to feel</h1>
     <p class="lead" data-anim="rise" data-delay="2">A sensor on the wrist, the app on the iPhone. Tracker measures the velocity of every repetition, places it in the work zone you are aiming for, and flags the moment a set stops delivering what you asked of it. In the gym, without interrupting the session.</p>
     <div class="btn-row" data-anim="rise" data-delay="3">
-      <a class="btn btn-primary" href="contact.html">Become a pilot club</a>
-      <a class="btn btn-ghost" href="#measure">What Tracker measures</a>
+      <a class="btn btn-primary" href="contact-en.html">Become a pilot club</a>
+      <a class="btn btn-ghost" href="#mesure">What Tracker measures</a>
     </div>
   </div>
 </header>
 
-<!-- ==================== 01 · WHAT TRACKER MEASURES ==================== -->
-<section id="measure">
+<!-- ==================== 01 · CE QUE TRACKER MESURE ==================== -->
+<section id="mesure">
   <div class="wrap">
     <div class="split">
       <div data-anim="rise" data-delay="0">
@@ -95,24 +99,24 @@
             <span class="mono">Back Squat · 100 kg · Set 2</span>
             <span class="live">Example</span>
           </div>
-          <svg viewBox="0 0 460 210" role="img" aria-labelledby="vbttitle-en">
-            <title id="vbttitle-en">Mean velocity per repetition, with target work zone</title>
-            <!-- target zone band -->
+          <svg viewBox="0 0 460 210" role="img" aria-labelledby="vbttitle">
+            <title id="vbttitle">Mean velocity per repetition, with target work zone</title>
+            <!-- bande de zone cible -->
             <rect x="46" y="66" width="394" height="52" fill="#0A6CFF" fill-opacity=".10"/>
             <text x="52" y="60" font-family="JetBrains Mono, monospace" font-size="9" fill="#0A6CFF" fill-opacity=".8">STRENGTH ZONE</text>
             <!-- axes -->
             <line x1="46" y1="12" x2="46" y2="176" stroke="currentColor" stroke-opacity=".18"/>
             <line x1="46" y1="176" x2="440" y2="176" stroke="currentColor" stroke-opacity=".18"/>
             <text x="26" y="20" font-family="JetBrains Mono, monospace" font-size="10" fill="currentColor" fill-opacity=".45">m/s</text>
-            <text x="418" y="196" font-family="JetBrains Mono, monospace" font-size="10" fill="currentColor" fill-opacity=".45">reps</text>
-            <!-- bars: velocity decaying across reps -->
+            <text x="420" y="196" font-family="JetBrains Mono, monospace" font-size="10" fill="currentColor" fill-opacity=".45">reps</text>
+            <!-- barres : vitesse décroissante au fil des reps -->
             <rect x="72"  y="70"  width="34" height="106" rx="3" fill="#0A6CFF" fill-opacity=".85"/>
             <rect x="132" y="76"  width="34" height="100" rx="3" fill="#0A6CFF" fill-opacity=".85"/>
             <rect x="192" y="82"  width="34" height="94"  rx="3" fill="#0A6CFF" fill-opacity=".85"/>
             <rect x="252" y="94"  width="34" height="82"  rx="3" fill="#0A6CFF" fill-opacity=".85"/>
             <rect x="312" y="108" width="34" height="68"  rx="3" fill="#0A6CFF" fill-opacity=".55"/>
             <rect x="372" y="126" width="34" height="50"  rx="3" fill="#E4572E" fill-opacity=".75"/>
-            <!-- trend line -->
+            <!-- ligne de tendance -->
             <line x1="89" y1="70" x2="389" y2="126" stroke="currentColor" stroke-opacity=".3" stroke-width="1.5" stroke-dasharray="4 4"/>
           </svg>
           <div class="datacard-foot">
@@ -129,7 +133,7 @@
   </div>
 </section>
 
-<!-- ==================== 02 · MODES ==================== -->
+<!-- ==================== 02 · LES MODES DE TRAVAIL ==================== -->
 <section>
   <div class="wrap">
     <span class="mono on" data-anim="rise" data-delay="0">02</span>
@@ -200,7 +204,7 @@
   </div>
 </section>
 
-<!-- ==================== 03 · THE APP ==================== -->
+<!-- ==================== 03 · L'APPLICATION ==================== -->
 <section>
   <div class="wrap">
     <div class="split">
@@ -250,19 +254,19 @@
       </div>
     </div>
 
-    <!-- Download strip.
-         Current state: TestFlight distribution, the app is not published yet.
-         On release day: replace the ghost button below with
-         <a class="btn btn-primary" href="https://apps.apple.com/…">Download on the App Store</a> -->
+    <!-- Bandeau de téléchargement.
+         État actuel : distribution TestFlight, l'app n'est pas encore publiée.
+         Le jour de la publication : remplacer le bouton ghost ci-dessous par
+         <a class="btn btn-primary" href="https://apps.apple.com/…">Télécharger sur l'App Store</a> -->
     <div class="getapp" style="margin-top:52px" data-anim="rise" data-delay="0">
       <p><strong>iPhone, iPad and Mac.</strong> The app is currently distributed through TestFlight to pilot organisations. App Store release will follow the end of that phase.</p>
-      <a class="btn btn-ghost" href="contact.html">Request TestFlight access</a>
+      <a class="btn btn-ghost" href="contact-en.html">Request TestFlight access</a>
     </div>
   </div>
 </section>
 
-<!-- ==================== 04 · THE SENSOR ==================== -->
-<section id="sensor">
+<!-- ==================== 04 · LE CAPTEUR ==================== -->
+<section id="capteur">
   <div class="wrap">
     <div class="split">
       <div data-anim="rise" data-delay="0">
@@ -301,7 +305,7 @@
   </div>
 </section>
 
-<!-- ==================== 05 · PLANS ==================== -->
+<!-- ==================== 05 · FORMULES ==================== -->
 <section id="tarifs">
   <div class="wrap">
     <span class="mono on" data-anim="rise" data-delay="0">05</span>
@@ -312,14 +316,14 @@
       <div class="plan" data-anim="rise" data-delay="0">
         <h3>Individual</h3>
         <p style="color:var(--ink-3);font-size:.88rem;margin:0">Strength coach, athlete</p>
-        <!-- Final grid: replace with <div class="price" data-price="trackerUnit"></div> -->
+        <!-- Grille définitive : remplacer par <div class="price" data-price="trackerUnit"></div> -->
         <div class="price" style="font-size:1.05rem">Pricing to come</div>
         <ul class="ticks">
           <li>One sensor and its strap</li>
           <li>Full app, every mode</li>
           <li>History and exports</li>
         </ul>
-        <a class="btn btn-ghost" href="contact.html">Hear about the launch</a>
+        <a class="btn btn-ghost" href="contact-en.html">Hear about the launch</a>
       </div>
 
       <div class="plan featured" data-anim="rise" data-delay="1">
@@ -333,7 +337,7 @@
           <li>Direct influence on how the product evolves</li>
           <li>Sinetik:studio connection as soon as it ships</li>
         </ul>
-        <a class="btn btn-primary" href="contact.html">Become a pilot club</a>
+        <a class="btn btn-primary" href="contact-en.html">Become a pilot club</a>
       </div>
 
       <div class="plan" data-anim="rise" data-delay="2">
@@ -345,7 +349,7 @@
           <li>API access for your own tools</li>
           <li>Dedicated support through the season</li>
         </ul>
-        <a class="btn btn-ghost" href="contact.html">Get in touch</a>
+        <a class="btn btn-ghost" href="contact-en.html">Get in touch</a>
       </div>
     </div>
 
@@ -353,7 +357,7 @@
   </div>
 </section>
 
-<!-- ==================== 06 · FAQ ==================== -->
+<!-- ==================== 06 · QUESTIONS ==================== -->
 <section>
   <div class="wrap">
     <span class="mono on" data-anim="rise" data-delay="0">06</span>
@@ -405,7 +409,7 @@
   </div>
 </section>
 
-<!-- ==================== 07 · ROADMAP ==================== -->
+<!-- ==================== 07 · FEUILLE DE ROUTE ==================== -->
 <section>
   <div class="wrap">
     <span class="mono on" data-anim="rise" data-delay="0">07</span>
@@ -432,7 +436,7 @@
   </div>
 </section>
 
-<!-- ==================== CLOSING BAND ==================== -->
+<!-- ==================== BANDEAU FINAL ==================== -->
 <section>
   <div class="wrap">
     <div class="band" data-anim="rise" data-delay="0">
@@ -440,7 +444,7 @@
       <h2>We are looking for organisations to get it wrong with us</h2>
       <p class="lead">Tracker works and is already used in the gym. That does not make it finished. We are opening a limited number of places to clubs and academies willing to use it daily, tell us what breaks, and shape what the product becomes. Entry terms guaranteed, and a direct line to the people building it.</p>
       <div class="btn-row">
-        <a class="btn btn-primary" href="contact.html">Become a pilot club</a>
+        <a class="btn btn-primary" href="contact-en.html">Become a pilot club</a>
         <a class="btn btn-ghost" href="studio-en.html">Discover Sinetik:studio</a>
       </div>
     </div>

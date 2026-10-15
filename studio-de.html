@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="de" data-theme="dark" data-page-lang="de" data-lang-urls='{"fr":"studio.html","en":"studio-en.html","de":"studio-de.html","it":"studio-it.html"}'><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>try{var t=localStorage.getItem('sinetik-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<title>Sinetik:studio — Software für das sportliche Leistungsmanagement (AMS) für Vereine, Verbände und Athletiktrainer</title>
+<meta name="description" content="Bündeln Sie GPS, Tests, Wellness, Verletzungen und Programmierung in einem Werkzeug, das nach Ihrer Methode konfiguriert ist. Planung, Trainingsbelastung und Return to Play vereint für den Leistungsstab. Demo auf Anfrage.">
+<link rel="canonical" href="https://www.sinetik.ch/studio-de.html">
+<link rel="alternate" hreflang="fr" href="https://www.sinetik.ch/studio.html">
+<link rel="alternate" hreflang="en" href="https://www.sinetik.ch/studio-en.html">
+<link rel="alternate" hreflang="de" href="https://www.sinetik.ch/studio-de.html">
+<link rel="alternate" hreflang="it" href="https://www.sinetik.ch/studio-it.html">
+<link rel="alternate" hreflang="x-default" href="https://www.sinetik.ch/studio.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.sinetik.ch/studio-de.html">
+<meta property="og:title" content="Sinetik:studio — Software für das sportliche Leistungsmanagement (AMS)">
+<meta property="og:description" content="Bündeln Sie GPS, Tests, Wellness, Verletzungen und Programmierung in einem Werkzeug, das nach Ihrer Methode konfiguriert ist. Demo auf Anfrage.">
+<!-- og:image : image de partage 1200x630 à produire, puis décommenter la ligne suivante
+<meta property="og:image" content="https://www.sinetik.ch/assets/img/og-studio.jpg"> -->
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/sinetik.css">
+
+<!-- ============================================================
+     Style local à cette page : le composant FAQ, identique à
+     celui de tracker.html pour garder la même structure partout.
+     ============================================================ -->
+<style>
+  /* — FAQ (balise native <details>, lisible sans JavaScript) — */
+  .faq{border-top:1px solid rgba(128,140,160,.16)}
+  .faq details{border-bottom:1px solid rgba(128,140,160,.16)}
+  .faq summary{cursor:pointer;list-style:none;padding:20px 40px 20px 0;position:relative;
+    font-weight:600;font-size:1rem}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:'+';position:absolute;right:6px;top:18px;font-size:1.3rem;
+    font-weight:400;color:var(--ink-3,#8a93a6);transition:transform .2s ease}
+  .faq details[open] summary::after{transform:rotate(45deg)}
+  .faq details p{margin:0 0 22px;max-width:70ch;color:var(--ink-2,#b6bdc9);font-size:.94rem;line-height:1.65}
+
+  @media (prefers-reduced-motion:reduce){.faq summary::after{transition:none}}
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+
+<header class="hero hero-solo">
+  <div class="hero-canvas" id="hero3d" data-scene="studio"></div>
+  <div class="hero-scrim"></div>
+  <div class="hero-glow"></div>
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">Sinetik:studio · Athlete Management System</span>
+    <h1 data-anim="rise" data-delay="1">Weniger Zeit mit Ihren Dateien.<br>Mehr Zeit mit Ihren Athleten.</h1>
+    <p class="lead" data-anim="rise" data-delay="2">Studio führt zusammen, was heute in Ihren Dateien und Apps lebt — GPS, Tests, Fragebögen, Medizin, Programmierung. Konfiguriert für Ihre Organisation — keine generische Vorlage, an die Sie sich anpassen müssen.</p>
+    <div class="btn-row" data-anim="rise" data-delay="3">
+      <a class="btn btn-primary" href="contact-de.html">Demo anfragen</a>
+      <a class="btn btn-ghost" href="#formules">Pakete</a>
+    </div>
+    <p class="mono" style="margin-top:18px;font-size:.78rem;color:var(--ink-3)" data-anim="rise" data-delay="4">30 Minuten. Mit Ihren eigenen Dateien, wenn Sie möchten.</p>
+  </div>
+</header>
+
+<!-- Vue d'ensemble + maquette -->
+<section>
+  <div class="wrap">
+    <div class="split">
+      <div data-anim="rise" data-delay="0">
+        <span class="mono on">01</span>
+        <h2>Das Dashboard am Montagmorgen</h2>
+        <p class="lead">Eine einzige Ansicht: die Belastung der letzten Woche, die Verfügbarkeit jedes Spielers, die Warnungen, die einen Blick wert sind. In dreissig Sekunden weiss der Staff, wen man fordern und wen man schützen muss.</p>
+      </div>
+
+      <div data-anim="rise" data-delay="1">
+        <div class="mock">
+          <div class="mock-bar"><i></i><i></i><i></i><span>Übersicht — Woche 34</span></div>
+          <div class="mock-body">
+            <div class="mock-row">
+              <div class="mock-tile"><em>Belastung</em><b>4 820</b></div>
+              <div class="mock-tile"><em>Plan/Ist</em><b>−8 %</b></div>
+              <div class="mock-tile"><em>Verfügb.</em><b>22/25</b></div>
+              <div class="mock-tile"><em>Warnungen</em><b>3</b></div>
+            </div>
+            <div class="mock-panel">
+              <h5>Wöchentliche Belastung — U18</h5>
+              <div class="mock-chart">
+                <i style="height:38%"></i><i style="height:62%"></i><i style="height:47%"></i>
+                <i style="height:81%"></i><i style="height:55%"></i><i class="alt" style="height:24%"></i>
+                <i style="height:70%"></i><i style="height:88%"></i><i style="height:59%"></i>
+                <i class="alt" style="height:31%"></i><i style="height:74%"></i><i style="height:44%"></i>
+              </div>
+            </div>
+            <div class="mock-panel">
+              <h5>Verfügbarkeit der Gruppe</h5>
+              <div class="mock-list">
+                <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="ok" style="width:88%"></b></span></div>
+                <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="ok" style="width:76%"></b></span></div>
+                <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="warn" style="width:52%"></b></span></div>
+                <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="high" style="width:34%"></b></span></div>
+                <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="ok" style="width:91%"></b></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modules -->
+<section>
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">02</span>
+    <h2 data-anim="rise" data-delay="0">Sechs Bereiche. Sie aktivieren die, die Sie brauchen.</h2>
+    <p class="lead" style="margin-bottom:40px" data-anim="rise" data-delay="0">Ein Ausbildungsverein arbeitet nicht wie ein Verband, und das Werkzeug sollte beide nicht gleich behandeln.</p>
+
+    <div class="grid g-3">
+      <div class="card" data-anim="rise" data-delay="0">
+        <h3>Planung &amp; Periodisierung</h3><p>Der Saisonkalender, vom Makrozyklus bis zur Trainingseinheit. Geplante Belastung auf der einen Seite, tatsächliche auf der anderen — die Differenz ist auf einen Blick ablesbar.</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>Makro-, Meso- und Mikrozyklen auf einer einzigen Zeitachse</li><li>Wiederverwendbare Wochenvorlagen pro Kategorie</li><li>Automatischer Vergleich von Plan und Ist</li>
+        </ul>
+      </div>
+      <div class="card" data-anim="rise" data-delay="1">
+        <h3>Belastung &amp; GPS-Daten</h3><p>Import Ihrer GPS-Exporte und der internen Belastung, Aggregation nach Spieler, Gruppe und Zeitraum. Kompatibel mit dem, was Sie bereits nutzen.</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>CSV-Import der wichtigsten GPS-Systeme am Markt</li><li>Interne Belastung: RPE, Dauer, Wochenbelastung</li><li>Vergleich von akuter und chronischer Belastung über die von Ihnen definierten Zeitfenster</li>
+        </ul>
+      </div>
+      <div class="card" data-anim="rise" data-delay="2">
+        <h3>Wellness &amp; Verfügbarkeit</h3><p>Täglicher Fragebogen auf Spielerseite, Verfügbarkeitstabelle auf Staffseite. Was Sie fragen möchten, und nicht mehr.</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>Anpassbarer Fragebogen, in weniger als einer Minute ausgefüllt</li><li>Warnungen bei individueller Abweichung, nicht beim Gruppendurchschnitt</li><li>Verlauf einsehbar Spieler für Spieler</li>
+        </ul>
+      </div>
+      <div class="card" data-anim="rise" data-delay="0">
+        <h3>Tests &amp; Athletenprofile</h3><p>Batterien physischer Tests, Verlauf pro Spieler, Vergleich mit der Alterskategorie und Fortschrittsverfolgung.</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>Ihre Testprotokolle, nicht unsere</li><li>Erfassung vor Ort auf dem Mobilgerät, offline bei Bedarf</li><li>Wachstums- und Reifungsmarker</li>
+        </ul>
+      </div>
+      <div class="card" data-anim="rise" data-delay="1">
+        <h3>Verletzungen &amp; Return to Play</h3><p>Meldung, Lokalisierung auf dem Körperschema, Return-to-Play-Stufen und Übergangskriterien. Eine klare Dokumentation, teilbar mit dem medizinischen Staff.</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>Interaktives Körperschema, Spiegelkonvention</li><li>Return-to-Play-Stufen mit objektiven Kriterien</li><li>Gemeinsames Journal für medizinischen und Leistungsstab</li>
+        </ul>
+      </div>
+      <div class="card" data-anim="rise" data-delay="2">
+        <h3>Berichte &amp; Teilen</h3><p>Der Wochenbericht für den Cheftrainer, die monatliche Übersicht für die Direktion. Generiert, nicht abgetippt.</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>Automatische Berichte pro Team und Zeitraum</li><li>PDF- und Excel-Export mit einem Klick</li><li>Zugriffsrechte nach Rolle: Coach, Medizin, Direktion</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mise en place -->
+<section>
+  <div class="wrap">
+    <div class="split split-narrow">
+      <div data-anim="rise" data-delay="0">
+        <span class="mono on">03</span>
+        <h2>Wie die Einrichtung abläuft</h2>
+      </div>
+      <ol class="steps" data-anim="rise" data-delay="1">
+        <li><strong>Wir hören zu</strong> Ein Gespräch, um Ihre Organisation, Ihre Kategorien und Ihre Arbeitsgewohnheiten zu verstehen.</li>
+        <li><strong>Wir konfigurieren</strong> Studio wird für Ihre Organisation eingerichtet: Ihre Teams, Ihre Tests, Ihre Kennzahlen, Ihr Vokabular.</li>
+        <li><strong>Wir übernehmen den Bestand</strong> Ihre Excel-Historien und GPS-Exporte werden importiert — Sie beginnen nicht bei null.</li>
+        <li><strong>Wir begleiten</strong> Einarbeitung mit dem Staff, danach regelmässige Austauschtermine in der ersten Saison.</li>
+      </ol>
+    </div>
+    <p class="note" style="margin-top:36px" data-anim="rise" data-delay="0">Eine Organisation mit drei Datenquellen ist in ein bis zwei Wochen einsatzbereit. Auf Ihrer Seite: Ihr Kader und ein Export pro Quelle. Auf unserer: die Konfiguration, die Übernahme Ihrer Historien und die Einarbeitung mit dem Staff.</p>
+  </div>
+</section>
+
+<!-- Ce que Studio ne fait pas -->
+<section>
+  <div class="wrap">
+    <div class="split split-narrow">
+      <div data-anim="rise" data-delay="0">
+        <span class="mono on">04</span>
+        <h2>Was Studio nicht tut</h2>
+        <p class="lead">Alle sagen Ihnen, was ihr Werkzeug kann. Hier ist, was unseres nicht tut — damit Sie im Januar keine böse Überraschung erleben.</p>
+      </div>
+      <ol class="steps" data-anim="rise" data-delay="1">
+        <li><strong>Es sagt keine Verletzungen voraus</strong> Niemand kann das zuverlässig. Studio zeigt Ihnen, was sich ändert, was ausserhalb Ihrer eigenen Grenzen liegt, was sich wiederholt. Die Entscheidung bleibt Ihre.</li>
+        <li><strong>Es ersetzt Ihr Auge nicht</strong> Die Daten sagen, dass ein Spieler vierhundert Meter weniger gelaufen ist als üblich. Sie sagen nicht, dass er schlecht geschlafen hat. Sie wissen es.</li>
+        <li><strong>Es misst selbst nichts</strong> Studio aggregiert, was Ihre Sensoren liefern. Sie behalten Ihr GPS, Ihre Kraftmessplatten und Ihre aktuellen Werkzeuge.</li>
+        <li><strong>Es liefert keine fertigen Programme</strong> Es gibt Ihnen die Werkzeuge, um Ihre eigenen zu bauen. Ihre Methode ist Ihr Wert; es ist nicht Aufgabe einer Software, sie Ihnen zu verkaufen.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- Formules -->
+<section id="formules">
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">05</span>
+    <h2 data-anim="rise" data-delay="0">Pakete</h2>
+    <p class="lead" style="margin-bottom:40px" data-anim="rise" data-delay="0">Der Preis hängt von der Zahl der betreuten Athleten und den gewählten Modulen ab. Einführungspreise, gemeinsam bestätigt vor jeder Verpflichtung.</p>
+
+    <div class="plans">
+      <div class="plan" data-anim="rise" data-delay="0">
+        <h3>Starter</h3>
+        <p style="color:var(--ink-3);font-size:.88rem;margin:0">Selbstständiger Coach, kleine Struktur</p>
+        <div class="price" data-price="studioStarter" data-unit="price.month"></div>
+        <ul class="ticks">
+          <li>Bis zu 30 Athleten</li><li>Planung, Wellness, Tests</li>
+          <li>CSV-Import, PDF-Berichte</li><li>Support per E-Mail</li>
+        </ul>
+        <a class="btn btn-ghost" href="contact-de.html">Demo anfragen</a>
+      </div>
+
+      <div class="plan featured" data-anim="rise" data-delay="1">
+        <span class="tag">Am häufigsten gewählt</span>
+        <h3>Club</h3>
+        <p style="color:var(--ink-3);font-size:.88rem;margin:0">Akademie, Ausbildungsverein</p>
+        <div class="price" data-price="studioClub" data-unit="price.month"></div>
+        <ul class="ticks">
+          <li>Bis zu 200 Athleten, unbegrenzte Teams</li><li>Alle Module, einschliesslich Verletzungen und Return to Play</li>
+          <li>Sinetik:tracker-Anbindung inbegriffen <span style="color:var(--ink-3)">— Herbst 2026</span></li><li>Konfiguration und Datenübernahme inbegriffen</li>
+        </ul>
+        <a class="btn btn-primary" href="contact-de.html">Demo anfragen</a>
+      </div>
+
+      <div class="plan" data-anim="rise" data-delay="2">
+        <h3>Elite / Verband</h3>
+        <p style="color:var(--ink-3);font-size:.88rem;margin:0">Profizentrum, Verband</p>
+        <div class="price" data-price="studioElite"></div>
+        <ul class="ticks">
+          <li>Unbegrenzte Athleten und Strukturen</li><li>Premium-Module und massgeschneiderte Kennzahlen</li>
+          <li>API und Anbindung an Ihre bestehenden Werkzeuge</li><li>Dedizierte Begleitung die ganze Saison</li>
+        </ul>
+        <a class="btn btn-ghost" href="contact-de.html">Kontakt aufnehmen</a>
+      </div>
+    </div>
+
+    <p style="margin-top:32px;text-align:center;color:var(--ink-3);font-size:.9rem;max-width:60ch;margin-left:auto;margin-right:auto" data-anim="rise" data-delay="0">Plattformen für das Leistungsmanagement werden zwischen 15 000 und 50 000 CHF pro Jahr berechnet. Wir sind nicht nach demselben Modell gebaut: keine Vertriebler, keine Investoren, ein Produkt, das aus dem Bedürfnis von jemandem entstanden ist, der die Arbeit macht.</p>
+
+    <p class="note" style="margin-top:28px" data-anim="rise" data-delay="0">Europäisches Hosting, verschlüsselte Daten, strikte Trennung zwischen Organisationen. Konform mit der DSGVO und dem Schweizer nDSG. Ihre Daten bleiben Ihre und sind jederzeit exportierbar, ohne Ausstiegsgebühren und ohne proprietäres Format.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">06</span>
+    <h2 data-anim="rise" data-delay="0">Was man uns am häufigsten fragt</h2>
+
+    <div class="faq" data-anim="rise" data-delay="1">
+      <details>
+        <summary>Müssen wir unsere aktuellen Werkzeuge aufgeben?</summary>
+        <p>Nein. Studio setzt auf dem auf, was Sie bereits nutzen. Sie machen weiter mit Ihrem GPS, Ihren Kraftmessplatten, Ihren Fragebögen. Wir übernehmen deren Exporte.</p>
+      </details>
+      <details>
+        <summary>Wie lange dauert der Start?</summary>
+        <p>Der Start hängt von der Zahl der Quellen ab. In der Praxis: Import der Athleten und Teams am ersten Tag, dann ein Importprofil pro Quelle. Eine Organisation mit drei Quellen ist in ein bis zwei Wochen einsatzbereit, Einarbeitung inbegriffen.</p>
+      </details>
+      <details>
+        <summary>Funktioniert es für eine andere Sportart als Fussball?</summary>
+        <p>Ja. Nichts in der Plattform ist fussballspezifisch: die Kennzahlen, die Vokabulare und die Schwellenwerte werden von jeder Organisation definiert. Fussball ist einfach die Sportart, in der das Werkzeug am meisten erprobt wurde.</p>
+      </details>
+      <details>
+        <summary>Wer sieht was?</summary>
+        <p>Sie definieren die Rollen und was jeder sieht. Medizinische Daten können dem medizinischen Staff vorbehalten bleiben.</p>
+      </details>
+      <details>
+        <summary>Und wenn wir aufhören möchten?</summary>
+        <p>Sie exportieren alles und gehen. Keine Ausstiegsgebühren, kein proprietäres Format.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/site.js"></script>
+<script type="module" src="assets/js/hero3d.js"></script>
+
+
+</body></html>

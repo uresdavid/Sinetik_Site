@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="{{lang}}" data-theme="dark" data-page-lang="{{lang}}" data-lang-urls='{{langUrls}}'>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>try{var t=localStorage.getItem('sinetik-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<title>{{t:meta.title}}</title>
+<meta name="description" content="{{t:meta.desc}}">
+{{headAlternates}}
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/sinetik.css">
+
+<!-- ============================================================
+     Styles locaux à cette page uniquement.
+     Volontairement minimalistes : 4 composants qui n'existent pas
+     encore dans sinetik.css (FAQ, cadre d'image, liste de specs,
+     bandeau de téléchargement). Tout le reste réutilise les
+     classes existantes du site.
+     ============================================================ -->
+<style>
+  /* — Cadre d'image réutilisable (capteur, photos) — */
+  /* Les visuels produit sont des PNG détourés : ils se posent sur le fond de
+     la carte et restent lisibles en thème clair comme en thème sombre. */
+  .shot{border:1px solid rgba(128,140,160,.22);border-radius:16px;overflow:hidden;
+    background:rgba(128,140,160,.05);max-width:380px}
+  .shot img{display:block;width:100%;height:auto;padding:9%;box-sizing:border-box}
+  .shot figcaption{padding:12px 16px;font-size:.8rem;line-height:1.5;color:var(--ink-3,#8a93a6);border-top:1px solid rgba(128,140,160,.16)}
+
+  /* — Liste de caractéristiques techniques — */
+  .specs{list-style:none;margin:24px 0 0;padding:0}
+  .specs li{display:flex;justify-content:space-between;gap:20px;padding:11px 0;
+    border-bottom:1px solid rgba(128,140,160,.16);font-size:.9rem}
+  .specs li:last-child{border-bottom:0}
+  .specs em{font-style:normal;color:var(--ink-3,#8a93a6)}
+  .specs b{font-family:var(--mono,'JetBrains Mono',monospace);font-weight:500;text-align:right}
+
+  /* — FAQ (balise native <details>, lisible sans JavaScript) — */
+  .faq{border-top:1px solid rgba(128,140,160,.16)}
+  .faq details{border-bottom:1px solid rgba(128,140,160,.16)}
+  .faq summary{cursor:pointer;list-style:none;padding:20px 40px 20px 0;position:relative;
+    font-weight:600;font-size:1rem}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:'+';position:absolute;right:6px;top:18px;font-size:1.3rem;
+    font-weight:400;color:var(--ink-3,#8a93a6);transition:transform .2s ease}
+  .faq details[open] summary::after{transform:rotate(45deg)}
+  .faq details p{margin:0 0 22px;max-width:70ch;color:var(--ink-2,#b6bdc9);font-size:.94rem;line-height:1.65}
+
+  /* — Bandeau de téléchargement — */
+  .getapp{display:flex;flex-wrap:wrap;align-items:center;gap:18px 28px;
+    padding:24px 28px;border:1px solid rgba(128,140,160,.22);border-radius:16px}
+  .getapp p{margin:0;font-size:.9rem;color:var(--ink-2,#b6bdc9)}
+
+  @media (prefers-reduced-motion:reduce){.faq summary::after{transition:none}}
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+
+<!-- ============================ HERO ============================ -->
+<header class="hero hero-solo">
+  <div class="hero-canvas" id="hero3d" data-scene="tracker"></div>
+  <div class="hero-scrim"></div>
+  <div class="hero-glow"></div>
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">{{t:hero.mono}}</span>
+    <h1 data-anim="rise" data-delay="1">{{t:hero.h1}}</h1>
+    <p class="lead" data-anim="rise" data-delay="2">{{t:hero.lead}}</p>
+    <div class="btn-row" data-anim="rise" data-delay="3">
+      <a class="btn btn-primary" href="{{url:contact}}">{{t:cta.pilot}}</a>
+      <a class="btn btn-ghost" href="#mesure">{{t:s1.h2}}</a>
+    </div>
+  </div>
+</header>
+
+<!-- ==================== 01 · CE QUE TRACKER MESURE ==================== -->
+<section id="mesure">
+  <div class="wrap">
+    <div class="split">
+      <div data-anim="rise" data-delay="0">
+        <span class="mono on">01</span>
+        <h2>{{t:s1.h2}}</h2>
+        <p class="lead">{{t:s1.p1}}</p>
+        <p style="margin-top:22px">{{t:s1.p2}}</p>
+      </div>
+
+      <div data-anim="right" data-delay="1">
+        <div class="datacard">
+          <div class="datacard-head">
+            <span class="mono">{{t:card.squat.set2}}</span>
+            <span class="live">{{t:card.example}}</span>
+          </div>
+          <svg viewBox="0 0 460 210" role="img" aria-labelledby="vbttitle">
+            <title id="vbttitle">{{t:svg.title}}</title>
+            <!-- bande de zone cible -->
+            <rect x="46" y="66" width="394" height="52" fill="#0A6CFF" fill-opacity=".10"/>
+            <text x="52" y="60" font-family="JetBrains Mono, monospace" font-size="9" fill="#0A6CFF" fill-opacity=".8">{{t:svg.zone.strength}}</text>
+            <!-- axes -->
+            <line x1="46" y1="12" x2="46" y2="176" stroke="currentColor" stroke-opacity=".18"/>
+            <line x1="46" y1="176" x2="440" y2="176" stroke="currentColor" stroke-opacity=".18"/>
+            <text x="26" y="20" font-family="JetBrains Mono, monospace" font-size="10" fill="currentColor" fill-opacity=".45">m/s</text>
+            <text x="420" y="196" font-family="JetBrains Mono, monospace" font-size="10" fill="currentColor" fill-opacity=".45">reps</text>
+            <!-- barres : vitesse décroissante au fil des reps -->
+            <rect x="72"  y="70"  width="34" height="106" rx="3" fill="#0A6CFF" fill-opacity=".85"/>
+            <rect x="132" y="76"  width="34" height="100" rx="3" fill="#0A6CFF" fill-opacity=".85"/>
+            <rect x="192" y="82"  width="34" height="94"  rx="3" fill="#0A6CFF" fill-opacity=".85"/>
+            <rect x="252" y="94"  width="34" height="82"  rx="3" fill="#0A6CFF" fill-opacity=".85"/>
+            <rect x="312" y="108" width="34" height="68"  rx="3" fill="#0A6CFF" fill-opacity=".55"/>
+            <rect x="372" y="126" width="34" height="50"  rx="3" fill="#E4572E" fill-opacity=".75"/>
+            <!-- ligne de tendance -->
+            <line x1="89" y1="70" x2="389" y2="126" stroke="currentColor" stroke-opacity=".3" stroke-width="1.5" stroke-dasharray="4 4"/>
+          </svg>
+          <div class="datacard-foot">
+            <div><em>{{t:foot.mvmoy}}</em><b>0.42<span>m/s</span></b></div>
+            <div><em>{{t:foot.pvmax}}</em><b>0.71<span>m/s</span></b></div>
+            <div><em>{{t:foot.loss}}</em><b>21<span>%</span></b></div>
+          </div>
+          <p class="mono" style="margin:14px 0 0;text-transform:none;letter-spacing:.02em">{{t:card.illustration}}</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="note" style="margin-top:44px" data-anim="rise" data-delay="0">{{t:s1.note}}</p>
+  </div>
+</section>
+
+<!-- ==================== 02 · LES MODES DE TRAVAIL ==================== -->
+<section>
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">02</span>
+    <h2 data-anim="rise" data-delay="0">{{t:s2.h2}}</h2>
+    <p class="lead" style="margin-bottom:40px" data-anim="rise" data-delay="0">{{t:s2.lead}}</p>
+
+    <div class="grid g-3">
+      <div class="card" data-anim="rise" data-delay="0">
+        <h3>{{t:s2.c1.h3}}</h3><p>{{t:s2.c1.p}}</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>{{t:s2.c1.li1}}</li>
+          <li>{{t:s2.c1.li2}}</li>
+          <li>{{t:s2.c1.li3}}</li>
+          <li>{{t:s2.c1.li4}}</li>
+        </ul>
+      </div>
+
+      <div class="card" data-anim="rise" data-delay="1">
+        <h3>{{t:s2.c2.h3}}</h3><p>{{t:s2.c2.p}}</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>{{t:s2.c2.li1}}</li>
+          <li>{{t:s2.c2.li2}}</li>
+          <li>{{t:s2.c2.li3}}</li>
+          <li>{{t:s2.c2.li4}}</li>
+        </ul>
+      </div>
+
+      <div class="card" data-anim="rise" data-delay="2">
+        <h3>{{t:s2.c3.h3}}</h3><p>{{t:s2.c3.p}}</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>{{t:s2.c3.li1}}</li>
+          <li>{{t:s2.c3.li2}}</li>
+          <li>{{t:s2.c3.li3}}</li>
+          <li>{{t:s2.c3.li4}}</li>
+        </ul>
+      </div>
+
+      <div class="card" data-anim="rise" data-delay="0">
+        <h3>{{t:s2.c4.h3}}</h3><p>{{t:s2.c4.p}}</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>{{t:s2.c4.li1}}</li>
+          <li>{{t:s2.c4.li2}}</li>
+          <li>{{t:s2.c4.li3}}</li>
+          <li>{{t:s2.c4.li4}}</li>
+        </ul>
+      </div>
+
+      <div class="card" data-anim="rise" data-delay="1">
+        <h3>{{t:s2.c5.h3}}</h3><p>{{t:s2.c5.p}}</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>{{t:s2.c5.li1}}</li>
+          <li>{{t:s2.c5.li2}}</li>
+          <li>{{t:s2.c5.li3}}</li>
+          <li>{{t:s2.c5.li4}}</li>
+        </ul>
+      </div>
+
+      <div class="card" data-anim="rise" data-delay="2">
+        <h3>{{t:s2.c6.h3}}</h3><p>{{t:s2.c6.p}}</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>{{t:s2.c6.li1}}</li>
+          <li>{{t:s2.c6.li2}}</li>
+          <li>{{t:s2.c6.li3}}</li>
+          <li>{{t:s2.c6.li4}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 03 · L'APPLICATION ==================== -->
+<section>
+  <div class="wrap">
+    <div class="split">
+      <div data-anim="rise" data-delay="0">
+        <span class="mono on">03</span>
+        <h2>{{t:s3.h2}}</h2>
+        <p class="lead">{{t:s3.lead}}</p>
+        <ul class="ticks" style="margin-top:24px">
+          <li>{{t:s3.li1}}</li>
+          <li>{{t:s3.li2}}</li>
+          <li>{{t:s3.li3}}</li>
+          <li>{{t:s3.li4}}</li>
+          <li>{{t:s3.li5}}</li>
+        </ul>
+      </div>
+
+      <div data-anim="rise" data-delay="1">
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-top"><i></i></div>
+            <div class="mock-body" style="padding:14px">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <strong style="font-size:12px">Back Squat · 100 kg</strong>
+                <span style="font-family:var(--mono);font-size:10px;color:#0A6CFF">{{t:phone.set2}}</span>
+              </div>
+              <div class="mock-row" style="grid-template-columns:1fr 1fr">
+                <div class="mock-tile"><em>{{t:foot.mvmoy}}</em><b>0.42 m/s</b></div>
+                <div class="mock-tile"><em>{{t:foot.loss}}</em><b>21 %</b></div>
+              </div>
+              <div class="mock-panel">
+                <h5>{{t:phone.chart}}</h5>
+                <div class="mock-chart" style="height:56px">
+                  <i style="height:92%"></i><i style="height:87%"></i><i style="height:81%"></i>
+                  <i style="height:71%"></i><i style="height:59%"></i><i class="alt" style="height:43%"></i>
+                </div>
+              </div>
+              <div class="mock-panel">
+                <h5>{{t:phone.zone}}</h5>
+                <div class="mock-list">
+                  <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b style="width:78%"></b></span></div>
+                  <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="warn" style="width:54%"></b></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bandeau de téléchargement.
+         État actuel : distribution TestFlight, l'app n'est pas encore publiée.
+         Le jour de la publication : remplacer le bouton ghost ci-dessous par
+         <a class="btn btn-primary" href="https://apps.apple.com/…">Télécharger sur l'App Store</a> -->
+    <div class="getapp" style="margin-top:52px" data-anim="rise" data-delay="0">
+      <p>{{t:getapp.p}}</p>
+      <a class="btn btn-ghost" href="{{url:contact}}">{{t:getapp.btn}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 04 · LE CAPTEUR ==================== -->
+<section id="capteur">
+  <div class="wrap">
+    <div class="split">
+      <div data-anim="rise" data-delay="0">
+        <span class="mono on">04</span>
+        <h2>{{t:s4.h2}}</h2>
+        <p class="lead">{{t:s4.lead}}</p>
+
+        <ul class="specs">
+          <li><em>{{t:spec.type.k}}</em><b>{{t:spec.type.v}}</b></li>
+          <li><em>{{t:spec.signal.k}}</em><b>{{t:spec.signal.v}}</b></li>
+          <li><em>{{t:spec.freq.k}}</em><b>52 Hz</b></li>
+          <li><em>{{t:spec.link.k}}</em><b>Bluetooth Low Energy</b></li>
+          <li><em>{{t:spec.worn.k}}</em><b>{{t:spec.worn.v}}</b></li>
+          <li><em>{{t:spec.setup.k}}</em><b>{{t:spec.setup.v}}</b></li>
+        </ul>
+
+        <ol class="steps" style="margin-top:34px">
+          <li><strong>{{t:step1.b}}</strong> {{t:step1.t}}</li>
+          <li><strong>{{t:step2.b}}</strong> {{t:step2.t}}</li>
+          <li><strong>{{t:step3.b}}</strong> {{t:step3.t}}</li>
+        </ol>
+      </div>
+
+      <div data-anim="rise" data-delay="1">
+        <figure class="shot">
+          <img src="assets/img/capteur-sinetik.png" width="714" height="713" loading="lazy" decoding="async" alt="{{t:fig1.alt}}">
+          <figcaption>{{t:fig1.cap}}</figcaption>
+        </figure>
+
+        <figure class="shot" style="margin-top:20px">
+          <img src="assets/img/capteur-isometrie.png" width="1100" height="763" loading="lazy" decoding="async" alt="{{t:fig2.alt}}">
+          <figcaption>{{t:fig2.cap}}</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 05 · FORMULES ==================== -->
+<section id="tarifs">
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">05</span>
+    <h2 data-anim="rise" data-delay="0">{{t:s5.h2}}</h2>
+    <p class="lead" style="margin-bottom:40px" data-anim="rise" data-delay="0">{{t:s5.lead}}</p>
+
+    <div class="plans">
+      <div class="plan" data-anim="rise" data-delay="0">
+        <h3>{{t:plan1.h3}}</h3>
+        <p style="color:var(--ink-3);font-size:.88rem;margin:0">{{t:plan1.sub}}</p>
+        <!-- Grille définitive : remplacer par <div class="price" data-price="trackerUnit"></div> -->
+        <div class="price" style="font-size:1.05rem">{{t:plan1.price}}</div>
+        <ul class="ticks">
+          <li>{{t:plan1.li1}}</li>
+          <li>{{t:plan1.li2}}</li>
+          <li>{{t:plan1.li3}}</li>
+        </ul>
+        <a class="btn btn-ghost" href="{{url:contact}}">{{t:plan1.btn}}</a>
+      </div>
+
+      <div class="plan featured" data-anim="rise" data-delay="1">
+        <span class="tag">{{t:plan2.tag}}</span>
+        <h3>{{t:plan2.h3}}</h3>
+        <p style="color:var(--ink-3);font-size:.88rem;margin:0">{{t:plan2.sub}}</p>
+        <div class="price" style="font-size:1.05rem">{{t:plan2.price}}</div>
+        <ul class="ticks">
+          <li>{{t:plan2.li1}}</li>
+          <li>{{t:plan2.li2}}</li>
+          <li>{{t:plan2.li3}}</li>
+          <li>{{t:plan2.li4}}</li>
+        </ul>
+        <a class="btn btn-primary" href="{{url:contact}}">{{t:cta.pilot}}</a>
+      </div>
+
+      <div class="plan" data-anim="rise" data-delay="2">
+        <h3>{{t:plan3.h3}}</h3>
+        <p style="color:var(--ink-3);font-size:.88rem;margin:0">{{t:plan3.sub}}</p>
+        <div class="price" style="font-size:1.05rem">{{t:plan3.price}}</div>
+        <ul class="ticks">
+          <li>{{t:plan3.li1}}</li>
+          <li>{{t:plan3.li2}}</li>
+          <li>{{t:plan3.li3}}</li>
+        </ul>
+        <a class="btn btn-ghost" href="{{url:contact}}">{{t:plan3.btn}}</a>
+      </div>
+    </div>
+
+    <p class="note" style="margin-top:36px" data-anim="rise" data-delay="0">{{t:s5.note}}</p>
+  </div>
+</section>
+
+<!-- ==================== 06 · QUESTIONS ==================== -->
+<section>
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">06</span>
+    <h2 data-anim="rise" data-delay="0">{{t:s6.h2}}</h2>
+    <p class="lead" style="margin-bottom:36px" data-anim="rise" data-delay="0">{{t:s6.lead}}</p>
+
+    <div class="faq" data-anim="rise" data-delay="0">
+      <details>
+        <summary>{{t:faq1.q}}</summary>
+        <p>{{t:faq1.a}}</p>
+      </details>
+      <details>
+        <summary>{{t:faq2.q}}</summary>
+        <p>{{t:faq2.a}}</p>
+      </details>
+      <details>
+        <summary>{{t:faq3.q}}</summary>
+        <p>{{t:faq3.a}}</p>
+      </details>
+      <details>
+        <summary>{{t:faq4.q}}</summary>
+        <p>{{t:faq4.a}}</p>
+      </details>
+      <details>
+        <summary>{{t:faq5.q}}</summary>
+        <p>{{t:faq5.a}}</p>
+      </details>
+      <details>
+        <summary>{{t:faq6.q}}</summary>
+        <p>{{t:faq6.a}}</p>
+      </details>
+      <details>
+        <summary>{{t:faq7.q}}</summary>
+        <p>{{t:faq7.a}}</p>
+      </details>
+      <details>
+        <summary>{{t:faq8.q}}</summary>
+        <p>{{t:faq8.a}}</p>
+      </details>
+      <details>
+        <summary>{{t:faq9.q}}</summary>
+        <p>{{t:faq9.a}}</p>
+      </details>
+      <details>
+        <summary>{{t:faq10.q}}</summary>
+        <p>{{t:faq10.a}}</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 07 · FEUILLE DE ROUTE ==================== -->
+<section>
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">07</span>
+    <h2 data-anim="rise" data-delay="0">{{t:s7.h2}}</h2>
+    <p class="lead" style="margin-bottom:40px" data-anim="rise" data-delay="0">{{t:s7.lead}}</p>
+
+    <div class="grid g-3">
+      <div class="card" data-anim="rise" data-delay="0">
+        <span class="mono">{{t:status.dev}}</span>
+        <h3>{{t:s7.c1.h3}}</h3>
+        <p>{{t:s7.c1.p}}</p>
+      </div>
+      <div class="card" data-anim="rise" data-delay="1">
+        <span class="mono">{{t:status.dev}}</span>
+        <h3>{{t:s7.c2.h3}}</h3>
+        <p>{{t:s7.c2.p}}</p>
+      </div>
+      <div class="card" data-anim="rise" data-delay="2">
+        <span class="mono">{{t:status.study}}</span>
+        <h3>{{t:s7.c3.h3}}</h3>
+        <p>{{t:s7.c3.p}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== BANDEAU FINAL ==================== -->
+<section>
+  <div class="wrap">
+    <div class="band" data-anim="rise" data-delay="0">
+      <span class="mono on">{{t:band.mono}}</span>
+      <h2>{{t:band.h2}}</h2>
+      <p class="lead">{{t:band.p}}</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="{{url:contact}}">{{t:cta.pilot}}</a>
+        <a class="btn btn-ghost" href="{{url:studio}}">{{t:band.btn.studio}}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/site.js"></script>
+<script type="module" src="assets/js/hero3d.js"></script>
+</body>
+</html>

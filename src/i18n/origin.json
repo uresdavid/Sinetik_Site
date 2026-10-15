@@ -1,0 +1,620 @@
+{
+  "meta.title": {
+    "fr": "Préparation physique individuelle · Lausanne — Sinetik:origin",
+    "en": "One-to-one physical preparation · Lausanne — Sinetik:origin",
+    "de": "Individuelle Athletikvorbereitung · Lausanne — Sinetik:origin",
+    "it": "Preparazione fisica individuale · Losanna — Sinetik:origin"
+  },
+  "meta.desc": {
+    "fr": "Bilan, programmation individualisée et suivi pour footballeurs, sportifs exigeants et reprise après blessure. En présentiel dans la région lémanique ou à distance.",
+    "en": "Assessment, individual programming and ongoing coaching for footballers, committed amateurs and athletes returning from injury. In the Lake Geneva region or fully remote.",
+    "de": "Bilanz, individuelle Programmierung und Begleitung für Fussballer, ambitionierte Sportler und die Rückkehr nach einer Verletzung. Vor Ort in der Genferseeregion oder aus der Ferne.",
+    "it": "Bilancio, programmazione individuale e accompagnamento per calciatori, sportivi esigenti e ripresa dopo un infortunio. In presenza nella regione del Lemano o a distanza."
+  },
+  "hero.mono": {
+    "fr": "Sinetik:origin · Préparation physique individuelle · Région lémanique &amp; à distance",
+    "en": "Sinetik:origin · One-to-one physical preparation · Lake Geneva region &amp; remote",
+    "de": "Sinetik:origin · Individuelle Athletikvorbereitung · Genferseeregion &amp; aus der Ferne",
+    "it": "Sinetik:origin · Preparazione fisica individuale · Regione del Lemano &amp; a distanza"
+  },
+  "hero.h1": {
+    "fr": "Comprendre comment vous bougez, avant de vous entraîner",
+    "en": "Understand how you move, before we train you",
+    "de": "Verstehen, wie Sie sich bewegen, bevor wir Sie trainieren",
+    "it": "Capire come ti muovi, prima di allenarti"
+  },
+  "hero.lead": {
+    "fr": "Préparation physique individuelle pour footballeurs, sportifs exigeants et reprise après blessure. Un bilan d'abord, un plan ensuite — construit autour de la semaine que vous avez vraiment, pas de la semaine idéale.",
+    "en": "One-to-one physical preparation for footballers, committed amateurs and athletes coming back from injury. An assessment first, a plan second — built around the week you actually have, not the ideal one.",
+    "de": "Individuelle Athletikvorbereitung für Fussballer, ambitionierte Sportler und die Rückkehr nach einer Verletzung. Zuerst eine Bilanz, dann ein Plan — aufgebaut auf der Woche, die Sie wirklich haben, nicht auf der idealen.",
+    "it": "Preparazione fisica individuale per calciatori, sportivi esigenti e ripresa dopo un infortunio. Prima un bilancio, poi un piano — costruito attorno alla settimana che hai davvero, non a quella ideale."
+  },
+  "cta.write": {
+    "fr": "Nous écrire",
+    "en": "Get in touch",
+    "de": "Schreiben Sie uns",
+    "it": "Scrivici"
+  },
+  "hero.ctaFormats": {
+    "fr": "Les formules",
+    "en": "The formats",
+    "de": "Die Formate",
+    "it": "Le formule"
+  },
+  "hero.note": {
+    "fr": "Le premier échange dure vingt minutes, par téléphone ou en visio. Gratuit et sans engagement.",
+    "en": "The first conversation lasts twenty minutes, by phone or video. Free, with no commitment.",
+    "de": "Das erste Gespräch dauert zwanzig Minuten, per Telefon oder Video. Kostenlos und unverbindlich.",
+    "it": "Il primo scambio dura venti minuti, al telefono o in videochiamata. Gratuito e senza impegno."
+  },
+  "s01.h2": {
+    "fr": "Entraîner une personne, pas un profil",
+    "en": "Training a person, not a profile",
+    "de": "Eine Person trainieren, kein Profil",
+    "it": "Allenare una persona, non un profilo"
+  },
+  "s01.lead": {
+    "fr": "La plupart des programmes s'adressent à un athlète moyen : un corps standard, une semaine standard, une fatigue standard. Ce sportif-là n'existe pas.",
+    "en": "Most programmes are written for an average athlete: a standard body, a standard week, a standard level of fatigue. That athlete does not exist.",
+    "de": "Die meisten Programme richten sich an einen durchschnittlichen Athleten: ein Standardkörper, eine Standardwoche, eine Standardmüdigkeit. Diesen Sportler gibt es nicht.",
+    "it": "La maggior parte dei programmi si rivolge a un atleta medio: un corpo standard, una settimana standard, una fatica standard. Quello sportivo non esiste."
+  },
+  "s01.p1": {
+    "fr": "Vous avez des leviers osseux qui vous appartiennent, une façon spontanée de produire de la force, une semaine qui n'a pas ressemblé à la précédente, un match dimanche et peut-être un dos qui tire depuis février. Un plan qui ignore tout cela finit toujours de la même manière : la stagnation, la douleur qui revient au même endroit, ou le sentiment de travailler dur pour rien.",
+    "en": "You have your own bone levers, your own spontaneous way of producing force, a week that looked nothing like the last one, a match on Sunday and perhaps a back that has been pulling since February. A plan that ignores all of this always ends the same way: a plateau, pain that returns to the same place, or the feeling of working hard for nothing.",
+    "de": "Sie haben Ihre eigenen knöchernen Hebel, Ihre eigene spontane Art, Kraft zu erzeugen, eine Woche, die der vorigen in nichts glich, am Sonntag ein Spiel und vielleicht einen Rücken, der seit Februar zieht. Ein Plan, der all das ignoriert, endet immer gleich: Stagnation, Schmerz, der an dieselbe Stelle zurückkehrt, oder das Gefühl, hart für nichts zu arbeiten.",
+    "it": "Hai le tue leve ossee, un tuo modo spontaneo di produrre forza, una settimana che non ha somigliato alla precedente, una partita domenica e forse una schiena che tira da febbraio. Un piano che ignora tutto questo finisce sempre allo stesso modo: la stagnazione, il dolore che torna nello stesso punto, o la sensazione di lavorare duro per niente."
+  },
+  "s01.p2": {
+    "fr": "Notre parti pris est simple. Nous n'organisons pas l'entraînement autour de ce que vous êtes, mais autour de ce que nous décidons de provoquer — aujourd'hui, avec le corps qui se présente aujourd'hui. Votre façon naturelle de bouger ne devient pas une étiquette : elle oriente le choix des exercices et la manière dont nous vous parlons pendant l'effort.",
+    "en": "Our position is simple. We do not organise training around what you are, but around what we decide to bring about — today, with the body that turns up today. Your natural way of moving does not become a label: it guides the choice of exercises and the way we coach you through the effort.",
+    "de": "Unser Standpunkt ist einfach. Wir richten das Training nicht danach aus, was Sie sind, sondern danach, was wir bewirken wollen — heute, mit dem Körper, der heute erscheint. Ihre natürliche Art, sich zu bewegen, wird nicht zum Etikett: Sie lenkt die Wahl der Übungen und die Art, wie wir Sie während der Belastung begleiten.",
+    "it": "La nostra posizione è semplice. Non organizziamo l'allenamento attorno a ciò che sei, ma attorno a ciò che decidiamo di provocare — oggi, con il corpo che si presenta oggi. Il tuo modo naturale di muoverti non diventa un'etichetta: orienta la scelta degli esercizi e il modo in cui ti parliamo durante lo sforzo."
+  },
+  "s01.p3": {
+    "fr": "L'accompagnement est assuré par un seul préparateur physique, du bilan au suivi. Vous ne changez pas d'interlocuteur en cours de route.",
+    "en": "One coach handles the whole thing, from the assessment to the follow-up. You never change contact halfway through.",
+    "de": "Die Begleitung übernimmt ein einziger Athletiktrainer, von der Bilanz bis zur Nachverfolgung. Sie wechseln unterwegs nicht den Ansprechpartner.",
+    "it": "L'accompagnamento è affidato a un unico preparatore fisico, dal bilancio al monitoraggio. Non cambi interlocutore lungo il percorso."
+  },
+  "s01.card.mono": {
+    "fr": "Avant chaque séance",
+    "en": "Before every session",
+    "de": "Vor jeder Einheit",
+    "it": "Prima di ogni seduta"
+  },
+  "s01.card.h3": {
+    "fr": "Deux questions, toujours les mêmes",
+    "en": "Two questions, always the same",
+    "de": "Zwei Fragen, immer dieselben",
+    "it": "Due domande, sempre le stesse"
+  },
+  "s01.card.p": {
+    "fr": "Deux conditions non négociables avant de charger quoi que ce soit. Elles prennent trente secondes et elles changent la séance.",
+    "en": "Two non-negotiable conditions before loading anything. They take thirty seconds, and they change the session.",
+    "de": "Zwei nicht verhandelbare Bedingungen, bevor überhaupt belastet wird. Sie dauern dreissig Sekunden und verändern die Einheit.",
+    "it": "Due condizioni non negoziabili prima di caricare qualsiasi cosa. Richiedono trenta secondi e cambiano la seduta."
+  },
+  "s01.card.li1": {
+    "fr": "<strong>L'énergie disponible.</strong> Ce dont vous disposez réellement aujourd'hui, pas ce que le plan avait prévu il y a trois semaines. La séance est maintenue, allégée ou remplacée.",
+    "en": "<strong>Available energy.</strong> What you actually have today, not what the plan assumed three weeks ago. The session is kept, lightened or replaced.",
+    "de": "<strong>Die verfügbare Energie.</strong> Das, worüber Sie heute wirklich verfügen, nicht das, was der Plan vor drei Wochen vorgesehen hatte. Die Einheit wird beibehalten, reduziert oder ersetzt.",
+    "it": "<strong>L'energia disponibile.</strong> Ciò di cui disponi davvero oggi, non ciò che il piano aveva previsto tre settimane fa. La seduta viene mantenuta, alleggerita o sostituita."
+  },
+  "s01.card.li2": {
+    "fr": "<strong>La douleur, de 0 à 10.</strong> En dessous de 5, on travaille le spécifique. Au-delà, on travaille autre chose — et on cherche pourquoi.",
+    "en": "<strong>Pain, from 0 to 10.</strong> Below 5, we work on the specific. Above it, we work on something else — and we look for the reason.",
+    "de": "<strong>Der Schmerz, von 0 bis 10.</strong> Unter 5 arbeiten wir am Spezifischen. Darüber arbeiten wir an etwas anderem — und suchen den Grund.",
+    "it": "<strong>Il dolore, da 0 a 10.</strong> Sotto il 5 si lavora sullo specifico. Oltre, si lavora su altro — e si cerca il perché."
+  },
+  "s01.card.note": {
+    "fr": "Ce n'est pas du laxisme. C'est ce qui fait qu'un plan tient six mois au lieu de trois semaines.",
+    "en": "This isn't leniency. It is what makes a plan last six months instead of three weeks.",
+    "de": "Das ist keine Nachlässigkeit. Es ist das, was einen Plan sechs Monate statt drei Wochen halten lässt.",
+    "it": "Non è lassismo. È ciò che fa durare un piano sei mesi invece di tre settimane."
+  },
+  "s02.h2": {
+    "fr": "Pour qui",
+    "en": "Who it's for",
+    "de": "Für wen",
+    "it": "Per chi"
+  },
+  "s02.lead": {
+    "fr": "Quatre situations très différentes, un point commun : quelqu'un qui s'entraîne déjà sérieusement et qui veut comprendre pourquoi certaines choses ne bougent pas.",
+    "en": "Four very different situations, one thing in common: someone who already trains seriously and wants to understand why certain things aren't moving.",
+    "de": "Vier sehr unterschiedliche Situationen, eine Gemeinsamkeit: jemand, der bereits ernsthaft trainiert und verstehen will, warum sich manches nicht bewegt.",
+    "it": "Quattro situazioni molto diverse, un punto in comune: qualcuno che si allena già seriamente e vuole capire perché certe cose non si muovono."
+  },
+  "s02.c1.h3": {
+    "fr": "Jeunes footballeurs",
+    "en": "Youth footballers",
+    "de": "Junge Fussballer",
+    "it": "Giovani calciatori"
+  },
+  "s02.c1.p": {
+    "fr": "Développer la force, la coordination et la robustesse au bon moment de la croissance. Nous travaillons sur l'âge biologique, pas sur l'année de naissance : dans une même catégorie, deux ans d'écart de maturation sont la norme. En complément du travail au club, jamais contre lui.",
+    "en": "Building strength, coordination and robustness at the right point in growth. We work from biological age, not year of birth: within one age group, two years of maturation difference is the norm. Alongside the club's work, never against it.",
+    "de": "Kraft, Koordination und Robustheit im richtigen Moment des Wachstums entwickeln. Wir arbeiten mit dem biologischen Alter, nicht mit dem Geburtsjahr: Innerhalb derselben Kategorie sind zwei Jahre Reifeunterschied die Norm. Ergänzend zur Arbeit im Verein, nie gegen sie.",
+    "it": "Sviluppare forza, coordinazione e robustezza nel momento giusto della crescita. Lavoriamo sull'età biologica, non sull'anno di nascita: nella stessa categoria, due anni di differenza di maturazione sono la norma. A complemento del lavoro nel club, mai contro di esso."
+  },
+  "s02.c2.h3": {
+    "fr": "Amateurs exigeants",
+    "en": "Committed amateurs",
+    "de": "Ambitionierte Amateure",
+    "it": "Amatori esigenti"
+  },
+  "s02.c2.p": {
+    "fr": "Trois entraînements par semaine, un travail à plein temps, une vie de famille. Progresser dans ces conditions est possible, à condition de renoncer à deux ou trois choses — et de savoir lesquelles. C'est exactement le travail que nous ferons ensemble.",
+    "en": "Three sessions a week, a full-time job, a family. Progress is possible in those conditions, provided you give up two or three things — and know which ones. That is exactly the work we'll do together.",
+    "de": "Drei Trainings pro Woche, ein Vollzeitjob, ein Familienleben. Unter diesen Bedingungen Fortschritte zu machen ist möglich — vorausgesetzt, man verzichtet auf zwei oder drei Dinge und weiss, auf welche. Genau das ist die Arbeit, die wir gemeinsam machen.",
+    "it": "Tre allenamenti a settimana, un lavoro a tempo pieno, una vita di famiglia. Progredire in queste condizioni è possibile, a patto di rinunciare a due o tre cose — e di sapere quali. È esattamente il lavoro che faremo insieme."
+  },
+  "s02.c3.h3": {
+    "fr": "Athlètes semi-pro &amp; pro",
+    "en": "Semi-pro &amp; pro athletes",
+    "de": "Semi-Profis &amp; Profis",
+    "it": "Atleti semi-pro &amp; pro"
+  },
+  "s02.c3.p": {
+    "fr": "Un regard extérieur sur votre planification, la préparation d'une échéance ou la reprise après une blessure longue. Nous nous articulons avec le staff en place : nous ne travaillons correctement que si le rôle de chacun est clair.",
+    "en": "An outside read on your planning, on preparing for a deadline, or on coming back from a long injury. We work alongside your existing staff: we only work properly when everyone's role is clear.",
+    "de": "Ein Blick von aussen auf Ihre Planung, die Vorbereitung auf einen Termin oder die Rückkehr nach einer langen Verletzung. Wir stimmen uns mit dem bestehenden Staff ab: Wir arbeiten nur dann richtig, wenn die Rolle jedes Einzelnen klar ist.",
+    "it": "Uno sguardo esterno sulla tua pianificazione, sulla preparazione di una scadenza o sul rientro dopo un infortunio lungo. Ci coordiniamo con lo staff presente: lavoriamo bene solo se il ruolo di ciascuno è chiaro."
+  },
+  "s02.c4.h3": {
+    "fr": "Reprise &amp; santé",
+    "en": "Return &amp; health",
+    "de": "Rückkehr &amp; Gesundheit",
+    "it": "Ripresa &amp; salute"
+  },
+  "s02.c4.p": {
+    "fr": "Après une longue interruption, une blessure ou une opération. L'objectif n'est pas un chiffre : c'est un corps disponible, sans douleur, qui tient dans la durée. Nous prenons le relais quand le physiothérapeute a terminé — sur son feu vert, jamais à sa place.",
+    "en": "After a long break, an injury or surgery. The goal is not a number: it is a body that is available, free of pain, and holds up over time. We take over when the physiotherapist is done — with their go-ahead, never in their place.",
+    "de": "Nach einer langen Pause, einer Verletzung oder einer Operation. Das Ziel ist keine Zahl: Es ist ein verfügbarer, schmerzfreier Körper, der auf Dauer hält. Wir übernehmen, wenn der Physiotherapeut fertig ist — auf sein grünes Licht, nie an seiner Stelle.",
+    "it": "Dopo una lunga interruzione, un infortunio o un'operazione. L'obiettivo non è un numero: è un corpo disponibile, senza dolore, che tiene nel tempo. Prendiamo il testimone quando il fisioterapista ha finito — con il suo via libera, mai al suo posto."
+  },
+  "s03.h2": {
+    "fr": "La méthode",
+    "en": "The method",
+    "de": "Die Methode",
+    "it": "Il metodo"
+  },
+  "s03.lead": {
+    "fr": "Quatre temps, toujours dans cet ordre. C'est l'ordre qui fait le travail, pas le catalogue d'exercices.",
+    "en": "Four stages, always in this order. The order does the work, not the exercise catalogue.",
+    "de": "Vier Etappen, immer in dieser Reihenfolge. Die Reihenfolge macht die Arbeit, nicht der Übungskatalog.",
+    "it": "Quattro tempi, sempre in questo ordine. È l'ordine a fare il lavoro, non il catalogo di esercizi."
+  },
+  "s03.step1": {
+    "fr": "<strong>Lire avant de programmer</strong> Votre histoire, vos blessures, votre semaine réelle — et votre façon spontanée de produire de la force. Certains s'organisent par l'ancrage et l'appui au sol, d'autres par le rebond et la légèreté. Ce n'est ni bien ni mal : c'est un point de départ, et cela change autant le choix des exercices que la façon de vous coacher.",
+    "en": "<strong>Read before programming</strong> Your history, your injuries, your real week — and the way you spontaneously produce force. Some people organise through anchoring and ground contact, others through rebound and lightness. Neither is better: it is a starting point, and it changes both the exercises we choose and the way we coach you.",
+    "de": "<strong>Lesen, bevor programmiert wird</strong> Ihre Geschichte, Ihre Verletzungen, Ihre reale Woche — und Ihre spontane Art, Kraft zu erzeugen. Manche organisieren sich über Verankerung und Bodenkontakt, andere über Rückstoss und Leichtigkeit. Das ist weder gut noch schlecht: Es ist ein Ausgangspunkt und verändert sowohl die Wahl der Übungen als auch die Art, Sie zu coachen.",
+    "it": "<strong>Leggere prima di programmare</strong> La tua storia, i tuoi infortuni, la tua settimana reale — e il tuo modo spontaneo di produrre forza. Alcuni si organizzano attraverso l'ancoraggio e l'appoggio al suolo, altri attraverso il rimbalzo e la leggerezza. Non è né giusto né sbagliato: è un punto di partenza, e cambia tanto la scelta degli esercizi quanto il modo di allenarti."
+  },
+  "s03.step2": {
+    "fr": "<strong>Construire ce qui protège</strong> Force, qualité de mouvement, capacité à répéter l'effort. La partie la moins spectaculaire et la mieux documentée. Tout le reste s'appuie dessus — et sans elle, tout le reste finit par céder.",
+    "en": "<strong>Build what protects</strong> Strength, movement quality, the capacity to repeat effort. The least spectacular part, and the best documented. Everything else rests on it — and without it, everything else eventually gives way.",
+    "de": "<strong>Aufbauen, was schützt</strong> Kraft, Bewegungsqualität, die Fähigkeit, den Aufwand zu wiederholen. Der unspektakulärste und am besten dokumentierte Teil. Alles andere stützt sich darauf — und ohne ihn gibt alles andere irgendwann nach.",
+    "it": "<strong>Costruire ciò che protegge</strong> Forza, qualità del movimento, capacità di ripetere lo sforzo. La parte meno spettacolare e la meglio documentata. Tutto il resto vi si appoggia — e senza di essa, tutto il resto finisce per cedere."
+  },
+  "s03.step3": {
+    "fr": "<strong>Rendre spécifique, progressivement</strong> On rapproche le travail des exigences réelles de votre sport et de votre poste, à mesure que l'échéance approche. Progressivement : la spécificité trop tôt est le raccourci le plus coûteux de la préparation physique.",
+    "en": "<strong>Make it specific, gradually</strong> We bring the work closer to the real demands of your sport and your position as the deadline approaches. Gradually: specificity too early is the most expensive shortcut in physical preparation.",
+    "de": "<strong>Schrittweise spezifisch machen</strong> Wir nähern die Arbeit den realen Anforderungen Ihrer Sportart und Ihrer Position an, je näher der Termin rückt. Schrittweise: zu frühe Spezifität ist die teuerste Abkürzung der Athletikvorbereitung.",
+    "it": "<strong>Rendere specifico, progressivamente</strong> Avviciniamo il lavoro alle esigenze reali del tuo sport e del tuo ruolo, man mano che la scadenza si avvicina. Progressivamente: la specificità troppo presto è la scorciatoia più costosa della preparazione fisica."
+  },
+  "s03.step4": {
+    "fr": "<strong>Ajuster, puis recommencer</strong> On mesure l'effet réel, on re-teste, on décide de la suite. Puis on repart au début, un cran plus fin. Le plan sert l'athlète, jamais l'inverse : il change quand votre semaine change.",
+    "en": "<strong>Adjust, then start again</strong> We measure the real effect, we re-test, we decide what comes next. Then we go back to the beginning, one notch finer. The plan serves the athlete, never the other way round: it changes when your week changes.",
+    "de": "<strong>Anpassen, dann von vorne beginnen</strong> Wir messen die tatsächliche Wirkung, testen erneut, entscheiden über das Weitere. Dann beginnen wir wieder von vorne, eine Stufe feiner. Der Plan dient dem Athleten, nie umgekehrt: Er ändert sich, wenn sich Ihre Woche ändert.",
+    "it": "<strong>Adattare, poi ricominciare</strong> Misuriamo l'effetto reale, ri-testiamo, decidiamo il seguito. Poi ripartiamo dall'inizio, un gradino più fine. Il piano serve l'atleta, mai il contrario: cambia quando cambia la tua settimana."
+  },
+  "s03.card.mono": {
+    "fr": "Une séance = une intention",
+    "en": "One session = one intention",
+    "de": "Eine Einheit = eine Absicht",
+    "it": "Una seduta = un'intenzione"
+  },
+  "s03.card.h3": {
+    "fr": "Quatre intentions, jamais cinq objectifs",
+    "en": "Four intentions, never five objectives",
+    "de": "Vier Absichten, nie fünf Ziele",
+    "it": "Quattro intenzioni, mai cinque obiettivi"
+  },
+  "s03.card.p": {
+    "fr": "Chaque séance poursuit une intention et une seule. C'est ce qui la rend lisible pour vous, et évaluable pour nous. Trois objectifs prioritaires au maximum par cycle : qui en poursuit cinq à la fois ne progresse sérieusement sur aucun.",
+    "en": "Every session pursues one intention and one only. That is what makes it readable for you and assessable for us. Three priority objectives per cycle at most: anyone chasing five at once makes serious progress on none.",
+    "de": "Jede Einheit verfolgt eine Absicht und nur eine. Das macht sie für Sie lesbar und für uns bewertbar. Höchstens drei vorrangige Ziele pro Zyklus: Wer fünf gleichzeitig verfolgt, macht bei keinem ernsthafte Fortschritte.",
+    "it": "Ogni seduta persegue un'intenzione e una sola. È ciò che la rende leggibile per te e valutabile per noi. Al massimo tre obiettivi prioritari per ciclo: chi ne persegue cinque alla volta non progredisce seriamente in nessuno."
+  },
+  "s03.card.li1": {
+    "fr": "<strong>Activer</strong> — préparer le système à agir : réveiller et connecter, sans crisper.",
+    "en": "<strong>Activate</strong> — prepare the system to work: wake it up and connect it, without tightening.",
+    "de": "<strong>Aktivieren</strong> — das System aufs Handeln vorbereiten: wecken und verbinden, ohne zu verkrampfen.",
+    "it": "<strong>Attivare</strong> — preparare il sistema ad agire: risvegliare e connettere, senza irrigidire."
+  },
+  "s03.card.li2": {
+    "fr": "<strong>Adoucir</strong> — relâcher ce qui bloque : lentement, en conscience, en respirant.",
+    "en": "<strong>Soften</strong> — release what is blocking: slowly, consciously, with the breath.",
+    "de": "<strong>Lösen</strong> — loslassen, was blockiert: langsam, bewusst, mit dem Atem.",
+    "it": "<strong>Ammorbidire</strong> — rilasciare ciò che blocca: lentamente, con consapevolezza, respirando."
+  },
+  "s03.card.li3": {
+    "fr": "<strong>Stabiliser</strong> — construire une base fiable : appuis, contrôle, robustesse.",
+    "en": "<strong>Stabilise</strong> — build a reliable base: support, control, robustness.",
+    "de": "<strong>Stabilisieren</strong> — eine verlässliche Basis bauen: Stützpunkte, Kontrolle, Robustheit.",
+    "it": "<strong>Stabilizzare</strong> — costruire una base affidabile: appoggi, controllo, robustezza."
+  },
+  "s03.card.li4": {
+    "fr": "<strong>Performer</strong> — exprimer et développer la qualité : le bon exercice, au bon dosage, au bon moment.",
+    "en": "<strong>Perform</strong> — express and develop the quality: the right exercise, at the right dose, at the right moment.",
+    "de": "<strong>Performen</strong> — die Qualität ausdrücken und entwickeln: die richtige Übung, in der richtigen Dosierung, zum richtigen Zeitpunkt.",
+    "it": "<strong>Performare</strong> — esprimere e sviluppare la qualità: l'esercizio giusto, nel giusto dosaggio, al momento giusto."
+  },
+  "s03.card.note": {
+    "fr": "Jamais Performer en premier. Un système qui n'est ni disponible ni stable ne transforme pas l'effort en progrès — il le transforme en usure.",
+    "en": "Never Perform first. A system that is neither available nor stable does not turn effort into progress — it turns it into wear.",
+    "de": "Nie zuerst Performen. Ein System, das weder verfügbar noch stabil ist, verwandelt den Aufwand nicht in Fortschritt — sondern in Verschleiss.",
+    "it": "Mai Performare per primo. Un sistema che non è né disponibile né stabile non trasforma lo sforzo in progresso — lo trasforma in usura."
+  },
+  "s04.h2": {
+    "fr": "Les formules",
+    "en": "The formats",
+    "de": "Die Formate",
+    "it": "Le formule"
+  },
+  "s04.lead": {
+    "fr": "Trois façons de travailler ensemble. Toutes commencent au même endroit : le bilan. Nous ne programmons pas pour quelqu'un que nous n'avons pas évalué — au mieux nous donnerions un plan générique, et nous ne voulons pas faire semblant que c'en est un autre. Le premier échange, lui, est gratuit : on choisit la formule après, pas avant.",
+    "en": "Three ways to work together. All of them start in the same place: the assessment. We don't programme for someone we haven't assessed — at best we'd be handing over a generic plan, and we don't want to pretend it's anything else. The first conversation is free: we choose the format afterwards, not before.",
+    "de": "Drei Arten, zusammenzuarbeiten. Alle beginnen am selben Punkt: der Bilanz. Wir programmieren nicht für jemanden, den wir nicht beurteilt haben — bestenfalls gäben wir einen generischen Plan, und wir wollen nicht so tun, als wäre es etwas anderes. Das erste Gespräch ist kostenlos: Das Format wählen wir danach, nicht davor.",
+    "it": "Tre modi di lavorare insieme. Tutti iniziano nello stesso punto: il bilancio. Non programmiamo per qualcuno che non abbiamo valutato — al massimo daremmo un piano generico, e non vogliamo far finta che sia altro. Il primo scambio è gratuito: la formula si sceglie dopo, non prima."
+  },
+  "s04.p1.h3": {
+    "fr": "Le bilan",
+    "en": "The assessment",
+    "de": "Die Bilanz",
+    "it": "Il bilancio"
+  },
+  "s04.p1.sub": {
+    "fr": "Séance unique, sans suite obligatoire",
+    "en": "Single session, nothing required afterwards",
+    "de": "Einzelne Einheit, ohne verpflichtende Folge",
+    "it": "Seduta unica, senza seguito obbligatorio"
+  },
+  "s04.p1.li1": {
+    "fr": "90 minutes : votre histoire, vos contraintes, votre objectif",
+    "en": "90 minutes: your history, your constraints, your goal",
+    "de": "90 Minuten: Ihre Geschichte, Ihre Einschränkungen, Ihr Ziel",
+    "it": "90 minuti: la tua storia, i tuoi vincoli, il tuo obiettivo"
+  },
+  "s04.p1.li2": {
+    "fr": "Qualité de mouvement et repères de force",
+    "en": "Movement quality and strength benchmarks",
+    "de": "Bewegungsqualität und Kraftreferenzen",
+    "it": "Qualità del movimento e riferimenti di forza"
+  },
+  "s04.p1.li3": {
+    "fr": "Tests physiques choisis selon votre sport",
+    "en": "Physical tests chosen for your sport",
+    "de": "Körperliche Tests, ausgewählt nach Ihrer Sportart",
+    "it": "Test fisici scelti in base al tuo sport"
+  },
+  "s04.p1.li4": {
+    "fr": "Un rapport écrit : ce qui a été mesuré, ce qu'on en déduit, vos trois priorités",
+    "en": "A written report: what was measured, what it means, your three priorities",
+    "de": "Ein schriftlicher Bericht: was gemessen wurde, was man daraus ableitet, Ihre drei Prioritäten",
+    "it": "Un rapporto scritto: ciò che è stato misurato, ciò che se ne deduce, le tue tre priorità"
+  },
+  "s04.p1.li5": {
+    "fr": "Lisible par vous, votre entraîneur et votre physiothérapeute",
+    "en": "Readable by you, your coach and your physiotherapist",
+    "de": "Lesbar für Sie, Ihren Trainer und Ihren Physiotherapeuten",
+    "it": "Leggibile da te, dal tuo allenatore e dal tuo fisioterapista"
+  },
+  "s04.p1.li6": {
+    "fr": "Vous pouvez vous arrêter là et vous entraîner avec. C'est prévu.",
+    "en": "You can stop there and train with it. That's by design.",
+    "de": "Sie können dort aufhören und damit trainieren. Das ist so vorgesehen.",
+    "it": "Puoi fermarti lì e allenarti con esso. È previsto."
+  },
+  "s04.p2.tag": {
+    "fr": "Le format que nous recommandons",
+    "en": "The format we recommend",
+    "de": "Das Format, das wir empfehlen",
+    "it": "Il formato che consigliamo"
+  },
+  "s04.p2.h3": {
+    "fr": "Hybride",
+    "en": "Hybrid",
+    "de": "Hybrid",
+    "it": "Ibrido"
+  },
+  "s04.p2.sub": {
+    "fr": "Présentiel et suivi à distance",
+    "en": "In person and remote follow-up",
+    "de": "Vor Ort und Nachverfolgung aus der Ferne",
+    "it": "In presenza e monitoraggio a distanza"
+  },
+  "s04.per.month": {
+    "fr": "/ mois",
+    "en": "/ month",
+    "de": "/ Monat",
+    "it": "/ mese"
+  },
+  "s04.p2.li1": {
+    "fr": "Bilan de départ inclus",
+    "en": "Starting assessment included",
+    "de": "Anfangsbilanz inbegriffen",
+    "it": "Bilancio iniziale incluso"
+  },
+  "s04.p2.li2": {
+    "fr": "Séances en présentiel dans la région lémanique",
+    "en": "In-person sessions in the Lake Geneva region",
+    "de": "Einheiten vor Ort in der Genferseeregion",
+    "it": "Sedute in presenza nella regione del Lemano"
+  },
+  "s04.p2.li3": {
+    "fr": "Programmation individualisée, revue chaque semaine",
+    "en": "Individual programming, reviewed every week",
+    "de": "Individuelle Programmierung, wöchentlich überprüft",
+    "it": "Programmazione individuale, rivista ogni settimana"
+  },
+  "s04.p2.li4": {
+    "fr": "Retours sur vos vidéos entre les rendez-vous",
+    "en": "Feedback on your videos between sessions",
+    "de": "Rückmeldungen zu Ihren Videos zwischen den Terminen",
+    "it": "Riscontri sui tuoi video tra un appuntamento e l'altro"
+  },
+  "s04.p2.li5": {
+    "fr": "Un point de contrôle et un re-test à la fin de chaque cycle",
+    "en": "A checkpoint and a re-test at the end of each cycle",
+    "de": "Ein Kontrollpunkt und ein Re-Test am Ende jedes Zyklus",
+    "it": "Un punto di controllo e un ri-test alla fine di ogni ciclo"
+  },
+  "s04.p3.h3": {
+    "fr": "À distance",
+    "en": "Remote",
+    "de": "Aus der Ferne",
+    "it": "A distanza"
+  },
+  "s04.p3.sub": {
+    "fr": "Où que vous soyez",
+    "en": "Wherever you are",
+    "de": "Wo immer Sie sind",
+    "it": "Ovunque tu sia"
+  },
+  "s04.p3.li1": {
+    "fr": "Bilan de départ en visio, ou en présentiel si vous pouvez vous déplacer",
+    "en": "Starting assessment by video call, or in person if you can travel",
+    "de": "Anfangsbilanz per Video oder vor Ort, wenn Sie anreisen können",
+    "it": "Bilancio iniziale in videochiamata, o in presenza se puoi spostarti"
+  },
+  "s04.p3.li2": {
+    "fr": "Programmation individualisée, adaptée au matériel dont vous disposez",
+    "en": "Individual programming, adapted to the equipment you have",
+    "de": "Individuelle Programmierung, angepasst an die Ausrüstung, über die Sie verfügen",
+    "it": "Programmazione individuale, adattata al materiale di cui disponi"
+  },
+  "s04.p3.li3": {
+    "fr": "Ajustements en cours de cycle selon vos retours et votre fatigue",
+    "en": "Mid-cycle adjustments based on your feedback and your fatigue",
+    "de": "Anpassungen während des Zyklus je nach Ihren Rückmeldungen und Ihrer Müdigkeit",
+    "it": "Aggiustamenti durante il ciclo in base ai tuoi riscontri e alla tua fatica"
+  },
+  "s04.p3.li4": {
+    "fr": "Retours écrits sur vos vidéos d'exécution",
+    "en": "Written feedback on your technique videos",
+    "de": "Schriftliche Rückmeldungen zu Ihren Ausführungsvideos",
+    "it": "Riscontri scritti sui tuoi video di esecuzione"
+  },
+  "s04.p3.li5": {
+    "fr": "Un canal direct pour les questions qui ne peuvent pas attendre",
+    "en": "A direct line for questions that can't wait",
+    "de": "Ein direkter Kanal für Fragen, die nicht warten können",
+    "it": "Un canale diretto per le domande che non possono aspettare"
+  },
+  "s04.tools.mono": {
+    "fr": "Les outils qui viennent avec",
+    "en": "The tools that come with it",
+    "de": "Die Werkzeuge, die dazugehören",
+    "it": "Gli strumenti che vengono con esso"
+  },
+  "s04.tools.h3": {
+    "fr": "Votre suivi ne vit pas dans un tableur",
+    "en": "Your follow-up does not live in a spreadsheet",
+    "de": "Ihre Nachverfolgung lebt nicht in einer Tabelle",
+    "it": "Il tuo monitoraggio non vive in un foglio di calcolo"
+  },
+  "s04.tools.p1": {
+    "fr": "Le suivi se fera sur un <strong>compte individuel Sinetik:studio</strong>, ouvert à votre nom : votre programmation, vos tests, vos rapports de bilan et votre historique au même endroit, consultables entre deux rendez-vous. Vous gardez l'accès à vos données et vous pouvez les exporter quand vous voulez.",
+    "en": "Follow-up will run on an <strong>individual Sinetik:studio account</strong>, opened in your name: your programming, your tests, your assessment reports and your history in one place, available between sessions. You keep access to your data and can export it whenever you want.",
+    "de": "Die Nachverfolgung läuft über ein <strong>individuelles Sinetik:studio-Konto</strong>, auf Ihren Namen eröffnet: Ihre Programmierung, Ihre Tests, Ihre Bilanzberichte und Ihre Historie am selben Ort, einsehbar zwischen zwei Terminen. Sie behalten den Zugriff auf Ihre Daten und können sie jederzeit exportieren.",
+    "it": "Il monitoraggio avverrà su un <strong>account individuale Sinetik:studio</strong>, aperto a tuo nome: la tua programmazione, i tuoi test, i tuoi rapporti di bilancio e il tuo storico nello stesso posto, consultabili tra un appuntamento e l'altro. Mantieni l'accesso ai tuoi dati e puoi esportarli quando vuoi."
+  },
+  "s04.tools.p2": {
+    "fr": "Selon la formule retenue, un <strong>capteur Sinetik:tracker</strong> peut être mis à votre disposition pour mesurer la vitesse d'exécution pendant vos séances de force — et savoir quand une série rapporte encore, plutôt que de le deviner. Nous en fixons les modalités au premier échange.",
+    "en": "Depending on the format you choose, a <strong>Sinetik:tracker sensor</strong> can be made available to you, to measure bar velocity during your strength sessions — so you know when a set is still paying off, rather than guessing. We settle the details in the first conversation.",
+    "de": "Je nach gewähltem Format kann Ihnen ein <strong>Sinetik:tracker-Sensor</strong> zur Verfügung gestellt werden, um die Hantelgeschwindigkeit während Ihrer Krafteinheiten zu messen — und zu wissen, wann ein Satz noch etwas bringt, statt es zu erraten. Die Modalitäten legen wir im ersten Gespräch fest.",
+    "it": "A seconda della formula scelta, un <strong>sensore Sinetik:tracker</strong> può essere messo a tua disposizione per misurare la velocità d'esecuzione durante le sedute di forza — e sapere quando una serie rende ancora, invece di indovinarlo. Ne fissiamo le modalità al primo scambio."
+  },
+  "s04.note": {
+    "fr": "Ces montants sont des points de départ. Le tarif exact dépend de la fréquence des séances, de la durée de l'accompagnement et du déplacement : nous le fixons ensemble au premier échange, avant que vous ne vous engagiez à quoi que ce soit. Si vous poursuivez après le bilan, son montant est déduit du premier mois.",
+    "en": "These figures are starting points. The exact rate depends on session frequency, the length of the programme and travel: we set it together in the first conversation, before you commit to anything. If you continue after the assessment, its cost is deducted from your first month.",
+    "de": "Diese Beträge sind Ausgangspunkte. Der genaue Tarif hängt von der Häufigkeit der Einheiten, der Dauer der Begleitung und der Anreise ab: Wir legen ihn gemeinsam im ersten Gespräch fest, bevor Sie sich zu irgendetwas verpflichten. Wenn Sie nach der Bilanz fortfahren, wird deren Betrag vom ersten Monat abgezogen.",
+    "it": "Questi importi sono punti di partenza. La tariffa esatta dipende dalla frequenza delle sedute, dalla durata dell'accompagnamento e dagli spostamenti: la fissiamo insieme al primo scambio, prima che tu ti impegni in qualsiasi cosa. Se prosegui dopo il bilancio, il suo importo viene detratto dal primo mese."
+  },
+  "s05.h2": {
+    "fr": "Ce que nous nous imposons",
+    "en": "What we hold ourselves to",
+    "de": "Was wir uns auferlegen",
+    "it": "Ciò che ci imponiamo"
+  },
+  "s05.lead": {
+    "fr": "Trois choses sur lesquelles nous ne transigeons pas. Elles nous coûtent parfois un client. Elles nous évitent toujours un mauvais accompagnement.",
+    "en": "Three things we don't compromise on. They occasionally cost us a client. They always save us a bad piece of coaching.",
+    "de": "Drei Dinge, bei denen wir keine Kompromisse machen. Sie kosten uns manchmal einen Kunden. Sie ersparen uns immer eine schlechte Begleitung.",
+    "it": "Tre cose su cui non transigiamo. A volte ci costano un cliente. Ci evitano sempre un cattivo accompagnamento."
+  },
+  "s05.step1": {
+    "fr": "<strong>Nous ne programmons pas sans avoir évalué</strong> Si vous voulez seulement un plan, nous pouvons vous en donner un — mais nous l'appellerons un plan générique, pas un accompagnement individualisé.",
+    "en": "<strong>We don't programme without assessing first</strong> If you only want a plan, we can give you one — but we'll call it a generic plan, not individual coaching.",
+    "de": "<strong>Wir programmieren nicht, ohne beurteilt zu haben</strong> Wenn Sie nur einen Plan wollen, können wir Ihnen einen geben — aber wir nennen ihn einen generischen Plan, keine individuelle Begleitung.",
+    "it": "<strong>Non programmiamo senza aver valutato</strong> Se vuoi soltanto un piano, possiamo dartene uno — ma lo chiameremo un piano generico, non un accompagnamento individuale."
+  },
+  "s05.step2": {
+    "fr": "<strong>Nous ne gardons pas un signal inquiétant pour nous</strong> Si quelque chose nous alerte dans ce que nous voyons, nous vous le disons, nous le documentons et nous vous orientons. Même s'il y a un match dimanche.",
+    "en": "<strong>We don't keep a worrying signal to ourselves</strong> If something in what we see concerns us, we tell you, we document it and we refer you on. Even if there's a match on Sunday.",
+    "de": "<strong>Wir behalten ein beunruhigendes Signal nicht für uns</strong> Wenn uns etwas an dem, was wir sehen, alarmiert, sagen wir es Ihnen, dokumentieren es und verweisen Sie weiter. Auch wenn am Sonntag ein Spiel ansteht.",
+    "it": "<strong>Non teniamo per noi un segnale preoccupante</strong> Se qualcosa in ciò che vediamo ci allarma, te lo diciamo, lo documentiamo e ti indirizziamo. Anche se c'è una partita domenica."
+  },
+  "s05.step3": {
+    "fr": "<strong>Nous ne vous dirons pas qu'une méthode est prouvée quand elle ne l'est pas</strong> Vous nous confiez votre corps et votre temps. Vous avez le droit de savoir sur quoi nous nous appuyons — et surtout où s'arrête ce qui est établi.",
+    "en": "<strong>We won't tell you a method is proven when it isn't</strong> You trust us with your body and your time. You are entitled to know what we base our work on — and above all where the established evidence stops.",
+    "de": "<strong>Wir sagen Ihnen nicht, eine Methode sei bewiesen, wenn sie es nicht ist</strong> Sie vertrauen uns Ihren Körper und Ihre Zeit an. Sie haben das Recht zu wissen, worauf wir uns stützen — und vor allem, wo das Gesicherte aufhört.",
+    "it": "<strong>Non ti diremo che un metodo è provato quando non lo è</strong> Ci affidi il tuo corpo e il tuo tempo. Hai il diritto di sapere su cosa ci basiamo — e soprattutto dove si ferma ciò che è stabilito."
+  },
+  "s05.evidence.h3": {
+    "fr": "Le niveau de preuve, dit à voix haute",
+    "en": "Levels of evidence, said out loud",
+    "de": "Das Evidenzniveau, laut ausgesprochen",
+    "it": "Il livello di prova, detto ad alta voce"
+  },
+  "s05.evidence.lead": {
+    "fr": "Rares sont les pages qui affichent cela. Nous préférons que vous le lisiez ici plutôt que de le découvrir en séance. Voici, classées par solidité, les approches que nous utilisons.",
+    "en": "Few pages publish this. We would rather you read it here than discover it in a session. Here are the approaches we use, ranked by how solid the evidence is.",
+    "de": "Wenige Seiten zeigen das. Uns ist es lieber, Sie lesen es hier, als es in einer Einheit zu entdecken. Hier sind, nach Solidität geordnet, die Ansätze, die wir verwenden.",
+    "it": "Poche pagine mostrano questo. Preferiamo che tu lo legga qui piuttosto che scoprirlo in seduta. Ecco, classificati per solidità, gli approcci che utilizziamo."
+  },
+  "s05.c1.mono": {
+    "fr": "Socle",
+    "en": "Foundation",
+    "de": "Fundament",
+    "it": "Base"
+  },
+  "s05.c1.h3": {
+    "fr": "Solidement documenté",
+    "en": "Solidly documented",
+    "de": "Solide dokumentiert",
+    "it": "Solidamente documentato"
+  },
+  "s05.c1.p": {
+    "fr": "Développement de la force, périodisation, travail à haute intensité, gestion de la charge d'entraînement, critères progressifs de retour au jeu, suivi de la croissance chez le jeune.",
+    "en": "Strength development, periodisation, high-intensity work, training-load management, progressive return-to-play criteria, growth monitoring in young athletes.",
+    "de": "Kraftentwicklung, Periodisierung, hochintensive Arbeit, Steuerung der Trainingsbelastung, progressive Return-to-Play-Kriterien, Wachstumsüberwachung bei Jugendlichen.",
+    "it": "Sviluppo della forza, periodizzazione, lavoro ad alta intensità, gestione del carico d'allenamento, criteri progressivi di ritorno in campo, monitoraggio della crescita nel giovane."
+  },
+  "s05.c1.note": {
+    "fr": "C'est le socle, et c'est l'essentiel de ce que nous ferons avec vous.",
+    "en": "This is the foundation, and it is most of what we will do with you.",
+    "de": "Das ist das Fundament, und es ist das Wesentliche dessen, was wir mit Ihnen machen.",
+    "it": "È la base, ed è l'essenziale di ciò che faremo con te."
+  },
+  "s05.c2.mono": {
+    "fr": "Complément",
+    "en": "Complement",
+    "de": "Ergänzung",
+    "it": "Complemento"
+  },
+  "s05.c2.h3": {
+    "fr": "Documenté, mais discuté",
+    "en": "Documented, but debated",
+    "de": "Dokumentiert, aber umstritten",
+    "it": "Documentato, ma discusso"
+  },
+  "s05.c2.p": {
+    "fr": "Le profilage à partir du saut vertical pour orienter la charge. La lecture des préférences motrices — produire sa force par l'ancrage ou par le rebond. Des travaux existent, le consensus n'est pas fait.",
+    "en": "Profiling from vertical-jump data to guide load. Reading motor preferences — producing force through anchoring or through rebound. Research exists; consensus does not.",
+    "de": "Profilbildung aus dem vertikalen Sprung zur Steuerung der Belastung. Das Lesen motorischer Präferenzen — Kraft über Verankerung oder über Rückstoss erzeugen. Arbeiten gibt es, der Konsens fehlt.",
+    "it": "La profilazione a partire dal salto verticale per orientare il carico. La lettura delle preferenze motorie — produrre forza attraverso l'ancoraggio o il rimbalzo. Lavori esistono, il consenso non c'è."
+  },
+  "s05.c2.note": {
+    "fr": "Nous nous en servons pour orienter des choix, jamais pour poser un diagnostic.",
+    "en": "We use it to guide choices, never to make a diagnosis.",
+    "de": "Wir nutzen es, um Entscheidungen zu lenken, nie um eine Diagnose zu stellen.",
+    "it": "Lo usiamo per orientare delle scelte, mai per fare una diagnosi."
+  },
+  "s05.c3.mono": {
+    "fr": "Exploratoire",
+    "en": "Exploratory",
+    "de": "Explorativ",
+    "it": "Esplorativo"
+  },
+  "s05.c3.h3": {
+    "fr": "Encore à démontrer",
+    "en": "Still to be demonstrated",
+    "de": "Noch zu belegen",
+    "it": "Ancora da dimostrare"
+  },
+  "s05.c3.p": {
+    "fr": "L'intégration des réflexes primitifs chez le sportif adulte. La littérature est solide chez l'enfant, mince chez l'athlète adulte.",
+    "en": "Integrating primitive reflexes in adult athletes. The literature is solid in children, thin in adult sport.",
+    "de": "Die Integration primitiver Reflexe beim erwachsenen Sportler. Die Literatur ist solide beim Kind, dünn beim erwachsenen Athleten.",
+    "it": "L'integrazione dei riflessi primitivi nello sportivo adulto. La letteratura è solida nel bambino, scarsa nell'atleta adulto."
+  },
+  "s05.c3.note": {
+    "fr": "Nous l'utilisons ponctuellement, en complément, et nous vous le signalons chaque fois que nous y touchons.",
+    "en": "We use it occasionally, as a complement, and we flag it every time we touch it.",
+    "de": "Wir setzen es punktuell ein, als Ergänzung, und weisen Sie jedes Mal darauf hin, wenn wir es einsetzen.",
+    "it": "Lo utilizziamo puntualmente, a complemento, e te lo segnaliamo ogni volta che lo tocchiamo."
+  },
+  "s06.h2": {
+    "fr": "Les questions qu'on nous pose",
+    "en": "Questions we get asked",
+    "de": "Die Fragen, die man uns stellt",
+    "it": "Le domande che ci vengono poste"
+  },
+  "s06.q1": {
+    "fr": "<strong>Est-ce que cela remplace le travail au club ?</strong> Non, et ce n'est pas le but. Ce que nous faisons vient en complément, sur des créneaux qui ne concurrencent pas les séances collectives. Quand c'est utile, nous en informons le club.",
+    "en": "<strong>Does this replace the work at my club?</strong> No, and it isn't meant to. What we do comes alongside it, in slots that don't compete with team sessions. When it helps, we tell the club.",
+    "de": "<strong>Ersetzt das die Arbeit im Verein?</strong> Nein, und das ist nicht das Ziel. Was wir tun, kommt ergänzend hinzu, zu Zeiten, die nicht mit den Mannschaftseinheiten konkurrieren. Wenn es nützlich ist, informieren wir den Verein.",
+    "it": "<strong>Questo sostituisce il lavoro nel club?</strong> No, e non è l'obiettivo. Ciò che facciamo si aggiunge come complemento, in fasce che non competono con le sedute di squadra. Quando è utile, ne informiamo il club."
+  },
+  "s06.q2": {
+    "fr": "<strong>En combien de temps voit-on quelque chose ?</strong> Les premiers changements de sensation arrivent souvent en trois à quatre semaines. Les changements mesurables — force, vitesse, capacité à répéter l'effort — demandent deux à trois mois de travail régulier. Nous ne promettons pas de pourcentage à huit semaines.",
+    "en": "<strong>How long before something shows?</strong> The first changes in how you feel often come within three to four weeks. Measurable change — strength, speed, the capacity to repeat effort — takes two to three months of consistent work. We don't promise a percentage at eight weeks.",
+    "de": "<strong>In welcher Zeit sieht man etwas?</strong> Die ersten Veränderungen im Empfinden kommen oft in drei bis vier Wochen. Messbare Veränderungen — Kraft, Geschwindigkeit, die Fähigkeit, den Aufwand zu wiederholen — brauchen zwei bis drei Monate regelmässiger Arbeit. Wir versprechen keinen Prozentsatz nach acht Wochen.",
+    "it": "<strong>In quanto tempo si vede qualcosa?</strong> I primi cambiamenti nelle sensazioni arrivano spesso in tre o quattro settimane. I cambiamenti misurabili — forza, velocità, capacità di ripetere lo sforzo — richiedono due o tre mesi di lavoro regolare. Non promettiamo una percentuale a otto settimane."
+  },
+  "s06.q3": {
+    "fr": "<strong>Faut-il une salle de sport ?</strong> Pour l'accompagnement à distance, non : la programmation s'adapte au matériel dont vous disposez. Il faut en revanche pouvoir vous filmer, sinon nous travaillons à l'aveugle.",
+    "en": "<strong>Do I need a gym?</strong> For remote coaching, no: the programming adapts to the equipment you have. You do need to be able to film yourself, otherwise we're working blind.",
+    "de": "<strong>Braucht es ein Fitnessstudio?</strong> Für die Begleitung aus der Ferne nein: Die Programmierung passt sich an die Ausrüstung an, über die Sie verfügen. Sie müssen sich allerdings filmen können, sonst arbeiten wir blind.",
+    "it": "<strong>Serve una palestra?</strong> Per l'accompagnamento a distanza, no: la programmazione si adatta al materiale di cui disponi. Devi però poterti filmare, altrimenti lavoriamo alla cieca."
+  },
+  "s06.q4": {
+    "fr": "<strong>Je sors d'une blessure. À partir de quand ?</strong> À partir du feu vert de votre physiothérapeute. Nous prenons le relais, nous ne prenons pas sa place, et nous restons en lien avec lui si vous le souhaitez.",
+    "en": "<strong>I'm coming back from injury. When can I start?</strong> Once your physiotherapist gives the go-ahead. We take over, we don't take their place, and we stay in touch with them if you'd like.",
+    "de": "<strong>Ich komme aus einer Verletzung. Ab wann?</strong> Ab dem grünen Licht Ihres Physiotherapeuten. Wir übernehmen, wir nehmen nicht seinen Platz ein, und wir bleiben mit ihm in Kontakt, wenn Sie es wünschen.",
+    "it": "<strong>Esco da un infortunio. Da quando?</strong> Dal via libera del tuo fisioterapista. Prendiamo il testimone, non prendiamo il suo posto, e restiamo in contatto con lui se lo desideri."
+  },
+  "s06.q5": {
+    "fr": "<strong>Et si ce n'est pas pour moi ?</strong> Nous vous le dirons au premier échange, et nous vous orienterons vers ce qui vous conviendra mieux. Un accompagnement mal ajusté coûte du temps aux deux parties.",
+    "en": "<strong>What if this isn't right for me?</strong> We'll tell you in the first conversation, and point you towards something that suits you better. Badly matched coaching costs both sides time.",
+    "de": "<strong>Und wenn es nichts für mich ist?</strong> Wir sagen es Ihnen im ersten Gespräch und verweisen Sie auf das, was besser zu Ihnen passt. Eine schlecht abgestimmte Begleitung kostet beide Seiten Zeit.",
+    "it": "<strong>E se non fa per me?</strong> Te lo diremo al primo scambio, e ti indirizzeremo verso ciò che ti si addice di più. Un accompagnamento mal calibrato costa tempo a entrambe le parti."
+  },
+  "s07.h2": {
+    "fr": "On commence par se parler",
+    "en": "Let's start by talking",
+    "de": "Wir beginnen mit einem Gespräch",
+    "it": "Iniziamo col parlarci"
+  },
+  "s07.lead": {
+    "fr": "Vingt minutes, par téléphone ou en visio, sans engagement. Vous nous racontez où vous en êtes ; nous vous disons honnêtement si nous sommes la bonne adresse, et ce que nous ferions à votre place. Si ce n'est pas nous, nous vous le dirons aussi.",
+    "en": "Twenty minutes, by phone or video, with no commitment. You tell us where you are; we'll tell you honestly whether we're the right people, and what we'd do in your position. If it isn't us, we'll say that too.",
+    "de": "Zwanzig Minuten, per Telefon oder Video, unverbindlich. Sie erzählen uns, wo Sie stehen; wir sagen Ihnen ehrlich, ob wir die richtige Adresse sind und was wir an Ihrer Stelle täten. Wenn wir es nicht sind, sagen wir Ihnen auch das.",
+    "it": "Venti minuti, al telefono o in videochiamata, senza impegno. Ci racconti a che punto sei; ti diciamo onestamente se siamo l'indirizzo giusto, e cosa faremmo al tuo posto. Se non siamo noi, te lo diremo anche."
+  },
+  "s07.ctaStudio": {
+    "fr": "Découvrir Sinetik:studio",
+    "en": "Discover Sinetik:studio",
+    "de": "Sinetik:studio entdecken",
+    "it": "Scopri Sinetik:studio"
+  },
+  "s07.note": {
+    "fr": "Nous répondons sous 48 heures. Dites-nous simplement votre sport, votre objectif en une phrase, et si vous préférez le présentiel, la distance, ou que vous ne savez pas encore.",
+    "en": "We reply within 48 hours. Just tell us your sport, your goal in one sentence, and whether you'd prefer in person, remote, or don't know yet.",
+    "de": "Wir antworten innerhalb von 48 Stunden. Sagen Sie uns einfach Ihre Sportart, Ihr Ziel in einem Satz und ob Sie den Präsenzmodus, die Ferne bevorzugen oder es noch nicht wissen.",
+    "it": "Rispondiamo entro 48 ore. Dicci semplicemente il tuo sport, il tuo obiettivo in una frase, e se preferisci la presenza, la distanza, o se non lo sai ancora."
+  }
+}

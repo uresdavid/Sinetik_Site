@@ -53,8 +53,8 @@ const PAGES = [
 /* ── Multilingue : langues disponibles par page (miroir de generate.mjs) ──
    Sert à construire des liens cohérents par langue (menu, logo, CTA).      */
 const PAGE_LANGS = {
-  index:["fr","en","de","it"], tracker:["fr","en"], studio:["fr","en"],
-  origin:["fr","en"], pure:["fr","en"], motion:["fr","en"], contact:["fr"],
+  index:["fr","en","de","it"], tracker:["fr","en","de","it"], studio:["fr","en","de","it"],
+  origin:["fr","en","de","it"], pure:["fr","en","de","it"], motion:["fr","en"], contact:["fr","en","de","it"],
   "mentions-legales":["fr","en","de","it"],
   "confidentialite":["fr","en","de","it"], "cgu":["fr","en","de","it"],
   "cgv":["fr","en","de","it"], "cookies":["fr","en","de","it"]

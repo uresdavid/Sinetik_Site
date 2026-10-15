@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="{{lang}}" data-theme="dark" data-page-lang="{{lang}}" data-lang-urls='{{langUrls}}'><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>try{var t=localStorage.getItem('sinetik-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<title>{{t:meta.title}}</title>
+<meta name="description" content="{{t:meta.desc}}">
+{{headAlternates}}
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ogUrl}}">
+<meta property="og:title" content="{{t:meta.ogTitle}}">
+<meta property="og:description" content="{{t:meta.ogDesc}}">
+<!-- og:image : image de partage 1200x630 à produire, puis décommenter la ligne suivante
+<meta property="og:image" content="https://www.sinetik.ch/assets/img/og-studio.jpg"> -->
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/sinetik.css">
+
+<!-- ============================================================
+     Style local à cette page : le composant FAQ, identique à
+     celui de tracker.html pour garder la même structure partout.
+     ============================================================ -->
+<style>
+  /* — FAQ (balise native <details>, lisible sans JavaScript) — */
+  .faq{border-top:1px solid rgba(128,140,160,.16)}
+  .faq details{border-bottom:1px solid rgba(128,140,160,.16)}
+  .faq summary{cursor:pointer;list-style:none;padding:20px 40px 20px 0;position:relative;
+    font-weight:600;font-size:1rem}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:'+';position:absolute;right:6px;top:18px;font-size:1.3rem;
+    font-weight:400;color:var(--ink-3,#8a93a6);transition:transform .2s ease}
+  .faq details[open] summary::after{transform:rotate(45deg)}
+  .faq details p{margin:0 0 22px;max-width:70ch;color:var(--ink-2,#b6bdc9);font-size:.94rem;line-height:1.65}
+
+  @media (prefers-reduced-motion:reduce){.faq summary::after{transition:none}}
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+
+<header class="hero hero-solo">
+  <div class="hero-canvas" id="hero3d" data-scene="studio"></div>
+  <div class="hero-scrim"></div>
+  <div class="hero-glow"></div>
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">{{t:hero.mono}}</span>
+    <h1 data-anim="rise" data-delay="1">{{t:hero.h1}}</h1>
+    <p class="lead" data-anim="rise" data-delay="2">{{t:hero.lead}}</p>
+    <div class="btn-row" data-anim="rise" data-delay="3">
+      <a class="btn btn-primary" href="{{url:contact}}">{{t:cta.demo}}</a>
+      <a class="btn btn-ghost" href="#formules">{{t:hero.ctaPlans}}</a>
+    </div>
+    <p class="mono" style="margin-top:18px;font-size:.78rem;color:var(--ink-3)" data-anim="rise" data-delay="4">{{t:hero.note}}</p>
+  </div>
+</header>
+
+<!-- Vue d'ensemble + maquette -->
+<section>
+  <div class="wrap">
+    <div class="split">
+      <div data-anim="rise" data-delay="0">
+        <span class="mono on">01</span>
+        <h2>{{t:s1.h2}}</h2>
+        <p class="lead">{{t:s1.lead}}</p>
+      </div>
+
+      <div data-anim="rise" data-delay="1">
+        <div class="mock">
+          <div class="mock-bar"><i></i><i></i><i></i><span>{{t:mock.bar}}</span></div>
+          <div class="mock-body">
+            <div class="mock-row">
+              <div class="mock-tile"><em>{{t:mock.load}}</em><b>4 820</b></div>
+              <div class="mock-tile"><em>{{t:mock.planreal}}</em><b>−8 %</b></div>
+              <div class="mock-tile"><em>{{t:mock.avail}}</em><b>22/25</b></div>
+              <div class="mock-tile"><em>{{t:mock.alerts}}</em><b>3</b></div>
+            </div>
+            <div class="mock-panel">
+              <h5>{{t:mock.chart}}</h5>
+              <div class="mock-chart">
+                <i style="height:38%"></i><i style="height:62%"></i><i style="height:47%"></i>
+                <i style="height:81%"></i><i style="height:55%"></i><i class="alt" style="height:24%"></i>
+                <i style="height:70%"></i><i style="height:88%"></i><i style="height:59%"></i>
+                <i class="alt" style="height:31%"></i><i style="height:74%"></i><i style="height:44%"></i>
+              </div>
+            </div>
+            <div class="mock-panel">
+              <h5>{{t:mock.squad}}</h5>
+              <div class="mock-list">
+                <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="ok" style="width:88%"></b></span></div>
+                <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="ok" style="width:76%"></b></span></div>
+                <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="warn" style="width:52%"></b></span></div>
+                <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="high" style="width:34%"></b></span></div>
+                <div class="mock-line"><span class="mock-av"></span><span class="mock-track"><b class="ok" style="width:91%"></b></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modules -->
+<section>
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">02</span>
+    <h2 data-anim="rise" data-delay="0">{{t:mod.h2}}</h2>
+    <p class="lead" style="margin-bottom:40px" data-anim="rise" data-delay="0">{{t:mod.lead}}</p>
+
+    <div class="grid g-3">
+      <div class="card" data-anim="rise" data-delay="0">
+        <h3>{{t:mod.1.h3}}</h3><p>{{t:mod.1.p}}</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>{{t:mod.1.li1}}</li><li>{{t:mod.1.li2}}</li><li>{{t:mod.1.li3}}</li>
+        </ul>
+      </div>
+      <div class="card" data-anim="rise" data-delay="1">
+        <h3>{{t:mod.2.h3}}</h3><p>{{t:mod.2.p}}</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>{{t:mod.2.li1}}</li><li>{{t:mod.2.li2}}</li><li>{{t:mod.2.li3}}</li>
+        </ul>
+      </div>
+      <div class="card" data-anim="rise" data-delay="2">
+        <h3>{{t:mod.3.h3}}</h3><p>{{t:mod.3.p}}</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>{{t:mod.3.li1}}</li><li>{{t:mod.3.li2}}</li><li>{{t:mod.3.li3}}</li>
+        </ul>
+      </div>
+      <div class="card" data-anim="rise" data-delay="0">
+        <h3>{{t:mod.4.h3}}</h3><p>{{t:mod.4.p}}</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>{{t:mod.4.li1}}</li><li>{{t:mod.4.li2}}</li><li>{{t:mod.4.li3}}</li>
+        </ul>
+      </div>
+      <div class="card" data-anim="rise" data-delay="1">
+        <h3>{{t:mod.5.h3}}</h3><p>{{t:mod.5.p}}</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>{{t:mod.5.li1}}</li><li>{{t:mod.5.li2}}</li><li>{{t:mod.5.li3}}</li>
+        </ul>
+      </div>
+      <div class="card" data-anim="rise" data-delay="2">
+        <h3>{{t:mod.6.h3}}</h3><p>{{t:mod.6.p}}</p>
+        <ul class="ticks" style="margin-top:18px">
+          <li>{{t:mod.6.li1}}</li><li>{{t:mod.6.li2}}</li><li>{{t:mod.6.li3}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mise en place -->
+<section>
+  <div class="wrap">
+    <div class="split split-narrow">
+      <div data-anim="rise" data-delay="0">
+        <span class="mono on">03</span>
+        <h2>{{t:setup.h2}}</h2>
+      </div>
+      <ol class="steps" data-anim="rise" data-delay="1">
+        <li>{{t:setup.step1}}</li>
+        <li>{{t:setup.step2}}</li>
+        <li>{{t:setup.step3}}</li>
+        <li>{{t:setup.step4}}</li>
+      </ol>
+    </div>
+    <p class="note" style="margin-top:36px" data-anim="rise" data-delay="0">{{t:setup.note}}</p>
+  </div>
+</section>
+
+<!-- Ce que Studio ne fait pas -->
+<section>
+  <div class="wrap">
+    <div class="split split-narrow">
+      <div data-anim="rise" data-delay="0">
+        <span class="mono on">04</span>
+        <h2>{{t:nope.h2}}</h2>
+        <p class="lead">{{t:nope.lead}}</p>
+      </div>
+      <ol class="steps" data-anim="rise" data-delay="1">
+        <li>{{t:nope.step1}}</li>
+        <li>{{t:nope.step2}}</li>
+        <li>{{t:nope.step3}}</li>
+        <li>{{t:nope.step4}}</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- Formules -->
+<section id="formules">
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">05</span>
+    <h2 data-anim="rise" data-delay="0">{{t:plans.h2}}</h2>
+    <p class="lead" style="margin-bottom:40px" data-anim="rise" data-delay="0">{{t:plans.lead}}</p>
+
+    <div class="plans">
+      <div class="plan" data-anim="rise" data-delay="0">
+        <h3>{{t:plan.starter.name}}</h3>
+        <p style="color:var(--ink-3);font-size:.88rem;margin:0">{{t:plan.starter.desc}}</p>
+        <div class="price" data-price="studioStarter" data-unit="price.month"></div>
+        <ul class="ticks">
+          <li>{{t:plan.starter.li1}}</li><li>{{t:plan.starter.li2}}</li>
+          <li>{{t:plan.starter.li3}}</li><li>{{t:plan.starter.li4}}</li>
+        </ul>
+        <a class="btn btn-ghost" href="{{url:contact}}">{{t:cta.demo}}</a>
+      </div>
+
+      <div class="plan featured" data-anim="rise" data-delay="1">
+        <span class="tag">{{t:plan.club.tag}}</span>
+        <h3>{{t:plan.club.name}}</h3>
+        <p style="color:var(--ink-3);font-size:.88rem;margin:0">{{t:plan.club.desc}}</p>
+        <div class="price" data-price="studioClub" data-unit="price.month"></div>
+        <ul class="ticks">
+          <li>{{t:plan.club.li1}}</li><li>{{t:plan.club.li2}}</li>
+          <li>{{t:plan.club.li3}}</li><li>{{t:plan.club.li4}}</li>
+        </ul>
+        <a class="btn btn-primary" href="{{url:contact}}">{{t:cta.demo}}</a>
+      </div>
+
+      <div class="plan" data-anim="rise" data-delay="2">
+        <h3>{{t:plan.elite.name}}</h3>
+        <p style="color:var(--ink-3);font-size:.88rem;margin:0">{{t:plan.elite.desc}}</p>
+        <div class="price" data-price="studioElite"></div>
+        <ul class="ticks">
+          <li>{{t:plan.elite.li1}}</li><li>{{t:plan.elite.li2}}</li>
+          <li>{{t:plan.elite.li3}}</li><li>{{t:plan.elite.li4}}</li>
+        </ul>
+        <a class="btn btn-ghost" href="{{url:contact}}">{{t:plan.elite.cta}}</a>
+      </div>
+    </div>
+
+    <p style="margin-top:32px;text-align:center;color:var(--ink-3);font-size:.9rem;max-width:60ch;margin-left:auto;margin-right:auto" data-anim="rise" data-delay="0">{{t:plans.compare}}</p>
+
+    <p class="note" style="margin-top:28px" data-anim="rise" data-delay="0">{{t:plans.note}}</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <span class="mono on" data-anim="rise" data-delay="0">06</span>
+    <h2 data-anim="rise" data-delay="0">{{t:faq.h2}}</h2>
+
+    <div class="faq" data-anim="rise" data-delay="1">
+      <details>
+        <summary>{{t:faq.q1}}</summary>
+        <p>{{t:faq.a1}}</p>
+      </details>
+      <details>
+        <summary>{{t:faq.q2}}</summary>
+        <p>{{t:faq.a2}}</p>
+      </details>
+      <details>
+        <summary>{{t:faq.q3}}</summary>
+        <p>{{t:faq.a3}}</p>
+      </details>
+      <details>
+        <summary>{{t:faq.q4}}</summary>
+        <p>{{t:faq.a4}}</p>
+      </details>
+      <details>
+        <summary>{{t:faq.q5}}</summary>
+        <p>{{t:faq.a5}}</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/site.js"></script>
+<script type="module" src="assets/js/hero3d.js"></script>
+
+
+</body></html>

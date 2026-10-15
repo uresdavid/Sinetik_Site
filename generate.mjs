@@ -16,6 +16,11 @@ const SITE = {
   // Pages à GÉNÉRER et dans quelles langues :
   generate: {
     index: ["fr", "en", "de", "it"],
+    studio: ["fr", "en", "de", "it"],
+    tracker: ["fr", "en", "de", "it"],
+    origin: ["fr", "en", "de", "it"],
+    pure: ["fr", "en", "de", "it"],
+    contact: ["fr", "en", "de", "it"],
     "mentions-legales": ["fr", "en", "de", "it"],
     "confidentialite": ["fr", "en", "de", "it"],
     "cgu": ["fr", "en", "de", "it"],
@@ -25,12 +30,12 @@ const SITE = {
   // Toutes les pages EXISTANTES et leurs langues (pour résoudre les liens) :
   pageLangs: {
     index:   ["fr", "en", "de", "it"],
-    tracker: ["fr", "en"],
-    studio:  ["fr", "en"],
-    origin:  ["fr", "en"],
-    pure:    ["fr", "en"],
+    tracker: ["fr", "en", "de", "it"],
+    studio:  ["fr", "en", "de", "it"],
+    origin:  ["fr", "en", "de", "it"],
+    pure:    ["fr", "en", "de", "it"],
     motion:  ["fr", "en"],
-    contact: ["fr"],
+    contact: ["fr", "en", "de", "it"],
     "mentions-legales": ["fr", "en", "de", "it"],
     "confidentialite": ["fr", "en", "de", "it"],
     "cgu": ["fr", "en", "de", "it"],
