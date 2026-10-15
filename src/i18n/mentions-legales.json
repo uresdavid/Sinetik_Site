@@ -1,0 +1,106 @@
+{
+  "ml.meta.title": {
+    "fr": "Mentions légales — Sinetik",
+    "en": "Legal notice — Sinetik",
+    "de": "Impressum — Sinetik",
+    "it": "Note legali — Sinetik"
+  },
+  "ml.meta.desc": {
+    "fr": "Mentions légales du site Sinetik — éditeur, hébergement, droit applicable.",
+    "en": "Legal notice for the Sinetik website — publisher, hosting, applicable law.",
+    "de": "Impressum der Website Sinetik — Herausgeber, Hosting, anwendbares Recht.",
+    "it": "Note legali del sito Sinetik — editore, hosting, legge applicabile."
+  },
+  "ml.h1": { "fr": "Mentions légales", "en": "Legal notice", "de": "Impressum", "it": "Note legali" },
+  "ml.lead": {
+    "fr": "Éditeur, hébergement et droit applicable.",
+    "en": "Publisher, hosting and applicable law.",
+    "de": "Herausgeber, Hosting und anwendbares Recht.",
+    "it": "Editore, hosting e legge applicabile."
+  },
+  "ml.provisional": {
+    "fr": "<strong>Version provisoire</strong> — document en cours de rédaction et de validation juridique. Certaines informations (identité de l'entité) seront complétées à la création de la société.",
+    "en": "<strong>Provisional version</strong> — document being drafted and under legal review. Some information (entity identity) will be completed when the company is formed.",
+    "de": "<strong>Provisorische Fassung</strong> — Dokument in Ausarbeitung und in rechtlicher Prüfung. Einzelne Angaben (Identität der Gesellschaft) werden bei der Gründung ergänzt.",
+    "it": "<strong>Versione provvisoria</strong> — documento in fase di redazione e di validazione giuridica. Alcune informazioni (identità della società) saranno completate alla costituzione della società."
+  },
+  "ml.h.editor": { "fr": "Éditeur du site", "en": "Website publisher", "de": "Herausgeber der Website", "it": "Editore del sito" },
+  "ml.editor.entity": {
+    "fr": "Sinetik — <em>[forme juridique et raison à compléter ; société Sinetik Sàrl prévue en 2027]</em>",
+    "en": "Sinetik — <em>[legal form and company name to be completed; Sinetik Sàrl planned for 2027]</em>",
+    "de": "Sinetik — <em>[Rechtsform und Firma noch zu ergänzen; Gesellschaft Sinetik Sàrl für 2027 geplant]</em>",
+    "it": "Sinetik — <em>[forma giuridica e denominazione da completare; società Sinetik Sàrl prevista nel 2027]</em>"
+  },
+  "ml.editor.address": {
+    "fr": "<em>[Adresse]</em>, Lausanne, Suisse",
+    "en": "<em>[Address]</em>, Lausanne, Switzerland",
+    "de": "<em>[Adresse]</em>, Lausanne, Schweiz",
+    "it": "<em>[Indirizzo]</em>, Losanna, Svizzera"
+  },
+  "ml.editor.contact": { "fr": "Contact :", "en": "Contact:", "de": "Kontakt:", "it": "Contatto:" },
+  "ml.editor.publisher": {
+    "fr": "Responsable de la publication : David Ures",
+    "en": "Publication director: David Ures",
+    "de": "Verantwortlich für den Inhalt: David Ures",
+    "it": "Responsabile della pubblicazione: David Ures"
+  },
+  "ml.h.hosting": { "fr": "Hébergement", "en": "Hosting", "de": "Hosting", "it": "Hosting" },
+  "ml.hosting.site": {
+    "fr": "<strong>Site</strong> : <em>[hébergeur du site sinetik.ch à préciser]</em>.",
+    "en": "<strong>Website</strong>: <em>[hosting provider for sinetik.ch to be specified]</em>.",
+    "de": "<strong>Website</strong>: <em>[Hosting-Anbieter für sinetik.ch noch anzugeben]</em>.",
+    "it": "<strong>Sito</strong>: <em>[provider di hosting di sinetik.ch da precisare]</em>."
+  },
+  "ml.hosting.studio": {
+    "fr": "<strong>Application Studio</strong> (app.sinetik-studio.ch) : Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA.",
+    "en": "<strong>Studio application</strong> (app.sinetik-studio.ch): Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA.",
+    "de": "<strong>Studio-Anwendung</strong> (app.sinetik-studio.ch): Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA.",
+    "it": "<strong>Applicazione Studio</strong> (app.sinetik-studio.ch): Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA."
+  },
+  "ml.hosting.db": {
+    "fr": "<strong>Base de données &amp; stockage</strong> : Supabase — hébergement dans l'Union européenne (Irlande).",
+    "en": "<strong>Database &amp; storage</strong>: Supabase — hosted in the European Union (Ireland).",
+    "de": "<strong>Datenbank &amp; Speicher</strong>: Supabase — Hosting in der Europäischen Union (Irland).",
+    "it": "<strong>Database e archiviazione</strong>: Supabase — hosting nell'Unione Europea (Irlanda)."
+  },
+  "ml.hosting.dns": {
+    "fr": "<strong>Nom de domaine / DNS</strong> : Infomaniak Network SA, Genève, Suisse.",
+    "en": "<strong>Domain name / DNS</strong>: Infomaniak Network SA, Geneva, Switzerland.",
+    "de": "<strong>Domainname / DNS</strong>: Infomaniak Network SA, Genf, Schweiz.",
+    "it": "<strong>Nome di dominio / DNS</strong>: Infomaniak Network SA, Ginevra, Svizzera."
+  },
+  "ml.h.ip": { "fr": "Propriété intellectuelle", "en": "Intellectual property", "de": "Geistiges Eigentum", "it": "Proprietà intellettuale" },
+  "ml.ip.p": {
+    "fr": "L'ensemble des contenus du site et des applications (marques « Sinetik », logos, textes, interfaces, code) est protégé. Toute reproduction ou réutilisation sans autorisation écrite est interdite. Les données saisies par une organisation cliente restent sa propriété.",
+    "en": "All content of the website and the applications (the “Sinetik” trademarks, logos, texts, interfaces, code) is protected. Any reproduction or reuse without written authorisation is prohibited. The data entered by a client organisation remains its property.",
+    "de": "Sämtliche Inhalte der Website und der Anwendungen (Marken «Sinetik», Logos, Texte, Benutzeroberflächen, Code) sind geschützt. Jede Vervielfältigung oder Weiterverwendung ohne schriftliche Genehmigung ist untersagt. Die von einer Kundenorganisation erfassten Daten bleiben deren Eigentum.",
+    "it": "L'insieme dei contenuti del sito e delle applicazioni (marchi «Sinetik», loghi, testi, interfacce, codice) è protetto. Qualsiasi riproduzione o riutilizzo senza autorizzazione scritta è vietato. I dati inseriti da un'organizzazione cliente restano di sua proprietà."
+  },
+  "ml.h.liability": { "fr": "Responsabilité", "en": "Liability", "de": "Haftung", "it": "Responsabilità" },
+  "ml.liability.p": {
+    "fr": "Sinetik met tout en œuvre pour assurer l'exactitude et la disponibilité des contenus et services, sans garantie d'absence d'erreur ou d'interruption. Les outils Sinetik sont des aides à la décision et à l'entraînement, et ne constituent pas un conseil médical.",
+    "en": "Sinetik does its utmost to ensure the accuracy and availability of its content and services, without guaranteeing the absence of error or interruption. Sinetik's tools are aids to decision-making and training; they do not constitute medical advice.",
+    "de": "Sinetik ist bestrebt, die Richtigkeit und Verfügbarkeit der Inhalte und Dienste sicherzustellen, ohne Gewähr für Fehlerfreiheit oder unterbrechungsfreien Betrieb. Die Werkzeuge von Sinetik sind Hilfsmittel für Entscheidungen und Training und stellen keine medizinische Beratung dar.",
+    "it": "Sinetik fa tutto il possibile per garantire l'esattezza e la disponibilità dei contenuti e dei servizi, senza garanzia di assenza di errori o interruzioni. Gli strumenti Sinetik sono ausili alla decisione e all'allenamento e non costituiscono un parere medico."
+  },
+  "ml.h.data": { "fr": "Protection des données", "en": "Data protection", "de": "Datenschutz", "it": "Protezione dei dati" },
+  "ml.data.p": {
+    "fr": "Le traitement des données personnelles est décrit dans la <a href=\"{{url:confidentialite}}\" style=\"color:var(--accent-2);text-decoration:none\">Politique de confidentialité</a> et la <a href=\"{{url:cookies}}\" style=\"color:var(--accent-2);text-decoration:none\">Politique cookies</a>.",
+    "en": "The processing of personal data is described in the <a href=\"{{url:confidentialite}}\" style=\"color:var(--accent-2);text-decoration:none\">Privacy Policy</a> and the <a href=\"{{url:cookies}}\" style=\"color:var(--accent-2);text-decoration:none\">Cookie Policy</a>.",
+    "de": "Die Verarbeitung personenbezogener Daten ist in der <a href=\"{{url:confidentialite}}\" style=\"color:var(--accent-2);text-decoration:none\">Datenschutzerklärung</a> und der <a href=\"{{url:cookies}}\" style=\"color:var(--accent-2);text-decoration:none\">Cookie-Richtlinie</a> beschrieben.",
+    "it": "Il trattamento dei dati personali è descritto nell'<a href=\"{{url:confidentialite}}\" style=\"color:var(--accent-2);text-decoration:none\">Informativa sulla privacy</a> e nella <a href=\"{{url:cookies}}\" style=\"color:var(--accent-2);text-decoration:none\">Cookie Policy</a>."
+  },
+  "ml.h.law": { "fr": "Droit applicable et for", "en": "Applicable law and jurisdiction", "de": "Anwendbares Recht und Gerichtsstand", "it": "Legge applicabile e foro" },
+  "ml.law.p": {
+    "fr": "Le présent site et les relations qui en découlent sont soumis au <strong>droit suisse</strong>. For : <strong>Lausanne</strong>, sous réserve des dispositions impératives applicables.",
+    "en": "This website and the relationships arising from it are governed by <strong>Swiss law</strong>. Place of jurisdiction: <strong>Lausanne</strong>, subject to any applicable mandatory provisions.",
+    "de": "Diese Website und die daraus entstehenden Beziehungen unterstehen dem <strong>schweizerischen Recht</strong>. Gerichtsstand: <strong>Lausanne</strong>, unter Vorbehalt zwingender anwendbarer Bestimmungen.",
+    "it": "Il presente sito e i rapporti che ne derivano sono soggetti al <strong>diritto svizzero</strong>. Foro competente: <strong>Losanna</strong>, fatte salve le disposizioni imperative applicabili."
+  },
+  "ml.prevail": {
+    "fr": "En cas de divergence entre les versions linguistiques, la <strong>version française fait foi</strong>.",
+    "en": "In the event of any discrepancy between language versions, the <strong>French version prevails</strong>.",
+    "de": "Bei Abweichungen zwischen den Sprachfassungen ist die <strong>französische Fassung massgebend</strong>.",
+    "it": "In caso di divergenza tra le versioni linguistiche, <strong>prevale la versione francese</strong>."
+  }
+}

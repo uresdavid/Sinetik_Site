@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="it" data-theme="dark" data-page-lang="it" data-lang-urls='{"fr":"confidentialite.html","en":"confidentialite-en.html","de":"confidentialite-de.html","it":"confidentialite-it.html"}'>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>try{var t=localStorage.getItem('sinetik-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<title>Informativa sulla privacy — Sinetik</title>
+<meta name="description" content="Informativa sulla privacy di Sinetik — nLPD (Svizzera) e GDPR, dati, diritti, sicurezza.">
+<link rel="canonical" href="https://www.sinetik.ch/confidentialite-it.html">
+<link rel="alternate" hreflang="fr" href="https://www.sinetik.ch/confidentialite.html">
+<link rel="alternate" hreflang="en" href="https://www.sinetik.ch/confidentialite-en.html">
+<link rel="alternate" hreflang="de" href="https://www.sinetik.ch/confidentialite-de.html">
+<link rel="alternate" hreflang="it" href="https://www.sinetik.ch/confidentialite-it.html">
+<link rel="alternate" hreflang="x-default" href="https://www.sinetik.ch/confidentialite.html">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/sinetik.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<header class="hero hero-solo">
+  <div class="hero-scrim"></div>
+  <div class="hero-glow"></div>
+  <div class="wrap">
+    <span class="mono on">Sinetik:</span>
+    <h1>Informativa sulla privacy</h1>
+    <p class="lead">Come trattiamo e proteggiamo i tuoi dati — nLPD (Svizzera) &amp; GDPR.</p>
+  </div>
+</header>
+
+<section style="padding-top:40px;padding-bottom:80px">
+  <div class="wrap" style="max-width:760px">
+    <div class="card" style="border-color:var(--accent-2);margin-bottom:28px">
+      <p style="margin:0;font-size:.92rem;color:var(--ink-2)"><strong>Versione provvisoria</strong> — documento in fase di validazione giuridica. Quadro: <strong>nLPD</strong> (legge svizzera) + <strong>GDPR</strong> per le persone situate nell'UE. Autorità: <strong>IFPDT</strong>.</p>
+    </div>
+
+    <h2>1. Chi è il responsabile?</h2>
+    <p>Sinetik — <em>[società, vedi Note legali]</em> («noi»). Due ruoli distinti:</p>
+    <ul>
+      <li><strong>Dati dell'account</strong> degli utenti (staff, coach, atleti indipendenti): Sinetik è <strong>titolare del trattamento</strong>.</li>
+      <li><strong>Dati degli atleti</strong> inseriti/importati da un'organizzazione cliente (club, federazione, clinica): l'<strong>organizzazione è titolare del trattamento</strong> e <strong>Sinetik agisce come responsabile del trattamento</strong> per suo conto (contratto di trattamento / DPA). Le richieste relative a questi dati vanno rivolte all'organizzazione.</li>
+    </ul>
+    <p>Contatto: <a data-email href="#" style="color:var(--accent-2);text-decoration:none"></a>.</p>
+
+    <h2>2. Quali dati trattiamo?</h2>
+    <ul>
+      <li><strong>Account e identità</strong>: cognome, nome, e-mail di contatto, nome utente, password (con hash), ruolo, organizzazione, lingua, log di accesso.</li>
+      <li><strong>Organizzazione e abbonamento</strong>: nome, tipo, sport, paese, stato e date dell'abbonamento (pagamenti tramite Stripe).</li>
+      <li><strong>Performance e monitoraggio</strong>: misurazioni (GPS, VBT, test, carico), benessere, antropometria, calendario, programmi.</li>
+      <li><strong>Dati sensibili / sanitari</strong> (art. 5 nLPD): benessere, dolori, infortuni, monitoraggio medico — trattati con misure rafforzate e una base giuridica appropriata.</li>
+      <li><strong>Dati tecnici</strong>: indirizzo IP, dispositivo/browser, cookie strettamente necessari.</li>
+    </ul>
+
+    <h2>3. Finalità e basi giuridiche</h2>
+    <ul>
+      <li>Fornire e proteggere il servizio — esecuzione del contratto.</li>
+      <li>Gestire l'abbonamento e la fatturazione — esecuzione del contratto / obbligo legale.</li>
+      <li>Trattare i dati sanitari/di performance degli atleti — consenso / responsabilità dell'organizzazione.</li>
+      <li>Verifica e-mail, reimpostazione password, notifiche — esecuzione del contratto / interesse legittimo.</li>
+      <li>Migliorare e proteggere la piattaforma — interesse legittimo.</li>
+    </ul>
+
+    <h2>4. Destinatari e responsabili del trattamento</h2>
+    <p>Non vendiamo mai i tuoi dati. Responsabili tecnici del trattamento: <strong>Supabase</strong> (database, autenticazione, archiviazione — hosting UE/Irlanda), <strong>Vercel</strong> (USA, hosting dell'app), <strong>Stripe</strong> (pagamenti — nessun dato della carta conservato da Sinetik), <strong>Resend</strong> <em>[o altro]</em> (e-mail transazionali). Ciascuno è vincolato da un contratto di trattamento.</p>
+
+    <h2>5. Trasferimenti fuori dalla Svizzera / UE</h2>
+    <p>I <strong>dati principali</strong> (database, autenticazione, archiviazione) sono ospitati <strong>nell'UE (Irlanda)</strong>. Alcuni responsabili (Vercel, Stripe, Resend) possono trattare determinati dati <strong>negli Stati Uniti</strong>, con garanzie appropriate (clausole contrattuali tipo / meccanismi riconosciuti).</p>
+
+    <h2>6. Durata di conservazione</h2>
+    <p>I dati sono conservati finché l'account / l'organizzazione è attivo. In caso di <strong>sospensione</strong> dell'abbonamento, sono <strong>conservati</strong> per consentire una riattivazione. La <strong>cancellazione definitiva</strong> avviene <strong>su richiesta</strong>, o previo preavviso da parte nostra, nel rispetto dei termini legali di conservazione.</p>
+
+    <h2>7. Sicurezza</h2>
+    <p>Rigida separazione per organizzazione, cifratura in transito (HTTPS) e a riposo, controllo degli accessi basato sui ruoli, password con hash, backup.</p>
+
+    <h2>8. I tuoi diritti</h2>
+    <p>Ai sensi della nLPD (e del GDPR se ti trovi nell'UE): diritti di <strong>accesso, rettifica, cancellazione, opposizione</strong> e di <strong>consegna / portabilità</strong>. Per i dati gestiti da un'organizzazione, rivolgiti prima a quest'ultima. Per esercitarli: <a data-email href="#" style="color:var(--accent-2);text-decoration:none"></a>. Puoi rivolgerti all'<strong>IFPDT</strong> (edoeb.admin.ch) o alla tua autorità di protezione dei dati.</p>
+
+    <h2>9. Minori</h2>
+    <p>Per gli atleti <strong>minorenni</strong>, il trattamento dei dati (in particolare quelli sanitari) richiede il <strong>consenso del rappresentante legale</strong>, raccolto dall'organizzazione cliente.</p>
+
+    <h2>10. Cookie</h2>
+    <p>Consulta la <a href="cookies-it.html" style="color:var(--accent-2);text-decoration:none">Cookie Policy</a>. Per impostazione predefinita, vengono utilizzati solo cookie strettamente necessari.</p>
+
+    <h2>11. Violazione dei dati</h2>
+    <p>In caso di violazione che presenta un rischio, notifichiamo l'<strong>IFPDT nel più breve tempo possibile</strong> (72 ore se si applica il GDPR) e informiamo le persone interessate quando la legge lo richiede.</p>
+
+    <h2>12. Contatto</h2>
+    <p><em>[Società]</em> — <a data-email href="#" style="color:var(--accent-2);text-decoration:none"></a> — Losanna, Svizzera.</p>
+
+    <p style="color:var(--ink-3);font-size:.9rem;margin-top:26px">In caso di divergenza tra le versioni linguistiche, <strong>prevale la versione francese</strong>.</p>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

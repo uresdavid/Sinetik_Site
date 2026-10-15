@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="{{lang}}" data-theme="dark" data-page-lang="{{lang}}" data-lang-urls='{{langUrls}}'>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>try{var t=localStorage.getItem('sinetik-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<title>{{t:cf.meta.title}}</title>
+<meta name="description" content="{{t:cf.meta.desc}}">
+{{headAlternates}}
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/sinetik.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<header class="hero hero-solo">
+  <div class="hero-scrim"></div>
+  <div class="hero-glow"></div>
+  <div class="wrap">
+    <span class="mono on">Sinetik:</span>
+    <h1>{{t:cf.h1}}</h1>
+    <p class="lead">{{t:cf.lead}}</p>
+  </div>
+</header>
+
+<section style="padding-top:40px;padding-bottom:80px">
+  <div class="wrap" style="max-width:760px">
+    <div class="card" style="border-color:var(--accent-2);margin-bottom:28px">
+      <p style="margin:0;font-size:.92rem;color:var(--ink-2)">{{t:cf.provisional}}</p>
+    </div>
+
+    <h2>{{t:cf.h.1}}</h2>
+    <p>{{t:cf.1.intro}}</p>
+    <ul>
+      <li>{{t:cf.1.li1}}</li>
+      <li>{{t:cf.1.li2}}</li>
+    </ul>
+    <p>{{t:cf.1.contact}} <a data-email href="#" style="color:var(--accent-2);text-decoration:none"></a>.</p>
+
+    <h2>{{t:cf.h.2}}</h2>
+    <ul>
+      <li>{{t:cf.2.li1}}</li>
+      <li>{{t:cf.2.li2}}</li>
+      <li>{{t:cf.2.li3}}</li>
+      <li>{{t:cf.2.li4}}</li>
+      <li>{{t:cf.2.li5}}</li>
+    </ul>
+
+    <h2>{{t:cf.h.3}}</h2>
+    <ul>
+      <li>{{t:cf.3.li1}}</li>
+      <li>{{t:cf.3.li2}}</li>
+      <li>{{t:cf.3.li3}}</li>
+      <li>{{t:cf.3.li4}}</li>
+      <li>{{t:cf.3.li5}}</li>
+    </ul>
+
+    <h2>{{t:cf.h.4}}</h2>
+    <p>{{t:cf.4.p}}</p>
+
+    <h2>{{t:cf.h.5}}</h2>
+    <p>{{t:cf.5.p}}</p>
+
+    <h2>{{t:cf.h.6}}</h2>
+    <p>{{t:cf.6.p}}</p>
+
+    <h2>{{t:cf.h.7}}</h2>
+    <p>{{t:cf.7.p}}</p>
+
+    <h2>{{t:cf.h.8}}</h2>
+    <p>{{t:cf.8.a}} <a data-email href="#" style="color:var(--accent-2);text-decoration:none"></a>. {{t:cf.8.b}}</p>
+
+    <h2>{{t:cf.h.9}}</h2>
+    <p>{{t:cf.9.p}}</p>
+
+    <h2>{{t:cf.h.10}}</h2>
+    <p>{{t:cf.10.p}}</p>
+
+    <h2>{{t:cf.h.11}}</h2>
+    <p>{{t:cf.11.p}}</p>
+
+    <h2>{{t:cf.h.12}}</h2>
+    <p>{{t:cf.12.pre}} <a data-email href="#" style="color:var(--accent-2);text-decoration:none"></a> {{t:cf.12.post}}</p>
+
+    <p style="color:var(--ink-3);font-size:.9rem;margin-top:26px">{{t:cf.prevail}}</p>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

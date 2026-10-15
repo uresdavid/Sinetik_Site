@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="{{lang}}" data-theme="dark" data-page-lang="{{lang}}" data-lang-urls='{{langUrls}}'>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>try{var t=localStorage.getItem('sinetik-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<title>{{t:ck.meta.title}}</title>
+<meta name="description" content="{{t:ck.meta.desc}}">
+{{headAlternates}}
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/sinetik.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<header class="hero hero-solo">
+  <div class="hero-scrim"></div>
+  <div class="hero-glow"></div>
+  <div class="wrap">
+    <span class="mono on">Sinetik:</span>
+    <h1>{{t:ck.h1}}</h1>
+    <p class="lead">{{t:ck.lead}}</p>
+  </div>
+</header>
+
+<section style="padding-top:40px;padding-bottom:80px">
+  <div class="wrap" style="max-width:760px">
+    <div class="card" style="border-color:var(--accent-2);margin-bottom:28px">
+      <p style="margin:0;font-size:.92rem;color:var(--ink-2)">{{t:ck.provisional}}</p>
+    </div>
+
+    <h2>{{t:ck.h.1}}</h2>
+    <p>{{t:ck.1.p}}</p>
+
+    <h2>{{t:ck.h.2}}</h2>
+    <p>{{t:ck.2.p}}</p>
+
+    <h2>{{t:ck.h.3}}</h2>
+    <ul>
+      <li>{{t:ck.3.li1}}</li>
+      <li>{{t:ck.3.li2}}</li>
+      <li>{{t:ck.3.li3}}</li>
+      <li>{{t:ck.3.li4}}</li>
+    </ul>
+    <p style="color:var(--ink-3);font-size:.9rem">{{t:ck.3.note}}</p>
+
+    <h2>{{t:ck.h.4}}</h2>
+    <p>{{t:ck.4.p}}</p>
+
+    <h2>{{t:ck.h.5}}</h2>
+    <p>{{t:ck.5.p}}</p>
+
+    <h2>{{t:ck.h.6}}</h2>
+    <p><a data-email href="#" style="color:var(--accent-2);text-decoration:none"></a>. {{t:ck.6.b}}</p>
+
+    <p style="color:var(--ink-3);font-size:.9rem;margin-top:26px">{{t:ck.prevail}}</p>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

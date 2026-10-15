@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="{{lang}}" data-theme="dark" data-page-lang="{{lang}}" data-lang-urls='{{langUrls}}'>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>try{var t=localStorage.getItem('sinetik-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<title>{{t:cv.meta.title}}</title>
+<meta name="description" content="{{t:cv.meta.desc}}">
+{{headAlternates}}
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/sinetik.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<header class="hero hero-solo">
+  <div class="hero-scrim"></div>
+  <div class="hero-glow"></div>
+  <div class="wrap">
+    <span class="mono on">Sinetik:</span>
+    <h1>{{t:cv.h1}}</h1>
+    <p class="lead">{{t:cv.lead}}</p>
+  </div>
+</header>
+
+<section style="padding-top:40px;padding-bottom:80px">
+  <div class="wrap" style="max-width:760px">
+    <div class="card" style="border-color:var(--accent-2);margin-bottom:28px">
+      <p style="margin:0;font-size:.92rem;color:var(--ink-2)">{{t:cv.provisional}}</p>
+    </div>
+
+    <p style="color:var(--ink-2)"><strong>{{t:cv.toc.title}}</strong>
+      <a href="#studio" style="color:var(--accent-2);text-decoration:none">{{t:cv.toc.studio}}</a> ·
+      <a href="#tracker" style="color:var(--accent-2);text-decoration:none">{{t:cv.toc.tracker}}</a> ·
+      <a href="#pure" style="color:var(--accent-2);text-decoration:none">{{t:cv.toc.pure}}</a> ·
+      <a href="#origin" style="color:var(--accent-2);text-decoration:none">{{t:cv.toc.origin}}</a>
+    </p>
+
+    <hr class="sep" style="margin:30px 0">
+    <h2 id="studio">{{t:cv.studio.h2}}</h2>
+    <ul>
+      <li>{{t:cv.studio.li1}}</li>
+      <li>{{t:cv.studio.li2}}</li>
+      <li>{{t:cv.studio.li3}}</li>
+      <li>{{t:cv.studio.li4}}</li>
+      <li>{{t:cv.studio.li5}}</li>
+      <li>{{t:cv.studio.li6}}</li>
+      <li>{{t:cv.studio.li7}}</li>
+    </ul>
+
+    <hr class="sep" style="margin:30px 0">
+    <h2 id="tracker">{{t:cv.tracker.h2}}</h2>
+    <p style="color:var(--ink-3);font-size:.9rem">{{t:cv.tracker.note}}</p>
+    <ul>
+      <li>{{t:cv.tracker.li1}}</li>
+      <li>{{t:cv.tracker.li2}}</li>
+      <li>{{t:cv.tracker.li3}}</li>
+      <li>{{t:cv.tracker.li4}}</li>
+      <li>{{t:cv.tracker.li5}}</li>
+    </ul>
+
+    <hr class="sep" style="margin:30px 0">
+    <h2 id="pure">{{t:cv.pure.h2}}</h2>
+    <ul>
+      <li>{{t:cv.pure.li1}}</li>
+      <li>{{t:cv.pure.li2}}</li>
+      <li>{{t:cv.pure.li3}}</li>
+      <li>{{t:cv.pure.li4}}</li>
+      <li>{{t:cv.pure.li5}}</li>
+      <li>{{t:cv.pure.li6}}</li>
+    </ul>
+
+    <hr class="sep" style="margin:30px 0">
+    <h2 id="origin">{{t:cv.origin.h2}}</h2>
+    <ul>
+      <li>{{t:cv.origin.li1}}</li>
+      <li>{{t:cv.origin.li2}}</li>
+      <li>{{t:cv.origin.li3}}</li>
+      <li>{{t:cv.origin.li4}}</li>
+      <li>{{t:cv.origin.li5}}</li>
+      <li>{{t:cv.origin.li6}}</li>
+    </ul>
+
+    <hr class="sep" style="margin:30px 0">
+    <h2>{{t:cv.common.h2}}</h2>
+    <p>{{t:cv.common.p}}</p>
+    <p style="color:var(--ink-3);font-size:.9rem;margin-top:26px">{{t:cv.prevail}}</p>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

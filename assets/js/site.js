@@ -54,7 +54,10 @@ const PAGES = [
    Sert à construire des liens cohérents par langue (menu, logo, CTA).      */
 const PAGE_LANGS = {
   index:["fr","en","de","it"], tracker:["fr","en"], studio:["fr","en"],
-  origin:["fr","en"], pure:["fr","en"], motion:["fr","en"], contact:["fr"]
+  origin:["fr","en"], pure:["fr","en"], motion:["fr","en"], contact:["fr"],
+  "mentions-legales":["fr","en","de","it"],
+  "confidentialite":["fr","en","de","it"], "cgu":["fr","en","de","it"],
+  "cgv":["fr","en","de","it"], "cookies":["fr","en","de","it"]
 };
 const fileForLang = (page, lang) => (lang === "fr" ? `${page}.html` : `${page}-${lang}.html`);
 function urlForLang(page, lang){
@@ -122,39 +125,41 @@ function buildHeader(){
 }
 
 function buildFooter(){
+  const lang = currentLang();
+  const u = p => urlForLang(p, lang);
   return `
   <footer class="foot">
     <div class="wrap">
       <div class="foot-grid">
         <div>
-          ${wordmark()}
+          <a class="wm" href="${u("index")}" aria-label="Sinetik">${MARK}<span class="wm-txt">Sınetık<i>:</i></span></a>
           <p style="margin-top:18px;max-width:34ch;color:var(--ink-2);font-size:.92rem" data-i18n="foot.tagline"></p>
         </div>
         <div>
           <h4 data-i18n="foot.h.modules"></h4>
           <ul>
-            <li><a href="tracker.html">Sinetik:tracker</a></li>
-            <li><a href="studio.html">Sinetik:studio</a></li>
-            <li><a href="origin.html">Sinetik:origin</a></li>
-            <li><a href="pure.html">Sinetik:pure</a></li>
+            <li><a href="${u("tracker")}">Sinetik:tracker</a></li>
+            <li><a href="${u("studio")}">Sinetik:studio</a></li>
+            <li><a href="${u("origin")}">Sinetik:origin</a></li>
+            <li><a href="${u("pure")}">Sinetik:pure</a></li>
           </ul>
         </div>
         <div>
           <h4 data-i18n="foot.h.marque"></h4>
           <ul>
-            <li><a href="index.html" data-i18n="foot.eco"></a></li>
-            <li><a href="contact.html" data-i18n="nav.contact"></a></li>
+            <li><a href="${u("index")}" data-i18n="foot.eco"></a></li>
+            <li><a href="${u("contact")}" data-i18n="nav.contact"></a></li>
             <li><a data-email href="#"></a></li>
           </ul>
         </div>
         <div>
           <h4 data-i18n="foot.h.legal"></h4>
           <ul>
-            <li><a href="mentions-legales.html" data-i18n="foot.legal"></a></li>
-            <li><a href="confidentialite.html" data-i18n="foot.privacy"></a></li>
-            <li><a href="cgu.html" data-i18n="foot.cgu"></a></li>
-            <li><a href="cgv.html" data-i18n="foot.cgv"></a></li>
-            <li><a href="cookies.html" data-i18n="foot.cookies"></a></li>
+            <li><a href="${u("mentions-legales")}" data-i18n="foot.legal"></a></li>
+            <li><a href="${u("confidentialite")}" data-i18n="foot.privacy"></a></li>
+            <li><a href="${u("cgu")}" data-i18n="foot.cgu"></a></li>
+            <li><a href="${u("cgv")}" data-i18n="foot.cgv"></a></li>
+            <li><a href="${u("cookies")}" data-i18n="foot.cookies"></a></li>
           </ul>
         </div>
       </div>

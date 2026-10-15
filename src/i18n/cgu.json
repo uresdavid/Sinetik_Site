@@ -1,0 +1,117 @@
+{
+  "cu.meta.title": { "fr": "CGU — Sinetik Studio", "en": "Terms of Use — Sinetik Studio", "de": "Nutzungsbedingungen — Sinetik Studio", "it": "Termini d'uso — Sinetik Studio" },
+  "cu.meta.desc": {
+    "fr": "Conditions générales d'utilisation de la plateforme Sinetik.studio.",
+    "en": "Terms of use of the Sinetik.studio platform.",
+    "de": "Allgemeine Nutzungsbedingungen der Plattform Sinetik.studio.",
+    "it": "Condizioni generali d'uso della piattaforma Sinetik.studio."
+  },
+  "cu.h1": { "fr": "Conditions générales d'utilisation", "en": "Terms of Use", "de": "Allgemeine Nutzungsbedingungen", "it": "Condizioni generali d'uso" },
+  "cu.lead": {
+    "fr": "Règles d'utilisation de la plateforme Sinetik.studio.",
+    "en": "Rules for using the Sinetik.studio platform.",
+    "de": "Regeln für die Nutzung der Plattform Sinetik.studio.",
+    "it": "Regole di utilizzo della piattaforma Sinetik.studio."
+  },
+  "cu.provisional": {
+    "fr": "<strong>Version provisoire</strong> — en cours de validation juridique. Les conditions financières (abonnement) figurent dans les <a href=\"{{url:cgv}}\" style=\"color:var(--accent-2);text-decoration:none\">CGV</a>.",
+    "en": "<strong>Provisional version</strong> — under legal review. The financial terms (subscription) are set out in the <a href=\"{{url:cgv}}\" style=\"color:var(--accent-2);text-decoration:none\">Terms of Sale</a>.",
+    "de": "<strong>Provisorische Fassung</strong> — in rechtlicher Prüfung. Die finanziellen Bedingungen (Abonnement) sind in den <a href=\"{{url:cgv}}\" style=\"color:var(--accent-2);text-decoration:none\">Verkaufsbedingungen</a> aufgeführt.",
+    "it": "<strong>Versione provvisoria</strong> — in fase di validazione giuridica. Le condizioni finanziarie (abbonamento) sono indicate nelle <a href=\"{{url:cgv}}\" style=\"color:var(--accent-2);text-decoration:none\">Condizioni di vendita</a>."
+  },
+  "cu.h.1": { "fr": "1. Objet", "en": "1. Purpose", "de": "1. Gegenstand", "it": "1. Oggetto" },
+  "cu.1.p": {
+    "fr": "Les présentes CGU régissent l'accès et l'utilisation de la plateforme <strong>Sinetik.studio</strong> (« le Service »), éditée par Sinetik <em>[entité]</em>. En créant un compte ou en utilisant le Service, l'utilisateur accepte les présentes CGU.",
+    "en": "These Terms of Use govern access to and use of the <strong>Sinetik.studio</strong> platform (“the Service”), operated by Sinetik <em>[entity]</em>. By creating an account or using the Service, the user accepts these Terms.",
+    "de": "Diese Nutzungsbedingungen regeln den Zugang zur und die Nutzung der Plattform <strong>Sinetik.studio</strong> («der Dienst»), betrieben von Sinetik <em>[Gesellschaft]</em>. Mit der Erstellung eines Kontos oder der Nutzung des Dienstes akzeptiert der Nutzer diese Bedingungen.",
+    "it": "I presenti Termini d'uso disciplinano l'accesso e l'utilizzo della piattaforma <strong>Sinetik.studio</strong> («il Servizio»), gestita da Sinetik <em>[società]</em>. Creando un account o utilizzando il Servizio, l'utente accetta i presenti Termini."
+  },
+  "cu.h.2": { "fr": "2. Description du Service", "en": "2. Description of the Service", "de": "2. Beschreibung des Dienstes", "it": "2. Descrizione del Servizio" },
+  "cu.2.p": {
+    "fr": "Sinetik.studio est une plateforme de suivi de la performance (Athlete Management System). <strong>C'est un outil d'aide à la décision</strong> ; il ne fournit <strong>ni diagnostic ni conseil médical</strong>.",
+    "en": "Sinetik.studio is a performance monitoring platform (Athlete Management System). <strong>It is a decision-support tool</strong>; it provides <strong>neither diagnosis nor medical advice</strong>.",
+    "de": "Sinetik.studio ist eine Plattform für das Leistungsmonitoring (Athlete Management System). <strong>Es ist ein Entscheidungshilfe-Werkzeug</strong>; es liefert <strong>weder eine Diagnose noch eine medizinische Beratung</strong>.",
+    "it": "Sinetik.studio è una piattaforma di monitoraggio della performance (Athlete Management System). <strong>È uno strumento di supporto alle decisioni</strong>; non fornisce <strong>né diagnosi né consulenza medica</strong>."
+  },
+  "cu.h.3": { "fr": "3. Compte et accès", "en": "3. Account and access", "de": "3. Konto und Zugang", "it": "3. Account e accesso" },
+  "cu.3.li1": {
+    "fr": "L'<strong>identifiant de connexion</strong> est personnel et <strong>définitif</strong> ; l'e-mail sert de contact et peut être partagé par deux comptes distincts.",
+    "en": "The <strong>login username</strong> is personal and <strong>permanent</strong>; the email is used for contact and may be shared by two separate accounts.",
+    "de": "Der <strong>Anmeldename</strong> ist persönlich und <strong>endgültig</strong>; die E-Mail dient als Kontakt und kann von zwei getrennten Konten gemeinsam genutzt werden.",
+    "it": "Il <strong>nome utente di accesso</strong> è personale e <strong>definitivo</strong>; l'e-mail funge da contatto e può essere condivisa da due account distinti."
+  },
+  "cu.3.li2": {
+    "fr": "L'utilisateur est responsable de la <strong>confidentialité de son mot de passe</strong> et des actions via son compte.",
+    "en": "The user is responsible for the <strong>confidentiality of their password</strong> and for actions taken through their account.",
+    "de": "Der Nutzer ist für die <strong>Vertraulichkeit seines Passworts</strong> und für die über sein Konto durchgeführten Handlungen verantwortlich.",
+    "it": "L'utente è responsabile della <strong>riservatezza della propria password</strong> e delle azioni effettuate tramite il proprio account."
+  },
+  "cu.3.li3": {
+    "fr": "Les comptes du staff/athlètes sont créés et gérés par l'organisation cliente. Chacun s'engage à fournir des informations exactes.",
+    "en": "Staff/athlete accounts are created and managed by the client organisation. Everyone undertakes to provide accurate information.",
+    "de": "Die Konten von Staff/Athleten werden von der Kundenorganisation erstellt und verwaltet. Jeder verpflichtet sich, korrekte Angaben zu machen.",
+    "it": "Gli account dello staff/atleti sono creati e gestiti dall'organizzazione cliente. Ciascuno si impegna a fornire informazioni esatte."
+  },
+  "cu.h.4": { "fr": "4. Utilisation acceptable", "en": "4. Acceptable use", "de": "4. Zulässige Nutzung", "it": "4. Uso accettabile" },
+  "cu.4.p": {
+    "fr": "L'utilisateur s'engage à ne pas : contourner la sécurité ou le cloisonnement entre organisations ; importer des contenus illicites ou des données sans base légale ; porter atteinte aux droits des athlètes ou de tiers ; perturber le Service ; revendre l'accès sans autorisation.",
+    "en": "The user undertakes not to: circumvent security or the isolation between organisations; import unlawful content or data without a legal basis; infringe the rights of athletes or third parties; disrupt the Service; resell access without authorisation.",
+    "de": "Der Nutzer verpflichtet sich, nicht: die Sicherheit oder die Trennung zwischen Organisationen zu umgehen; rechtswidrige Inhalte oder Daten ohne Rechtsgrundlage zu importieren; die Rechte von Athleten oder Dritten zu verletzen; den Dienst zu stören; den Zugang ohne Genehmigung weiterzuverkaufen.",
+    "it": "L'utente si impegna a non: eludere la sicurezza o la separazione tra organizzazioni; importare contenuti illeciti o dati senza base giuridica; ledere i diritti degli atleti o di terzi; perturbare il Servizio; rivendere l'accesso senza autorizzazione."
+  },
+  "cu.h.5": { "fr": "5. Données et contenus", "en": "5. Data and content", "de": "5. Daten und Inhalte", "it": "5. Dati e contenuti" },
+  "cu.5.p": {
+    "fr": "Les données saisies/importées par une organisation <strong>restent sa propriété</strong>. Pour les données des athlètes, l'organisation est <strong>responsable du traitement</strong> et Sinetik <strong>sous-traitant</strong> (voir <a href=\"{{url:confidentialite}}\" style=\"color:var(--accent-2);text-decoration:none\">Confidentialité</a> et DPA). L'utilisateur garantit disposer des <strong>bases légales/consentements</strong> nécessaires (données de santé, mineurs).",
+    "en": "Data entered/imported by an organisation <strong>remains its property</strong>. For athlete data, the organisation is the <strong>data controller</strong> and Sinetik the <strong>processor</strong> (see <a href=\"{{url:confidentialite}}\" style=\"color:var(--accent-2);text-decoration:none\">Privacy</a> and DPA). The user warrants that it holds the necessary <strong>legal bases/consents</strong> (health data, minors).",
+    "de": "Von einer Organisation erfasste/importierte Daten <strong>bleiben deren Eigentum</strong>. Für Athletendaten ist die Organisation <strong>verantwortliche Stelle</strong> und Sinetik <strong>Auftragsbearbeiter</strong> (siehe <a href=\"{{url:confidentialite}}\" style=\"color:var(--accent-2);text-decoration:none\">Datenschutz</a> und DPA). Der Nutzer sichert zu, über die notwendigen <strong>Rechtsgrundlagen/Einwilligungen</strong> zu verfügen (Gesundheitsdaten, Minderjährige).",
+    "it": "I dati inseriti/importati da un'organizzazione <strong>restano di sua proprietà</strong>. Per i dati degli atleti, l'organizzazione è <strong>titolare del trattamento</strong> e Sinetik <strong>responsabile del trattamento</strong> (vedi <a href=\"{{url:confidentialite}}\" style=\"color:var(--accent-2);text-decoration:none\">Privacy</a> e DPA). L'utente garantisce di disporre delle <strong>basi giuridiche/consensi</strong> necessari (dati sanitari, minori)."
+  },
+  "cu.h.6": { "fr": "6. Propriété intellectuelle", "en": "6. Intellectual property", "de": "6. Geistiges Eigentum", "it": "6. Proprietà intellettuale" },
+  "cu.6.p": {
+    "fr": "La plateforme, ses marques, son code et son design appartiennent à Sinetik. Les CGU confèrent un <strong>droit d'utilisation</strong> personnel, non exclusif et non transférable pendant la durée de l'abonnement.",
+    "en": "The platform, its trademarks, code and design belong to Sinetik. These Terms grant a personal, non-exclusive and non-transferable <strong>right of use</strong> for the duration of the subscription.",
+    "de": "Die Plattform, ihre Marken, ihr Code und ihr Design gehören Sinetik. Die Nutzungsbedingungen gewähren ein persönliches, nicht ausschliessliches und nicht übertragbares <strong>Nutzungsrecht</strong> für die Dauer des Abonnements.",
+    "it": "La piattaforma, i suoi marchi, il suo codice e il suo design appartengono a Sinetik. I Termini conferiscono un <strong>diritto d'uso</strong> personale, non esclusivo e non trasferibile per la durata dell'abbonamento."
+  },
+  "cu.h.7": { "fr": "7. Disponibilité et évolutions", "en": "7. Availability and changes", "de": "7. Verfügbarkeit und Weiterentwicklung", "it": "7. Disponibilità ed evoluzioni" },
+  "cu.7.p": {
+    "fr": "Sinetik s'efforce d'assurer une bonne disponibilité, sans garantie d'absence d'interruption. Le Service peut évoluer (fonctionnalités, maintenance).",
+    "en": "Sinetik strives to ensure good availability, without guaranteeing the absence of interruption. The Service may change (features, maintenance).",
+    "de": "Sinetik bemüht sich um eine gute Verfügbarkeit, ohne Gewähr für einen unterbrechungsfreien Betrieb. Der Dienst kann sich weiterentwickeln (Funktionen, Wartung).",
+    "it": "Sinetik si impegna a garantire una buona disponibilità, senza garanzia di assenza di interruzioni. Il Servizio può evolvere (funzionalità, manutenzione)."
+  },
+  "cu.h.8": { "fr": "8. Responsabilité", "en": "8. Liability", "de": "8. Haftung", "it": "8. Responsabilità" },
+  "cu.8.p": {
+    "fr": "Le Service est fourni « en l'état ». Sinetik n'est pas responsable des décisions prises sur la base des données/analyses ni des dommages indirects. Dans la mesure permise par le droit suisse, la responsabilité est limitée au montant payé sur les 12 derniers mois.",
+    "en": "The Service is provided “as is”. Sinetik is not liable for decisions made on the basis of the data/analyses, nor for indirect damages. To the extent permitted by Swiss law, liability is limited to the amount paid over the last 12 months.",
+    "de": "Der Dienst wird «wie besehen» bereitgestellt. Sinetik haftet weder für Entscheidungen, die auf Grundlage der Daten/Analysen getroffen werden, noch für indirekte Schäden. Soweit nach schweizerischem Recht zulässig, ist die Haftung auf den in den letzten 12 Monaten bezahlten Betrag beschränkt.",
+    "it": "Il Servizio è fornito «così com'è». Sinetik non è responsabile delle decisioni prese sulla base dei dati/analisi né dei danni indiretti. Nei limiti consentiti dal diritto svizzero, la responsabilità è limitata all'importo pagato negli ultimi 12 mesi."
+  },
+  "cu.h.9": { "fr": "9. Suspension et résiliation", "en": "9. Suspension and termination", "de": "9. Sperrung und Kündigung", "it": "9. Sospensione e risoluzione" },
+  "cu.9.p": {
+    "fr": "Sinetik peut suspendre un compte en cas de violation ou de défaut de paiement (voir <a href=\"{{url:cgv}}\" style=\"color:var(--accent-2);text-decoration:none\">CGV</a>). En cas de suspension, les <strong>données sont conservées</strong> et peuvent être réactivées.",
+    "en": "Sinetik may suspend an account in the event of a breach or non-payment (see <a href=\"{{url:cgv}}\" style=\"color:var(--accent-2);text-decoration:none\">Terms of Sale</a>). In the event of suspension, the <strong>data is retained</strong> and can be reactivated.",
+    "de": "Sinetik kann ein Konto bei Verstössen oder Zahlungsverzug sperren (siehe <a href=\"{{url:cgv}}\" style=\"color:var(--accent-2);text-decoration:none\">Verkaufsbedingungen</a>). Bei einer Sperrung werden die <strong>Daten aufbewahrt</strong> und können reaktiviert werden.",
+    "it": "Sinetik può sospendere un account in caso di violazione o mancato pagamento (vedi <a href=\"{{url:cgv}}\" style=\"color:var(--accent-2);text-decoration:none\">Condizioni di vendita</a>). In caso di sospensione, i <strong>dati sono conservati</strong> e possono essere riattivati."
+  },
+  "cu.h.10": { "fr": "10. Modifications", "en": "10. Changes", "de": "10. Änderungen", "it": "10. Modifiche" },
+  "cu.10.p": {
+    "fr": "Sinetik peut modifier les CGU ; la version en vigueur est datée. En cas de changement important, les utilisateurs sont informés.",
+    "en": "Sinetik may amend these Terms; the version in force is dated. In the event of a significant change, users are informed.",
+    "de": "Sinetik kann die Nutzungsbedingungen ändern; die geltende Fassung ist datiert. Bei wesentlichen Änderungen werden die Nutzer informiert.",
+    "it": "Sinetik può modificare i Termini; la versione in vigore è datata. In caso di modifica importante, gli utenti vengono informati."
+  },
+  "cu.h.11": { "fr": "11. Droit applicable et for", "en": "11. Applicable law and jurisdiction", "de": "11. Anwendbares Recht und Gerichtsstand", "it": "11. Legge applicabile e foro" },
+  "cu.11.p": {
+    "fr": "<strong>Droit suisse.</strong> For : <strong>Lausanne</strong>, sous réserve des dispositions impératives.",
+    "en": "<strong>Swiss law.</strong> Place of jurisdiction: <strong>Lausanne</strong>, subject to mandatory provisions.",
+    "de": "<strong>Schweizerisches Recht.</strong> Gerichtsstand: <strong>Lausanne</strong>, unter Vorbehalt zwingender Bestimmungen.",
+    "it": "<strong>Diritto svizzero.</strong> Foro competente: <strong>Losanna</strong>, fatte salve le disposizioni imperative."
+  },
+  "cu.prevail": {
+    "fr": "En cas de divergence entre les versions linguistiques, la <strong>version française fait foi</strong>.",
+    "en": "In the event of any discrepancy between language versions, the <strong>French version prevails</strong>.",
+    "de": "Bei Abweichungen zwischen den Sprachfassungen ist die <strong>französische Fassung massgebend</strong>.",
+    "it": "In caso di divergenza tra le versioni linguistiche, <strong>prevale la versione francese</strong>."
+  }
+}

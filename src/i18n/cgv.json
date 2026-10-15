@@ -1,0 +1,199 @@
+{
+  "cv.meta.title": { "fr": "CGV — Sinetik", "en": "Terms of Sale — Sinetik", "de": "Verkaufsbedingungen — Sinetik", "it": "Condizioni di vendita — Sinetik" },
+  "cv.meta.desc": {
+    "fr": "Conditions générales de vente Sinetik — Studio, Tracker, Pure, Origin.",
+    "en": "Sinetik Terms of Sale — Studio, Tracker, Pure, Origin.",
+    "de": "Allgemeine Verkaufsbedingungen von Sinetik — Studio, Tracker, Pure, Origin.",
+    "it": "Condizioni generali di vendita Sinetik — Studio, Tracker, Pure, Origin."
+  },
+  "cv.h1": { "fr": "Conditions générales de vente", "en": "Terms of Sale", "de": "Allgemeine Verkaufsbedingungen", "it": "Condizioni generali di vendita" },
+  "cv.lead": {
+    "fr": "Par offre — droit suisse (Code des obligations).",
+    "en": "By offer — Swiss law (Code of Obligations).",
+    "de": "Nach Angebot — schweizerisches Recht (Obligationenrecht).",
+    "it": "Per offerta — diritto svizzero (Codice delle obbligazioni)."
+  },
+  "cv.provisional": {
+    "fr": "<strong>Version provisoire</strong> — en cours de validation juridique. Chaque offre relève d'un régime distinct.",
+    "en": "<strong>Provisional version</strong> — under legal review. Each offer is subject to a distinct regime.",
+    "de": "<strong>Provisorische Fassung</strong> — in rechtlicher Prüfung. Jedes Angebot unterliegt einer eigenen Regelung.",
+    "it": "<strong>Versione provvisoria</strong> — in fase di validazione giuridica. Ogni offerta è soggetta a un regime distinto."
+  },
+  "cv.toc.title": { "fr": "Sommaire :", "en": "Contents:", "de": "Inhalt:", "it": "Sommario:" },
+  "cv.toc.studio": { "fr": "Studio (abonnement)", "en": "Studio (subscription)", "de": "Studio (Abonnement)", "it": "Studio (abbonamento)" },
+  "cv.toc.tracker": { "fr": "Tracker (capteur + app)", "en": "Tracker (sensor + app)", "de": "Tracker (Sensor + App)", "it": "Tracker (sensore + app)" },
+  "cv.toc.pure": { "fr": "Pure (chaussures)", "en": "Pure (footwear)", "de": "Pure (Schuhe)", "it": "Pure (scarpe)" },
+  "cv.toc.origin": { "fr": "Origin (accompagnement)", "en": "Origin (coaching)", "de": "Origin (Betreuung)", "it": "Origin (accompagnamento)" },
+
+  "cv.studio.h2": { "fr": "Sinetik Studio — Abonnement", "en": "Sinetik Studio — Subscription", "de": "Sinetik Studio — Abonnement", "it": "Sinetik Studio — Abbonamento" },
+  "cv.studio.li1": {
+    "fr": "<strong>Objet</strong> : souscription payante à la plateforme Sinetik.studio.",
+    "en": "<strong>Purpose</strong>: paid subscription to the Sinetik.studio platform.",
+    "de": "<strong>Gegenstand</strong>: kostenpflichtiges Abonnement der Plattform Sinetik.studio.",
+    "it": "<strong>Oggetto</strong>: sottoscrizione a pagamento alla piattaforma Sinetik.studio."
+  },
+  "cv.studio.li2": {
+    "fr": "<strong>Offres &amp; prix</strong> : présentés dans le Service (CHF). Structures (clubs/fédérations) : abonnement, le cas échéant par contrat ; indépendants : souscription en ligne en libre-service.",
+    "en": "<strong>Offers &amp; prices</strong>: shown in the Service (CHF). Organisations (clubs/federations): subscription, where applicable by contract; independents: online self-service subscription.",
+    "de": "<strong>Angebote &amp; Preise</strong>: im Dienst angezeigt (CHF). Organisationen (Vereine/Verbände): Abonnement, gegebenenfalls per Vertrag; Selbstständige: Online-Abonnement im Self-Service.",
+    "it": "<strong>Offerte e prezzi</strong>: indicati nel Servizio (CHF). Organizzazioni (club/federazioni): abbonamento, se del caso tramite contratto; indipendenti: sottoscrizione online in self-service."
+  },
+  "cv.studio.li3": {
+    "fr": "<strong>Essai</strong> : une période d'essai gratuite peut être proposée ; à son terme, l'accès peut être suspendu (données conservées).",
+    "en": "<strong>Trial</strong>: a free trial period may be offered; at its end, access may be suspended (data retained).",
+    "de": "<strong>Testphase</strong>: eine kostenlose Testphase kann angeboten werden; nach deren Ablauf kann der Zugang gesperrt werden (Daten aufbewahrt).",
+    "it": "<strong>Prova</strong>: può essere offerto un periodo di prova gratuito; al termine, l'accesso può essere sospeso (dati conservati)."
+  },
+  "cv.studio.li4": {
+    "fr": "<strong>Paiement</strong> : via Stripe (mensuel/annuel, d'avance). Aucune donnée de carte conservée.",
+    "en": "<strong>Payment</strong>: via Stripe (monthly/yearly, in advance). No card data retained.",
+    "de": "<strong>Zahlung</strong>: über Stripe (monatlich/jährlich, im Voraus). Keine Kartendaten gespeichert.",
+    "it": "<strong>Pagamento</strong>: tramite Stripe (mensile/annuale, anticipato). Nessun dato della carta conservato."
+  },
+  "cv.studio.li5": {
+    "fr": "<strong>Reconduction &amp; résiliation</strong> : reconduction automatique ; résiliation depuis l'espace client, effet en fin de période, sans remboursement du prorata (sauf disposition impérative).",
+    "en": "<strong>Renewal &amp; termination</strong>: automatic renewal; termination from the client area, taking effect at the end of the period, without pro-rata refund (unless a mandatory provision applies).",
+    "de": "<strong>Verlängerung &amp; Kündigung</strong>: automatische Verlängerung; Kündigung über den Kundenbereich, Wirkung zum Ende der Periode, ohne anteilige Rückerstattung (sofern keine zwingende Bestimmung gilt).",
+    "it": "<strong>Rinnovo e risoluzione</strong>: rinnovo automatico; risoluzione dall'area cliente, con effetto a fine periodo, senza rimborso del pro rata (salvo disposizione imperativa)."
+  },
+  "cv.studio.li6": {
+    "fr": "<strong>Défaut de paiement</strong> : passage en « paiement en attente » puis suspension ; données conservées.",
+    "en": "<strong>Non-payment</strong>: switch to “payment pending” then suspension; data retained.",
+    "de": "<strong>Zahlungsverzug</strong>: Wechsel zu «Zahlung ausstehend», dann Sperrung; Daten aufbewahrt.",
+    "it": "<strong>Mancato pagamento</strong>: passaggio a «pagamento in attesa» e poi sospensione; dati conservati."
+  },
+  "cv.studio.li7": {
+    "fr": "<strong>Rétractation</strong> : service numérique professionnel — le droit suisse ne prévoit pas de droit de rétractation à distance.",
+    "en": "<strong>Right of withdrawal</strong>: professional digital service — Swiss law does not provide a distance right of withdrawal.",
+    "de": "<strong>Widerruf</strong>: professioneller digitaler Dienst — das schweizerische Recht sieht kein Widerrufsrecht im Fernabsatz vor.",
+    "it": "<strong>Recesso</strong>: servizio digitale professionale — il diritto svizzero non prevede un diritto di recesso a distanza."
+  },
+
+  "cv.tracker.h2": { "fr": "Sinetik Tracker — Capteur + application", "en": "Sinetik Tracker — Sensor + application", "de": "Sinetik Tracker — Sensor + Anwendung", "it": "Sinetik Tracker — Sensore + applicazione" },
+  "cv.tracker.note": {
+    "fr": "<em>Le capteur est commercialisé sous la marque Sinetik (base matérielle Movesense). En apposant sa marque, Sinetik assume les obligations du producteur (conformité, garantie, SAV, responsabilité du fait des produits).</em>",
+    "en": "<em>The sensor is marketed under the Sinetik brand (Movesense hardware base). By affixing its brand, Sinetik assumes the obligations of the producer (conformity, warranty, after-sales service, product liability).</em>",
+    "de": "<em>Der Sensor wird unter der Marke Sinetik vertrieben (Hardware-Basis Movesense). Durch das Anbringen seiner Marke übernimmt Sinetik die Pflichten des Herstellers (Konformität, Garantie, Kundendienst, Produktehaftung).</em>",
+    "it": "<em>Il sensore è commercializzato con il marchio Sinetik (base hardware Movesense). Apponendo il proprio marchio, Sinetik assume gli obblighi del produttore (conformità, garanzia, assistenza, responsabilità da prodotto).</em>"
+  },
+  "cv.tracker.li1": {
+    "fr": "<strong>Matériel (capteur)</strong> : vente en ligne, paiement via <strong>Stripe</strong> ; livraison selon zones/frais/délais <em>[à préciser]</em> ; risques transférés à la remise.",
+    "en": "<strong>Hardware (sensor)</strong>: online sale, payment via <strong>Stripe</strong>; delivery according to zones/fees/times <em>[to be specified]</em>; risk transferred on handover.",
+    "de": "<strong>Hardware (Sensor)</strong>: Online-Verkauf, Zahlung über <strong>Stripe</strong>; Lieferung nach Zonen/Kosten/Fristen <em>[noch anzugeben]</em>; Gefahrübergang bei Übergabe.",
+    "it": "<strong>Hardware (sensore)</strong>: vendita online, pagamento tramite <strong>Stripe</strong>; consegna secondo zone/costi/tempi <em>[da precisare]</em>; rischi trasferiti alla consegna."
+  },
+  "cv.tracker.li2": {
+    "fr": "<strong>Conformité</strong> : Sinetik est responsable de la conformité (marquage CE, documentation) du produit mis sur le marché sous sa marque. <strong>Ce n'est pas un dispositif médical.</strong>",
+    "en": "<strong>Conformity</strong>: Sinetik is responsible for the conformity (CE marking, documentation) of the product placed on the market under its brand. <strong>It is not a medical device.</strong>",
+    "de": "<strong>Konformität</strong>: Sinetik ist für die Konformität (CE-Kennzeichnung, Dokumentation) des unter seiner Marke in Verkehr gebrachten Produkts verantwortlich. <strong>Es ist kein Medizinprodukt.</strong>",
+    "it": "<strong>Conformità</strong>: Sinetik è responsabile della conformità (marcatura CE, documentazione) del prodotto immesso sul mercato con il proprio marchio. <strong>Non è un dispositivo medico.</strong>"
+  },
+  "cv.tracker.li3": {
+    "fr": "<strong>Garantie &amp; SAV</strong> : garantie légale (CO) ; SAV assuré par Sinetik.",
+    "en": "<strong>Warranty &amp; after-sales</strong>: statutory warranty (Code of Obligations); after-sales service provided by Sinetik.",
+    "de": "<strong>Garantie &amp; Kundendienst</strong>: gesetzliche Gewährleistung (OR); Kundendienst durch Sinetik.",
+    "it": "<strong>Garanzia e assistenza</strong>: garanzia legale (CO); assistenza fornita da Sinetik."
+  },
+  "cv.tracker.li4": {
+    "fr": "<strong>Abonnement application iOS</strong> : via l'<strong>achat intégré Apple (App Store)</strong> — paiement, reconduction et remboursements gérés par Apple ; gestion/résiliation dans les réglages du compte Apple.",
+    "en": "<strong>iOS app subscription</strong>: via <strong>Apple in-app purchase (App Store)</strong> — payment, renewal and refunds managed by Apple; management/cancellation in the Apple account settings.",
+    "de": "<strong>iOS-App-Abonnement</strong>: über den <strong>Apple In-App-Kauf (App Store)</strong> — Zahlung, Verlängerung und Rückerstattungen durch Apple verwaltet; Verwaltung/Kündigung in den Einstellungen des Apple-Kontos.",
+    "it": "<strong>Abbonamento app iOS</strong>: tramite l'<strong>acquisto in-app di Apple (App Store)</strong> — pagamento, rinnovo e rimborsi gestiti da Apple; gestione/disdetta nelle impostazioni dell'account Apple."
+  },
+  "cv.tracker.li5": {
+    "fr": "<strong>Rétractation</strong> : Suisse — pas de droit légal à distance ; UE (consommateurs) — 14 jours pour le matériel <em>[si l'UE est visée]</em>.",
+    "en": "<strong>Right of withdrawal</strong>: Switzerland — no statutory distance right; EU (consumers) — 14 days for the hardware <em>[if the EU is targeted]</em>.",
+    "de": "<strong>Widerruf</strong>: Schweiz — kein gesetzliches Fernabsatzrecht; EU (Verbraucher) — 14 Tage für die Hardware <em>[falls die EU adressiert wird]</em>.",
+    "it": "<strong>Recesso</strong>: Svizzera — nessun diritto legale a distanza; UE (consumatori) — 14 giorni per l'hardware <em>[se è interessata l'UE]</em>."
+  },
+
+  "cv.pure.h2": { "fr": "Sinetik Pure — Chaussures de football", "en": "Sinetik Pure — Football boots", "de": "Sinetik Pure — Fussballschuhe", "it": "Sinetik Pure — Scarpe da calcio" },
+  "cv.pure.li1": {
+    "fr": "<strong>Objet</strong> : vente en ligne de chaussures de football et accessoires.",
+    "en": "<strong>Purpose</strong>: online sale of football boots and accessories.",
+    "de": "<strong>Gegenstand</strong>: Online-Verkauf von Fussballschuhen und Zubehör.",
+    "it": "<strong>Oggetto</strong>: vendita online di scarpe da calcio e accessori."
+  },
+  "cv.pure.li2": {
+    "fr": "<strong>Prix &amp; commande</strong> : en CHF ; commande validée après paiement ; e-mail de confirmation.",
+    "en": "<strong>Prices &amp; order</strong>: in CHF; order confirmed after payment; confirmation email.",
+    "de": "<strong>Preise &amp; Bestellung</strong>: in CHF; Bestellung nach Zahlung bestätigt; Bestätigungs-E-Mail.",
+    "it": "<strong>Prezzi e ordine</strong>: in CHF; ordine confermato dopo il pagamento; e-mail di conferma."
+  },
+  "cv.pure.li3": {
+    "fr": "<strong>Paiement</strong> : via <strong>Stripe</strong> (aucune donnée de carte conservée).",
+    "en": "<strong>Payment</strong>: via <strong>Stripe</strong> (no card data retained).",
+    "de": "<strong>Zahlung</strong>: über <strong>Stripe</strong> (keine Kartendaten gespeichert).",
+    "it": "<strong>Pagamento</strong>: tramite <strong>Stripe</strong> (nessun dato della carta conservato)."
+  },
+  "cv.pure.li4": {
+    "fr": "<strong>Livraison</strong> : zones/frais/délais <em>[à préciser]</em>. <strong>Droits de douane et TVA à l'import</strong> éventuels (expéditions transfrontalières) à la charge du client sauf mention contraire.",
+    "en": "<strong>Delivery</strong>: zones/fees/times <em>[to be specified]</em>. Any <strong>customs duties and import VAT</strong> (cross-border shipments) are borne by the customer unless stated otherwise.",
+    "de": "<strong>Lieferung</strong>: Zonen/Kosten/Fristen <em>[noch anzugeben]</em>. Allfällige <strong>Zollgebühren und Einfuhrsteuer</strong> (grenzüberschreitende Sendungen) gehen zu Lasten des Kunden, sofern nichts anderes angegeben ist.",
+    "it": "<strong>Consegna</strong>: zone/costi/tempi <em>[da precisare]</em>. Eventuali <strong>dazi doganali e IVA all'importazione</strong> (spedizioni transfrontaliere) sono a carico del cliente salvo diversa indicazione."
+  },
+  "cv.pure.li5": {
+    "fr": "<strong>Rétractation / retours</strong> : Suisse — pas de droit légal de rétractation à distance ; UE (consommateurs) — 14 jours. Politique de retour commerciale <em>[à définir]</em>.",
+    "en": "<strong>Withdrawal / returns</strong>: Switzerland — no statutory distance right of withdrawal; EU (consumers) — 14 days. Commercial returns policy <em>[to be defined]</em>.",
+    "de": "<strong>Widerruf / Rücksendungen</strong>: Schweiz — kein gesetzliches Widerrufsrecht im Fernabsatz; EU (Verbraucher) — 14 Tage. Kommerzielle Rückgaberichtlinie <em>[noch festzulegen]</em>.",
+    "it": "<strong>Recesso / resi</strong>: Svizzera — nessun diritto legale di recesso a distanza; UE (consumatori) — 14 giorni. Politica commerciale di reso <em>[da definire]</em>."
+  },
+  "cv.pure.li6": {
+    "fr": "<strong>Garantie</strong> : garantie légale pour les défauts selon le CO.",
+    "en": "<strong>Warranty</strong>: statutory warranty for defects under the Code of Obligations.",
+    "de": "<strong>Garantie</strong>: gesetzliche Gewährleistung für Mängel nach OR.",
+    "it": "<strong>Garanzia</strong>: garanzia legale per i difetti secondo il CO."
+  },
+
+  "cv.origin.h2": { "fr": "Sinetik Origin — Accompagnement individuel", "en": "Sinetik Origin — Individual coaching", "de": "Sinetik Origin — Individuelle Betreuung", "it": "Sinetik Origin — Accompagnamento individuale" },
+  "cv.origin.li1": {
+    "fr": "<strong>Objet</strong> : prestations de préparation physique individuelle (présentiel et/ou en ligne), sous forme de séances, forfaits ou abonnement. L'accompagnement est suivi via la plateforme Sinetik.studio.",
+    "en": "<strong>Purpose</strong>: individual physical preparation services (on-site and/or online), in the form of sessions, packages or subscription. Coaching is tracked via the Sinetik.studio platform.",
+    "de": "<strong>Gegenstand</strong>: individuelle Athletikvorbereitung (vor Ort und/oder online), in Form von Einheiten, Paketen oder Abonnement. Die Betreuung erfolgt über die Plattform Sinetik.studio.",
+    "it": "<strong>Oggetto</strong>: prestazioni di preparazione fisica individuale (in presenza e/o online), sotto forma di sedute, pacchetti o abbonamento. L'accompagnamento è seguito tramite la piattaforma Sinetik.studio."
+  },
+  "cv.origin.li2": {
+    "fr": "<strong>Nature</strong> : accompagnement sportif — <strong>non un acte médical ni thérapeutique</strong>.",
+    "en": "<strong>Nature</strong>: sports coaching — <strong>not a medical or therapeutic act</strong>.",
+    "de": "<strong>Art</strong>: sportliche Betreuung — <strong>keine medizinische oder therapeutische Handlung</strong>.",
+    "it": "<strong>Natura</strong>: accompagnamento sportivo — <strong>non un atto medico né terapeutico</strong>."
+  },
+  "cv.origin.li3": {
+    "fr": "<strong>Réservation &amp; paiement</strong> : selon les modalités indiquées <em>[outil / prestataire à préciser]</em>.",
+    "en": "<strong>Booking &amp; payment</strong>: according to the terms indicated <em>[tool / provider to be specified]</em>.",
+    "de": "<strong>Buchung &amp; Zahlung</strong>: gemäss den angegebenen Modalitäten <em>[Tool / Anbieter noch anzugeben]</em>.",
+    "it": "<strong>Prenotazione e pagamento</strong>: secondo le modalità indicate <em>[strumento / fornitore da precisare]</em>."
+  },
+  "cv.origin.li4": {
+    "fr": "<strong>Annulation / absence</strong> : <em>[politique à définir — délai, no-show]</em>.",
+    "en": "<strong>Cancellation / no-show</strong>: <em>[policy to be defined — notice period, no-show]</em>.",
+    "de": "<strong>Stornierung / Nichterscheinen</strong>: <em>[Richtlinie noch festzulegen — Frist, No-Show]</em>.",
+    "it": "<strong>Annullamento / assenza</strong>: <em>[politica da definire — preavviso, no-show]</em>."
+  },
+  "cv.origin.li5": {
+    "fr": "<strong>Aptitude</strong> : le client fournit des informations exactes sur son état de santé ; un avis médical préalable est recommandé en cas de doute, pathologie ou reprise après blessure.",
+    "en": "<strong>Fitness to train</strong>: the client provides accurate information about their state of health; prior medical advice is recommended in case of doubt, a medical condition, or a return after injury.",
+    "de": "<strong>Eignung</strong>: der Kunde macht korrekte Angaben zu seinem Gesundheitszustand; eine vorgängige ärztliche Abklärung wird bei Zweifeln, Erkrankungen oder Wiedereinstieg nach einer Verletzung empfohlen.",
+    "it": "<strong>Idoneità</strong>: il cliente fornisce informazioni esatte sul proprio stato di salute; è consigliato un parere medico preventivo in caso di dubbio, patologia o ripresa dopo un infortunio."
+  },
+  "cv.origin.li6": {
+    "fr": "<strong>Données de santé</strong> : traitées via Sinetik.studio, avec consentement (voir <a href=\"{{url:confidentialite}}\" style=\"color:var(--accent-2);text-decoration:none\">Confidentialité</a>).",
+    "en": "<strong>Health data</strong>: processed via Sinetik.studio, with consent (see <a href=\"{{url:confidentialite}}\" style=\"color:var(--accent-2);text-decoration:none\">Privacy</a>).",
+    "de": "<strong>Gesundheitsdaten</strong>: über Sinetik.studio verarbeitet, mit Einwilligung (siehe <a href=\"{{url:confidentialite}}\" style=\"color:var(--accent-2);text-decoration:none\">Datenschutz</a>).",
+    "it": "<strong>Dati sanitari</strong>: trattati tramite Sinetik.studio, con consenso (vedi <a href=\"{{url:confidentialite}}\" style=\"color:var(--accent-2);text-decoration:none\">Privacy</a>)."
+  },
+
+  "cv.common.h2": { "fr": "Dispositions communes", "en": "Common provisions", "de": "Gemeinsame Bestimmungen", "it": "Disposizioni comuni" },
+  "cv.common.p": {
+    "fr": "Dans les limites du droit suisse, la responsabilité de Sinetik est limitée aux dommages directs. <strong>Droit applicable : droit suisse (CO).</strong> For : <strong>Lausanne</strong>, sous réserve des dispositions impératives applicables aux consommateurs (y compris, le cas échéant, celles du pays de résidence du consommateur dans l'UE).",
+    "en": "Within the limits of Swiss law, Sinetik's liability is limited to direct damages. <strong>Applicable law: Swiss law (Code of Obligations).</strong> Place of jurisdiction: <strong>Lausanne</strong>, subject to the mandatory provisions applicable to consumers (including, where applicable, those of the consumer's country of residence in the EU).",
+    "de": "Im Rahmen des schweizerischen Rechts ist die Haftung von Sinetik auf direkte Schäden beschränkt. <strong>Anwendbares Recht: schweizerisches Recht (OR).</strong> Gerichtsstand: <strong>Lausanne</strong>, unter Vorbehalt der zwingenden, für Verbraucher geltenden Bestimmungen (gegebenenfalls einschliesslich jener des Wohnsitzlandes des Verbrauchers in der EU).",
+    "it": "Nei limiti del diritto svizzero, la responsabilità di Sinetik è limitata ai danni diretti. <strong>Legge applicabile: diritto svizzero (CO).</strong> Foro competente: <strong>Losanna</strong>, fatte salve le disposizioni imperative applicabili ai consumatori (comprese, se del caso, quelle del paese di residenza del consumatore nell'UE)."
+  },
+  "cv.prevail": {
+    "fr": "En cas de divergence entre les versions linguistiques, la <strong>version française fait foi</strong>.",
+    "en": "In the event of any discrepancy between language versions, the <strong>French version prevails</strong>.",
+    "de": "Bei Abweichungen zwischen den Sprachfassungen ist die <strong>französische Fassung massgebend</strong>.",
+    "it": "In caso di divergenza tra le versioni linguistiche, <strong>prevale la versione francese</strong>."
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "ck.meta.title": { "fr": "Politique cookies — Sinetik", "en": "Cookie Policy — Sinetik", "de": "Cookie-Richtlinie — Sinetik", "it": "Cookie Policy — Sinetik" },
+  "ck.meta.desc": {
+    "fr": "Politique cookies Sinetik — cookies strictement nécessaires, consentement.",
+    "en": "Sinetik Cookie Policy — strictly necessary cookies, consent.",
+    "de": "Cookie-Richtlinie von Sinetik — unbedingt erforderliche Cookies, Einwilligung.",
+    "it": "Cookie Policy di Sinetik — cookie strettamente necessari, consenso."
+  },
+  "ck.h1": { "fr": "Politique cookies", "en": "Cookie Policy", "de": "Cookie-Richtlinie", "it": "Cookie Policy" },
+  "ck.lead": { "fr": "Ce que nous utilisons, et pourquoi.", "en": "What we use, and why.", "de": "Was wir verwenden, und warum.", "it": "Cosa usiamo, e perché." },
+  "ck.provisional": {
+    "fr": "<strong>Version provisoire</strong> — en cours de validation juridique.",
+    "en": "<strong>Provisional version</strong> — under legal review.",
+    "de": "<strong>Provisorische Fassung</strong> — in rechtlicher Prüfung.",
+    "it": "<strong>Versione provvisoria</strong> — in fase di validazione giuridica."
+  },
+  "ck.h.1": { "fr": "1. Qu'est-ce qu'un cookie ?", "en": "1. What is a cookie?", "de": "1. Was ist ein Cookie?", "it": "1. Che cos'è un cookie?" },
+  "ck.1.p": {
+    "fr": "Un petit fichier déposé sur votre appareil lors de la visite. Nous incluons aussi le stockage local du navigateur au même titre.",
+    "en": "A small file placed on your device when you visit. We also include the browser's local storage in the same category.",
+    "de": "Eine kleine Datei, die beim Besuch auf Ihrem Gerät abgelegt wird. Den lokalen Speicher des Browsers behandeln wir gleich.",
+    "it": "Un piccolo file depositato sul tuo dispositivo durante la visita. Includiamo allo stesso titolo anche l'archiviazione locale del browser."
+  },
+  "ck.h.2": { "fr": "2. Notre principe", "en": "2. Our principle", "de": "2. Unser Grundsatz", "it": "2. Il nostro principio" },
+  "ck.2.p": {
+    "fr": "Par défaut, nous n'utilisons que des cookies <strong>strictement nécessaires</strong> au fonctionnement et à la sécurité. Aucun cookie publicitaire. Tout cookie de mesure d'audience ou de préférence non essentielle n'est déposé qu'<strong>avec votre consentement</strong>, retirable à tout moment.",
+    "en": "By default, we only use cookies that are <strong>strictly necessary</strong> for operation and security. No advertising cookies. Any audience-measurement or non-essential preference cookie is only placed <strong>with your consent</strong>, which can be withdrawn at any time.",
+    "de": "Standardmässig verwenden wir nur <strong>unbedingt erforderliche</strong> Cookies für Betrieb und Sicherheit. Keine Werbe-Cookies. Cookies zur Reichweitenmessung oder für nicht wesentliche Präferenzen werden nur <strong>mit Ihrer Einwilligung</strong> gesetzt, die jederzeit widerrufbar ist.",
+    "it": "Per impostazione predefinita, utilizziamo solo cookie <strong>strettamente necessari</strong> al funzionamento e alla sicurezza. Nessun cookie pubblicitario. Qualsiasi cookie di misurazione del pubblico o di preferenza non essenziale viene depositato solo <strong>con il tuo consenso</strong>, revocabile in qualsiasi momento."
+  },
+  "ck.h.3": { "fr": "3. Cookies strictement nécessaires", "en": "3. Strictly necessary cookies", "de": "3. Unbedingt erforderliche Cookies", "it": "3. Cookie strettamente necessari" },
+  "ck.3.li1": {
+    "fr": "<strong>Session d'authentification</strong> — vous maintenir connecté·e en sécurité.",
+    "en": "<strong>Authentication session</strong> — keeping you securely signed in.",
+    "de": "<strong>Authentifizierungssitzung</strong> — Sie sicher angemeldet halten.",
+    "it": "<strong>Sessione di autenticazione</strong> — mantenerti connesso in sicurezza."
+  },
+  "ck.3.li2": {
+    "fr": "<strong>Périmètre &amp; abonnement</strong> (app Studio) — mémoriser la sélection et l'état d'accès (durée courte).",
+    "en": "<strong>Scope &amp; subscription</strong> (Studio app) — remembering the selection and access state (short duration).",
+    "de": "<strong>Bereich &amp; Abonnement</strong> (Studio-App) — Auswahl und Zugriffsstatus speichern (kurze Dauer).",
+    "it": "<strong>Ambito e abbonamento</strong> (app Studio) — memorizzare la selezione e lo stato di accesso (breve durata)."
+  },
+  "ck.3.li3": {
+    "fr": "<strong>Langue</strong> — mémoriser votre préférence de langue.",
+    "en": "<strong>Language</strong> — remembering your language preference.",
+    "de": "<strong>Sprache</strong> — Ihre Sprachpräferenz speichern.",
+    "it": "<strong>Lingua</strong> — memorizzare la tua preferenza di lingua."
+  },
+  "ck.3.li4": {
+    "fr": "<strong>Thème</strong> — mémoriser le mode clair/sombre.",
+    "en": "<strong>Theme</strong> — remembering light/dark mode.",
+    "de": "<strong>Design</strong> — den hellen/dunklen Modus speichern.",
+    "it": "<strong>Tema</strong> — memorizzare la modalità chiara/scura."
+  },
+  "ck.3.note": {
+    "fr": "<em>Liste indicative — à compléter avant publication définitive.</em>",
+    "en": "<em>Indicative list — to be completed before final publication.</em>",
+    "de": "<em>Indikative Liste — vor der endgültigen Veröffentlichung zu vervollständigen.</em>",
+    "it": "<em>Elenco indicativo — da completare prima della pubblicazione definitiva.</em>"
+  },
+  "ck.h.4": { "fr": "4. Cookies soumis à consentement", "en": "4. Cookies subject to consent", "de": "4. Einwilligungspflichtige Cookies", "it": "4. Cookie soggetti a consenso" },
+  "ck.4.p": {
+    "fr": "À ce jour : <strong>aucun</strong>. Tout outil de mesure d'audience ajouté ultérieurement sera listé ici et soumis à votre consentement préalable.",
+    "en": "To date: <strong>none</strong>. Any audience-measurement tool added later will be listed here and subject to your prior consent.",
+    "de": "Bis heute: <strong>keine</strong>. Jedes später hinzugefügte Reichweitenmesstool wird hier aufgeführt und unterliegt Ihrer vorherigen Einwilligung.",
+    "it": "Ad oggi: <strong>nessuno</strong>. Qualsiasi strumento di misurazione del pubblico aggiunto in seguito sarà elencato qui e soggetto al tuo consenso preventivo."
+  },
+  "ck.h.5": { "fr": "5. Gérer vos cookies", "en": "5. Managing your cookies", "de": "5. Ihre Cookies verwalten", "it": "5. Gestire i tuoi cookie" },
+  "ck.5.p": {
+    "fr": "Via la bannière de consentement (pour les cookies non essentiels) et via les réglages de votre navigateur. Le blocage des cookies strictement nécessaires peut empêcher la connexion.",
+    "en": "Through the consent banner (for non-essential cookies) and through your browser settings. Blocking strictly necessary cookies may prevent sign-in.",
+    "de": "Über das Consent-Banner (für nicht wesentliche Cookies) und über die Einstellungen Ihres Browsers. Das Blockieren unbedingt erforderlicher Cookies kann die Anmeldung verhindern.",
+    "it": "Tramite il banner di consenso (per i cookie non essenziali) e tramite le impostazioni del browser. Il blocco dei cookie strettamente necessari può impedire l'accesso."
+  },
+  "ck.h.6": { "fr": "6. Contact", "en": "6. Contact", "de": "6. Kontakt", "it": "6. Contatto" },
+  "ck.6.b": {
+    "fr": "Voir aussi la <a href=\"{{url:confidentialite}}\" style=\"color:var(--accent-2);text-decoration:none\">Politique de confidentialité</a>.",
+    "en": "See also the <a href=\"{{url:confidentialite}}\" style=\"color:var(--accent-2);text-decoration:none\">Privacy Policy</a>.",
+    "de": "Siehe auch die <a href=\"{{url:confidentialite}}\" style=\"color:var(--accent-2);text-decoration:none\">Datenschutzerklärung</a>.",
+    "it": "Vedi anche l'<a href=\"{{url:confidentialite}}\" style=\"color:var(--accent-2);text-decoration:none\">Informativa sulla privacy</a>."
+  },
+  "ck.prevail": {
+    "fr": "En cas de divergence entre les versions linguistiques, la <strong>version française fait foi</strong>.",
+    "en": "In the event of any discrepancy between language versions, the <strong>French version prevails</strong>.",
+    "de": "Bei Abweichungen zwischen den Sprachfassungen ist die <strong>französische Fassung massgebend</strong>.",
+    "it": "In caso di divergenza tra le versioni linguistiche, <strong>prevale la versione francese</strong>."
+  }
+}

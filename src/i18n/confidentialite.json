@@ -1,0 +1,150 @@
+{
+  "cf.meta.title": { "fr": "Politique de confidentialité — Sinetik", "en": "Privacy Policy — Sinetik", "de": "Datenschutzerklärung — Sinetik", "it": "Informativa sulla privacy — Sinetik" },
+  "cf.meta.desc": {
+    "fr": "Politique de confidentialité Sinetik — nLPD (Suisse) et RGPD, données, droits, sécurité.",
+    "en": "Sinetik Privacy Policy — Swiss nFADP and GDPR, data, rights, security.",
+    "de": "Datenschutzerklärung von Sinetik — revDSG (Schweiz) und DSGVO, Daten, Rechte, Sicherheit.",
+    "it": "Informativa sulla privacy di Sinetik — nLPD (Svizzera) e GDPR, dati, diritti, sicurezza."
+  },
+  "cf.h1": { "fr": "Politique de confidentialité", "en": "Privacy Policy", "de": "Datenschutzerklärung", "it": "Informativa sulla privacy" },
+  "cf.lead": {
+    "fr": "Comment nous traitons et protégeons vos données — nLPD (Suisse) &amp; RGPD.",
+    "en": "How we process and protect your data — Swiss nFADP &amp; GDPR.",
+    "de": "Wie wir Ihre Daten verarbeiten und schützen — revDSG (Schweiz) &amp; DSGVO.",
+    "it": "Come trattiamo e proteggiamo i tuoi dati — nLPD (Svizzera) &amp; GDPR."
+  },
+  "cf.provisional": {
+    "fr": "<strong>Version provisoire</strong> — document en cours de validation juridique. Cadre : <strong>nLPD</strong> (loi suisse) + <strong>RGPD</strong> pour les personnes situées dans l'UE. Autorité : <strong>PFPDT</strong>.",
+    "en": "<strong>Provisional version</strong> — document under legal review. Framework: <strong>Swiss nFADP</strong> + <strong>GDPR</strong> for individuals located in the EU. Authority: <strong>FDPIC</strong>.",
+    "de": "<strong>Provisorische Fassung</strong> — Dokument in rechtlicher Prüfung. Rahmen: <strong>revDSG</strong> (Schweizer Recht) + <strong>DSGVO</strong> für Personen in der EU. Behörde: <strong>EDÖB</strong>.",
+    "it": "<strong>Versione provvisoria</strong> — documento in fase di validazione giuridica. Quadro: <strong>nLPD</strong> (legge svizzera) + <strong>GDPR</strong> per le persone situate nell'UE. Autorità: <strong>IFPDT</strong>."
+  },
+  "cf.h.1": { "fr": "1. Qui est responsable ?", "en": "1. Who is responsible?", "de": "1. Wer ist verantwortlich?", "it": "1. Chi è il responsabile?" },
+  "cf.1.intro": {
+    "fr": "Sinetik — <em>[entité, voir Mentions légales]</em> (« nous »). Deux rôles distincts :",
+    "en": "Sinetik — <em>[entity, see Legal notice]</em> (“we”). Two distinct roles:",
+    "de": "Sinetik — <em>[Gesellschaft, siehe Impressum]</em> («wir»). Zwei unterschiedliche Rollen:",
+    "it": "Sinetik — <em>[società, vedi Note legali]</em> («noi»). Due ruoli distinti:"
+  },
+  "cf.1.li1": {
+    "fr": "<strong>Données de compte</strong> des utilisateurs (staff, coachs, athlètes indépendants) : Sinetik est <strong>responsable du traitement</strong>.",
+    "en": "<strong>Account data</strong> of users (staff, coaches, independent athletes): Sinetik is the <strong>data controller</strong>.",
+    "de": "<strong>Kontodaten</strong> der Nutzer (Staff, Coaches, selbstständige Athleten): Sinetik ist <strong>verantwortliche Stelle</strong>.",
+    "it": "<strong>Dati dell'account</strong> degli utenti (staff, coach, atleti indipendenti): Sinetik è <strong>titolare del trattamento</strong>."
+  },
+  "cf.1.li2": {
+    "fr": "<strong>Données des athlètes</strong> saisies/importées par une organisation cliente (club, fédération, clinique) : l'<strong>organisation est responsable du traitement</strong> et <strong>Sinetik agit comme sous-traitant</strong> pour son compte (contrat de sous-traitance / DPA). Les demandes relatives à ces données sont à adresser à l'organisation.",
+    "en": "<strong>Athlete data</strong> entered/imported by a client organisation (club, federation, clinic): the <strong>organisation is the data controller</strong> and <strong>Sinetik acts as a processor</strong> on its behalf (data processing agreement / DPA). Requests regarding this data should be addressed to the organisation.",
+    "de": "<strong>Athletendaten</strong>, die von einer Kundenorganisation (Verein, Verband, Klinik) erfasst/importiert werden: die <strong>Organisation ist verantwortliche Stelle</strong> und <strong>Sinetik handelt als Auftragsbearbeiter</strong> in deren Auftrag (Auftragsbearbeitungsvertrag / DPA). Anfragen zu diesen Daten sind an die Organisation zu richten.",
+    "it": "<strong>Dati degli atleti</strong> inseriti/importati da un'organizzazione cliente (club, federazione, clinica): l'<strong>organizzazione è titolare del trattamento</strong> e <strong>Sinetik agisce come responsabile del trattamento</strong> per suo conto (contratto di trattamento / DPA). Le richieste relative a questi dati vanno rivolte all'organizzazione."
+  },
+  "cf.1.contact": { "fr": "Contact :", "en": "Contact:", "de": "Kontakt:", "it": "Contatto:" },
+  "cf.h.2": { "fr": "2. Quelles données traitons-nous ?", "en": "2. What data do we process?", "de": "2. Welche Daten verarbeiten wir?", "it": "2. Quali dati trattiamo?" },
+  "cf.2.li1": {
+    "fr": "<strong>Compte &amp; identité</strong> : nom, prénom, e-mail de contact, identifiant, mot de passe (haché), rôle, organisation, langue, journaux de connexion.",
+    "en": "<strong>Account &amp; identity</strong>: last name, first name, contact email, username, password (hashed), role, organisation, language, login logs.",
+    "de": "<strong>Konto &amp; Identität</strong>: Name, Vorname, Kontakt-E-Mail, Benutzername, Passwort (gehasht), Rolle, Organisation, Sprache, Anmeldeprotokolle.",
+    "it": "<strong>Account e identità</strong>: cognome, nome, e-mail di contatto, nome utente, password (con hash), ruolo, organizzazione, lingua, log di accesso."
+  },
+  "cf.2.li2": {
+    "fr": "<strong>Organisation &amp; abonnement</strong> : nom, type, sport(s), pays, statut et dates d'abonnement (paiements via Stripe).",
+    "en": "<strong>Organisation &amp; subscription</strong>: name, type, sport(s), country, subscription status and dates (payments via Stripe).",
+    "de": "<strong>Organisation &amp; Abonnement</strong>: Name, Typ, Sportart(en), Land, Abonnementstatus und -daten (Zahlungen über Stripe).",
+    "it": "<strong>Organizzazione e abbonamento</strong>: nome, tipo, sport, paese, stato e date dell'abbonamento (pagamenti tramite Stripe)."
+  },
+  "cf.2.li3": {
+    "fr": "<strong>Performance et suivi</strong> : mesures (GPS, VBT, tests, charge), bien-être, anthropométrie, calendrier, programmes.",
+    "en": "<strong>Performance and monitoring</strong>: measurements (GPS, VBT, tests, load), wellness, anthropometry, calendar, programmes.",
+    "de": "<strong>Leistung und Monitoring</strong>: Messungen (GPS, VBT, Tests, Belastung), Wellness, Anthropometrie, Kalender, Programme.",
+    "it": "<strong>Performance e monitoraggio</strong>: misurazioni (GPS, VBT, test, carico), benessere, antropometria, calendario, programmi."
+  },
+  "cf.2.li4": {
+    "fr": "<strong>Données sensibles / de santé</strong> (art. 5 nLPD) : bien-être, douleurs, blessures, suivi médical — traitées avec des mesures renforcées et une base légale appropriée.",
+    "en": "<strong>Sensitive / health data</strong> (art. 5 nFADP): wellness, pain, injuries, medical follow-up — processed with enhanced measures and an appropriate legal basis.",
+    "de": "<strong>Besonders schützenswerte Daten / Gesundheitsdaten</strong> (Art. 5 revDSG): Wellness, Schmerzen, Verletzungen, medizinische Betreuung — mit verstärkten Massnahmen und einer angemessenen Rechtsgrundlage verarbeitet.",
+    "it": "<strong>Dati sensibili / sanitari</strong> (art. 5 nLPD): benessere, dolori, infortuni, monitoraggio medico — trattati con misure rafforzate e una base giuridica appropriata."
+  },
+  "cf.2.li5": {
+    "fr": "<strong>Techniques</strong> : adresse IP, appareil/navigateur, cookies strictement nécessaires.",
+    "en": "<strong>Technical</strong>: IP address, device/browser, strictly necessary cookies.",
+    "de": "<strong>Technische Daten</strong>: IP-Adresse, Gerät/Browser, unbedingt erforderliche Cookies.",
+    "it": "<strong>Dati tecnici</strong>: indirizzo IP, dispositivo/browser, cookie strettamente necessari."
+  },
+  "cf.h.3": { "fr": "3. Finalités et bases légales", "en": "3. Purposes and legal bases", "de": "3. Zwecke und Rechtsgrundlagen", "it": "3. Finalità e basi giuridiche" },
+  "cf.3.li1": { "fr": "Fournir et sécuriser le service — exécution du contrat.", "en": "Providing and securing the service — performance of the contract.", "de": "Bereitstellung und Sicherung des Dienstes — Vertragserfüllung.", "it": "Fornire e proteggere il servizio — esecuzione del contratto." },
+  "cf.3.li2": { "fr": "Gérer l'abonnement et la facturation — exécution du contrat / obligation légale.", "en": "Managing the subscription and billing — performance of the contract / legal obligation.", "de": "Verwaltung von Abonnement und Rechnungsstellung — Vertragserfüllung / gesetzliche Pflicht.", "it": "Gestire l'abbonamento e la fatturazione — esecuzione del contratto / obbligo legale." },
+  "cf.3.li3": { "fr": "Traiter les données de santé/performance des athlètes — consentement / responsabilité de l'organisation.", "en": "Processing athletes' health/performance data — consent / organisation's responsibility.", "de": "Verarbeitung von Gesundheits-/Leistungsdaten der Athleten — Einwilligung / Verantwortung der Organisation.", "it": "Trattare i dati sanitari/di performance degli atleti — consenso / responsabilità dell'organizzazione." },
+  "cf.3.li4": { "fr": "Vérification d'e-mail, réinitialisation, notifications — exécution du contrat / intérêt légitime.", "en": "Email verification, password reset, notifications — performance of the contract / legitimate interest.", "de": "E-Mail-Verifizierung, Passwort-Zurücksetzung, Benachrichtigungen — Vertragserfüllung / berechtigtes Interesse.", "it": "Verifica e-mail, reimpostazione password, notifiche — esecuzione del contratto / interesse legittimo." },
+  "cf.3.li5": { "fr": "Améliorer et sécuriser la plateforme — intérêt légitime.", "en": "Improving and securing the platform — legitimate interest.", "de": "Verbesserung und Absicherung der Plattform — berechtigtes Interesse.", "it": "Migliorare e proteggere la piattaforma — interesse legittimo." },
+  "cf.h.4": { "fr": "4. Destinataires et sous-traitants", "en": "4. Recipients and processors", "de": "4. Empfänger und Auftragsbearbeiter", "it": "4. Destinatari e responsabili del trattamento" },
+  "cf.4.p": {
+    "fr": "Nous ne vendons jamais vos données. Sous-traitants techniques : <strong>Supabase</strong> (base de données, auth, stockage — hébergement UE/Irlande), <strong>Vercel</strong> (USA, hébergement de l'app), <strong>Stripe</strong> (paiements — aucune donnée de carte conservée par Sinetik), <strong>Resend</strong> <em>[ou autre]</em> (e-mails transactionnels). Chacun est lié par un accord de traitement.",
+    "en": "We never sell your data. Technical processors: <strong>Supabase</strong> (database, auth, storage — hosted in the EU/Ireland), <strong>Vercel</strong> (USA, app hosting), <strong>Stripe</strong> (payments — no card data retained by Sinetik), <strong>Resend</strong> <em>[or other]</em> (transactional emails). Each is bound by a data processing agreement.",
+    "de": "Wir verkaufen Ihre Daten niemals. Technische Auftragsbearbeiter: <strong>Supabase</strong> (Datenbank, Authentifizierung, Speicher — Hosting in der EU/Irland), <strong>Vercel</strong> (USA, App-Hosting), <strong>Stripe</strong> (Zahlungen — keine Kartendaten bei Sinetik gespeichert), <strong>Resend</strong> <em>[oder andere]</em> (Transaktions-E-Mails). Jeder ist durch einen Auftragsbearbeitungsvertrag gebunden.",
+    "it": "Non vendiamo mai i tuoi dati. Responsabili tecnici del trattamento: <strong>Supabase</strong> (database, autenticazione, archiviazione — hosting UE/Irlanda), <strong>Vercel</strong> (USA, hosting dell'app), <strong>Stripe</strong> (pagamenti — nessun dato della carta conservato da Sinetik), <strong>Resend</strong> <em>[o altro]</em> (e-mail transazionali). Ciascuno è vincolato da un contratto di trattamento."
+  },
+  "cf.h.5": { "fr": "5. Transferts hors de Suisse / UE", "en": "5. Transfers outside Switzerland / the EU", "de": "5. Übermittlungen ausserhalb der Schweiz / EU", "it": "5. Trasferimenti fuori dalla Svizzera / UE" },
+  "cf.5.p": {
+    "fr": "Les <strong>données principales</strong> (base, auth, stockage) sont hébergées <strong>dans l'UE (Irlande)</strong>. Certains sous-traitants (Vercel, Stripe, Resend) peuvent traiter certaines données <strong>aux États-Unis</strong>, encadré par des garanties appropriées (clauses contractuelles types / mécanismes reconnus).",
+    "en": "The <strong>main data</strong> (database, auth, storage) is hosted <strong>in the EU (Ireland)</strong>. Some processors (Vercel, Stripe, Resend) may process certain data <strong>in the United States</strong>, subject to appropriate safeguards (standard contractual clauses / recognised mechanisms).",
+    "de": "Die <strong>Hauptdaten</strong> (Datenbank, Authentifizierung, Speicher) werden <strong>in der EU (Irland)</strong> gehostet. Einzelne Auftragsbearbeiter (Vercel, Stripe, Resend) können bestimmte Daten <strong>in den USA</strong> verarbeiten, abgesichert durch geeignete Garantien (Standardvertragsklauseln / anerkannte Mechanismen).",
+    "it": "I <strong>dati principali</strong> (database, autenticazione, archiviazione) sono ospitati <strong>nell'UE (Irlanda)</strong>. Alcuni responsabili (Vercel, Stripe, Resend) possono trattare determinati dati <strong>negli Stati Uniti</strong>, con garanzie appropriate (clausole contrattuali tipo / meccanismi riconosciuti)."
+  },
+  "cf.h.6": { "fr": "6. Durée de conservation", "en": "6. Retention period", "de": "6. Aufbewahrungsdauer", "it": "6. Durata di conservazione" },
+  "cf.6.p": {
+    "fr": "Les données sont conservées tant que le compte / l'organisation est actif. En cas de <strong>suspension</strong> d'abonnement, elles sont <strong>conservées</strong> pour permettre une réactivation. La <strong>suppression définitive</strong> intervient <strong>sur demande</strong>, ou après un préavis de notre part, dans le respect des durées légales de conservation.",
+    "en": "Data is kept for as long as the account / organisation is active. If a subscription is <strong>suspended</strong>, data is <strong>retained</strong> to allow reactivation. <strong>Permanent deletion</strong> occurs <strong>on request</strong>, or after notice from us, subject to statutory retention periods.",
+    "de": "Die Daten werden aufbewahrt, solange das Konto / die Organisation aktiv ist. Bei <strong>Sperrung</strong> des Abonnements werden sie <strong>aufbewahrt</strong>, um eine Reaktivierung zu ermöglichen. Die <strong>endgültige Löschung</strong> erfolgt <strong>auf Anfrage</strong> oder nach einer Vorankündigung unsererseits, unter Einhaltung der gesetzlichen Aufbewahrungsfristen.",
+    "it": "I dati sono conservati finché l'account / l'organizzazione è attivo. In caso di <strong>sospensione</strong> dell'abbonamento, sono <strong>conservati</strong> per consentire una riattivazione. La <strong>cancellazione definitiva</strong> avviene <strong>su richiesta</strong>, o previo preavviso da parte nostra, nel rispetto dei termini legali di conservazione."
+  },
+  "cf.h.7": { "fr": "7. Sécurité", "en": "7. Security", "de": "7. Sicherheit", "it": "7. Sicurezza" },
+  "cf.7.p": {
+    "fr": "Cloisonnement strict par organisation, chiffrement en transit (HTTPS) et au repos, contrôle d'accès par rôle, mots de passe hachés, sauvegardes.",
+    "en": "Strict isolation per organisation, encryption in transit (HTTPS) and at rest, role-based access control, hashed passwords, backups.",
+    "de": "Strikte Trennung pro Organisation, Verschlüsselung bei der Übertragung (HTTPS) und im Ruhezustand, rollenbasierte Zugriffskontrolle, gehashte Passwörter, Backups.",
+    "it": "Rigida separazione per organizzazione, cifratura in transito (HTTPS) e a riposo, controllo degli accessi basato sui ruoli, password con hash, backup."
+  },
+  "cf.h.8": { "fr": "8. Vos droits", "en": "8. Your rights", "de": "8. Ihre Rechte", "it": "8. I tuoi diritti" },
+  "cf.8.a": {
+    "fr": "Conformément à la nLPD (et au RGPD si vous êtes dans l'UE) : droits d'<strong>accès, rectification, effacement, opposition</strong> et de <strong>remise / portabilité</strong>. Pour les données gérées par une organisation, adressez-vous d'abord à celle-ci. Exercice :",
+    "en": "In accordance with the nFADP (and the GDPR if you are in the EU): rights of <strong>access, rectification, erasure, objection</strong> and <strong>data release / portability</strong>. For data managed by an organisation, please contact it first. To exercise your rights:",
+    "de": "Gemäss revDSG (und DSGVO, wenn Sie sich in der EU befinden): Rechte auf <strong>Auskunft, Berichtigung, Löschung, Widerspruch</strong> sowie auf <strong>Datenherausgabe / Datenübertragbarkeit</strong>. Für von einer Organisation verwaltete Daten wenden Sie sich bitte zuerst an diese. Zur Ausübung:",
+    "it": "Ai sensi della nLPD (e del GDPR se ti trovi nell'UE): diritti di <strong>accesso, rettifica, cancellazione, opposizione</strong> e di <strong>consegna / portabilità</strong>. Per i dati gestiti da un'organizzazione, rivolgiti prima a quest'ultima. Per esercitarli:"
+  },
+  "cf.8.b": {
+    "fr": "Vous pouvez saisir le <strong>PFPDT</strong> (edoeb.admin.ch) ou votre autorité de protection des données.",
+    "en": "You may lodge a complaint with the <strong>FDPIC</strong> (edoeb.admin.ch) or your data protection authority.",
+    "de": "Sie können sich an den <strong>EDÖB</strong> (edoeb.admin.ch) oder Ihre Datenschutzbehörde wenden.",
+    "it": "Puoi rivolgerti all'<strong>IFPDT</strong> (edoeb.admin.ch) o alla tua autorità di protezione dei dati."
+  },
+  "cf.h.9": { "fr": "9. Mineurs", "en": "9. Minors", "de": "9. Minderjährige", "it": "9. Minori" },
+  "cf.9.p": {
+    "fr": "Pour les athlètes <strong>mineurs</strong>, le traitement des données (notamment de santé) requiert le <strong>consentement du représentant légal</strong>, recueilli par l'organisation cliente.",
+    "en": "For <strong>minor</strong> athletes, the processing of data (particularly health data) requires the <strong>consent of the legal guardian</strong>, collected by the client organisation.",
+    "de": "Bei <strong>minderjährigen</strong> Athleten erfordert die Verarbeitung der Daten (insbesondere Gesundheitsdaten) die <strong>Einwilligung der gesetzlichen Vertretung</strong>, die von der Kundenorganisation eingeholt wird.",
+    "it": "Per gli atleti <strong>minorenni</strong>, il trattamento dei dati (in particolare quelli sanitari) richiede il <strong>consenso del rappresentante legale</strong>, raccolto dall'organizzazione cliente."
+  },
+  "cf.h.10": { "fr": "10. Cookies", "en": "10. Cookies", "de": "10. Cookies", "it": "10. Cookie" },
+  "cf.10.p": {
+    "fr": "Voir la <a href=\"{{url:cookies}}\" style=\"color:var(--accent-2);text-decoration:none\">Politique cookies</a>. Par défaut, seuls des cookies strictement nécessaires sont utilisés.",
+    "en": "See the <a href=\"{{url:cookies}}\" style=\"color:var(--accent-2);text-decoration:none\">Cookie Policy</a>. By default, only strictly necessary cookies are used.",
+    "de": "Siehe die <a href=\"{{url:cookies}}\" style=\"color:var(--accent-2);text-decoration:none\">Cookie-Richtlinie</a>. Standardmässig werden nur unbedingt erforderliche Cookies verwendet.",
+    "it": "Consulta la <a href=\"{{url:cookies}}\" style=\"color:var(--accent-2);text-decoration:none\">Cookie Policy</a>. Per impostazione predefinita, vengono utilizzati solo cookie strettamente necessari."
+  },
+  "cf.h.11": { "fr": "11. Violation de données", "en": "11. Data breach", "de": "11. Datenschutzverletzung", "it": "11. Violazione dei dati" },
+  "cf.11.p": {
+    "fr": "En cas de violation présentant un risque, nous notifions le <strong>PFPDT dans les meilleurs délais</strong> (72 h si le RGPD s'applique) et informons les personnes concernées lorsque la loi l'exige.",
+    "en": "In the event of a breach presenting a risk, we notify the <strong>FDPIC as soon as possible</strong> (72 hours where the GDPR applies) and inform the data subjects where the law requires it.",
+    "de": "Bei einer Verletzung mit Risiko benachrichtigen wir den <strong>EDÖB so rasch als möglich</strong> (72 Stunden, sofern die DSGVO gilt) und informieren die betroffenen Personen, sofern das Gesetz dies verlangt.",
+    "it": "In caso di violazione che presenta un rischio, notifichiamo l'<strong>IFPDT nel più breve tempo possibile</strong> (72 ore se si applica il GDPR) e informiamo le persone interessate quando la legge lo richiede."
+  },
+  "cf.h.12": { "fr": "12. Contact", "en": "12. Contact", "de": "12. Kontakt", "it": "12. Contatto" },
+  "cf.12.pre": { "fr": "<em>[Entité]</em> —", "en": "<em>[Entity]</em> —", "de": "<em>[Gesellschaft]</em> —", "it": "<em>[Società]</em> —" },
+  "cf.12.post": { "fr": "— Lausanne, Suisse.", "en": "— Lausanne, Switzerland.", "de": "— Lausanne, Schweiz.", "it": "— Losanna, Svizzera." },
+  "cf.prevail": {
+    "fr": "En cas de divergence entre les versions linguistiques, la <strong>version française fait foi</strong>.",
+    "en": "In the event of any discrepancy between language versions, the <strong>French version prevails</strong>.",
+    "de": "Bei Abweichungen zwischen den Sprachfassungen ist die <strong>französische Fassung massgebend</strong>.",
+    "it": "In caso di divergenza tra le versioni linguistiche, <strong>prevale la versione francese</strong>."
+  }
+}
