@@ -2,7 +2,7 @@
 <html lang="{{lang}}" data-theme="dark" data-page-lang="{{lang}}" data-lang-urls='{{langUrls}}'><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<script>try{var t=localStorage.getItem('sinetik-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script>try{var t=localStorage.getItem('sinetik-theme')||'dark';document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 <title>{{t:meta.title}}</title>
 <meta name="description" content="{{t:meta.desc}}">
 {{headAlternates}}
@@ -259,12 +259,12 @@
       <div data-anim="rise" data-delay="0">
         <div class="carou" data-anim="rise" data-delay="0">
           <div class="carou-track">
-            <figure class="is-video" data-label="Rendu animé">
+            <figure class="is-video" data-label="{{t:pure.carousel.video}}">
               <video src="assets/img/onda/onda-fg01.mp4" poster="assets/img/onda/00-video-poster.jpg" width="540" height="960" autoplay muted loop playsinline preload="auto" aria-label="{{t:prod.video.alt}}"></video>
               <span class="carou-cap">{{t:prod.cap.video}}</span>
             </figure>
-            <figure class="is-spin" data-label="Vue 360°">
-              <div class="spin" data-frames="8" data-src="assets/img/onda/360/onda-360-{i}.jpg" data-alt="Onda FG-01, vue tournante sur 360 degrés" data-hint="Glissez pour tourner"></div>
+            <figure class="is-spin" data-label="{{t:pure.carousel.spin}}">
+              <div class="spin" data-frames="8" data-src="assets/img/onda/360/onda-360-{i}.jpg" data-alt="{{t:pure.spin.alt}}" data-hint="{{t:pure.spin.hint}}"></div>
               <span class="carou-cap">{{t:prod.cap.spin}}</span>
             </figure>
           </div>
@@ -368,7 +368,7 @@
       var b = document.createElement('button');
       b.type = 'button';
       b.setAttribute('role','tab');
-      b.setAttribute('aria-label', (s.dataset.label || ('Vue ' + (n+1))));
+      b.setAttribute('aria-label', (s.dataset.label || ('{{t:pure.view}} ' + (n+1))));
       b.addEventListener('click', function(){ go(n); });
       dots.appendChild(b);
     });
@@ -408,7 +408,7 @@
       var play = document.createElement('button');
       play.type = 'button';
       play.className = 'carou-play';
-      play.setAttribute('aria-label', 'Lire la vidéo');
+      play.setAttribute('aria-label', '{{t:pure.video.play}}');
       play.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
       play.addEventListener('click', function(e){
         e.stopPropagation();
@@ -417,7 +417,7 @@
       fig.appendChild(play);
       var sync = function(){
         play.hidden = !vid.paused;
-        play.setAttribute('aria-label', vid.paused ? 'Lire la vidéo' : 'Mettre en pause');
+        play.setAttribute('aria-label', vid.paused ? '{{t:pure.video.play}}' : '{{t:pure.video.pause}}');
       };
       vid.addEventListener('play', sync);
       vid.addEventListener('pause', sync);
@@ -477,7 +477,7 @@
     cur.alt = root.dataset.alt || ''; cur.draggable = false;
     stage.appendChild(cur);
     var hint = document.createElement('span'); hint.className = 'spin-hint';
-    hint.textContent = root.dataset.hint || 'Glissez pour tourner'; stage.appendChild(hint);
+    hint.textContent = root.dataset.hint || '{{t:pure.spin.hint}}'; stage.appendChild(hint);
     var bar = document.createElement('div'); bar.className = 'spin-bar'; bar.innerHTML = '<b></b>'; stage.appendChild(bar);
     root.appendChild(stage);
 

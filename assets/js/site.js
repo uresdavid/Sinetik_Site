@@ -186,8 +186,7 @@ function initialTheme(){
     const saved = localStorage.getItem("sinetik-theme");
     if(saved) return saved;
   }catch(e){}
-  if(window.matchMedia("(prefers-color-scheme: light)").matches) return "light";
-  return SINETIK.defaultTheme;
+  return SINETIK.defaultTheme;              // dark-first (identité Sinetik) ; l'utilisateur peut basculer
 }
 
 /* ══ 4. Traduction ═══════════════════════════════════════════ */
@@ -344,6 +343,17 @@ function initTicker(){
    ═════════════════════════════════════════════════════════════ */
 function initScrollMotion(){
   const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* Cascade automatique : les enfants directs des grilles se révèlent en séquence.
+     On n'écrase pas un type d'animation déjà posé ; on (re)pose seulement le délai. */
+  document.querySelectorAll(".grid, .plans").forEach(grid => {
+    [...grid.children].forEach((child, i) => {
+      if(child.nodeType !== 1) return;
+      if(!child.hasAttribute("data-anim")) child.setAttribute("data-anim", "rise");
+      child.setAttribute("data-delay", String(Math.min(i, 5)));
+    });
+  });
+
   const els = [...document.querySelectorAll("[data-anim]")];
   if(!els.length) return;
 
@@ -485,6 +495,23 @@ function initRails(){
   });
 }
 
+/* Reflet spéculaire qui suit le pointeur sur les cartes (signature liquid glass) */
+function initGlint(){
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if(matchMedia("(hover: none)").matches) return;            // pas sur écran tactile
+  let queued = false, el = null, mx = 50, my = 0;
+  function apply(){ queued = false; if(el){ el.style.setProperty("--mx", mx + "%"); el.style.setProperty("--my", my + "%"); } }
+  document.addEventListener("pointermove", e => {
+    const card = e.target.closest(".card");
+    if(!card) return;
+    const r = card.getBoundingClientRect();
+    mx = ((e.clientX - r.left) / r.width) * 100;
+    my = ((e.clientY - r.top) / r.height) * 100;
+    el = card;
+    if(!queued){ queued = true; requestAnimationFrame(apply); }
+  }, { passive:true });
+}
+
 /* ══ 7. Démarrage ════════════════════════════════════════════ */
 document.addEventListener("DOMContentLoaded", () => {
   const head = document.getElementById("site-header");
@@ -525,11 +552,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const burger = document.querySelector(".burger");
   const links  = document.querySelector(".nav-links");
   if(burger && links){
-    burger.addEventListener("click", () => {
-      const open = links.dataset.open === "true";
-      links.dataset.open = String(!open);
-      burger.setAttribute("aria-expanded", String(!open));
-    });
+    const setOpen = v => { links.dataset.open = String(v); burger.setAttribute("aria-expanded", String(v)); };
+    burger.addEventListener("click", () => setOpen(links.dataset.open !== "true"));
+    links.addEventListener("click", e => { if(e.target.closest("a")) setOpen(false); });   // fermer au clic sur un lien
+    addEventListener("resize", () => { if(innerWidth > 720) setOpen(false); }, { passive:true });
   }
 
   const nav = document.querySelector(".nav");
@@ -539,6 +565,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   initScrollMotion();
   initRails();
+  initGlint();
 
   const form = document.getElementById("contact-form");
   if(form){

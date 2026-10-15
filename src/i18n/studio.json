@@ -498,7 +498,7 @@
   "plans.note": {
     "fr": "Hébergement européen, données chiffrées, cloisonnement strict entre organisations. Conforme au RGPD et à la nLPD suisse. Vos données restent les vôtres et sont exportables à tout moment, sans frais de sortie ni format propriétaire.",
     "en": "European hosting, encrypted data, strict separation between organisations. GDPR and Swiss nFADP compliant. Your data stays yours and can be exported at any time, with no exit fees and no proprietary format.",
-    "de": "Europäisches Hosting, verschlüsselte Daten, strikte Trennung zwischen Organisationen. Konform mit der DSGVO und dem Schweizer nDSG. Ihre Daten bleiben Ihre und sind jederzeit exportierbar, ohne Ausstiegsgebühren und ohne proprietäres Format.",
+    "de": "Europäisches Hosting, verschlüsselte Daten, strikte Trennung zwischen Organisationen. Konform mit der DSGVO und dem Schweizer revDSG. Ihre Daten bleiben Ihre und sind jederzeit exportierbar, ohne Ausstiegsgebühren und ohne proprietäres Format.",
     "it": "Hosting europeo, dati cifrati, separazione rigorosa tra organizzazioni. Conforme al GDPR e alla nLPD svizzera. I tuoi dati restano tuoi e sono esportabili in qualsiasi momento, senza costi di uscita né formato proprietario."
   },
   "faq.h2": {
