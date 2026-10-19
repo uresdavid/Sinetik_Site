@@ -444,10 +444,10 @@
     "it": "Club amatoriale, 2–3 squadre"
   },
   "plan.club.li1": {
-    "fr": "Jusqu’à 75 athlètes, 5 encadrants",
-    "en": "Up to 75 athletes, 5 staff",
-    "de": "Bis zu 75 Athleten, 5 Betreuer",
-    "it": "Fino a 75 atleti, 5 membri dello staff"
+    "fr": "Jusqu’à 90 athlètes, 5 encadrants",
+    "en": "Up to 90 athletes, 5 staff",
+    "de": "Bis zu 90 Athleten, 5 Betreuer",
+    "it": "Fino a 90 atleti, 5 membri dello staff"
   },
   "plan.club.li2": {
     "fr": "Socle + 2 modules, multi-équipes",
@@ -480,10 +480,10 @@
     "it": "Club pro, accademia professionale"
   },
   "plan.elite.li1": {
-    "fr": "Jusqu’à 150 athlètes, 20 encadrants",
-    "en": "Up to 150 athletes, 20 staff",
-    "de": "Bis zu 150 Athleten, 20 Betreuer",
-    "it": "Fino a 150 atleti, 20 membri dello staff"
+    "fr": "Jusqu’à 400 athlètes, 20 encadrants",
+    "en": "Up to 400 athletes, 20 staff",
+    "de": "Bis zu 400 Athleten, 20 Betreuer",
+    "it": "Fino a 400 atleti, 20 membri dello staff"
   },
   "plan.elite.li2": {
     "fr": "Tous les modules inclus",
@@ -642,10 +642,10 @@
     "it": "Accademia, centro di formazione"
   },
   "plan.academie.li1": {
-    "fr": "Jusqu’à 150 athlètes, 10 encadrants",
-    "en": "Up to 150 athletes, 10 staff",
-    "de": "Bis zu 150 Athleten, 10 Betreuer",
-    "it": "Fino a 150 atleti, 10 membri dello staff"
+    "fr": "Jusqu’à 200 athlètes, 10 encadrants",
+    "en": "Up to 200 athletes, 10 staff",
+    "de": "Bis zu 200 Athleten, 10 Betreuer",
+    "it": "Fino a 200 atleti, 10 membri dello staff"
   },
   "plan.academie.li2": {
     "fr": "Socle + 3 modules, multi-équipes",
@@ -666,9 +666,9 @@
     "it": "Moduli aggiuntivi a scelta"
   },
   "plans.quote": {
-    "fr": "Au-delà de 150 athlètes, multi-organisations ou options techniques (identité unique, marque blanche, intégration GPS) : sur devis.",
-    "en": "Beyond 150 athletes, multi-organisation or technical options (single sign-on, white-label, GPS integration): on request.",
-    "de": "Über 150 Athleten, Multi-Organisation oder technische Optionen (Single Sign-on, White-Label, GPS-Integration): auf Anfrage.",
-    "it": "Oltre 150 atleti, multi-organizzazione o opzioni tecniche (single sign-on, white-label, integrazione GPS): su preventivo."
+    "fr": "Au-delà de 400 athlètes, multi-organisations ou options techniques (identité unique, marque blanche, intégration GPS) : sur devis.",
+    "en": "Beyond 400 athletes, multi-organisation or technical options (single sign-on, white-label, GPS integration): on request.",
+    "de": "Über 400 Athleten, Multi-Organisation oder technische Optionen (Single Sign-on, White-Label, GPS-Integration): auf Anfrage.",
+    "it": "Oltre 400 atleti, multi-organizzazione o opzioni tecniche (single sign-on, white-label, integrazione GPS): su preventivo."
   }
 }

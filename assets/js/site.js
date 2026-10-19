@@ -23,8 +23,8 @@ const SINETIK = {
   prices: {
     studioCoach    : "CHF 49",         // grille officielle (HT) — mensuel
     studioClub     : "CHF 149",
-    studioAcademie : "CHF 249",
-    studioElite    : "CHF 449",
+    studioAcademie : "CHF 290",
+    studioElite    : "CHF 590",
     trackerUnit   : "CHF 290",
     trackerTeam   : "CHF 4'900",
     trackerAcademy: null,
