@@ -17,11 +17,14 @@ const SINETIK = {
 
   /* Prix encore provisoires ? true → badge orange à côté de chaque montant */
   pricesArePlaceholders: true,
+  /* ...sauf ces prix-là, confirmés (grille officielle) : pas de badge */
+  pricesFinal: ["studioCoach", "studioClub", "studioAcademie", "studioElite"],
 
   prices: {
-    studioStarter : "CHF 49",
-    studioClub    : "CHF 189",
-    studioElite   : null,             // null → « sur devis »
+    studioCoach    : "CHF 49",         // grille officielle (HT) — mensuel
+    studioClub     : "CHF 149",
+    studioAcademie : "CHF 249",
+    studioElite    : "CHF 449",
     trackerUnit   : "CHF 290",
     trackerTeam   : "CHF 4'900",
     trackerAcademy: null,
@@ -291,7 +294,8 @@ function renderPrices(lang){
       return;
     }
     const unit = el.dataset.unit ? ` <small>${t(el.dataset.unit)}</small>` : "";
-    const flag = SINETIK.pricesArePlaceholders ? ` <span class="todo">${t("price.tbd")}</span>` : "";
+    const isFinal = (SINETIK.pricesFinal || []).includes(el.dataset.price);
+    const flag = (SINETIK.pricesArePlaceholders && !isFinal) ? ` <span class="todo">${t("price.tbd")}</span>` : "";
     el.innerHTML = val + unit + flag;
   });
 }

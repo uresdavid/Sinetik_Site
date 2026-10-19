@@ -384,10 +384,10 @@
     "it": "Piani"
   },
   "plans.lead": {
-    "fr": "Le tarif dépend du nombre d'athlètes suivis et des modules retenus. Tarifs de lancement, confirmés ensemble avant tout engagement.",
-    "en": "Pricing depends on the number of athletes and the modules you keep. Launch pricing, confirmed together before any commitment.",
-    "de": "Der Preis hängt von der Zahl der betreuten Athleten und den gewählten Modulen ab. Einführungspreise, gemeinsam bestätigt vor jeder Verpflichtung.",
-    "it": "Il prezzo dipende dal numero di atleti seguiti e dai moduli scelti. Prezzi di lancio, confermati insieme prima di qualsiasi impegno."
+    "fr": "Un abonnement par taille de structure. Tarifs mensuels, hors taxes — en formule annuelle, 2 mois sont offerts.",
+    "en": "One subscription per organisation size. Monthly prices, excl. VAT — on the annual plan, 2 months are free.",
+    "de": "Ein Abo je Organisationsgröße. Monatspreise, zzgl. MwSt. — im Jahresabo sind 2 Monate geschenkt.",
+    "it": "Un abbonamento per dimensione della struttura. Prezzi mensili, IVA esclusa — nel piano annuale, 2 mesi sono offerti."
   },
   "plan.starter.name": {
     "fr": "Starter",
@@ -438,70 +438,70 @@
     "it": "Club"
   },
   "plan.club.desc": {
-    "fr": "Académie, club formateur",
-    "en": "Academy, development club",
-    "de": "Akademie, Ausbildungsverein",
-    "it": "Accademia, club di formazione"
+    "fr": "Club amateur, 2 à 3 équipes",
+    "en": "Amateur club, 2–3 teams",
+    "de": "Amateurverein, 2–3 Teams",
+    "it": "Club amatoriale, 2–3 squadre"
   },
   "plan.club.li1": {
-    "fr": "Jusqu'à 200 athlètes, équipes illimitées",
-    "en": "Up to 200 athletes, unlimited teams",
-    "de": "Bis zu 200 Athleten, unbegrenzte Teams",
-    "it": "Fino a 200 atleti, squadre illimitate"
+    "fr": "Jusqu’à 75 athlètes, 5 encadrants",
+    "en": "Up to 75 athletes, 5 staff",
+    "de": "Bis zu 75 Athleten, 5 Betreuer",
+    "it": "Fino a 75 atleti, 5 membri dello staff"
   },
   "plan.club.li2": {
-    "fr": "Tous les modules, dont blessures et retour au jeu",
-    "en": "All modules, including injuries and return-to-play",
-    "de": "Alle Module, einschliesslich Verletzungen und Return to Play",
-    "it": "Tutti i moduli, inclusi infortuni e ritorno in campo"
+    "fr": "Socle + 2 modules, multi-équipes",
+    "en": "Core + 2 modules, multi-team",
+    "de": "Basis + 2 Module, Multi-Team",
+    "it": "Base + 2 moduli, multi-squadra"
   },
   "plan.club.li3": {
-    "fr": "Connexion Sinetik:tracker incluse <span style=\"color:var(--ink-3)\">— automne 2026</span>",
-    "en": "Sinetik:tracker connection included <span style=\"color:var(--ink-3)\">— autumn 2026</span>",
-    "de": "Sinetik:tracker-Anbindung inbegriffen <span style=\"color:var(--ink-3)\">— Herbst 2026</span>",
-    "it": "Connessione Sinetik:tracker inclusa <span style=\"color:var(--ink-3)\">— autunno 2026</span>"
+    "fr": "Mise en place offerte avec l’engagement annuel",
+    "en": "Setup included with annual commitment",
+    "de": "Einrichtung bei Jahresbindung inklusive",
+    "it": "Avvio incluso con impegno annuale"
   },
   "plan.club.li4": {
-    "fr": "Configuration et reprise des données incluses",
-    "en": "Setup and data migration included",
-    "de": "Konfiguration und Datenübernahme inbegriffen",
-    "it": "Configurazione e migrazione dei dati incluse"
+    "fr": "Connexion Sinetik:tracker prévue",
+    "en": "Sinetik:tracker connection planned",
+    "de": "Sinetik:tracker-Anbindung geplant",
+    "it": "Connessione Sinetik:tracker prevista"
   },
   "plan.elite.name": {
-    "fr": "Elite / Fédération",
-    "en": "Elite / Federation",
-    "de": "Elite / Verband",
-    "it": "Elite / Federazione"
+    "fr": "Élite",
+    "en": "Elite",
+    "de": "Elite",
+    "it": "Elite"
   },
   "plan.elite.desc": {
-    "fr": "Centre professionnel, fédération",
-    "en": "Professional centre, federation",
-    "de": "Profizentrum, Verband",
-    "it": "Centro professionistico, federazione"
+    "fr": "Club pro, académie professionnelle",
+    "en": "Pro club, professional academy",
+    "de": "Profiverein, Profi-Akademie",
+    "it": "Club pro, accademia professionale"
   },
   "plan.elite.li1": {
-    "fr": "Athlètes et structures illimités",
-    "en": "Unlimited athletes and structures",
-    "de": "Unbegrenzte Athleten und Strukturen",
-    "it": "Atleti e strutture illimitati"
+    "fr": "Jusqu’à 150 athlètes, 20 encadrants",
+    "en": "Up to 150 athletes, 20 staff",
+    "de": "Bis zu 150 Athleten, 20 Betreuer",
+    "it": "Fino a 150 atleti, 20 membri dello staff"
   },
   "plan.elite.li2": {
-    "fr": "Modules premium et indicateurs sur mesure",
-    "en": "Premium modules and custom metrics",
-    "de": "Premium-Module und massgeschneiderte Kennzahlen",
-    "it": "Moduli premium e indicatori su misura"
+    "fr": "Tous les modules inclus",
+    "en": "All modules included",
+    "de": "Alle Module inklusive",
+    "it": "Tutti i moduli inclusi"
   },
   "plan.elite.li3": {
-    "fr": "API et connexion à vos outils existants",
-    "en": "API and connection to your existing tools",
-    "de": "API und Anbindung an Ihre bestehenden Werkzeuge",
-    "it": "API e connessione ai tuoi strumenti esistenti"
+    "fr": "Tableaux de bord sur mesure",
+    "en": "Custom dashboards",
+    "de": "Maßgeschneiderte Dashboards",
+    "it": "Dashboard su misura"
   },
   "plan.elite.li4": {
-    "fr": "Accompagnement dédié toute la saison",
-    "en": "Dedicated support all season",
-    "de": "Dedizierte Begleitung die ganze Saison",
-    "it": "Accompagnamento dedicato per tutta la stagione"
+    "fr": "Support prioritaire",
+    "en": "Priority support",
+    "de": "Priorisierter Support",
+    "it": "Supporto prioritario"
   },
   "plan.elite.cta": {
     "fr": "Nous écrire",
@@ -592,5 +592,83 @@
     "en": "Scroll",
     "de": "Scrollen",
     "it": "Scorri"
+  },
+  "plan.coach.name": {
+    "fr": "Coach",
+    "en": "Coach",
+    "de": "Coach",
+    "it": "Coach"
+  },
+  "plan.coach.desc": {
+    "fr": "Préparateur, coach, kiné, nutritionniste",
+    "en": "Trainer, coach, physio, nutritionist",
+    "de": "Trainer, Coach, Physio, Ernährungsberater",
+    "it": "Preparatore, coach, fisio, nutrizionista"
+  },
+  "plan.coach.li1": {
+    "fr": "Jusqu’à 30 athlètes, 1 encadrant",
+    "en": "Up to 30 athletes, 1 staff member",
+    "de": "Bis zu 30 Athleten, 1 Betreuer",
+    "it": "Fino a 30 atleti, 1 membro dello staff"
+  },
+  "plan.coach.li2": {
+    "fr": "Socle + 2 modules au choix",
+    "en": "Core + 2 modules of your choice",
+    "de": "Basis + 2 Module nach Wahl",
+    "it": "Base + 2 moduli a scelta"
+  },
+  "plan.coach.li3": {
+    "fr": "Mise en place par guides vidéo",
+    "en": "Onboarding via video guides",
+    "de": "Einrichtung per Videoanleitungen",
+    "it": "Avvio tramite guide video"
+  },
+  "plan.coach.li4": {
+    "fr": "Au-delà de 30 : +15 athlètes à la carte",
+    "en": "Beyond 30: +15 athletes à la carte",
+    "de": "Über 30: +15 Athleten optional",
+    "it": "Oltre 30: +15 atleti a scelta"
+  },
+  "plan.academie.name": {
+    "fr": "Académie",
+    "en": "Academy",
+    "de": "Akademie",
+    "it": "Accademia"
+  },
+  "plan.academie.desc": {
+    "fr": "Académie, centre de formation",
+    "en": "Academy, training centre",
+    "de": "Akademie, Ausbildungszentrum",
+    "it": "Accademia, centro di formazione"
+  },
+  "plan.academie.li1": {
+    "fr": "Jusqu’à 150 athlètes, 10 encadrants",
+    "en": "Up to 150 athletes, 10 staff",
+    "de": "Bis zu 150 Athleten, 10 Betreuer",
+    "it": "Fino a 150 atleti, 10 membri dello staff"
+  },
+  "plan.academie.li2": {
+    "fr": "Socle + 3 modules, multi-équipes",
+    "en": "Core + 3 modules, multi-team",
+    "de": "Basis + 3 Module, Multi-Team",
+    "it": "Base + 3 moduli, multi-squadra"
+  },
+  "plan.academie.li3": {
+    "fr": "Mise en place offerte avec l’engagement annuel",
+    "en": "Setup included with annual commitment",
+    "de": "Einrichtung bei Jahresbindung inklusive",
+    "it": "Avvio incluso con impegno annuale"
+  },
+  "plan.academie.li4": {
+    "fr": "Modules supplémentaires à la carte",
+    "en": "Extra modules à la carte",
+    "de": "Zusätzliche Module optional",
+    "it": "Moduli aggiuntivi a scelta"
+  },
+  "plans.quote": {
+    "fr": "Au-delà de 150 athlètes, multi-organisations ou options techniques (identité unique, marque blanche, intégration GPS) : sur devis.",
+    "en": "Beyond 150 athletes, multi-organisation or technical options (single sign-on, white-label, GPS integration): on request.",
+    "de": "Über 150 Athleten, Multi-Organisation oder technische Optionen (Single Sign-on, White-Label, GPS-Integration): auf Anfrage.",
+    "it": "Oltre 150 atleti, multi-organizzazione o opzioni tecniche (single sign-on, white-label, integrazione GPS): su preventivo."
   }
 }

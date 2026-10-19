@@ -201,12 +201,12 @@
 
     <div class="plans">
       <div class="plan" data-anim="rise" data-delay="0">
-        <h3>{{t:plan.starter.name}}</h3>
-        <p style="color:var(--ink-3);font-size:.88rem;margin:0">{{t:plan.starter.desc}}</p>
-        <div class="price" data-price="studioStarter" data-unit="price.month"></div>
+        <h3>{{t:plan.coach.name}}</h3>
+        <p style="color:var(--ink-3);font-size:.88rem;margin:0">{{t:plan.coach.desc}}</p>
+        <div class="price" data-price="studioCoach" data-unit="price.month"></div>
         <ul class="ticks">
-          <li>{{t:plan.starter.li1}}</li><li>{{t:plan.starter.li2}}</li>
-          <li>{{t:plan.starter.li3}}</li><li>{{t:plan.starter.li4}}</li>
+          <li>{{t:plan.coach.li1}}</li><li>{{t:plan.coach.li2}}</li>
+          <li>{{t:plan.coach.li3}}</li><li>{{t:plan.coach.li4}}</li>
         </ul>
         <a class="btn btn-ghost" href="{{url:contact}}">{{t:cta.demo}}</a>
       </div>
@@ -224,16 +224,29 @@
       </div>
 
       <div class="plan" data-anim="rise" data-delay="2">
+        <h3>{{t:plan.academie.name}}</h3>
+        <p style="color:var(--ink-3);font-size:.88rem;margin:0">{{t:plan.academie.desc}}</p>
+        <div class="price" data-price="studioAcademie" data-unit="price.month"></div>
+        <ul class="ticks">
+          <li>{{t:plan.academie.li1}}</li><li>{{t:plan.academie.li2}}</li>
+          <li>{{t:plan.academie.li3}}</li><li>{{t:plan.academie.li4}}</li>
+        </ul>
+        <a class="btn btn-ghost" href="{{url:contact}}">{{t:cta.demo}}</a>
+      </div>
+
+      <div class="plan" data-anim="rise" data-delay="3">
         <h3>{{t:plan.elite.name}}</h3>
         <p style="color:var(--ink-3);font-size:.88rem;margin:0">{{t:plan.elite.desc}}</p>
-        <div class="price" data-price="studioElite"></div>
+        <div class="price" data-price="studioElite" data-unit="price.month"></div>
         <ul class="ticks">
           <li>{{t:plan.elite.li1}}</li><li>{{t:plan.elite.li2}}</li>
           <li>{{t:plan.elite.li3}}</li><li>{{t:plan.elite.li4}}</li>
         </ul>
-        <a class="btn btn-ghost" href="{{url:contact}}">{{t:plan.elite.cta}}</a>
+        <a class="btn btn-ghost" href="{{url:contact}}">{{t:cta.demo}}</a>
       </div>
     </div>
+
+    <p style="margin-top:24px;text-align:center;color:var(--ink-3);font-size:.9rem;max-width:70ch;margin-left:auto;margin-right:auto" data-anim="rise" data-delay="0">{{t:plans.quote}}</p>
 
     <p style="margin-top:32px;text-align:center;color:var(--ink-3);font-size:.9rem;max-width:60ch;margin-left:auto;margin-right:auto" data-anim="rise" data-delay="0">{{t:plans.compare}}</p>
 
